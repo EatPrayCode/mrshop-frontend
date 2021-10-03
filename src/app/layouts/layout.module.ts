@@ -1,3 +1,4 @@
+import { CheckoutModule } from './../features/checkout/checkout.module';
 import { NgModule } from '@angular/core';
 
 import { CommonModule } from '@angular/common';
@@ -33,7 +34,8 @@ import { CustomisePackModule } from '../features/checkout/components/customise-p
     ReactiveFormsModule,
     NgBottomNavigationModule,
     AuthModule,
-    CustomisePackModule
+    CustomisePackModule,
+    CheckoutModule
   ],
   exports: [
     BlankComponent,
