@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { mockPackDataProduct } from './../../../../../../mock-data/mockJsonPacks';
+import { Component, Inject, OnInit, Optional } from '@angular/core';
+import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-view-edit-pack',
@@ -7,9 +9,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ViewEditPackComponent implements OnInit {
 
-  constructor() { }
+  mockPackDataProduct: any = mockPackDataProduct;
+  inputData: any = {};
 
-  ngOnInit(): void {
+  ngOnInit(): void { }
+
+  constructor(
+    public dialogRef: MatDialogRef<ViewEditPackComponent>,
+    //@Optional() is used to prevent error if no data is passed
+    @Optional() @Inject(MAT_DIALOG_DATA) public data: any) {
+    this.inputData = { ...data };
+  }
+
+  doAction() { }
+
+  closeDialog() {
+    this.dialogRef.close({ event: 'Cancel' });
   }
 
 }

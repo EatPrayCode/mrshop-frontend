@@ -2,7 +2,7 @@ import { Component, OnInit, ViewChild, ElementRef, NgZone } from '@angular/core'
 import { MatStepper } from '@angular/material/stepper';
 import { FormGroup, FormBuilder, Validators, FormArray } from '@angular/forms';
 import { MapsAPILoader } from '@agm/core';
-import { mockData } from 'src/app/mock-data/mockJsonPacks';
+import { mockPackDataProduct } from 'src/app/mock-data/mockJsonPacks';
 import { AppService } from 'src/app/app/app.service';
 
 @Component({
@@ -11,6 +11,7 @@ import { AppService } from 'src/app/app/app.service';
   styleUrls: ['./checkout.component.scss']
 })
 export class CheckoutComponent implements OnInit {
+
   @ViewChild('horizontalStepper')
   horizontalStepper!: MatStepper;
   @ViewChild('addressAutocomplete')
@@ -19,23 +20,25 @@ export class CheckoutComponent implements OnInit {
   addressForm: FormGroup = new FormGroup({});
   paymentForm: FormGroup = new FormGroup({});
 
-  public features:any = [];
-  public propertyTypes:any = [];
-  public propertyStatuses:any = [];
-  public cities:any = [];
-  public neighborhoods:any = [];
-  public streets:any = [];
+  public features: any = [];
+  public propertyTypes: any = [];
+  public propertyStatuses: any = [];
+  public cities: any = [];
+  public neighborhoods: any = [];
+  public streets: any = [];
   public lat: number = 40.678178;
   public lng: number = -73.944158;
   public zoom: number = 12;
 
-  inputData: any = mockData;
+  inputData: any = mockPackDataProduct;
 
   constructor(
     public appService: AppService,
     private fb: FormBuilder,
     private ngZone: NgZone
-  ) { }
+  ) {
+    this.loadCart();
+   }
 
   ngOnInit() {
 
@@ -87,6 +90,12 @@ export class CheckoutComponent implements OnInit {
     // this.placesAutocomplete();
   }
 
+  loadCart() {
+    console.log(this.appService.Data.cartList);
+    this.inputData = [
+      ...this.appService.Data.cartList
+    ];
+  }
 
   public onSelectionChange(e: any) {
     // if(e.selectedIndex == 4){   
@@ -178,6 +187,6 @@ export class CheckoutComponent implements OnInit {
     console.log(e);
   }
 
-  public setAddresses(result: any) {}
+  public setAddresses(result: any) { }
 
 }

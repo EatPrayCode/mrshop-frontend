@@ -1,3 +1,4 @@
+import { mockPackDataProduct } from './mockJsonPacks';
 import { appSettingsState, categoriesNavItems } from "./app.models";
 
 export const categoriesNavItemsConst: categoriesNavItems[] = [
@@ -666,7 +667,6 @@ export const organiserItemsConst: any[] = [
     },
 ];
 
-
 export const appSettingsStateFirebaseBangalore: appSettingsState = {
     uid: '',
     isLoggedIn: false,
@@ -775,217 +775,20 @@ export const adminMenuConst: any[] = [
 ];
 
 export class Pack {
-    constructor(public id: number,
+    constructor(
+        public id: number,
         public name: string,
-        public title: string,
-        public desc: string,
-        public propertyType: string,
-        public propertyStatus: any,
-        public city: string,
-        public zipCode: any,
-        public neighborhood: any,
-        public street: any,
-        public location: any,
-        public formattedAddress: string,
-        public features: any,
-        public featured: boolean,
-        public oldPrice: any,
-        public newPrice: any,
-        public discount: any,
-        public description: any,
-        public priceDollar: any,
-        public priceEuro: any,
-        public bedrooms: number,
-        public bathrooms: number,
-        public garages: number,
-        public area: any,
-        public yearBuilt: number,
-        public ratingsCount: number,
-        public ratingsValue: number,
-        public additionalFeatures: any,
-        public gallery: any,
-        public plans: any,
-        public availibilityCount: any,
-        public videos: any,
-        public published: string,
-        public lastUpdate: string,
-        public color: any,
-        public size: any,
-        public weight: any,
-        public categoryId: any,
-
-        public views: number) { }
+        public packsData?: any
+    ) { }
 }
 
 export const packSample: Pack = {
     "id": 1,
     "name": "Piano",
-    "oldPrice": null,
-    "newPrice": 175,
-    "discount": null,
-    "ratingsCount": 3,
-    "ratingsValue": 280,
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut congue eleifend nulla vel rutrum. Donec tempus metus non erat vehicula, vel hendrerit sem interdum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.",
-    "availibilityCount": 5,
-    "color": [
-        "#5C6BC0",
-        "#66BB6A",
-        "#90A4AE"
-    ],
-    "size": [
-        "S",
-        "M",
-        "L",
-        "XL"
-    ],
-    "weight": 150,
-    "categoryId": 100,
-    "title": "Pack Name",
-    "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium magnam veniam sit reprehenderit deserunt ad voluptates id aperiam veritatis! Nobis saepe quos eveniet numquam vitae quis, tenetur consectetur impedit dolore.",
-    "propertyType": "Apartment",
-    "propertyStatus": [
-        "For Sale"
-    ],
-    "city": "New York",
-    "zipCode": "10033",
-    "neighborhood": [
-        "Astoria",
-        "Midtown"
-    ],
-    "street": [
-        "Astoria Street #1",
-        "Midtown Street #2"
-    ],
-    "location": {
-        "lat": 40.84915,
-        "lng": -73.9351
-    },
-    "formattedAddress": "Vendor Name",
-    "features": [
-        "Air Conditioning",
-        "Barbeque",
-        "Dryer",
-        "Microwave",
-        "Refrigerator",
-        "Fireplace",
-        "Swimming Pool",
-        "TV Cable",
-        "WiFi"
-    ],
-    "featured": false,
-    "priceDollar": {
-        "sale": 1300000,
-        "rent": null
-    },
-    "priceEuro": {
-        "sale": 1160000,
-        "rent": null
-    },
-    "bedrooms": 2,
-    "bathrooms": 2,
-    "garages": 1,
-    "area": {
-        "value": 2380,
-        "unit": "ft²"
-    },
-    "yearBuilt": 2007,
-    "additionalFeatures": [
-        {
-            "name": "Heat",
-            "value": "Natural Gas"
-        },
-        {
-            "name": "Roof",
-            "value": "Composition/Shingle"
-        },
-        {
-            "name": "Floors",
-            "value": "Wall-to-Wall Carpet"
-        },
-        {
-            "name": "Water",
-            "value": "District/Public"
-        },
-        {
-            "name": "Cross Streets",
-            "value": "Orangethorpe-Gilbert"
-        },
-        {
-            "name": "Windows",
-            "value": "Skylights"
-        },
-        {
-            "name": "Flat",
-            "value": "5"
-        },
-        {
-            "name": "Childroom",
-            "value": "2"
-        }
-    ],
-    "gallery": [
-        {
-            "small": "assets/images/props/flat-1/1-small.jpg",
-            "medium": "assets/images/props/flat-1/1-medium.jpg",
-            "big": "assets/images/props/flat-1/1-big.jpg"
-        },
-        {
-            "small": "assets/images/props/flat-1/2-small.jpg",
-            "medium": "assets/images/props/flat-1/2-medium.jpg",
-            "big": "assets/images/props/flat-1/2-big.jpg"
-        },
-        {
-            "small": "assets/images/props/flat-1/3-small.jpg",
-            "medium": "assets/images/props/flat-1/3-medium.jpg",
-            "big": "assets/images/props/flat-1/3-big.jpg"
-        },
-        {
-            "small": "assets/images/props/flat-1/4-small.jpg",
-            "medium": "assets/images/props/flat-1/4-medium.jpg",
-            "big": "assets/images/props/flat-1/4-big.jpg"
-        }
-    ],
-    "plans": [
-        {
-            "name": "First floor",
-            "desc": "Plan description. Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium magnam veniam sit reprehenderit deserunt ad voluptates id aperiam veritatis! Nobis saepe quos eveniet numquam vitae quis, tenetur consectetur impedit dolore.",
-            "area": {
-                "value": 1180,
-                "unit": "ft²"
-            },
-            "rooms": 3,
-            "baths": 1,
-            "image": "assets/images/others/plan-1.jpg"
-        },
-        {
-            "name": "Second floor",
-            "desc": "Plan description. Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium magnam veniam sit reprehenderit deserunt ad voluptates id aperiam veritatis! Nobis saepe quos eveniet numquam vitae quis, tenetur consectetur impedit dolore.",
-            "area": {
-                "value": 1200,
-                "unit": "ft²"
-            },
-            "rooms": 5,
-            "baths": 2,
-            "image": "assets/images/others/plan-2.jpg"
-        }
-    ],
-    "videos": [
-        {
-            "name": "Video",
-            "link": "http://themeseason.com/data/videos/video-1.mp4"
-        },
-        {
-            "name": "Video with 'ngx-embed-video' plugin",
-            "link": "https://www.youtube.com/watch?v=-NInBEdSvp8"
-        }
-    ],
-    "published": "2012-08-12 17:17:30",
-    "lastUpdate": "2019-05-20 14:20:00",
-    "views": 322
+    packsData: mockPackDataProduct
 };
 
 export const taskPacksSample = [packSample, packSample, packSample, packSample, packSample, packSample, packSample, packSample, packSample, packSample, packSample, packSample];
-
 
 const toOrganiseTasks: any[] = [
     {
@@ -1124,4 +927,6 @@ export const dataProfiles: any = [
     }
 ];
 
+
 // https://stackblitz.com/edit/angular-mat-card-sample?file=src%2Fstyles.scss
+

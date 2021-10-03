@@ -167,7 +167,7 @@ const packTemplates = [{
     key: 'MiniTemplate',
 }];
 
-export const mockData = {
+export const mockPackDataProduct = {
     packName: 'MAIN_PACK_NAME',
     packTemplates: packTemplates,
     packSizes: packSizes

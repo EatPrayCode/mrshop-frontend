@@ -1,7 +1,7 @@
 import { Component, EventEmitter, Input, OnChanges, Output, SimpleChanges } from '@angular/core';
 import { FormGroup, FormBuilder, FormArray, FormControl } from '@angular/forms';
 import { dataProfiles } from 'src/app/mock-data/constants';
-import { mockData } from 'src/app/mock-data/mockJsonPacks';
+import { mockPackDataProduct } from 'src/app/mock-data/mockJsonPacks';
 @Component({
   selector: 'app-customise-pack',
   templateUrl: './customise-pack.component.html',
@@ -9,7 +9,7 @@ import { mockData } from 'src/app/mock-data/mockJsonPacks';
 })
 export class CustomisePackComponent implements OnChanges {
 
-  @Input() inputData: any = mockData;
+  @Input() inputData: any = mockPackDataProduct;
   @Output() packChange = new EventEmitter();
   form: FormGroup = new FormGroup({});
   packLoaded: any = false;
@@ -25,13 +25,13 @@ export class CustomisePackComponent implements OnChanges {
   ];
 
   ngOnChanges(changeRecord: SimpleChanges) {
-    const record = changeRecord.inputData;
-    const inputData = record.currentValue || '';
-    if (this.inputData) {
-      this.initialisePage(inputData);
-      this.inputData = inputData;
-      this.packLoaded = true;
-    }
+    // const record = changeRecord.inputData;
+    // const inputData = record.currentValue || '';
+    // if (this.inputData) {
+    //   this.initialisePage(inputData);
+    //   this.inputData = inputData;
+    //   this.packLoaded = true;
+    // }
   }
 
   doSomething(event: any) {

@@ -7,7 +7,7 @@ import { debounceTime, distinctUntilChanged, filter, map } from 'rxjs/operators'
 
 import { isPlatformBrowser } from '@angular/common';
 import { Pagination, Property } from 'src/app/mock-data/app.models';
-import { mockData } from 'src/app/mock-data/mockJsonPacks';
+import { mockPackDataProduct } from 'src/app/mock-data/mockJsonPacks';
 import { AppSettings, Settings } from 'src/app/app/app.settings';
 import { AppService } from 'src/app/app/app.service';
 
@@ -30,7 +30,7 @@ export class PacksComponent implements OnInit, OnChanges {
 
   public settings: Settings;
 
-  @Input() inputData: any = mockData;
+  @Input() inputData: any = mockPackDataProduct;
   @Output() packChange = new EventEmitter();
 
   packsLoaded: any = false;

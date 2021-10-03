@@ -27,7 +27,7 @@ export class Data {
     public locations: Location[],
     public categories: Category[],
     public wishList: Product[],
-    public cartList: Product[],
+    public cartList: any[],
     public totalPrice: any,
     public totalCartCount: any) { }
 }
@@ -64,7 +64,6 @@ export class AppService {
     public stateService: StateService,
     private router: Router) {
     this.addMockToCart();
-    this.addSampleToCart();
   }
 
   addMockToCart() {
@@ -72,9 +71,8 @@ export class AppService {
     this.addToCart(product1);
   }
 
-  addSampleToCart() {
-    const product1 = packSample;
-    this.addToCart(product1);
+  addSampleToCart(pack: any) {
+    this.addToCart(pack);
   }
 
   logout() {
