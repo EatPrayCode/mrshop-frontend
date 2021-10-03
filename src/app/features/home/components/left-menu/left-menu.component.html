@@ -1,0 +1,35 @@
+<div class="sidenav_container" [@onSideNavChange]="sideNavState ? 'open' : 'close'">
+  <div fxLayout="column" fxLayoutGap="10px" style="height: 100%;">
+
+    <div class="user_menu">
+      <button mat-icon-button (click)="onSinenavToggle()">
+        <mat-icon>menu</mat-icon>
+        <mat-icon *ngIf="sideNavState">arrow_left</mat-icon>
+        <mat-icon *ngIf="!sideNavState">arrow_right</mat-icon>
+      </button>
+      <mat-divider></mat-divider>
+    </div>
+
+    <div>
+
+      <app-choose-organiser-categories *ngIf="linkText"></app-choose-organiser-categories>
+
+      <mat-nav-list *ngIf="!linkText">
+        <a mat-list-item *ngFor="let message of complexLinks">
+          <span class="list-item__emoji">
+            {{message.imageUrl}}
+          </span>
+          <span [@animateText]="linkText ? 'show' : 'hide'">{{ message?.displayName }} </span>
+        </a>
+      </mat-nav-list>
+    </div>
+  </div>
+
+  <!-- <span class="spacer"></span>
+  <div fxLayout="row" fxLayoutAlign="end center" style="padding: 0px 10px;">
+    <button mat-icon-button (click)="onSinenavToggle()">
+      <mat-icon *ngIf="sideNavState">arrow_left</mat-icon>
+      <mat-icon *ngIf="!sideNavState">arrow_right</mat-icon>
+    </button>
+  </div> -->
+</div>

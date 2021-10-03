@@ -1,0 +1,32 @@
+<div class="main-container">
+    <div class="header">
+        <span style="color: white;">mrshop</span>
+    </div>
+    <div class="main-content">
+        <router-outlet></router-outlet>
+    </div>
+</div>
+
+<bottom-nav-wrapper bottomNavHeight="38px" topNavHeight="55px" bottomNavBreakpoint="1800px">
+
+    <bottom-nav>
+
+        <bottom-nav-item class="nav-item-mobile" [link]="'store'" [exact]="true" label="Store">
+            watch_later
+        </bottom-nav-item>
+
+        <bottom-nav-item class="nav-item-mobile" [link]="'home'" [exact]="true" label="Organiser">
+            thumb_up
+        </bottom-nav-item>
+
+        <bottom-nav-item class="nav-item-mobile" [link]="'cart'" [exact]="true" label="Cart">
+            watch_later
+        </bottom-nav-item>
+
+        <bottom-nav-item class="nav-item-mobile" [link]="'checkout'" [exact]="true" label="Checkout">
+            thumb_up
+        </bottom-nav-item>
+
+    </bottom-nav>
+
+</bottom-nav-wrapper>
