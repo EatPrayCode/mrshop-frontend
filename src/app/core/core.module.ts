@@ -9,11 +9,12 @@ import { HttpClientModule } from '@angular/common/http';
   declarations: [],
   imports: [
     CommonModule,
-    HttpClientModule
+    HttpClientModule,
   ],
   exports: [
     AuthModule,
-    FirebaseModule
+    FirebaseModule,
+    HttpClientModule
   ]
 })
 export class CoreModule { }
