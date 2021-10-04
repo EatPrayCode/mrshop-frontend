@@ -9,7 +9,26 @@
 				Task Description that is cool
 			</h4>
 		</div>
-		<i class="fas fa-chevron-down top-icon"></i>
+		<i class="fas fa-chevron-down top-icon" [matMenuTriggerFor]="menu"></i>
 		<i class="fas fa-plus" (click)="addTaskToList(message)"></i>
+
+		<button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Select Organiser options">
+			<mat-icon>more_vert</mat-icon>
+		</button>
+		<mat-menu #menu="matMenu">
+			<button mat-menu-item>
+				<mat-icon>dialpad</mat-icon>
+				<span>Redial</span>
+			</button>
+			<button mat-menu-item disabled>
+				<mat-icon>voicemail</mat-icon>
+				<span>Check voice mail</span>
+			</button>
+			<button mat-menu-item>
+				<mat-icon>notifications_off</mat-icon>
+				<span>Disable alerts</span>
+			</button>
+		</mat-menu>
+
 	</div>
 </div>
