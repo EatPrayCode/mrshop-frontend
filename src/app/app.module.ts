@@ -41,13 +41,12 @@ import { AppComponent } from './app/app.component';
         deps: [HttpClient]
       }
     }),
-    NgProgressModule,
-    NgProgressHttpModule,
+    // NgProgressModule,
+    // NgProgressHttpModule,
     AppRoutingModule,
     CoreModule,
     LayoutsModule,
-    SharedModule,
-    MatDialogModule
+    SharedModule
   ],
   providers: [
     AppSettings,
