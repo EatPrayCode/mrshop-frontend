@@ -1,3 +1,4 @@
+import { organiserItemsConst } from 'src/app/mock-data/constants';
 import { SidenavService } from './../../../../services/sidenav.service';
 import { Component, OnInit } from '@angular/core';
 import { onSideNavChange, animateText } from '../../animations/animations';
@@ -18,6 +19,7 @@ export class LeftMenuComponent implements OnInit {
 
   public sideNavState: boolean = false;
   public linkText: boolean = false;
+  complexLinks: any[] = organiserItemsConst;
 
   constructor(private _sidenavService: SidenavService) { }
 

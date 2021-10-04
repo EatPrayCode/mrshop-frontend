@@ -1,3 +1,17 @@
+<mat-toolbar class="mat-elevation-z8">
+
+    <a mat-button class="companyName" (click)="gotoPacks()">
+        <span>Packs</span>
+    </a>
+
+    <a mat-button class="companyName" (click)="gotoServices()">
+        <span>Services</span>
+    </a>
+
+    <app-customer-type></app-customer-type>
+
+</mat-toolbar>
+
 <mat-sidenav-container class="sidenav-container">
 
     <mat-sidenav #leftSidenav mode="side" opened>
@@ -7,20 +21,6 @@
     <mat-sidenav-content [@onMainContentChange]="onSideNavChange ? 'open': 'close'">
 
         <div class="main_content">
-
-            <mat-toolbar class="mat-elevation-z8">
-
-                <a mat-button class="companyName" (click)="gotoPacks()">
-                    <span>Packs</span>
-                </a>
-
-                <a mat-button class="companyName" (click)="gotoServices()">
-                    <span>Services</span>
-                </a>
-
-                <app-customer-type></app-customer-type>
-
-            </mat-toolbar>
 
             <div>
                 <a mat-bustton [matMenuTriggerFor]="sortMenu" #sortMenuTrigger="matMenuTrigger">

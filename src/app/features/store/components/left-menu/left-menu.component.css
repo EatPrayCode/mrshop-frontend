@@ -1,8 +1,6 @@
 .sidenav_container {
-  min-width: 60px;
-  max-width: 60px;
-  /* height: calc(100vh - 200px); */
-  overflow: hidden;
+  min-width: 60px; 
+  height: calc(100vh - 200px);
 }
 
 .jim {
