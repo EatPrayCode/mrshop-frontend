@@ -1,3 +1,4 @@
+import { BlankComponent } from './layouts/blank/blank.component';
 import { AppRoutingModule } from './app/app.routing';
 import { LayoutsModule } from './layouts/layout.module';
 import { CoreModule } from './core/core.module';
@@ -22,10 +23,12 @@ import { AppComponent } from './app/app.component';
 @NgModule({
   declarations: [
     AppComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    BlankComponent
   ],
   imports: [
     BrowserAnimationsModule,
+    CoreModule,
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,
@@ -34,8 +37,7 @@ import { AppComponent } from './app/app.component';
       }
     }),
     AppRoutingModule,
-    CoreModule,
-    LayoutsModule
+    // LayoutsModule
   ],
   providers: [
     AppSettings,

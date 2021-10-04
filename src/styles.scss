@@ -6,8 +6,8 @@ html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
-
 @import "./../node_modules/ng-bottom-navigation/ng-bottom-navigation.scss";
+@import "./../node_modules/font-awesome/css/font-awesome.css";
 
 app-pages .full-screen {
     height: auto !important; // this thing

@@ -9,7 +9,6 @@ import { SharedModule } from 'src/app/shared/shared.module';
 import { AuthModule } from '../core/auth/auth.module';
 import { NgBottomNavigationModule } from 'ng-bottom-navigation';
 
-import { BlankComponent } from './blank/blank.component';
 import { PagesComponent } from './pages/pages.component';
 import { BreadcrumbComponent } from './components/breadcrumb/breadcrumb.component';
 import { FullScreenComponent } from './components/fullscreen/fullscreen.component';
@@ -19,7 +18,6 @@ import { CustomisePackModule } from '../features/checkout/components/customise-p
 
 @NgModule({
   declarations: [
-    BlankComponent,
     PagesComponent,
     MenuComponent,
     UserMenuComponent,
@@ -38,7 +36,6 @@ import { CustomisePackModule } from '../features/checkout/components/customise-p
     CheckoutModule
   ],
   exports: [
-    BlankComponent,
     PagesComponent,
     MenuComponent,
     UserMenuComponent,
