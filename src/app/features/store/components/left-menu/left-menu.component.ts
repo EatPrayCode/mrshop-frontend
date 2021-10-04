@@ -1,6 +1,6 @@
+import { SidenavService } from './../../../../services/sidenav.service';
 import { Component, OnInit } from '@angular/core';
 import { onSideNavChange, animateText } from '../../animations/animations';
-import { SidenavService } from '../../sidenav.service';
 
 interface Page {
   link: string;

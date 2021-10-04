@@ -8,14 +8,6 @@
 
         <div class="main_content">
 
-            <mat-toolbar class="mat-elevation-z8">
-
-                <a mat-button class="companyName" (click)="gotoPacks()">
-                    <span>Organiser</span>
-                </a>
-
-            </mat-toolbar>
-
             <app-organiser-list (addTaskToListEvt)="handleAddTaskToList($event)"></app-organiser-list>
 
         </div>

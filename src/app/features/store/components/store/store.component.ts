@@ -1,10 +1,10 @@
+import { SidenavService } from './../../../../services/sidenav.service';
 import { FiltersComponent } from '../filters/filters.component';
 import { MatDialog } from '@angular/material/dialog';
 import { Component, ViewChild, OnInit } from '@angular/core';
 import { BreakpointObserver } from '@angular/cdk/layout';
 import { MatSidenav } from '@angular/material/sidenav';
 import { delay } from 'rxjs/operators';
-import { SidenavService } from '../../sidenav.service';
 import { ChooseCategoriesComponent } from '../choose-categories/choose-categories.component';
 import { onSideNavChange, animateText, onMainContentChange } from '../../animations/animations';
 
