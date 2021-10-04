@@ -1,32 +1,21 @@
-<div class="wrapper">
-	<div class="card" *ngFor="let message of complexLinks">
+
+<div class="card-wrapper">
+
+	<mat-card class="example-card" *ngFor="let message of complexLinks">
+	  <mat-card-header>
 		<img
-			src="https://images.unsplash.com/photo-1595152452543-e5fc28ebc2b8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80">
-		<div class="">
-			<h2 class="name">Task Name comes here</h2>
-			<h4 class="location">
-				<i class="fa fa-map-marker"></i>
-				Task Description that is cool and this long enough at the minimum.
-			</h4>
-		</div>
-		<i class="fas fa-chevron-down top-icon" [matMenuTriggerFor]="menu"></i>
-		<i class="fas fa-plus" (click)="addTaskToList(message)"></i>
-
-		<button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Select Organiser options">
-			<mat-icon>more_vert</mat-icon>
-		</button>
-
-		<mat-menu #menu="matMenu">
-			<button mat-menu-item (click)="addTaskToList(message)">
-				<mat-icon>add</mat-icon>
-				<span>Add to box</span>
-			</button>
-			<button mat-menu-item>
-				<mat-icon>notifications_off</mat-icon>
-				<span>Organise Now</span>
-			</button>
-		</mat-menu>
-
-	</div>
-	
-</div>
+		  src="https://images.unsplash.com/photo-1595152452543-e5fc28ebc2b8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+		  mat-card-avatar />
+		<mat-card-title>FreakyJolly.com</mat-card-title>
+		<mat-card-subtitle>
+		  Angular Material Card with List Example
+		</mat-card-subtitle>
+	  </mat-card-header>
+ 
+	  <mat-card-actions>
+		<button mat-raised-button color="accent">LIKE</button>
+		<button mat-raised-button color="primary">SHARE</button>
+	  </mat-card-actions>
+	</mat-card>
+  
+  </div>

@@ -24,6 +24,14 @@ export class CustomisePackComponent implements OnChanges {
     // { title: 'Title', subtitle: 'Subtitle', content: 'Content here', url: 'https://material.angular.io/assets/img/examples/shiba2.jpg' },
   ];
 
+  tiles: any[] = [
+    {text: 'One', cols: 3, rows: 1, color: 'lightblue'},
+    {text: 'Two', cols: 1, rows: 2, color: 'lightgreen'},
+    {text: 'Three', cols: 1, rows: 1, color: 'lightpink'},
+    {text: 'Four', cols: 2, rows: 1, color: '#DDBDF1'},
+  ];
+
+
   ngOnChanges(changeRecord: SimpleChanges) {
     // const record = changeRecord.inputData;
     // const inputData = record.currentValue || '';

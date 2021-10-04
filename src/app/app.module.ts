@@ -1,3 +1,4 @@
+import { CustomisePackModule } from './features/checkout/components/customise-pack/customise-pack.module';
 import { BlankComponent } from './layouts/blank/blank.component';
 import { AppRoutingModule } from './app/app.routing';
 import { LayoutsModule } from './layouts/layout.module';
@@ -37,7 +38,8 @@ import { AppComponent } from './app/app.component';
       }
     }),
     AppRoutingModule,
-    // LayoutsModule
+    LayoutsModule,
+    CustomisePackModule
   ],
   providers: [
     AppSettings,
