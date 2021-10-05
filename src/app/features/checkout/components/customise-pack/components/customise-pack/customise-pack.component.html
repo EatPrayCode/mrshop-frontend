@@ -48,37 +48,46 @@
                   src="https://www.freakyjolly.com/wp-content/uploads/2021/07/cropped-cropped-fj-logo-192-removebg-preview-e1625997712615-1.png"
                   mat-card-avatar />
                 <mat-card-title>
-                  <input placeholder="Name" formControlName="name" />
+                  {{(form.controls.items?.value)[i].name}}
                 </mat-card-title>
 
                 <mat-card-subtitle>
-                  Angular Material Card with Grid Example
+                  Pack Description
                 </mat-card-subtitle>
               </mat-card-header>
 
               <mat-card-content>
                 <div fxLayout="column">
                   <!-- Column-1 -->
-                  <div fxLayout="row" fxFlex="50px" style="background-color: #74edfd" fxLayoutAlign="center center">column1</div>
+                  <div fxLayout="row" fxFlex="50px" style="background-color: #74edfd" fxLayoutAlign="center center">
+                    column1</div>
                   <!-- Column-2 -->
                   <div fxLayout="row" style="height: 75px">
                     <!-- Column-2 Row-1-->
-                    <div fxLayout="column" fxFlex="40" fxFlexFill style="background-color: #fd7474" fxLayoutAlign="space-between strech">
-                      <div fxLayout="row" fxFlex="20px" style="background-color: #ffa1a1" fxLayoutAlign="center center">column2-1 row1</div>
-                      <div fxLayout="row" fxFlex="20px" style="background-color: #ffa1a1" fxLayoutAlign="center center">column2-2 row1</div>
-                      <div fxLayout="row" fxFlex="20px" style="background-color: #ffa1a1" fxLayoutAlign="center center">column2-3 row1</div>
+                    <div fxLayout="column" fxFlex="40" fxFlexFill style="background-color: #fd7474"
+                      fxLayoutAlign="space-between strech">
+                      <div fxLayout="row" fxFlex="20px" style="background-color: #ffa1a1" fxLayoutAlign="center center">
+                        column2-1 row1</div>
+                      <div fxLayout="row" fxFlex="20px" style="background-color: #ffa1a1" fxLayoutAlign="center center">
+                        column2-2 row1</div>
+                      <div fxLayout="row" fxFlex="20px" style="background-color: #ffa1a1" fxLayoutAlign="center center">
+                        column2-3 row1</div>
                     </div>
                     <!-- Column-2 Row-2-->
-                    <div fxLayout="row" fxFlex="60" fxFlexFill style="background-color: #e8fd74" fxLayoutAlign="space-around strech">
-                      <div fxFlex="30" style="background-color: #f1fac0" fxLayoutAlign="center center">column2, row2-1</div>
-                      <div fxFlex="30" style="background-color: #f1fac0" fxLayoutAlign="center center">column2, row2-2</div>
-                      <div fxFlex="30" style="background-color: #f1fac0" fxLayoutAlign="center center">column2, row2-3</div>
+                    <div fxLayout="column" fxFlex="60" fxFlexFill style="background-color: #e8fd74"
+                      fxLayoutAlign="space-around strech">
+                      <div fxFlex="30" style="background-color: #f1fac0" fxLayoutAlign="center center">column2, row2-1
+                      </div>
+                      <div fxFlex="30" style="background-color: #f1fac0" fxLayoutAlign="center center">column2, row2-2
+                      </div>
+                      <div fxFlex="30" style="background-color: #f1fac0" fxLayoutAlign="center center">column2, row2-3
+                      </div>
                     </div>
                   </div>
                   <!-- Column-3 -->
                   <div fxLayout="row" style="height: 75px; background-color: #74fd86">
-                    <div fxFlex="20" fxFlexOffset="10" style="background-color: #b5ffbf" fxLayoutAlign="center center">column3 row1</div>
-                    <div fxFlex="80" fxFlexOffset="10" style="background-color: #b5ffbf" fxLayoutAlign="center center">column3 row2</div>
+                    <div fxFlex="80" style="background-color: #b5ffbf" fxLayoutAlign="center center">column3 row2</div>
+                    <div fxFlex="80" style="background-color: #74edfd" fxLayoutAlign="center center">column3 row2</div>
                   </div>
                 </div>
               </mat-card-content>
