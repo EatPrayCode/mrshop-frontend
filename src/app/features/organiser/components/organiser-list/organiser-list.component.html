@@ -1,21 +1,132 @@
+<section class="reactist_modal_box__body">
+    <div class="item_detail" tabindex="-1" data-item-detail-root="" data-item-content="hey task name"
+        data-item-project-id="2275354207" data-item-project-name="Inbox">
 
-<div class="card-wrapper">
-
-	<mat-card class="example-card" *ngFor="let task of allTasks">
-	  <mat-card-header>
-		<img
-		  src="https://images.unsplash.com/photo-1595152452543-e5fc28ebc2b8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
-		  mat-card-avatar />
-		<mat-card-title>{{task.taskName}}</mat-card-title>
-		<mat-card-subtitle>
-			{{task.taskDescription}}
-		</mat-card-subtitle>
-	  </mat-card-header>
- 
-	  <mat-card-actions>
-		<button mat-raised-button (click)="addTaskToList(task)" color="accent">Add</button>
-		<button mat-raised-button color="primary">SHARE</button>
-	  </mat-card-actions>
-	</mat-card>
-  
-  </div>
+        <div id="tabs-8" class="reactist tabs task_detail_tabs focus-marker-enabled-within">
+            <div role="tablist"><button id="tabs-8-tab-activity"
+                    aria-controls="tabs-8-panel-activity" aria-selected="true" role="tab"
+                    class="reactist">Activity</button></div>
+            <div class="reactist tabs__body">
+                <div id="tabs-8-panel-subtasks" aria-labelledby="tabs-8-tab-subtasks" role="tabpanel" tabindex="-1"
+                    class="sub_items_tab_container" hidden="">
+                    <div class="list_holder" data-task-list-id="taskList-9">
+                        <ul class="items" data-subitem-list-id="5215936856">
+                            <li class="controller actions task_actions full_width_actions"><button type="button"
+                                    data-add-task-navigation-element="true" class="plus_add_button"><span
+                                        class="icon_add" aria-hidden="true"><svg width="13" height="13">
+                                            <path
+                                                d="M6 6V.5a.5.5 0 0 1 1 0V6h5.5a.5.5 0 1 1 0 1H7v5.5a.5.5 0 1 1-1 0V7H.5a.5.5 0 0 1 0-1H6z"
+                                                fill="currentColor" fill-rule="evenodd"></path>
+                                        </svg></span>Add sub-task</button></li>
+                        </ul>
+                        <ul class="items"></ul>
+                    </div>
+                </div>
+                <div id="tabs-8-panel-activity" aria-labelledby="tabs-8-tab-activity" role="tabpanel" tabindex="-1"
+                    class="activity_tab_container active">
+                    <div class="_6JSw8SN7kccAy1Lf9lZUp">
+                        <div id="activity_app">
+                            <section aria-label="5 Oct ‧ Today" class="section">
+                                <ul class="items" id="day_ul_2021-10-04T18:30:00.000Z">
+                                    <li class="event">
+                                        <div class="avatar"><img
+                                                src="https://avatars.doist.com?fullName=Bharadwaj%20A&amp;email=bharadwaj7569%40gmail.com&amp;size=100&amp;bg=ffffff"
+                                                alt="Bharadwaj A" class="user_avatar medium">
+                                            <div class="avatar_event_icon"><svg
+                                                    data-svgs-path="sm1/notification_updated.svg"
+                                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+                                                    <g fill="none" fill-rule="evenodd" transform="translate(-4 -4)">
+                                                        <circle cx="12" cy="12" r="8" fill="#4DC1E6"></circle>
+                                                        <path fill="#FFF"
+                                                            d="M15.11 11.34a3.2 3.2 0 1 0-1.77 3.53l.78 1.03a4.48 4.48 0 1 1 2.29-4.56h1.64l-2.37 3.2-2.42-3.2h1.85z">
+                                                        </path>
+                                                    </g>
+                                                </svg></div>
+                                        </div>
+                                        <div class="text">
+                                            <div><span class="user">You</span> changed the due date of <span
+                                                    class="_3N9H_VsD-lqrIQYqqii2JR">
+                                                    <div class="markdown_content task_content">hey task name</div>
+                                                </span> to <span class="bold">Tomorrow</span></div><span
+                                                class="activity_time" data-reach-tooltip-trigger=""> 23:43</span>
+                                        </div>
+                                    </li>
+                                    <li class="event">
+                                        <div class="avatar"><img
+                                                src="https://avatars.doist.com?fullName=Bharadwaj%20A&amp;email=bharadwaj7569%40gmail.com&amp;size=100&amp;bg=ffffff"
+                                                alt="Bharadwaj A" class="user_avatar medium">
+                                            <div class="avatar_event_icon"><svg
+                                                    data-svgs-path="sm1/notification_updated.svg"
+                                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+                                                    <g fill="none" fill-rule="evenodd" transform="translate(-4 -4)">
+                                                        <circle cx="12" cy="12" r="8" fill="#4DC1E6"></circle>
+                                                        <path fill="#FFF"
+                                                            d="M15.11 11.34a3.2 3.2 0 1 0-1.77 3.53l.78 1.03a4.48 4.48 0 1 1 2.29-4.56h1.64l-2.37 3.2-2.42-3.2h1.85z">
+                                                        </path>
+                                                    </g>
+                                                </svg></div>
+                                        </div>
+                                        <div class="text">
+                                            <div><span class="user">You</span> changed the due date of <span
+                                                    class="_3N9H_VsD-lqrIQYqqii2JR">
+                                                    <div class="markdown_content task_content">hey task name</div>
+                                                </span> to <span class="bold">Today</span></div><span
+                                                class="activity_time" data-reach-tooltip-trigger=""> 23:43</span>
+                                        </div>
+                                    </li>
+                                    <li class="event">
+                                        <div class="avatar"><img
+                                                src="https://avatars.doist.com?fullName=Bharadwaj%20A&amp;email=bharadwaj7569%40gmail.com&amp;size=100&amp;bg=ffffff"
+                                                alt="Bharadwaj A" class="user_avatar medium">
+                                            <div class="avatar_event_icon"><svg
+                                                    data-svgs-path="sm1/notification_updated.svg"
+                                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+                                                    <g fill="none" fill-rule="evenodd" transform="translate(-4 -4)">
+                                                        <circle cx="12" cy="12" r="8" fill="#4DC1E6"></circle>
+                                                        <path fill="#FFF"
+                                                            d="M15.11 11.34a3.2 3.2 0 1 0-1.77 3.53l.78 1.03a4.48 4.48 0 1 1 2.29-4.56h1.64l-2.37 3.2-2.42-3.2h1.85z">
+                                                        </path>
+                                                    </g>
+                                                </svg></div>
+                                        </div>
+                                        <div class="text">
+                                            <div><span class="user">You</span> changed the due date of <span
+                                                    class="_3N9H_VsD-lqrIQYqqii2JR">
+                                                    <div class="markdown_content task_content">hey task name</div>
+                                                </span> to <span class="bold">Tomorrow</span></div><span
+                                                class="activity_time" data-reach-tooltip-trigger=""> 23:43</span>
+                                        </div>
+                                    </li>
+                                    <li class="event">
+                                        <div class="avatar"><img
+                                                src="https://avatars.doist.com?fullName=Bharadwaj%20A&amp;email=bharadwaj7569%40gmail.com&amp;size=100&amp;bg=ffffff"
+                                                alt="Bharadwaj A" class="user_avatar medium">
+                                            <div class="avatar_event_icon"><svg
+                                                    data-svgs-path="sm1/notification_assigned.svg"
+                                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+                                                    <g fill="none" fill-rule="evenodd" transform="translate(-4 -4)">
+                                                        <circle cx="12" cy="12" r="8" fill="#FF9E13"></circle>
+                                                        <path fill="#FFF"
+                                                            d="M11 11V8a1 1 0 0 1 2 0v3h3a1 1 0 0 1 0 2h-3v3a1 1 0 0 1-2 0v-3H8a1 1 0 0 1 0-2h3z">
+                                                        </path>
+                                                    </g>
+                                                </svg></div>
+                                        </div>
+                                        <div class="text">
+                                            <div><span class="user">You</span> added a task: <span
+                                                    class="_3N9H_VsD-lqrIQYqqii2JR">
+                                                    <div class="markdown_content task_content">hey task name</div>
+                                                </span></div><span class="activity_time" data-reach-tooltip-trigger="">
+                                                23:42</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </section><button type="button" data-track="activity_log|load_more" class="load_more">Load
+                                more history from 3 weeks ago...</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
