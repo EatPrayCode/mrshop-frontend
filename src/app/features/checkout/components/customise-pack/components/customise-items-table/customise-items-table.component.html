@@ -1,17 +1,65 @@
-<div class="wrapper">
-	<div class="card" *ngFor="let pack of inputData">
-		<img
-			src="https://images.unsplash.com/photo-1595152452543-e5fc28ebc2b8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80">
-		<div class="">
-			<h2 class="name">{{pack?.packsData?.packName}}</h2>
-			<h4 class="location">
-				<i class="fa fa-map-marker"></i>
-				VendorName
-			</h4>
+<section aria-label="Let’s get started with a few tips" class="section">
 
-		</div>
-		<i class="fa fa-chevron-down top-icon"></i>
-		<i class="fa fa-eye" (click)="openViewEditPackDialog(pack)"></i>
-		<i class="fa fa-trash" (click)="openViewEditPackDialog(pack)"></i>
+	<div class="list_holder" data-task-list-id="taskList-81">
+		<ul class="items" data-section-list-id="_1633457465006">
+			<li *ngFor="let pack of complexLinks" data-selection-id="5215933928" aria-selected="false"
+				id="task-5215933928" class="task_list_item task_list_item--with_subtasks task_list_item--project_hidden"
+				data-item-id="5215933928" data-item-indent="1" data-task-navigation-element="5215933928">
+				<div role="button" tabindex="0" data-action-hint="task-root" aria-labelledby="task-5215933928-content"
+					class="task_list_item__body">
+					<div class="task_list_item__overflow_actions task_list_item__overflow_actions--wide">
+						<div class="task_list_item__drag_container"><span
+								class="task_list_item__drag_handle item_dnd_handle"
+								data-testid="task_list_item__drag_handle"><svg width="24" height="24">
+									<path fill="currentColor"
+										d="M14.5 15.5a1.5 1.5 0 11-.001 3.001A1.5 1.5 0 0114.5 15.5zm-5 0a1.5 1.5 0 11-.001 3.001A1.5 1.5 0 019.5 15.5zm5-5a1.5 1.5 0 11-.001 3.001A1.5 1.5 0 0114.5 10.5zm-5 0a1.5 1.5 0 11-.001 3.001A1.5 1.5 0 019.5 10.5zm5-5a1.5 1.5 0 11-.001 3.001A1.5 1.5 0 0114.5 5.5zm-5 0a1.5 1.5 0 11-.001 3.001A1.5 1.5 0 019.5 5.5z">
+									</path>
+								</svg></span></div><button type="button" class="arrow task_list_item__collapser down"
+							aria-label="collapse" aria-expanded="true" data-action-hint="task-toggle-collapse"><svg
+								width="24" height="24">
+								<path fill="none" stroke="currentColor" d="M16 10l-4 4-4-4"></path>
+							</svg></button>
+					</div><button type="button" role="checkbox" aria-checked="false" aria-label="Mark task as complete"
+						aria-describedby="task-5215933928-content" data-action-hint="task-complete"
+						class="task_checkbox priority_1">
+						<div class="task_checkbox__circle"><svg width="24" height="24">
+								<path fill="currentColor"
+									d="M11.23 13.7l-2.15-2a.55.55 0 0 0-.74-.01l.03-.03a.46.46 0 0 0 0 .68L11.24 15l5.4-5.01a.45.45 0 0 0 0-.68l.02.03a.55.55 0 0 0-.73 0l-4.7 4.35z">
+								</path>
+							</svg></div>
+					</button>
+					<div class="task_list_item__content">
+						<div id="task-5215933928-content" class="task_list_item__content__wrapper">
+							<div class="markdown_content task_content">Select this task to see more details <span
+									class="emoji"><img class="emoji" alt="🔎"
+										src="https://twemoji.maxcdn.com/v/latest/svg/1f50e.svg"></span></div>
+							<div class="markdown_content task_description">Quick notes and links can go here — and files
+								in the comments tab below.<span class="emoji"><img class="emoji" alt="👇"
+										src="https://twemoji.maxcdn.com/v/latest/svg/1f447.svg"></span></div>
+						</div>
+						<div class="task_list_item__info_tags" data-layout="list"><a
+								class="task_list_item__info_tags__subtasks task_list_item__info_tags__subtasks--show-complete"
+								href="/app/project/2275354208/task/5215933928">
+								<svg width="16" height="16" viewBox="0 0 16 16" aria-label="0/1 sub-task">
+									<path fill="currentColor"
+										d="M4.5 2A2.5 2.5 0 015 6.95V8.5a2.5 2.5 0 002.336 2.495L7.5 11h1.55a2.5 2.5 0 110 1H7.5a3.5 3.5 0 01-3.495-3.308L4 8.5V6.95A2.5 2.5 0 014.5 2zm7 8a1.5 1.5 0 100 3 1.5 1.5 0 000-3zm-7-7a1.5 1.5 0 100 3 1.5 1.5 0 000-3z">
+									</path>
+								</svg>
+								<span aria-hidden="true">0/1</span></a>
+							<a (click)="openViewEditPackDialog(pack)">
+								<svg width="12" height="12" viewBox="0 0 12 12" class="notes_icon"
+									aria-label="1 comment">
+									<g fill="none" fill-rule="evenodd">
+										<path fill="currentColor" fill-rule="nonzero"
+											d="M9.5 1A1.5 1.5 0 0 1 11 2.5v5A1.5 1.5 0 0 1 9.5 9H7.249L5.28 10.97A.75.75 0 0 1 4 10.44V9H2.5A1.5 1.5 0 0 1 1 7.5v-5A1.5 1.5 0 0 1 2.5 1h7zm0 1h-7a.5.5 0 0 0-.5.5v5a.5.5 0 0 0 .5.5H5v1.836L6.835 8H9.5a.5.5 0 0 0 .5-.5v-5a.5.5 0 0 0-.5-.5z">
+										</path>
+									</g>
+								</svg>
+								<span aria-hidden="true">1</span></a>
+						</div>
+					</div>
+				</div>
+			</li>
+		</ul>
 	</div>
-</div>
+</section>
