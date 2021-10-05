@@ -1,7 +1,5 @@
 import { Component, EventEmitter, Input, OnChanges, Output, SimpleChanges } from '@angular/core';
 import { FormGroup, FormBuilder, FormArray, FormControl } from '@angular/forms';
-import { dataProfiles } from 'src/app/mock-data/constants';
-import { mockPackDataProduct } from 'src/app/mock-data/mockJsonPacks';
 @Component({
   selector: 'app-customise-pack',
   templateUrl: './customise-pack.component.html',
@@ -9,20 +7,10 @@ import { mockPackDataProduct } from 'src/app/mock-data/mockJsonPacks';
 })
 export class CustomisePackComponent implements OnChanges {
 
-  @Input() inputData: any = mockPackDataProduct;
+  @Input() inputData: any = {};
   @Output() packChange = new EventEmitter();
   form: FormGroup = new FormGroup({});
   packLoaded: any = false;
-
-  complexLinks: any[] = dataProfiles[0].toOrganiseTasks;
-
-  members: { title: string, subtitle: string, content: string, url: string }[] = [
-    { title: 'Title', subtitle: 'Subtitle', content: 'Content here', url: 'https://material.angular.io/assets/img/examples/shiba2.jpg' },
-    // { title: 'Title', subtitle: 'Subtitle', content: 'Content here', url: 'https://material.angular.io/assets/img/examples/shiba2.jpg' },
-    // { title: 'Title', subtitle: 'Subtitle', content: 'Content here', url: 'https://material.angular.io/assets/img/examples/shiba2.jpg' },
-    // { title: 'Title', subtitle: 'Subtitle', content: 'Content here', url: 'https://material.angular.io/assets/img/examples/shiba2.jpg' },
-    // { title: 'Title', subtitle: 'Subtitle', content: 'Content here', url: 'https://material.angular.io/assets/img/examples/shiba2.jpg' },
-  ];
 
   tiles: any[] = [
     {text: 'One', cols: 3, rows: 1, color: 'lightblue'},
@@ -31,15 +19,14 @@ export class CustomisePackComponent implements OnChanges {
     {text: 'Four', cols: 2, rows: 1, color: '#DDBDF1'},
   ];
 
-
   ngOnChanges(changeRecord: SimpleChanges) {
-    // const record = changeRecord.inputData;
-    // const inputData = record.currentValue || '';
-    // if (this.inputData) {
-    //   this.initialisePage(inputData);
-    //   this.inputData = inputData;
-    //   this.packLoaded = true;
-    // }
+    const record = changeRecord.inputData;
+    const inputData = record.currentValue || '';
+    if (this.inputData) {
+      this.inputData = inputData;
+      this.packLoaded = true;
+      this.initialisePage(inputData.pack);
+    }
   }
 
   doSomething(event: any) {

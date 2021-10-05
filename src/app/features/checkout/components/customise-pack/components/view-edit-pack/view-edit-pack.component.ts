@@ -1,4 +1,3 @@
-import { mockPackDataProduct } from './../../../../../../mock-data/mockJsonPacks';
 import { Component, Inject, OnInit, Optional } from '@angular/core';
 import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 
@@ -9,7 +8,6 @@ import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 })
 export class ViewEditPackComponent implements OnInit {
 
-  mockPackDataProduct: any = mockPackDataProduct;
   inputData: any = {};
 
   ngOnInit(): void { }

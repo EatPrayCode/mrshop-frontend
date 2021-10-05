@@ -152,7 +152,6 @@ export class CheckoutComponent implements OnInit {
     }
   }
 
-
   // public getAddress(){    
   //   this.mapsAPILoader.load().then(() => {
   //     let geocoder = new google.maps.Geocoder();
@@ -168,6 +167,7 @@ export class CheckoutComponent implements OnInit {
   //     });
   //   });
   // }
+  
   public getAddress() {
     this.appService.getAddress(this.lat, this.lng).subscribe(response => {
       console.log(response);
@@ -178,11 +178,13 @@ export class CheckoutComponent implements OnInit {
       // }
     })
   }
+  
   public onMapClick(e: any) {
     this.lat = e.coords.lat;
     this.lng = e.coords.lng;
     this.getAddress();
   }
+
   public onMarkerClick(e: any) {
     console.log(e);
   }

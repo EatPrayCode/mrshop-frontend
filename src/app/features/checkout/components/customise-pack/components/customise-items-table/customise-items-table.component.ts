@@ -201,7 +201,7 @@ export class CustomiseItemsTableComponent implements OnChanges {
         bottom: '0px',
       },
       data: {
-        pack: pack
+        pack: mockPackDataProduct
       }
     });
 

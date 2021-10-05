@@ -56,7 +56,7 @@ export class PacksComponent implements OnInit, OnChanges {
     this.getProperties();
   }
 
-  ngOnDestroy() {}
+  ngOnDestroy() { }
 
   public getProperties() {
     this.appService.getProperties().subscribe((data: any) => {
@@ -75,6 +75,10 @@ export class PacksComponent implements OnInit, OnChanges {
     if (isPlatformBrowser(this.platformId)) {
       window.scrollTo(0, 0);
     }
+  }
+
+  addToCart(pack: any) {
+    this.appService.addMockToCart();
   }
 
 }
