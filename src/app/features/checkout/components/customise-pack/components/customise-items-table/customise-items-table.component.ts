@@ -2,7 +2,6 @@ import { ViewEditPackComponent } from './../view-edit-pack/view-edit-pack.compon
 import { MatDialog } from '@angular/material/dialog';
 import { Component, EventEmitter, Input, OnChanges, Output, SimpleChanges } from '@angular/core';
 import { FormGroup, FormBuilder, FormArray, FormControl } from '@angular/forms';
-import { mockPackDataProduct } from 'src/app/mock-data/mockJsonPacks';
 import { dataProfiles } from 'src/app/mock-data/constants';
 
 @Component({
@@ -22,7 +21,7 @@ export class CustomiseItemsTableComponent implements OnChanges {
   ];
   complexLinks: any[] = dataProfiles[0].toOrganiseTasks;
 
-  @Input() inputData: any = mockPackDataProduct;
+  @Input() inputData: any = {};
 
   @Output() packChange = new EventEmitter();
 
@@ -201,7 +200,7 @@ export class CustomiseItemsTableComponent implements OnChanges {
         bottom: '0px',
       },
       data: {
-        pack: mockPackDataProduct
+        pack: pack
       }
     });
 

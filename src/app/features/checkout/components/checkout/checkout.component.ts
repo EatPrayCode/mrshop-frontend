@@ -2,7 +2,6 @@ import { Component, OnInit, ViewChild, ElementRef, NgZone } from '@angular/core'
 import { MatStepper } from '@angular/material/stepper';
 import { FormGroup, FormBuilder, Validators, FormArray } from '@angular/forms';
 import { MapsAPILoader } from '@agm/core';
-import { mockPackDataProduct } from 'src/app/mock-data/mockJsonPacks';
 import { AppService } from 'src/app/app/app.service';
 
 @Component({
@@ -30,7 +29,7 @@ export class CheckoutComponent implements OnInit {
   public lng: number = -73.944158;
   public zoom: number = 12;
 
-  inputData: any = mockPackDataProduct;
+  inputData: any = {};
 
   constructor(
     public appService: AppService,

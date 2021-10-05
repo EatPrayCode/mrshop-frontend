@@ -22,10 +22,10 @@ export class CustomisePackComponent implements OnChanges {
   ngOnChanges(changeRecord: SimpleChanges) {
     const record = changeRecord.inputData;
     const inputData = record.currentValue || '';
-    if (this.inputData) {
+    if (this.inputData && this.inputData.packId ) {
       this.inputData = inputData;
       this.packLoaded = true;
-      this.initialisePage(inputData.pack);
+      this.initialisePage(inputData);
     }
   }
 
@@ -39,7 +39,7 @@ export class CustomisePackComponent implements OnChanges {
   }
 
   constructor(private fb: FormBuilder) {
-    if (this.inputData) {
+    if (this.inputData && this.inputData.packId) {
       this.initialisePage(this.inputData);
       this.packLoaded = true;
     }

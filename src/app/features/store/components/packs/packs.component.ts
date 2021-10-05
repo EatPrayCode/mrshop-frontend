@@ -1,13 +1,8 @@
 import { Component, Inject, OnInit, PLATFORM_ID, ViewChild, OnChanges, EventEmitter, Input, Output, SimpleChanges } from '@angular/core';
-import { MatPaginator } from '@angular/material/paginator';
-import { MediaChange, MediaObserver } from '@angular/flex-layout';
-import { PerfectScrollbarConfigInterface } from 'ngx-perfect-scrollbar';
-import { Subscription } from 'rxjs';
-import { debounceTime, distinctUntilChanged, filter, map } from 'rxjs/operators';
+import { MediaObserver } from '@angular/flex-layout';
 
 import { isPlatformBrowser } from '@angular/common';
 import { Pagination, Property } from 'src/app/mock-data/app.models';
-import { mockPackDataProduct } from 'src/app/mock-data/mockJsonPacks';
 import { AppSettings, Settings } from 'src/app/app/app.settings';
 import { AppService } from 'src/app/app/app.service';
 
@@ -30,7 +25,7 @@ export class PacksComponent implements OnInit, OnChanges {
 
   public settings: Settings;
 
-  @Input() inputData: any = mockPackDataProduct;
+  @Input() inputData: any = [];
   @Output() packChange = new EventEmitter();
 
   packsLoaded: any = false;

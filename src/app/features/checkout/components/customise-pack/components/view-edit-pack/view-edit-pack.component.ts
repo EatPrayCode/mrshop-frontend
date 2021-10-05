@@ -16,7 +16,7 @@ export class ViewEditPackComponent implements OnInit {
     public dialogRef: MatDialogRef<ViewEditPackComponent>,
     //@Optional() is used to prevent error if no data is passed
     @Optional() @Inject(MAT_DIALOG_DATA) public data: any) {
-    this.inputData = { ...data };
+    this.inputData = data.pack.packsData;
   }
 
   doAction() { }

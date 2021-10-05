@@ -170,5 +170,6 @@ const packTemplates = [{
 export const mockPackDataProduct = {
     packName: 'MAIN_PACK_NAME',
     packTemplates: packTemplates,
-    packSizes: packSizes
+    packSizes: packSizes,
+    packId: 100
 };
