@@ -1,4 +1,4 @@
-import { mockPackDataProduct } from './mockJsonPacks';
+import { mockFruitsProduct3, mockGroceryProduct3, mockMilkPackService1, mockMonthlyHomeEssentialsProduct2, mockPackDataProduct, mockPackProduct1, mockPhoneBillService2, mockVegetablesProduct3, mockVirtualMathService3 } from './mockJsonPacks';
 import { appSettingsState, categoriesNavItems } from "./app.models";
 
 export const categoriesNavItemsConst: categoriesNavItems[] = [
@@ -774,21 +774,18 @@ export const adminMenuConst: any[] = [
     },
 ];
 
-export class Pack {
-    constructor(
-        public id: number,
-        public name: string,
-        public packsData?: any
-    ) { }
-}
 
-export const packSample: Pack = {
-    "id": 1,
-    "name": "Piano",
-    packsData: mockPackDataProduct
-};
-
-export const taskPacksSample = [packSample, packSample, packSample, packSample, packSample, packSample, packSample, packSample, packSample, packSample, packSample, packSample];
+export const packsDataSampleDoctor = [
+    mockPackDataProduct,
+    mockPackProduct1,
+    mockMonthlyHomeEssentialsProduct2,
+    mockGroceryProduct3,
+    mockFruitsProduct3,
+    mockVegetablesProduct3,
+    mockMilkPackService1,
+    mockPhoneBillService2,
+    mockVirtualMathService3,
+];
 
 const toOrganiseTasks: any[] = [
     {
@@ -799,7 +796,7 @@ const toOrganiseTasks: any[] = [
         taskImage: 'https://semantic-ui.com/images/avatar2/large/matthew.png',
         icon: 'icon-angular',
         CSSClass: 'icon-angular',
-        taskPacks: taskPacksSample
+        packsData: mockMilkPackService1
     },
     {
         link: 'https://facebook.com/',
@@ -809,88 +806,68 @@ const toOrganiseTasks: any[] = [
         taskImage: 'https://semantic-ui.com/images/avatar2/large/matthew.png',
         icon: 'icon-angular',
         CSSClass: 'icon-facebook',
-        taskPacks: taskPacksSample,
+        packsData: mockGroceryProduct3,
         route: 'Organiser'
     },
     {
         link: 'https://google.com/',
-        taskDescription: "Organise your daily Home Essentials, and save time",
-        taskName: "Catchy Home Task Name Essentials",
+        taskDescription: "Organise your monthly Home Essentials, and save time",
+        taskName: "Catchy Home Essentials Task Name",
         taskVendor: 'taskVendorName',
         taskImage: 'https://semantic-ui.com/images/avatar2/large/matthew.png',
         icon: 'icon-angular',
         CSSClass: 'icon-google',
-        taskPacks: taskPacksSample
+        packsData: mockMonthlyHomeEssentialsProduct2
     },
     {
         link: 'https://microsoft.com/',
-        taskDescription: "Organise your daily House Keeping, and save time",
-        taskName: "Catchy House Task Name Keeping",
+        taskDescription: "Organise your Kid's Math Tutorial with this pack. Super Quality Edtech Pack at super prices.",
+        taskName: "Catchy Virtual Math Kid's Tutorial Task Name",
         taskVendor: 'taskVendorName',
         taskImage: 'https://semantic-ui.com/images/avatar2/large/matthew.png',
         icon: 'icon-angular',
         CSSClass: 'icon-microsoft',
-        taskPacks: taskPacksSample
+        packsData: mockVirtualMathService3
     },
     {
         link: 'https://microsoft.com/',
-        taskDescription: "Organise your daily Fruits/Vegetables, and save time",
-        taskName: "Catchy Fruits Task Name/Vegetables",
+        taskDescription: "Organise your Fruits, and save time",
+        taskName: "Catchy Fruits Task Name",
         taskVendor: 'taskVendorName',
         taskImage: 'https://semantic-ui.com/images/avatar2/large/matthew.png',
         icon: 'icon-angular',
         CSSClass: 'icon-microsoft',
-        taskPacks: taskPacksSample
+        packsData: mockFruitsProduct3
+    },
+    {
+        link: 'https://microsoft.com/',
+        taskDescription: "Organise your Vegetables, and save time",
+        taskName: "Catchy Vegetables Task Name",
+        taskVendor: 'taskVendorName',
+        taskImage: 'https://semantic-ui.com/images/avatar2/large/matthew.png',
+        icon: 'icon-angular',
+        CSSClass: 'icon-microsoft',
+        packsData: mockVegetablesProduct3
     },
     {
         link: 'https://angular.io/',
-        taskDescription: 'Organise your daily Milk, and save time',
-        taskName: 'Catchy Milk Task Name',
+        taskDescription: 'Organise your Prepaid Phone bill, and save stress',
+        taskName: 'Catchy Phone bill pay Task Name',
         taskVendor: 'taskVendorName',
         taskImage: 'https://semantic-ui.com/images/avatar2/large/matthew.png',
         icon: 'icon-angular',
         CSSClass: 'icon-angular',
-        taskPacks: taskPacksSample
+        packsData: mockPhoneBillService2
     },
     {
-        link: 'https://facebook.com/',
-        taskDescription: 'Organise your daily Grocery, and save time',
-        taskName: 'Catchy Grocery Task Name',
+        link: 'https://angular.io/',
+        taskDescription: 'Other Demo Task, Test Task',
+        taskName: 'Other Demo Task, Test Task',
         taskVendor: 'taskVendorName',
         taskImage: 'https://semantic-ui.com/images/avatar2/large/matthew.png',
         icon: 'icon-angular',
-        CSSClass: 'icon-facebook',
-        taskPacks: taskPacksSample
-    },
-    {
-        link: 'https://google.com/',
-        taskDescription: "Organise your daily Home Essentials, and save time",
-        taskName: "Catchy Home Task Name Essentials",
-        taskVendor: 'taskVendorName',
-        taskImage: 'https://semantic-ui.com/images/avatar2/large/matthew.png',
-        icon: 'icon-angular',
-        CSSClass: 'icon-google',
-        taskPacks: taskPacksSample
-    },
-    {
-        link: 'https://microsoft.com/',
-        taskDescription: "Organise your daily House Keeping, and save time",
-        taskName: "Catchy House Task Name Keeping",
-        taskVendor: 'taskVendorName',
-        taskImage: 'https://semantic-ui.com/images/avatar2/large/matthew.png',
-        icon: 'icon-angular',
-        CSSClass: 'icon-microsoft',
-        taskPacks: taskPacksSample
-    },
-    {
-        link: 'https://microsoft.com/',
-        taskDescription: "Organise your daily Fruits/Vegetables, and save time",
-        taskName: "Catchy Fruits Task Name/Vegetables",
-        taskVendor: 'taskVendorName',
-        taskImage: 'https://semantic-ui.com/images/avatar2/large/matthew.png',
-        icon: 'icon-angular',
-        CSSClass: 'icon-microsoft',
-        taskPacks: taskPacksSample
+        CSSClass: 'icon-angular',
+        packsData: mockPackDataProduct
     }
 ];
 

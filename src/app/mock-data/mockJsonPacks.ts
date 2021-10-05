@@ -171,5 +171,69 @@ export const mockPackDataProduct = {
     packName: 'MAIN_PACK_NAME',
     packTemplates: packTemplates,
     packSizes: packSizes,
-    packId: 100
+    packId: 1
+};
+
+export class Pack {
+    constructor(
+        public id: any,
+        public name: string,
+        public packsData?: any
+    ) { }
+}
+
+export const mockPackProduct1 = {
+    packName: 'Monthly Razors',
+    packTemplates: packTemplates,
+    packSizes: packSizes,
+    packId: '100'
+};
+
+export const mockMonthlyHomeEssentialsProduct2 = {
+    packName: 'Monthly Home Essentials',
+    packTemplates: packTemplates,
+    packSizes: packSizes,
+    packId: '101'
+};
+
+export const mockGroceryProduct3 = {
+    packName: 'Monthly Groceries',
+    packTemplates: packTemplates,
+    packSizes: packSizes,
+    packId: '102'
+};
+
+export const mockFruitsProduct3 = {
+    packName: 'Monthly Fruits',
+    packTemplates: packTemplates,
+    packSizes: packSizes,
+    packId: '102'
+};
+
+export const mockVegetablesProduct3 = {
+    packName: 'Monthly Vegetables',
+    packTemplates: packTemplates,
+    packSizes: packSizes,
+    packId: '102'
+};
+
+export const mockMilkPackService1 = {
+    packName: 'Milk Service monthly',
+    packTemplates: packTemplates,
+    packSizes: packSizes,
+    packId: '200'
+};
+
+export const mockPhoneBillService2 = {
+    packName: 'Prepaid Phone Bill Payment',
+    packTemplates: packTemplates,
+    packSizes: packSizes,
+    packId: '201'
+};
+
+export const mockVirtualMathService3 = {
+    packName: 'Virtual Math Tutorial',
+    packTemplates: packTemplates,
+    packSizes: packSizes,
+    packId: '202'
 };

@@ -1,19 +1,19 @@
 
 <div class="card-wrapper">
 
-	<mat-card class="example-card" *ngFor="let message of complexLinks">
+	<mat-card class="example-card" *ngFor="let task of allTasks">
 	  <mat-card-header>
 		<img
 		  src="https://images.unsplash.com/photo-1595152452543-e5fc28ebc2b8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
 		  mat-card-avatar />
-		<mat-card-title>Task Name</mat-card-title>
+		<mat-card-title>{{task.taskName}}</mat-card-title>
 		<mat-card-subtitle>
-			Task Description that is this long at final
+			{{task.taskDescription}}
 		</mat-card-subtitle>
 	  </mat-card-header>
  
 	  <mat-card-actions>
-		<button mat-raised-button (click)="addTaskToList(message)" color="accent">Add</button>
+		<button mat-raised-button (click)="addTaskToList(task)" color="accent">Add</button>
 		<button mat-raised-button color="primary">SHARE</button>
 	  </mat-card-actions>
 	</mat-card>

@@ -1,3 +1,4 @@
+import { packsDataSampleDoctor } from './../mock-data/constants';
 import { of } from 'rxjs';
 import { Inject, Injectable, PLATFORM_ID } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
@@ -14,11 +15,11 @@ import { Router } from '@angular/router';
 import { AuthService } from '../core/auth/auth.service';
 import { AuthGuard } from '../core/auth/guards/auth.guard';
 import { Property, Category, Product } from '../mock-data/app.models';
-import { packSample, taskPacksSample } from '../mock-data/constants';
 import { AppResolver } from '../services/app.resolver';
 import { StateService } from '../services/state.service';
 import { AlertDialogComponent } from '../shared/components/alert-dialog/alert-dialog.component';
 import { ConfirmDialogModel, ConfirmDialogComponent } from '../shared/components/confirm-dialog/confirm-dialog.component';
+import { mockPackProduct1 } from '../mock-data/mockJsonPacks';
 
 export class Data {
   constructor(public properties: Property[],
@@ -67,8 +68,10 @@ export class AppService {
   }
 
   addMockToCart() {
-    const product1 = packSample;
-    this.addToCart(product1);
+    const product1 = mockPackProduct1;
+    this.addSampleToCart({
+      packsData: product1
+    });
   }
 
   addSampleToCart(pack: any) {
@@ -96,12 +99,12 @@ export class AppService {
 
   public getProperties(): Observable<any[]> {
     // return this.http.get<Property[]>(this.url + 'packs.json').pipe(tap(s=>{ }));
-    return of(taskPacksSample);
+    return of(packsDataSampleDoctor);
   }
 
   public getPropertyById(id: any): Observable<any> {
     // return this.http.get<Property>(this.url + 'property-' + id + '.json');
-    return of(packSample);
+    return of(mockPackProduct1);
   }
 
   public getFeaturedProperties(): Observable<Property[]> {

@@ -8,13 +8,15 @@ import { dataProfiles } from 'src/app/mock-data/constants';
 })
 export class OrganiserListComponent implements OnInit {
 
-  complexLinks: any[] = dataProfiles[0].toOrganiseTasks;
+  allTasks: any[] = dataProfiles[0].toOrganiseTasks;
 
   @Output() addTaskToListEvt = new EventEmitter();
 
   constructor() { }
 
-  ngOnInit(): void { }
+  ngOnInit(): void {
+    console.log(this.allTasks);
+   }
 
   addTaskToList(message: any) {
     this.addTaskToListEvt.emit(message);

@@ -1,4 +1,3 @@
-import { packSample } from '../../../../mock-data/constants';
 import { ChoosOrganiserCategoriesComponent } from '../choose-organiser-categories/choose-organiser-categories.component';
 import { MatDialog } from '@angular/material/dialog';
 import { Component, ViewChild, OnInit } from '@angular/core';
@@ -33,9 +32,8 @@ export class OrganiserComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  handleAddTaskToList(event: any) {
-    const pack = packSample;
-    this.appService.addSampleToCart(pack);
+  handleAddTaskToList(task: any) {
+    this.appService.addSampleToCart(task);
   }
 
   ngAfterViewInit() {
