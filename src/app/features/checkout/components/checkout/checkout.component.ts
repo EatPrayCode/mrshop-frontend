@@ -37,7 +37,7 @@ export class CheckoutComponent implements OnInit {
     private ngZone: NgZone
   ) {
     this.loadCart();
-   }
+  }
 
   ngOnInit() {
 
@@ -90,7 +90,6 @@ export class CheckoutComponent implements OnInit {
   }
 
   loadCart() {
-    console.log(this.appService.Data.cartList);
     this.inputData = [
       ...this.appService.Data.cartList
     ];
@@ -166,7 +165,7 @@ export class CheckoutComponent implements OnInit {
   //     });
   //   });
   // }
-  
+
   public getAddress() {
     this.appService.getAddress(this.lat, this.lng).subscribe(response => {
       console.log(response);
@@ -177,7 +176,7 @@ export class CheckoutComponent implements OnInit {
       // }
     })
   }
-  
+
   public onMapClick(e: any) {
     this.lat = e.coords.lat;
     this.lng = e.coords.lng;

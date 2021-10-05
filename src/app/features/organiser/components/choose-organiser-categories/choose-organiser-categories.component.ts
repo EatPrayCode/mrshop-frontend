@@ -73,7 +73,6 @@ export class ChoosOrganiserCategoriesComponent implements OnInit, AfterViewInit,
   }
 
   handleViewPack(event: any) {
-    console.log(event);
     this.exploreAllPacks(this.subCategory);
   }
 

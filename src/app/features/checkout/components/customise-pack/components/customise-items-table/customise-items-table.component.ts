@@ -32,6 +32,7 @@ export class CustomiseItemsTableComponent implements OnChanges {
     const record = changeRecord.inputData;
     const inputData = record.currentValue || '';
     if (this.inputData) {
+      console.log(this.inputData);
       this.initialisePage(inputData);
       this.inputData = inputData;
       this.packLoaded = true;

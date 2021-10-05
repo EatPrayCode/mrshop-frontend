@@ -81,7 +81,6 @@ export class ChooseCategoriesComponent implements OnInit, AfterViewInit, OnDestr
   }
 
   handleViewPack(event: any) {
-    console.log(event);
     this.exploreAllPacks(this.subCategory);
   }
 
@@ -106,7 +105,6 @@ export class ChooseCategoriesComponent implements OnInit, AfterViewInit, OnDestr
   }
 
   explorePack(pack: any) {
-    console.log(pack);
     const subCat = this.subCategory.displayName;
     const packId = pack.id;
     this.router.navigate([`/${subCat}/${packId}`]);

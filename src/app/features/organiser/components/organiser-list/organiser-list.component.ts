@@ -14,9 +14,7 @@ export class OrganiserListComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit(): void {
-    console.log(this.allTasks);
-   }
+  ngOnInit(): void { }
 
   addTaskToList(message: any) {
     this.addTaskToListEvt.emit(message);
