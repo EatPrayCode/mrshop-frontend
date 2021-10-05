@@ -186,6 +186,7 @@ export const mockPackProduct1 = {
     packName: 'Monthly Razors',
     packTemplates: packTemplates,
     packSizes: packSizes,
+    packDescription: 'Monthly Razors',
     packId: '100'
 };
 
@@ -193,6 +194,7 @@ export const mockMonthlyHomeEssentialsProduct2 = {
     packName: 'Monthly Home Essentials',
     packTemplates: packTemplates,
     packSizes: packSizes,
+    packDescription: 'Monthly Home Essentials',
     packId: '101'
 };
 
@@ -200,6 +202,7 @@ export const mockGroceryProduct3 = {
     packName: 'Monthly Groceries',
     packTemplates: packTemplates,
     packSizes: packSizes,
+    packDescription: 'Monthly Groceries',
     packId: '102'
 };
 
@@ -207,6 +210,7 @@ export const mockFruitsProduct3 = {
     packName: 'Monthly Fruits',
     packTemplates: packTemplates,
     packSizes: packSizes,
+    packDescription: 'Monthly Fruits',
     packId: '102'
 };
 
@@ -214,6 +218,7 @@ export const mockVegetablesProduct3 = {
     packName: 'Monthly Vegetables',
     packTemplates: packTemplates,
     packSizes: packSizes,
+    packDescription: 'Monthly Vegetables',
     packId: '102'
 };
 
@@ -221,6 +226,7 @@ export const mockMilkPackService1 = {
     packName: 'Milk Service monthly',
     packTemplates: packTemplates,
     packSizes: packSizes,
+    packDescription: 'Milk Service monthly',
     packId: '200'
 };
 
@@ -228,6 +234,7 @@ export const mockPhoneBillService2 = {
     packName: 'Prepaid Phone Bill Payment',
     packTemplates: packTemplates,
     packSizes: packSizes,
+    packDescription: 'Prepaid Phone Bill Payment',
     packId: '201'
 };
 
@@ -235,5 +242,6 @@ export const mockVirtualMathService3 = {
     packName: 'Virtual Math Tutorial',
     packTemplates: packTemplates,
     packSizes: packSizes,
+    packDescription: 'Virtual Math Tutorial',
     packId: '202'
 };

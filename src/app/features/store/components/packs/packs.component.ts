@@ -14,7 +14,7 @@ import { AppService } from 'src/app/app/app.service';
 export class PacksComponent implements OnInit, OnChanges {
 
   @ViewChild('sidenav') sidenav: any;
-  public properties: Property[] = [];
+  public allPacks: any[] = [];
   public viewType: string = 'grid';
   public viewCol: number = 33.3;
   public count: number = 12;
@@ -43,6 +43,7 @@ export class PacksComponent implements OnInit, OnChanges {
     const inputData = record.currentValue || '';
     if (this.inputData) {
       this.inputData = inputData;
+      console.log(this.inputData);
       this.packsLoaded = true;
     }
   }
@@ -56,16 +57,17 @@ export class PacksComponent implements OnInit, OnChanges {
   public getProperties() {
     this.appService.getProperties().subscribe((data: any) => {
       // let result = this.filterData(data); 
+      console.log(data);
       let result = {
         data: data,
         pagination: new Pagination(1, this.count, 0, 2, 0, 0)
       };
-      this.properties = result.data;
+      this.allPacks = result.data;
     })
   }
 
   public searchClicked() {
-    this.properties.length = 0;
+    this.allPacks.length = 0;
     this.getProperties();
     if (isPlatformBrowser(this.platformId)) {
       window.scrollTo(0, 0);
