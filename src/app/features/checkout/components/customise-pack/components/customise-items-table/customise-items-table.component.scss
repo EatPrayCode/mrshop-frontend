@@ -1,548 +1,2143 @@
-/*! CSS Used from: https://d3ptyyxy2at9ui.cloudfront.net/assets/app.5d81ce68551cd1ff3075.css */
-img.emoji {
-  width: 16px;
-  height: 16px;
-  vertical-align: baseline;
-}
-.with_new_emoji_sizing img.emoji {
-  width: 14px;
-  height: 14px;
-}
-img {
-  border: 0;
-  vertical-align: middle;
-}
-a {
-  color: #202020;
-}
-a:hover {
-  text-decoration: underline;
-}
-button {
-  font-family: inherit;
-  font-size: 13px;
-  color: #202020;
-  text-decoration: none;
-  cursor: pointer;
-  background-color: transparent;
-  border: none;
-  padding: 0;
-  margin: 0;
-}
-button:disabled {
-  opacity: 0.3;
-}
-::-moz-placeholder {
-  color: rgba(0, 0, 0, 0.4);
-  opacity: 1;
-}
-:-ms-input-placeholder {
-  color: rgba(0, 0, 0, 0.4);
-  opacity: 1;
-}
-::placeholder {
-  color: rgba(0, 0, 0, 0.4);
-  opacity: 1;
-}
-span.emoji {
-  font-size: 18px;
-  vertical-align: baseline;
-}
-.with_new_emoji_sizing span.emoji {
-  font-size: 14px;
-}
-[data-whatinput="mouse"] * {
-  outline: none !important;
-}
-.actions {
-  color: #555;
-}
-.items {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-.arrow {
-  position: absolute;
-  margin-left: -18px;
-  cursor: pointer;
-  color: grey;
-}
-.arrow:hover {
-  color: #202020;
-}
-.drag_and_drop_handler {
-  cursor: move;
-  position: absolute;
-  margin-left: -23px;
-  padding-top: 6px;
-  width: 18px;
-  height: 23px;
-  display: flex;
-  justify-content: center;
-  opacity: 0.5;
-  color: #555;
-}
-.drag_and_drop_handler:hover {
-  opacity: 1;
-}
-.task_content a:hover {
-  color: #db4c3f;
-  -webkit-text-decoration-color: #db4c3f;
-  text-decoration-color: #db4c3f;
-}
-.task_description {
-  color: grey;
-}
-.task_description a {
-  color: grey;
-  -webkit-text-decoration-color: grey;
-  text-decoration-color: grey;
-}
-.task_description a:hover {
-  color: #db4c3f;
-  -webkit-text-decoration-color: #db4c3f;
-  text-decoration-color: #db4c3f;
-}
-#editor .actions .plus_add_button {
-  color: grey !important;
-  text-decoration: none;
-}
-#editor .actions .plus_add_button .icon_add {
-  color: #dd4b39;
-}
-#editor .actions .plus_add_button:hover {
-  color: #dd4b39 !important;
-}
-#editor .actions .plus_add_button:hover .icon_add {
-  color: #fff !important;
-  background-color: #dd4b39;
-}
-.plus_add_button {
-  color: grey !important;
-  text-decoration: none;
-}
-.plus_add_button:hover {
-  color: #dd4b39 !important;
-}
-.plus_add_button:hover .icon_add {
-  color: #fff !important;
-}
-#editor .controller {
-  padding: 0 20px 0 3px;
-}
-#editor .arrow {
-  margin-top: 9px;
-  margin-left: -27px;
-  padding-left: 3px;
-  padding-right: 3px;
-}
-#editor .drag_and_drop_handler {
-  padding-top: 0;
-}
-#editor .drag_and_drop_handler svg {
-  margin-top: 8px;
-}
-.project_editor_instance ul {
-  margin-bottom: 0 !important;
-}
-.task_list_item {
-  border-bottom: 1px solid #f0f0f0;
-}
-.task_list_item a:hover {
-  text-decoration: underline;
-}
-.task_list_item[data-item-indent="2"] {
-  margin-left: 28px;
-}
-.task_list_item .task_list_item__body {
-  display: flex;
-  align-items: stretch;
-  position: relative;
-  padding: 0;
-  cursor: pointer;
-}
-.task_list_item .task_list_item__collapser {
-  padding: 0 !important;
-  margin: 0 !important;
-  position: relative !important;
-  height: 24px;
-  width: 24px;
-  color: grey;
-  border-radius: 3px;
-}
-.task_list_item .task_list_item__collapser:hover {
-  color: #202020;
-  background-color: #eee;
-}
-.task_list_item .task_list_item__content {
-  flex: 1;
-  padding: 8px 0;
-  margin-right: 30px;
-}
-.task_list_item .task_list_item__content .task_list_item__content__wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  margin-bottom: 3px;
-}
-.task_list_item .task_list_item__content .task_list_item__content__wrapper .task_content {
-  flex-grow: 1;
-  font-size: 14px;
-  line-height: 21px;
-  word-wrap: break-word;
-  word-break: break-word;
-  display: -webkit-box;
-  -webkit-line-clamp: 4;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-}
-.task_list_item .task_list_item__content .task_list_item__content__wrapper .task_description {
-  flex-basis: 100%;
-  font-size: 12px;
-  word-wrap: break-word;
-  word-break: break-all;
-  display: -webkit-box;
-  -webkit-line-clamp: 1;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-}
-.task_list_item .task_checkbox {
-  margin: 8px 6px 0 -3px;
-  z-index: 1;
-}
-.task_list_item .task_list_item__overflow_actions {
-  position: absolute;
-  top: 7px;
-  left: -27px;
-  width: 27px;
-  padding-right: 3px;
-  display: flex;
-  flex-wrap: nowrap;
-}
-.task_list_item .task_list_item__overflow_actions--wide {
-  left: -51px;
-  width: 51px;
-}
-.task_list_item .task_list_item__drag_handle {
-  display: inline-block;
-  height: 24px;
-  opacity: 0;
-  cursor: move;
-  color: grey;
-  border-radius: 3px;
-}
-.task_list_item .task_list_item__drag_handle:hover {
-  color: #202020;
-  background-color: #eee;
-}
-.task_list_item:hover .task_list_item__drag_handle {
-  opacity: 1;
-}
-.task_list_item.task_list_item--project_hidden .task_list_item__info_tags:empty {
-  display: none;
-}
-.task_list_item__actions {
-  display: flex;
-  justify-content: flex-end;
-  height: 24px;
-  margin-right: -38px;
-  margin-top: 8px;
-  padding-left: 16px;
-  position: absolute;
-  right: 0;
-  top: 0;
-}
-.task_list_item__actions > button,
-.task_list_item__actions a {
-  border-radius: 3px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 24px;
-  height: 24px;
-  color: grey;
-  cursor: pointer;
-  margin-left: 8px;
-}
-.task_list_item__actions > button:disabled,
-.task_list_item__actions a:disabled {
-  cursor: default;
-}
-.task_list_item .task_list_item__actions a,
-.task_list_item
-  .task_list_item__actions
-  button:not([aria-expanded="true"]):not(.task_list_item__person_picker--assigned) {
-  opacity: 0;
-}
-.task_list_item:hover .task_list_item__actions {
-  background-image: linear-gradient(90deg, hsla(0, 0%, 100%, 0) 0, #fff 16px, #fff);
-  background-image: linear-gradient(90deg, hsla(0, 0%, 100%, 0) 0, #fff 16px 100%);
-}
-.task_list_item:hover .task_list_item__actions a,
-.task_list_item:hover
-  .task_list_item__actions
-  button:not([aria-expanded="true"]):not(.task_list_item__person_picker--assigned) {
-  opacity: 1;
-}
-.task_list_item__info_tags {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  margin: 0;
-  padding: 0;
-  min-height: 16px;
-}
-.task_list_item__info_tags > * {
-  display: block;
-  align-items: center;
-  flex-wrap: nowrap;
-  white-space: nowrap;
-  height: 16px;
-  line-height: 16px;
-  font-size: 12px;
-  color: grey;
-  border-radius: 3px;
-  margin: 0 8px 0 0;
-}
-.task_list_item__info_tags a {
-  font-size: 12px;
-}
-.task_list_item__info_tags a {
-  display: flex;
-  align-items: center;
-  flex-wrap: nowrap;
-}
-.task_list_item__info_tags a:hover {
-  color: #202020;
-}
-.task_list_item__info_tags .task_list_item__info_tags__subtasks {
-  display: inline-block;
-  text-decoration: none;
-}
-.task_list_item__info_tags .task_list_item__info_tags__subtasks,
-.task_list_item__info_tags .task_list_item__info_tags__subtasks:hover {
-  text-decoration: none;
-}
-.task_list_item__info_tags .task_list_item__info_tags__subtasks--show-complete {
-  display: flex;
-  align-items: center;
-}
-.task_list_item__info_tags .notes_icon {
-  margin-right: 2px;
-}
-@media (max-width: 810px) {
-  .task_list_item__actions .due_date_controls,
-  .task_list_item__actions .task_list_item__comments_link {
-      display: none;
+/*! CSS Used from: https://www.godiva.com/on/demandware.static/Sites-Godiva-Site/-/en_US/v1633496501374/css/global.css */
+@media (max-width: 543.98px) {
+  .btn.btn-block.btn-holiday.cart {
+      text-transform: uppercase;
+      padding-top: 0.8em;
+      padding-bottom: 0.8em;
+      width: 95%;
+      margin-left: 2.5%;
   }
 }
-.section header .section_head__overflow_actions {
-  width: 48px;
-  display: flex;
-  height: 24px;
-  position: absolute;
-  left: -51px;
+*,
+::after,
+::before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
-.section header .section_head__overflow_actions .collapser {
-  width: 24px;
-  height: 24px;
-  position: relative;
-  left: 0;
-  border-radius: 3px;
-  color: grey;
+[tabindex="-1"]:focus {
+  outline: 0 !important;
 }
-.section header .section_head__overflow_actions .collapser:hover {
-  color: #202020;
-  background-color: #eee;
+hr {
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
 }
-.section header .section_head__overflow_actions .drag_and_drop_handler {
-  opacity: 0;
-  width: 24px !important;
-  height: 24px !important;
-  position: relative;
+h2 {
+  margin-top: 0;
+}
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+b,
+strong {
+  font-weight: bolder;
+}
+a {
+  color: #444;
+  text-decoration: none;
+  background-color: transparent;
+}
+a:hover {
+  color: #1e1e1e;
+  text-decoration: underline;
+}
+img {
+  vertical-align: middle;
+  border-style: none;
+}
+label {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+button {
+  border-radius: 0;
+}
+button,
+input {
   margin: 0;
-  color: grey;
-  border-radius: 3px;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
 }
-.section header .section_head__overflow_actions .drag_and_drop_handler svg {
-  margin-top: 0 !important;
+button,
+input {
+  overflow: visible;
 }
-.section header .section_head__overflow_actions .drag_and_drop_handler:hover {
-  color: #202020;
-  background-color: #eee;
+button {
+  text-transform: none;
 }
-.section header:hover .section_head__overflow_actions .drag_and_drop_handler {
+[type="button"],
+[type="submit"],
+button {
+  -webkit-appearance: button;
+}
+[type="button"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner,
+button::-moz-focus-inner {
+  padding: 0;
+  border-style: none;
+}
+h2 {
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+h2 {
+  font-size: 1.8rem;
+}
+hr {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 1px solid #ccc;
+}
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 769px) {
+  .container {
+      max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+      max-width: 940px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+      max-width: 1140px;
+  }
+}
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.col,
+.col-12,
+.col-4,
+.col-5,
+.col-7,
+.col-8,
+.col-lg-1,
+.col-lg-12,
+.col-lg-5,
+.col-lg-7,
+.col-md-4,
+.col-md-8,
+.col-sm-5,
+.col-sm-7 {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.col {
+  -ms-flex-preferred-size: 0;
+  flex-basis: 0;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  max-width: 100%;
+}
+.col-4 {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 33.33333%;
+  flex: 0 0 33.33333%;
+  max-width: 33.33333%;
+}
+.col-5 {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 41.66667%;
+  flex: 0 0 41.66667%;
+  max-width: 41.66667%;
+}
+.col-7 {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 58.33333%;
+  flex: 0 0 58.33333%;
+  max-width: 58.33333%;
+}
+.col-8 {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 66.66667%;
+  flex: 0 0 66.66667%;
+  max-width: 66.66667%;
+}
+.col-12 {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+.offset-2 {
+  margin-left: 16.66667%;
+}
+@media (min-width: 544px) {
+  .col-sm-5 {
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 41.66667%;
+      flex: 0 0 41.66667%;
+      max-width: 41.66667%;
+  }
+  .col-sm-7 {
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 58.33333%;
+      flex: 0 0 58.33333%;
+      max-width: 58.33333%;
+  }
+}
+@media (min-width: 769px) {
+  .col-md-4 {
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 33.33333%;
+      flex: 0 0 33.33333%;
+      max-width: 33.33333%;
+  }
+  .col-md-8 {
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 66.66667%;
+      flex: 0 0 66.66667%;
+      max-width: 66.66667%;
+  }
+}
+@media (min-width: 992px) {
+  .col-lg-1 {
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 8.33333%;
+      flex: 0 0 8.33333%;
+      max-width: 8.33333%;
+  }
+  .col-lg-5 {
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 41.66667%;
+      flex: 0 0 41.66667%;
+      max-width: 41.66667%;
+  }
+  .col-lg-7 {
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 58.33333%;
+      flex: 0 0 58.33333%;
+      max-width: 58.33333%;
+  }
+  .col-lg-12 {
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+      flex: 0 0 100%;
+      max-width: 100%;
+  }
+}
+.form-control {
+  display: block;
+  width: 100%;
+  height: calc(1.5em + 0.75rem + 2px);
+  padding: 0.375rem 0.75rem;
+  font-size: 0.9rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.1875rem;
+  -webkit-transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+}
+@media (prefers-reduced-motion: reduce) {
+  .form-control {
+      -webkit-transition: none;
+      transition: none;
+  }
+}
+.form-control::-ms-expand {
+  background-color: transparent;
+  border: 0;
+}
+.form-control:focus {
+  color: #495057;
+  background-color: #fff;
+  border-color: #61d2ff;
+  outline: 0;
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(0, 161, 224, 0.25);
+  box-shadow: 0 0 0 0.2rem rgba(0, 161, 224, 0.25);
+}
+.form-control::-webkit-input-placeholder {
+  color: #6c757d;
   opacity: 1;
 }
-.section header {
-  display: flex;
-  align-items: center;
-  position: -webkit-sticky;
-  position: sticky;
-  top: var(--view-header-height);
-  background-color: #fff;
-  border: #ddd;
-  font-size: 14px;
-  border-bottom: 1px solid #f0f0f0;
-  padding: 0;
-  z-index: 2;
+.form-control::-moz-placeholder {
+  color: #6c757d;
+  opacity: 1;
 }
-.section header button.section_head__title {
-  text-align: left;
-  padding: 6px 30px 5px 0;
-  line-height: 20px;
-  font-size: 14px;
-  font-weight: 700;
-  flex: 1;
-  margin: 0;
-  word-wrap: break-word;
-  word-break: break-word;
+.form-control:-ms-input-placeholder {
+  color: #6c757d;
+  opacity: 1;
 }
-.section header button.section_head__title small {
-  color: grey;
-  margin-left: 6px;
-  font-size: 12px;
+.form-control::-ms-input-placeholder {
+  color: #6c757d;
+  opacity: 1;
+}
+.form-control::placeholder {
+  color: #6c757d;
+  opacity: 1;
+}
+.form-control:disabled {
+  background-color: #e9ecef;
+  opacity: 1;
+}
+.form-group {
+  margin-bottom: 1rem;
+}
+.btn {
+  display: inline-block;
   font-weight: 400;
-}
-.section header .collapser {
-  position: absolute;
-  left: -24px;
-  height: 20px;
-  display: flex;
-  align-items: center;
-  color: grey;
-}
-.section header .collapser:hover {
-  color: #202020;
-}
-.plus_add_button {
-  text-align: left;
-  width: 100%;
-  margin-left: -2px;
-  padding: 0 0 8px;
-  color: grey;
-  font-size: 14px;
-  white-space: nowrap;
-}
-.plus_add_button .icon_add {
-  align-items: center;
-  border-radius: 50%;
-  color: #dd4b39;
-  display: inline-flex;
-  height: 17px;
-  justify-content: center;
-  margin-right: 11px;
-  transform: translateY(8px);
-  vertical-align: 7px;
-  width: 17px;
-}
-.plus_add_button:hover {
-  color: #dd4b39;
-  text-decoration: none;
-}
-.plus_add_button:hover .icon_add {
-  color: #fff;
-  background-color: #dd4b39;
-}
-.plus_add_button:hover .icon_add svg {
-  transform: scale(0.846);
-}
-.task_checkbox {
-  width: 24px;
-  height: 24px;
-  cursor: pointer;
+  color: #212529;
+  text-align: center;
+  vertical-align: middle;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-}
-.task_checkbox,
-.task_checkbox .task_checkbox__circle {
-  display: flex;
-  flex-shrink: 0;
-  align-items: center;
-  justify-content: center;
-}
-.task_checkbox .task_checkbox__circle {
-  height: 16px;
-  width: 16px;
-  border: 1px solid #dcdcdc;
-  border-radius: 50%;
-}
-.task_checkbox svg {
-  display: inline-block;
+  background-color: transparent;
   border: 1px solid transparent;
-  height: 16px;
-  width: 16px;
-  margin-left: -8px;
-  transition: opacity 0.15s cubic-bezier(0.4, 0, 1, 1);
-  margin-top: -8px;
+  padding: 0.375rem 0.75rem;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  border-radius: 0.1875rem;
+  -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
+      -webkit-box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
+      -webkit-box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
+      box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
+      box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+}
+@media (prefers-reduced-motion: reduce) {
+  .btn {
+      -webkit-transition: none;
+      transition: none;
+  }
+}
+.btn:hover {
+  color: #212529;
+  text-decoration: none;
+}
+.btn:focus {
+  outline: 0;
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(0, 161, 224, 0.25);
+  box-shadow: 0 0 0 0.2rem rgba(0, 161, 224, 0.25);
+}
+.btn:disabled {
+  opacity: 0.65;
+}
+.btn-light {
+  color: #212529;
+  background-color: #f8f9fa;
+  border-color: #f8f9fa;
+}
+.btn-light:hover {
+  color: #212529;
+  background-color: #e2e6ea;
+  border-color: #dae0e5;
+}
+.btn-light:focus {
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(216, 217, 219, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(216, 217, 219, 0.5);
+}
+.btn-light:disabled {
+  color: #212529;
+  background-color: #f8f9fa;
+  border-color: #f8f9fa;
+}
+.btn-link {
+  font-weight: 400;
+  color: #444;
+  text-decoration: none;
+}
+.btn-link:hover {
+  color: #1e1e1e;
+  text-decoration: underline;
+}
+.btn-link:focus {
+  text-decoration: underline;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.btn-link:disabled {
+  color: #6c757d;
   pointer-events: none;
+}
+.btn-block {
+  display: block;
+  width: 100%;
+}
+.fade {
+  -webkit-transition: opacity 0.15s linear;
+  transition: opacity 0.15s linear;
+}
+@media (prefers-reduced-motion: reduce) {
+  .fade {
+      -webkit-transition: none;
+      transition: none;
+  }
+}
+.fade:not(.show) {
   opacity: 0;
 }
-.task_checkbox:hover svg {
-  opacity: 1;
+.card {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.1875rem;
 }
-.task_checkbox.priority_1 .task_checkbox__circle {
-  background-color: hsla(0, 0%, 50.2%, 0.1);
-  border-color: grey;
-  color: grey;
+.close {
+  float: right;
+  font-size: 1.35rem;
+  font-weight: 700;
+  line-height: 1;
+  color: #000;
+  text-shadow: 0 1px 0 #fff;
+  opacity: 0.5;
 }
-.task_checkbox.priority_1:hover .task_checkbox__circle {
-  background-color: hsla(0, 0%, 50.2%, 0.2);
+.close:hover {
+  color: #000;
+  text-decoration: none;
 }
-.task_checkbox.priority_1 .task_checkbox__circle {
+button.close {
+  padding: 0;
   background-color: transparent;
+  border: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
-.markdown_content > :first-child {
-  margin-top: 0;
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1050;
+  display: none;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  outline: 0;
 }
-.markdown_content code {
-  background-color: #fafafa;
-  border-radius: 3px;
+.modal-dialog {
+  position: relative;
+  width: auto;
+  margin: 0.5rem;
+  pointer-events: none;
 }
-.markdown_content code {
+.modal.fade .modal-dialog {
+  -webkit-transition: -webkit-transform 0.3s ease-out;
+  transition: -webkit-transform 0.3s ease-out;
+  transition: transform 0.3s ease-out;
+  transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
+  -webkit-transform: translate(0, -50px);
+  transform: translate(0, -50px);
+}
+@media (prefers-reduced-motion: reduce) {
+  .modal.fade .modal-dialog {
+      -webkit-transition: none;
+      transition: none;
+  }
+}
+.modal-content {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
+  pointer-events: auto;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 0.1875rem;
+  outline: 0;
+}
+.modal-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  border-top-left-radius: 0.1875rem;
+  border-top-right-radius: 0.1875rem;
+}
+.modal-header .close {
+  padding: 1rem;
+  margin: -1rem -1rem -1rem auto;
+}
+.modal-title {
+  margin-bottom: 0;
+  line-height: 1.5;
+}
+@media (min-width: 544px) {
+  .modal-dialog {
+      max-width: 500px;
+      margin: 1.75rem auto;
+  }
+}
+.d-none {
+  display: none !important;
+}
+.d-flex {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+@media (min-width: 992px) {
+  .d-lg-none {
+      display: none !important;
+  }
+  .d-lg-block {
+      display: block !important;
+  }
+}
+.flex-row {
+  -webkit-box-orient: horizontal !important;
+  -webkit-box-direction: normal !important;
+  -ms-flex-direction: row !important;
+  flex-direction: row !important;
+}
+.flex-column {
+  -webkit-box-orient: vertical !important;
+  -webkit-box-direction: normal !important;
+  -ms-flex-direction: column !important;
+  flex-direction: column !important;
+}
+.flex-grow-1 {
+  -webkit-box-flex: 1 !important;
+  -ms-flex-positive: 1 !important;
+  flex-grow: 1 !important;
+}
+.justify-content-end {
+  -webkit-box-pack: end !important;
+  -ms-flex-pack: end !important;
+  justify-content: flex-end !important;
+}
+.align-items-end {
+  -webkit-box-align: end !important;
+  -ms-flex-align: end !important;
+  align-items: flex-end !important;
+}
+.text-right {
+  text-align: right !important;
+}
+.font-weight-bold {
+  font-weight: 700 !important;
+}
+@media print {
+  *,
+  ::after,
+  ::before {
+      text-shadow: none !important;
+      -webkit-box-shadow: none !important;
+      box-shadow: none !important;
+  }
+  a:not(.btn) {
+      text-decoration: underline;
+  }
+  img {
+      page-break-inside: avoid;
+  }
+  h2,
+  p {
+      orphans: 3;
+      widows: 3;
+  }
+  h2 {
+      page-break-after: avoid;
+  }
+  .container {
+      min-width: 992px !important;
+  }
+}
+.card {
+  margin-bottom: 1em;
+}
+@media (max-width: 991.98px) {
+  .hidden-md-down {
+      display: none !important;
+  }
+}
+input[placeholder] {
+  text-overflow: ellipsis;
+}
+.hide-order-discount {
+  display: none;
+}
+.order-discount,
+.shipping-discount {
+  color: #008827;
+}
+.price {
+  color: #222;
+}
+.item-attributes {
+  padding-left: 0;
+}
+.line-item-attributes {
+  font-size: 0.813rem;
   margin: 0;
 }
-.markdown_content code.code_inline {
-  border: 1px solid #d6d6d6;
-  padding: 1px;
+.line-item-pricing-info {
+  margin-bottom: 0;
 }
-.markdown_content a {
-  text-decoration: underline !important;
-}
-:target:not([data-location-target-animated]) {
-  background-color: #ffc;
-}
-.task_list_item__info_tags a,
-.task_list_item__info_tags a:hover {
-  text-decoration: none;
-}
-.task_content a {
-  border-radius: 3px;
-  text-decoration: underline;
-  -webkit-text-decoration-color: grey;
-  text-decoration-color: grey;
-}
-.task_content a:hover {
-  text-decoration: none;
-}
-.section_head_menu {
-  border-radius: 3px;
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+}
+.pricing {
+  font-size: 1em;
+  font-weight: bolder;
+}
+.non-adjusted-price {
+  display: none;
+}
+.line-item-promo {
+  font-size: 0.813em;
+}
+.line-item-availability {
+  font-size: 0.813rem;
+}
+@media (max-width: 543.98px) {
+  .btn.btn-block.btn-holiday.cart {
+      text-transform: uppercase;
+      padding-top: 0.8em;
+      padding-bottom: 0.8em;
+      width: 95%;
+      margin-left: 2.5%;
+  }
+}
+.grand-total {
+  font-size: 1.125rem !important;
+}
+.checkout-continue {
+  margin: 10px 0 20px;
+}
+@media (min-width: 544px) {
+  .checkout-continue {
+      width: initial;
+  }
+}
+@media (max-width: 543.98px) {
+  .checkout-continue .btn {
+      width: 100% !important;
+      margin-left: 0 !important;
+  }
+}
+@media (max-width: 543.98px) {
+  .btn.btn-block.btn-holiday.cart {
+      text-transform: uppercase;
+      padding-top: 0.8em;
+      padding-bottom: 0.8em;
+      width: 95%;
+      margin-left: 2.5%;
+  }
+}
+.modal-header {
+  padding: 0 0.5rem;
+  border-bottom: none;
+}
+.shipping-discount {
+  color: #cb0c34;
+}
+@media (max-width: 543.98px) {
+  .btn.btn-block.btn-holiday.cart {
+      text-transform: uppercase;
+      padding-top: 0.8em;
+      padding-bottom: 0.8em;
+      width: 95%;
+      margin-left: 2.5%;
+  }
+}
+h2 {
+  font-family: Gotham, Arial, sans-serif;
+}
+@media (max-width: 543.98px) {
+  .btn.btn-block.btn-holiday.cart {
+      text-transform: uppercase;
+      padding-top: 0.8em;
+      padding-bottom: 0.8em;
+      width: 95%;
+      margin-left: 2.5%;
+  }
+}
+.price .strike-through {
+  color: #000;
+  text-decoration: line-through;
+  margin-right: 0.938rem;
+}
+.price .sales {
+  font-weight: 700;
+}
+@media (max-width: 543.98px) {
+  .btn.btn-block.btn-holiday.cart {
+      text-transform: uppercase;
+      padding-top: 0.8em;
+      padding-bottom: 0.8em;
+      width: 95%;
+      margin-left: 2.5%;
+  }
+}
+@media (max-width: 543.98px) {
+  .btn.btn-block.btn-holiday.cart {
+      text-transform: uppercase;
+      padding-top: 0.8em;
+      padding-bottom: 0.8em;
+      width: 95%;
+      margin-left: 2.5%;
+  }
+}
+.btn-brown-custom {
+  background-color: #000;
+  color: #fff;
+  border: none;
+}
+.btn-brown-custom:focus {
+  background-color: #cfb56a;
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(207, 181, 106, 0.25);
+  box-shadow: 0 0 0 0.2rem rgba(207, 181, 106, 0.25);
+}
+.btn-brown-custom:active {
+  background-color: #e6cc7f;
+}
+.btn-brown-custom:disabled {
+  background-color: #f2f2f2;
+  color: #707070;
+  opacity: 1;
+}
+@media (min-width: 992px) {
+  .btn-brown-custom:hover {
+      background-color: #cfb56a;
+      color: #fff;
+  }
+  .btn-brown-custom:disabled:hover {
+      background-color: inherit;
+      color: inherit;
+  }
+}
+.btn-brown-custom.btn-holiday {
+  background-color: #eec172;
+  font-family: Gotham;
+  font-style: normal;
+  font-size: 1rem;
+  line-height: 2;
+  letter-spacing: 0.5px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #000;
+  src: url(https://www.godiva.com/on/demandware.static/Sites-Godiva-Site/-/en_US/v1633496501374/fonts/Gotham/Gotham-Bold.ttf)
+          format("truetype"),
+      url(https://www.godiva.com/on/demandware.static/Sites-Godiva-Site/-/en_US/v1633496501374/fonts/Gotham/Gotham-Bold.otf)
+          format("opentype");
+  width: 45%;
+}
+.btn-brown-custom.btn-holiday:hover {
+  background-color: #ffe4a2;
+  color: #000;
+}
+.btn-brown-custom.btn-holiday:active,
+.btn-brown-custom.btn-holiday:focus {
+  background-color: #d7a858;
+}
+.btn-brown-custom.btn-holiday:disabled {
+  background-color: #ecdac3;
+  color: #494242;
+}
+@media (max-width: 543.98px) {
+  .btn-brown-custom.btn-holiday {
+      line-height: 1.5;
+      font-size: 1.25rem;
+      padding: 0.8em 0;
+      width: 100%;
+  }
+}
+.btn-brown-outline {
+  background-color: transparent;
+  color: #000;
+  border: 1px solid #000;
+}
+.btn-brown-outline:focus {
+  background-color: #cfb56a;
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(60, 28, 13, 0.25);
+  box-shadow: 0 0 0 0.2rem rgba(60, 28, 13, 0.25);
+  color: #fff;
+  outline: dotted 2px;
+}
+@media (min-width: 992px) {
+  .btn-brown-outline:hover {
+      background-color: #000;
+      color: #fff;
+  }
+}
+.btn-link-primary {
+  color: #cfb56a;
+}
+@media (min-width: 992px) {
+  .btn-link-primary:hover {
+      color: #cfb56a;
+  }
+}
+.checkout-btn {
+  width: 100% !important;
+}
+@media (max-width: 543.98px) {
+  .btn.btn-block.btn-holiday.cart {
+      text-transform: uppercase;
+      padding-top: 0.8em;
+      padding-bottom: 0.8em;
+      width: 95%;
+      margin-left: 2.5%;
+  }
+}
+@media (max-width: 543.98px) {
+  .btn.btn-block.btn-holiday.cart {
+      text-transform: uppercase;
+      padding-top: 0.8em;
+      padding-bottom: 0.8em;
+      width: 95%;
+      margin-left: 2.5%;
+  }
+}
+.edit {
+  margin-right: 0.625em;
+}
+.product-edit {
+  margin-top: auto;
+}
+.product-edit a {
+  font-size: 0.813em;
+  color: #cfb56a;
+}
+.line-item-attributes {
+  font-size: 0.813rem;
+  margin: 0;
+}
+.item-attributes {
+  display: inline-block;
+  vertical-align: top;
+}
+.line-item-divider {
+  margin: 0.625em -0.625rem;
+}
+.line-item-name {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 1em;
+  color: #000;
+  font-weight: 700;
+  margin-bottom: 0.625em;
+  width: 90%;
+}
+.line-item-price-info {
+  font-size: 0.75em;
+  margin-bottom: 0.5rem;
+}
+.product-info {
+  margin-bottom: 0.313em;
+  padding: 0.625em;
+}
+@media (min-width: 769px) {
+  .product-info {
+      height: auto;
+  }
+}
+.product-to-remove {
+  font-weight: 700;
+}
+.item-image {
+  height: 5.625em;
+  width: 5.625em;
+  margin-right: 0.938em;
+  -webkit-box-flex: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+.item-image img.product-image {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+  max-height: 5.625em;
+}
+@media (min-width: 544px) {
+  .promo-code-form {
+      display: block;
+  }
+}
+.promo-code-submit {
+  padding-left: 0;
+}
+.quantity-form {
+  margin-bottom: 0;
+  margin-top: -0.313em;
+}
+.product-info .remove-btn-lg {
+  border: none;
+  border-radius: 0;
+  font-size: 1.625em;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  padding-left: 0.3125rem;
+  padding-right: 0.3125rem;
+  z-index: 1;
+}
+.remove-line-item {
+  position: relative;
+}
+.sub-total {
+  font-weight: 700;
+}
+.grand-total {
+  font-weight: 600;
+  font-weight: 600;
+}
+.coupons-and-promos {
+  margin-bottom: 0.625rem;
+  padding-right: 0;
+  padding-left: 0;
+}
+.coupon-error {
+  color: #c00;
+  margin-top: 0.25rem;
+}
+.coupon-missing-error {
+  display: none;
+}
+.applied-promotion-discount {
+  color: #008827;
+  float: right;
+}
+.promotion-information {
+  margin-bottom: 0.625rem;
+  margin-top: 0.625rem;
+}
+.line-item-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.quantity-label {
+  font-size: 0.813em;
+}
+.modal-body-remove.delete-confirmation-body {
+  padding: 1rem;
+}
+.modal-footer-remove {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
-  width: 24px;
-  height: 24px;
-  color: grey;
-  cursor: pointer;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  padding: 1rem;
+  border-top: 1px solid #dee2e6;
+  border-bottom-right-radius: 0.1875rem;
+  border-bottom-left-radius: 0.1875rem;
 }
-.section_head_menu:disabled {
-  cursor: default;
+.modal-footer-remove > button {
+  margin-right: 7px;
 }
-.section_head__title {
-  cursor: text;
+.product-info *,
+.totals {
+  font-family: Gotham, Arial, sans-serif;
 }
-.section_head__overflow_actions {
-  cursor: pointer;
+@media (min-width: 544px) {
+  .cart-page {
+      margin-bottom: 15px;
+  }
+}
+.cart-page .promotion-label {
+  display: inline-block;
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-top: 20px;
+}
+.cart-page .subtotal-label {
+  font-size: 1rem;
+}
+.login-cart {
+  text-decoration: underline;
+  color: #cfb56a;
+}
+.promo-code-form {
+  display: block;
+}
+@media (max-width: 543.98px) {
+  .promo-code-form {
+      margin-top: 1rem;
+  }
+}
+[data-form-split] {
+  width: 12rem;
+}
+[data-form-split] .btn-link-primary {
+  font-size: 0.813em;
+}
+.product-info[data-line-qty="1.0"] [data-form-split] {
+  display: none;
+}
+.lg-down-split-shipment-form [data-form-split] {
+  width: 10rem;
+}
+.lg-down-split-shipment-form [data-form-split] button {
+  text-align: right;
+}
+.lg-split-shipment-form [data-form-split] {
+  margin-right: auto;
+  margin-left: auto;
+  width: 12rem;
+}
+.checkout-continue {
+  z-index: 10;
+}
+.coupon_loginRqd,
+.coupon_orderTooSoon {
+  display: none;
+  color: #c00;
+}
+.qty-input-container {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 130px;
+  max-width: 80%;
+  min-width: 90px;
+  height: calc(1.5em + 0.75rem + 2px);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.1875rem;
+  overflow: hidden;
+}
+.qty-input-container .qty-input {
+  width: 100%;
+  padding: 0;
+  border: none;
+  border-radius: none;
+  text-align: center;
+  z-index: 1;
+}
+.qty-input-container input[type="number"] {
+  -webkit-appearance: textfield;
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+.qty-input-container .qty-btn-down,
+.qty-input-container .qty-btn-up {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 4em;
+  min-width: 1.5em;
+  padding: 0;
+  border: none;
+  border-radius: unset;
+  outline: 0;
+  -webkit-appearance: none;
+}
+@media (max-width: 543.98px) {
+  .btn.btn-block.btn-holiday.cart {
+      text-transform: uppercase;
+      padding-top: 0.8em;
+      padding-bottom: 0.8em;
+      width: 95%;
+      margin-left: 2.5%;
+  }
+}
+button:focus {
+  outline: #757575 auto;
+}
+@media (max-width: 543.98px) {
+  .btn.btn-block.btn-holiday.cart {
+      text-transform: uppercase;
+      padding-top: 0.8em;
+      padding-bottom: 0.8em;
+      width: 95%;
+      margin-left: 2.5%;
+  }
+}
+@media (max-width: 543.98px) {
+  .btn.btn-block.btn-holiday.cart {
+      text-transform: uppercase;
+      padding-top: 0.8em;
+      padding-bottom: 0.8em;
+      width: 95%;
+      margin-left: 2.5%;
+  }
+}
+.line-item-promo {
+  color: #000;
+  text-transform: uppercase;
+}
+@media (max-width: 543.98px) {
+  .btn.btn-block.btn-holiday.cart {
+      text-transform: uppercase;
+      padding-top: 0.8em;
+      padding-bottom: 0.8em;
+      width: 95%;
+      margin-left: 2.5%;
+  }
+}
+@media (max-width: 543.98px) {
+  .btn.btn-block.btn-holiday.cart {
+      text-transform: uppercase;
+      padding-top: 0.8em;
+      padding-bottom: 0.8em;
+      width: 95%;
+      margin-left: 2.5%;
+  }
+}
+/*! CSS Used from: https://www.godiva.com/on/demandware.static/Sites-Godiva-Site/-/en_US/v1633496501374/css/cart.css */
+@media (max-width: 543.98px) {
+  .btn.btn-block.btn-holiday.cart {
+      text-transform: uppercase;
+      padding-top: 0.8em;
+      padding-bottom: 0.8em;
+      width: 95%;
+      margin-left: 2.5%;
+  }
+}
+.edit {
+  margin-right: 0.625em;
+}
+.product-edit {
+  margin-top: auto;
+}
+.product-edit a {
+  font-size: 0.813em;
+  color: #cfb56a;
+}
+.line-item-attributes {
+  font-size: 0.813rem;
+  margin: 0;
+}
+.item-attributes {
+  display: inline-block;
+  vertical-align: top;
+}
+.line-item-divider {
+  margin: 0.625em -0.625rem;
+}
+.line-item-name {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 1em;
+  color: #000;
+  font-weight: 700;
+  margin-bottom: 0.625em;
+  width: 90%;
+}
+.line-item-price-info {
+  font-size: 0.75em;
+  margin-bottom: 0.5rem;
+}
+.product-info {
+  margin-bottom: 0.313em;
+  padding: 0.625em;
+}
+@media (min-width: 769px) {
+  .product-info {
+      height: auto;
+  }
+}
+.product-to-remove {
+  font-weight: 700;
+}
+.item-image {
+  height: 5.625em;
+  width: 5.625em;
+  margin-right: 0.938em;
+  -webkit-box-flex: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+.item-image img.product-image {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+  max-height: 5.625em;
+}
+@media (min-width: 544px) {
+  .promo-code-form {
+      display: block;
+  }
+}
+.promo-code-submit {
+  padding-left: 0;
+}
+.quantity-form {
+  margin-bottom: 0;
+  margin-top: -0.313em;
+}
+.product-info .remove-btn-lg {
+  border: none;
+  border-radius: 0;
+  font-size: 1.625em;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  padding-left: 0.3125rem;
+  padding-right: 0.3125rem;
+  z-index: 1;
+}
+.remove-line-item {
+  position: relative;
+}
+.sub-total {
+  font-weight: 700;
+}
+.grand-total {
+  font-size: 1em;
+  font-weight: 600;
+}
+.coupons-and-promos {
+  margin-bottom: 0.625rem;
+  padding-right: 0;
+  padding-left: 0;
+}
+.coupon-error {
+  color: #c00;
+  margin-top: 0.25rem;
+}
+.coupon-missing-error {
+  display: none;
+}
+.applied-promotion-discount {
+  color: #008827;
+  float: right;
+}
+.promotion-information {
+  margin-bottom: 0.625rem;
+  margin-top: 0.625rem;
+}
+.line-item-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.quantity-label {
+  font-size: 0.813em;
+}
+.modal-body-remove.delete-confirmation-body {
+  padding: 1rem;
+}
+.modal-footer-remove {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  padding: 1rem;
+  border-top: 1px solid #dee2e6;
+  border-bottom-right-radius: 0.1875rem;
+  border-bottom-left-radius: 0.1875rem;
+}
+.modal-footer-remove > button {
+  margin-right: 7px;
+}
+.product-info *,
+.totals {
+  font-family: Gotham, Arial, sans-serif;
+}
+@media (min-width: 544px) {
+  .cart-page {
+      margin-bottom: 15px;
+  }
+}
+.cart-page .promotion-label {
+  display: inline-block;
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-top: 20px;
+}
+.cart-page .subtotal-label {
+  font-size: 1rem;
+}
+.login-cart {
+  text-decoration: underline;
+  color: #cfb56a;
+}
+.promo-code-form {
+  display: block;
+}
+@media (max-width: 543.98px) {
+  .promo-code-form {
+      margin-top: 1rem;
+  }
+}
+[data-form-split] {
+  width: 12rem;
+}
+[data-form-split] .btn-link-primary {
+  font-size: 0.813em;
+}
+.product-info[data-line-qty="1.0"] [data-form-split] {
+  display: none;
+}
+.lg-down-split-shipment-form [data-form-split] {
+  width: 10rem;
+}
+.lg-down-split-shipment-form [data-form-split] button {
+  text-align: right;
+}
+.lg-split-shipment-form [data-form-split] {
+  margin-right: auto;
+  margin-left: auto;
+  width: 12rem;
+}
+.checkout-continue {
+  z-index: 10;
+}
+.coupon_loginRqd,
+.coupon_orderTooSoon {
+  display: none;
+  color: #c00;
+}
+.qty-input-container {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 130px;
+  max-width: 80%;
+  min-width: 90px;
+  height: calc(1.5em + 0.75rem + 2px);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.1875rem;
+  overflow: hidden;
+}
+.qty-input-container .qty-input {
+  width: 100%;
+  padding: 0;
+  border: none;
+  border-radius: none;
+  text-align: center;
+  z-index: 1;
+}
+.qty-input-container input[type="number"] {
+  -webkit-appearance: textfield;
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+.qty-input-container .qty-btn-down,
+.qty-input-container .qty-btn-up {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 4em;
+  min-width: 1.5em;
+  padding: 0;
+  border: none;
+  border-radius: unset;
+  outline: 0;
+  -webkit-appearance: none;
+}
+/*! CSS Used fontfaces */
+@font-face {
+  font-family: Gotham;
+  font-style: normal;
+  font-weight: 800;
+  src: url(https://www.godiva.com/on/demandware.static/Sites-Godiva-Site/-/en_US/v1633496501374/fonts/Gotham/Gotham-Bold.ttf)
+          format("truetype"),
+      url(https://www.godiva.com/on/demandware.static/Sites-Godiva-Site/-/en_US/v1633496501374/fonts/Gotham/Gotham-Bold.otf)
+          format("opentype");
+}
+@font-face {
+  font-family: Gotham;
+  font-style: italic;
+  font-weight: 800;
+  src: url(https://www.godiva.com/on/demandware.static/Sites-Godiva-Site/-/en_US/v1633496501374/fonts/Gotham/Gotham-BoldItalic.ttf)
+      format("truetype");
+}
+@font-face {
+  font-family: Gotham;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://www.godiva.com/on/demandware.static/Sites-Godiva-Site/-/en_US/v1633496501374/fonts/Gotham/Gotham-Book.ttf)
+          format("truetype"),
+      url(https://www.godiva.com/on/demandware.static/Sites-Godiva-Site/-/en_US/v1633496501374/fonts/Gotham/Gotham-Book.otf)
+          format("opentype");
+}
+@font-face {
+  font-family: Gotham;
+  font-style: italic;
+  font-weight: 400;
+  src: url(https://www.godiva.com/on/demandware.static/Sites-Godiva-Site/-/en_US/v1633496501374/fonts/Gotham/Gotham-BookItalic.ttf)
+      format("truetype");
+}
+@font-face {
+  font-family: Gotham;
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://www.godiva.com/on/demandware.static/Sites-Godiva-Site/-/en_US/v1633496501374/fonts/Gotham/Gotham-Medium.ttf)
+          format("truetype"),
+      url(https://www.godiva.com/on/demandware.static/Sites-Godiva-Site/-/en_US/v1633496501374/fonts/Gotham/Gotham-Medium.otf)
+          format("opentype");
+}
+@font-face {
+  font-family: Gotham;
+  font-style: italic;
+  font-weight: 700;
+  src: url(https://www.godiva.com/on/demandware.static/Sites-Godiva-Site/-/en_US/v1633496501374/fonts/Gotham/Gotham-MediumItalic.ttf)
+      format("truetype");
+}
+@font-face {
+  font-family: Gotham;
+  font-style: normal;
+  font-weight: 800;
+  src: url(https://www.godiva.com/on/demandware.static/Sites-Godiva-Site/-/en_US/v1633496501374/fonts/Gotham/Gotham-Bold.ttf)
+          format("truetype"),
+      url(https://www.godiva.com/on/demandware.static/Sites-Godiva-Site/-/en_US/v1633496501374/fonts/Gotham/Gotham-Bold.otf)
+          format("opentype");
+}
+@font-face {
+  font-family: Gotham;
+  font-style: italic;
+  font-weight: 800;
+  src: url(https://www.godiva.com/on/demandware.static/Sites-Godiva-Site/-/en_US/v1633496501374/fonts/Gotham/Gotham-BoldItalic.ttf)
+      format("truetype");
+}
+@font-face {
+  font-family: Gotham;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://www.godiva.com/on/demandware.static/Sites-Godiva-Site/-/en_US/v1633496501374/fonts/Gotham/Gotham-Book.ttf)
+          format("truetype"),
+      url(https://www.godiva.com/on/demandware.static/Sites-Godiva-Site/-/en_US/v1633496501374/fonts/Gotham/Gotham-Book.otf)
+          format("opentype");
+}
+@font-face {
+  font-family: Gotham;
+  font-style: italic;
+  font-weight: 400;
+  src: url(https://www.godiva.com/on/demandware.static/Sites-Godiva-Site/-/en_US/v1633496501374/fonts/Gotham/Gotham-BookItalic.ttf)
+      format("truetype");
+}
+@font-face {
+  font-family: Gotham;
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://www.godiva.com/on/demandware.static/Sites-Godiva-Site/-/en_US/v1633496501374/fonts/Gotham/Gotham-Medium.ttf)
+          format("truetype"),
+      url(https://www.godiva.com/on/demandware.static/Sites-Godiva-Site/-/en_US/v1633496501374/fonts/Gotham/Gotham-Medium.otf)
+          format("opentype");
+}
+@font-face {
+  font-family: Gotham;
+  font-style: italic;
+  font-weight: 700;
+  src: url(https://www.godiva.com/on/demandware.static/Sites-Godiva-Site/-/en_US/v1633496501374/fonts/Gotham/Gotham-MediumItalic.ttf)
+      format("truetype");
+}
+@font-face {
+  font-family: Gotham;
+  font-style: normal;
+  font-weight: 800;
+  src: url(https://www.godiva.com/on/demandware.static/Sites-Godiva-Site/-/en_US/v1633496501374/fonts/Gotham/Gotham-Bold.ttf)
+          format("truetype"),
+      url(https://www.godiva.com/on/demandware.static/Sites-Godiva-Site/-/en_US/v1633496501374/fonts/Gotham/Gotham-Bold.otf)
+          format("opentype");
+}
+@font-face {
+  font-family: Gotham;
+  font-style: italic;
+  font-weight: 800;
+  src: url(https://www.godiva.com/on/demandware.static/Sites-Godiva-Site/-/en_US/v1633496501374/fonts/Gotham/Gotham-BoldItalic.ttf)
+      format("truetype");
+}
+@font-face {
+  font-family: Gotham;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://www.godiva.com/on/demandware.static/Sites-Godiva-Site/-/en_US/v1633496501374/fonts/Gotham/Gotham-Book.ttf)
+          format("truetype"),
+      url(https://www.godiva.com/on/demandware.static/Sites-Godiva-Site/-/en_US/v1633496501374/fonts/Gotham/Gotham-Book.otf)
+          format("opentype");
+}
+@font-face {
+  font-family: Gotham;
+  font-style: italic;
+  font-weight: 400;
+  src: url(https://www.godiva.com/on/demandware.static/Sites-Godiva-Site/-/en_US/v1633496501374/fonts/Gotham/Gotham-BookItalic.ttf)
+      format("truetype");
+}
+@font-face {
+  font-family: Gotham;
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://www.godiva.com/on/demandware.static/Sites-Godiva-Site/-/en_US/v1633496501374/fonts/Gotham/Gotham-Medium.ttf)
+          format("truetype"),
+      url(https://www.godiva.com/on/demandware.static/Sites-Godiva-Site/-/en_US/v1633496501374/fonts/Gotham/Gotham-Medium.otf)
+          format("opentype");
+}
+@font-face {
+  font-family: Gotham;
+  font-style: italic;
+  font-weight: 700;
+  src: url(https://www.godiva.com/on/demandware.static/Sites-Godiva-Site/-/en_US/v1633496501374/fonts/Gotham/Gotham-MediumItalic.ttf)
+      format("truetype");
+}
+@font-face {
+  font-family: Gotham;
+  font-style: normal;
+  font-weight: 800;
+  src: url(https://www.godiva.com/on/demandware.static/Sites-Godiva-Site/-/en_US/v1633496501374/fonts/Gotham/Gotham-Bold.ttf)
+          format("truetype"),
+      url(https://www.godiva.com/on/demandware.static/Sites-Godiva-Site/-/en_US/v1633496501374/fonts/Gotham/Gotham-Bold.otf)
+          format("opentype");
+}
+@font-face {
+  font-family: Gotham;
+  font-style: italic;
+  font-weight: 800;
+  src: url(https://www.godiva.com/on/demandware.static/Sites-Godiva-Site/-/en_US/v1633496501374/fonts/Gotham/Gotham-BoldItalic.ttf)
+      format("truetype");
+}
+@font-face {
+  font-family: Gotham;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://www.godiva.com/on/demandware.static/Sites-Godiva-Site/-/en_US/v1633496501374/fonts/Gotham/Gotham-Book.ttf)
+          format("truetype"),
+      url(https://www.godiva.com/on/demandware.static/Sites-Godiva-Site/-/en_US/v1633496501374/fonts/Gotham/Gotham-Book.otf)
+          format("opentype");
+}
+@font-face {
+  font-family: Gotham;
+  font-style: italic;
+  font-weight: 400;
+  src: url(https://www.godiva.com/on/demandware.static/Sites-Godiva-Site/-/en_US/v1633496501374/fonts/Gotham/Gotham-BookItalic.ttf)
+      format("truetype");
+}
+@font-face {
+  font-family: Gotham;
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://www.godiva.com/on/demandware.static/Sites-Godiva-Site/-/en_US/v1633496501374/fonts/Gotham/Gotham-Medium.ttf)
+          format("truetype"),
+      url(https://www.godiva.com/on/demandware.static/Sites-Godiva-Site/-/en_US/v1633496501374/fonts/Gotham/Gotham-Medium.otf)
+          format("opentype");
+}
+@font-face {
+  font-family: Gotham;
+  font-style: italic;
+  font-weight: 700;
+  src: url(https://www.godiva.com/on/demandware.static/Sites-Godiva-Site/-/en_US/v1633496501374/fonts/Gotham/Gotham-MediumItalic.ttf)
+      format("truetype");
+}
+@font-face {
+  font-family: Gotham;
+  font-style: normal;
+  font-weight: 800;
+  src: url(https://www.godiva.com/on/demandware.static/Sites-Godiva-Site/-/en_US/v1633496501374/fonts/Gotham/Gotham-Bold.ttf)
+          format("truetype"),
+      url(https://www.godiva.com/on/demandware.static/Sites-Godiva-Site/-/en_US/v1633496501374/fonts/Gotham/Gotham-Bold.otf)
+          format("opentype");
+}
+@font-face {
+  font-family: Gotham;
+  font-style: italic;
+  font-weight: 800;
+  src: url(https://www.godiva.com/on/demandware.static/Sites-Godiva-Site/-/en_US/v1633496501374/fonts/Gotham/Gotham-BoldItalic.ttf)
+      format("truetype");
+}
+@font-face {
+  font-family: Gotham;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://www.godiva.com/on/demandware.static/Sites-Godiva-Site/-/en_US/v1633496501374/fonts/Gotham/Gotham-Book.ttf)
+          format("truetype"),
+      url(https://www.godiva.com/on/demandware.static/Sites-Godiva-Site/-/en_US/v1633496501374/fonts/Gotham/Gotham-Book.otf)
+          format("opentype");
+}
+@font-face {
+  font-family: Gotham;
+  font-style: italic;
+  font-weight: 400;
+  src: url(https://www.godiva.com/on/demandware.static/Sites-Godiva-Site/-/en_US/v1633496501374/fonts/Gotham/Gotham-BookItalic.ttf)
+      format("truetype");
+}
+@font-face {
+  font-family: Gotham;
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://www.godiva.com/on/demandware.static/Sites-Godiva-Site/-/en_US/v1633496501374/fonts/Gotham/Gotham-Medium.ttf)
+          format("truetype"),
+      url(https://www.godiva.com/on/demandware.static/Sites-Godiva-Site/-/en_US/v1633496501374/fonts/Gotham/Gotham-Medium.otf)
+          format("opentype");
+}
+@font-face {
+  font-family: Gotham;
+  font-style: italic;
+  font-weight: 700;
+  src: url(https://www.godiva.com/on/demandware.static/Sites-Godiva-Site/-/en_US/v1633496501374/fonts/Gotham/Gotham-MediumItalic.ttf)
+      format("truetype");
+}
+@font-face {
+  font-family: Gotham;
+  font-style: normal;
+  font-weight: 800;
+  src: url(https://www.godiva.com/on/demandware.static/Sites-Godiva-Site/-/en_US/v1633496501374/fonts/Gotham/Gotham-Bold.ttf)
+          format("truetype"),
+      url(https://www.godiva.com/on/demandware.static/Sites-Godiva-Site/-/en_US/v1633496501374/fonts/Gotham/Gotham-Bold.otf)
+          format("opentype");
+}
+@font-face {
+  font-family: Gotham;
+  font-style: italic;
+  font-weight: 800;
+  src: url(https://www.godiva.com/on/demandware.static/Sites-Godiva-Site/-/en_US/v1633496501374/fonts/Gotham/Gotham-BoldItalic.ttf)
+      format("truetype");
+}
+@font-face {
+  font-family: Gotham;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://www.godiva.com/on/demandware.static/Sites-Godiva-Site/-/en_US/v1633496501374/fonts/Gotham/Gotham-Book.ttf)
+          format("truetype"),
+      url(https://www.godiva.com/on/demandware.static/Sites-Godiva-Site/-/en_US/v1633496501374/fonts/Gotham/Gotham-Book.otf)
+          format("opentype");
+}
+@font-face {
+  font-family: Gotham;
+  font-style: italic;
+  font-weight: 400;
+  src: url(https://www.godiva.com/on/demandware.static/Sites-Godiva-Site/-/en_US/v1633496501374/fonts/Gotham/Gotham-BookItalic.ttf)
+      format("truetype");
+}
+@font-face {
+  font-family: Gotham;
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://www.godiva.com/on/demandware.static/Sites-Godiva-Site/-/en_US/v1633496501374/fonts/Gotham/Gotham-Medium.ttf)
+          format("truetype"),
+      url(https://www.godiva.com/on/demandware.static/Sites-Godiva-Site/-/en_US/v1633496501374/fonts/Gotham/Gotham-Medium.otf)
+          format("opentype");
+}
+@font-face {
+  font-family: Gotham;
+  font-style: italic;
+  font-weight: 700;
+  src: url(https://www.godiva.com/on/demandware.static/Sites-Godiva-Site/-/en_US/v1633496501374/fonts/Gotham/Gotham-MediumItalic.ttf)
+      format("truetype");
+}
+@font-face {
+  font-family: Gotham;
+  font-style: normal;
+  font-weight: 800;
+  src: url(https://www.godiva.com/on/demandware.static/Sites-Godiva-Site/-/en_US/v1633496501374/fonts/Gotham/Gotham-Bold.ttf)
+          format("truetype"),
+      url(https://www.godiva.com/on/demandware.static/Sites-Godiva-Site/-/en_US/v1633496501374/fonts/Gotham/Gotham-Bold.otf)
+          format("opentype");
+}
+@font-face {
+  font-family: Gotham;
+  font-style: italic;
+  font-weight: 800;
+  src: url(https://www.godiva.com/on/demandware.static/Sites-Godiva-Site/-/en_US/v1633496501374/fonts/Gotham/Gotham-BoldItalic.ttf)
+      format("truetype");
+}
+@font-face {
+  font-family: Gotham;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://www.godiva.com/on/demandware.static/Sites-Godiva-Site/-/en_US/v1633496501374/fonts/Gotham/Gotham-Book.ttf)
+          format("truetype"),
+      url(https://www.godiva.com/on/demandware.static/Sites-Godiva-Site/-/en_US/v1633496501374/fonts/Gotham/Gotham-Book.otf)
+          format("opentype");
+}
+@font-face {
+  font-family: Gotham;
+  font-style: italic;
+  font-weight: 400;
+  src: url(https://www.godiva.com/on/demandware.static/Sites-Godiva-Site/-/en_US/v1633496501374/fonts/Gotham/Gotham-BookItalic.ttf)
+      format("truetype");
+}
+@font-face {
+  font-family: Gotham;
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://www.godiva.com/on/demandware.static/Sites-Godiva-Site/-/en_US/v1633496501374/fonts/Gotham/Gotham-Medium.ttf)
+          format("truetype"),
+      url(https://www.godiva.com/on/demandware.static/Sites-Godiva-Site/-/en_US/v1633496501374/fonts/Gotham/Gotham-Medium.otf)
+          format("opentype");
+}
+@font-face {
+  font-family: Gotham;
+  font-style: italic;
+  font-weight: 700;
+  src: url(https://www.godiva.com/on/demandware.static/Sites-Godiva-Site/-/en_US/v1633496501374/fonts/Gotham/Gotham-MediumItalic.ttf)
+      format("truetype");
+}
+@font-face {
+  font-family: Gotham;
+  font-style: normal;
+  font-weight: 800;
+  src: url(https://www.godiva.com/on/demandware.static/Sites-Godiva-Site/-/en_US/v1633496501374/fonts/Gotham/Gotham-Bold.ttf)
+          format("truetype"),
+      url(https://www.godiva.com/on/demandware.static/Sites-Godiva-Site/-/en_US/v1633496501374/fonts/Gotham/Gotham-Bold.otf)
+          format("opentype");
+}
+@font-face {
+  font-family: Gotham;
+  font-style: italic;
+  font-weight: 800;
+  src: url(https://www.godiva.com/on/demandware.static/Sites-Godiva-Site/-/en_US/v1633496501374/fonts/Gotham/Gotham-BoldItalic.ttf)
+      format("truetype");
+}
+@font-face {
+  font-family: Gotham;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://www.godiva.com/on/demandware.static/Sites-Godiva-Site/-/en_US/v1633496501374/fonts/Gotham/Gotham-Book.ttf)
+          format("truetype"),
+      url(https://www.godiva.com/on/demandware.static/Sites-Godiva-Site/-/en_US/v1633496501374/fonts/Gotham/Gotham-Book.otf)
+          format("opentype");
+}
+@font-face {
+  font-family: Gotham;
+  font-style: italic;
+  font-weight: 400;
+  src: url(https://www.godiva.com/on/demandware.static/Sites-Godiva-Site/-/en_US/v1633496501374/fonts/Gotham/Gotham-BookItalic.ttf)
+      format("truetype");
+}
+@font-face {
+  font-family: Gotham;
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://www.godiva.com/on/demandware.static/Sites-Godiva-Site/-/en_US/v1633496501374/fonts/Gotham/Gotham-Medium.ttf)
+          format("truetype"),
+      url(https://www.godiva.com/on/demandware.static/Sites-Godiva-Site/-/en_US/v1633496501374/fonts/Gotham/Gotham-Medium.otf)
+          format("opentype");
+}
+@font-face {
+  font-family: Gotham;
+  font-style: italic;
+  font-weight: 700;
+  src: url(https://www.godiva.com/on/demandware.static/Sites-Godiva-Site/-/en_US/v1633496501374/fonts/Gotham/Gotham-MediumItalic.ttf)
+      format("truetype");
+}
+@font-face {
+  font-family: Gotham;
+  font-style: normal;
+  font-weight: 800;
+  src: url(https://www.godiva.com/on/demandware.static/Sites-Godiva-Site/-/en_US/v1633496501374/fonts/Gotham/Gotham-Bold.ttf)
+          format("truetype"),
+      url(https://www.godiva.com/on/demandware.static/Sites-Godiva-Site/-/en_US/v1633496501374/fonts/Gotham/Gotham-Bold.otf)
+          format("opentype");
+}
+@font-face {
+  font-family: Gotham;
+  font-style: italic;
+  font-weight: 800;
+  src: url(https://www.godiva.com/on/demandware.static/Sites-Godiva-Site/-/en_US/v1633496501374/fonts/Gotham/Gotham-BoldItalic.ttf)
+      format("truetype");
+}
+@font-face {
+  font-family: Gotham;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://www.godiva.com/on/demandware.static/Sites-Godiva-Site/-/en_US/v1633496501374/fonts/Gotham/Gotham-Book.ttf)
+          format("truetype"),
+      url(https://www.godiva.com/on/demandware.static/Sites-Godiva-Site/-/en_US/v1633496501374/fonts/Gotham/Gotham-Book.otf)
+          format("opentype");
+}
+@font-face {
+  font-family: Gotham;
+  font-style: italic;
+  font-weight: 400;
+  src: url(https://www.godiva.com/on/demandware.static/Sites-Godiva-Site/-/en_US/v1633496501374/fonts/Gotham/Gotham-BookItalic.ttf)
+      format("truetype");
+}
+@font-face {
+  font-family: Gotham;
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://www.godiva.com/on/demandware.static/Sites-Godiva-Site/-/en_US/v1633496501374/fonts/Gotham/Gotham-Medium.ttf)
+          format("truetype"),
+      url(https://www.godiva.com/on/demandware.static/Sites-Godiva-Site/-/en_US/v1633496501374/fonts/Gotham/Gotham-Medium.otf)
+          format("opentype");
+}
+@font-face {
+  font-family: Gotham;
+  font-style: italic;
+  font-weight: 700;
+  src: url(https://www.godiva.com/on/demandware.static/Sites-Godiva-Site/-/en_US/v1633496501374/fonts/Gotham/Gotham-MediumItalic.ttf)
+      format("truetype");
+}
+@font-face {
+  font-family: Gotham;
+  font-style: normal;
+  font-weight: 800;
+  src: url(https://www.godiva.com/on/demandware.static/Sites-Godiva-Site/-/en_US/v1633496501374/fonts/Gotham/Gotham-Bold.ttf)
+          format("truetype"),
+      url(https://www.godiva.com/on/demandware.static/Sites-Godiva-Site/-/en_US/v1633496501374/fonts/Gotham/Gotham-Bold.otf)
+          format("opentype");
+}
+@font-face {
+  font-family: Gotham;
+  font-style: italic;
+  font-weight: 800;
+  src: url(https://www.godiva.com/on/demandware.static/Sites-Godiva-Site/-/en_US/v1633496501374/fonts/Gotham/Gotham-BoldItalic.ttf)
+      format("truetype");
+}
+@font-face {
+  font-family: Gotham;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://www.godiva.com/on/demandware.static/Sites-Godiva-Site/-/en_US/v1633496501374/fonts/Gotham/Gotham-Book.ttf)
+          format("truetype"),
+      url(https://www.godiva.com/on/demandware.static/Sites-Godiva-Site/-/en_US/v1633496501374/fonts/Gotham/Gotham-Book.otf)
+          format("opentype");
+}
+@font-face {
+  font-family: Gotham;
+  font-style: italic;
+  font-weight: 400;
+  src: url(https://www.godiva.com/on/demandware.static/Sites-Godiva-Site/-/en_US/v1633496501374/fonts/Gotham/Gotham-BookItalic.ttf)
+      format("truetype");
+}
+@font-face {
+  font-family: Gotham;
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://www.godiva.com/on/demandware.static/Sites-Godiva-Site/-/en_US/v1633496501374/fonts/Gotham/Gotham-Medium.ttf)
+          format("truetype"),
+      url(https://www.godiva.com/on/demandware.static/Sites-Godiva-Site/-/en_US/v1633496501374/fonts/Gotham/Gotham-Medium.otf)
+          format("opentype");
+}
+@font-face {
+  font-family: Gotham;
+  font-style: italic;
+  font-weight: 700;
+  src: url(https://www.godiva.com/on/demandware.static/Sites-Godiva-Site/-/en_US/v1633496501374/fonts/Gotham/Gotham-MediumItalic.ttf)
+      format("truetype");
+}
+@font-face {
+  font-family: Gotham;
+  font-style: normal;
+  font-weight: 800;
+  src: url(https://www.godiva.com/on/demandware.static/Sites-Godiva-Site/-/en_US/v1633496501374/fonts/Gotham/Gotham-Bold.ttf)
+          format("truetype"),
+      url(https://www.godiva.com/on/demandware.static/Sites-Godiva-Site/-/en_US/v1633496501374/fonts/Gotham/Gotham-Bold.otf)
+          format("opentype");
+}
+@font-face {
+  font-family: Gotham;
+  font-style: italic;
+  font-weight: 800;
+  src: url(https://www.godiva.com/on/demandware.static/Sites-Godiva-Site/-/en_US/v1633496501374/fonts/Gotham/Gotham-BoldItalic.ttf)
+      format("truetype");
+}
+@font-face {
+  font-family: Gotham;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://www.godiva.com/on/demandware.static/Sites-Godiva-Site/-/en_US/v1633496501374/fonts/Gotham/Gotham-Book.ttf)
+          format("truetype"),
+      url(https://www.godiva.com/on/demandware.static/Sites-Godiva-Site/-/en_US/v1633496501374/fonts/Gotham/Gotham-Book.otf)
+          format("opentype");
+}
+@font-face {
+  font-family: Gotham;
+  font-style: italic;
+  font-weight: 400;
+  src: url(https://www.godiva.com/on/demandware.static/Sites-Godiva-Site/-/en_US/v1633496501374/fonts/Gotham/Gotham-BookItalic.ttf)
+      format("truetype");
+}
+@font-face {
+  font-family: Gotham;
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://www.godiva.com/on/demandware.static/Sites-Godiva-Site/-/en_US/v1633496501374/fonts/Gotham/Gotham-Medium.ttf)
+          format("truetype"),
+      url(https://www.godiva.com/on/demandware.static/Sites-Godiva-Site/-/en_US/v1633496501374/fonts/Gotham/Gotham-Medium.otf)
+          format("opentype");
+}
+@font-face {
+  font-family: Gotham;
+  font-style: italic;
+  font-weight: 700;
+  src: url(https://www.godiva.com/on/demandware.static/Sites-Godiva-Site/-/en_US/v1633496501374/fonts/Gotham/Gotham-MediumItalic.ttf)
+      format("truetype");
+}
+@font-face {
+  font-family: Gotham;
+  font-style: normal;
+  font-weight: 800;
+  src: url(https://www.godiva.com/on/demandware.static/Sites-Godiva-Site/-/en_US/v1633496501374/fonts/Gotham/Gotham-Bold.ttf)
+          format("truetype"),
+      url(https://www.godiva.com/on/demandware.static/Sites-Godiva-Site/-/en_US/v1633496501374/fonts/Gotham/Gotham-Bold.otf)
+          format("opentype");
+}
+@font-face {
+  font-family: Gotham;
+  font-style: italic;
+  font-weight: 800;
+  src: url(https://www.godiva.com/on/demandware.static/Sites-Godiva-Site/-/en_US/v1633496501374/fonts/Gotham/Gotham-BoldItalic.ttf)
+      format("truetype");
+}
+@font-face {
+  font-family: Gotham;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://www.godiva.com/on/demandware.static/Sites-Godiva-Site/-/en_US/v1633496501374/fonts/Gotham/Gotham-Book.ttf)
+          format("truetype"),
+      url(https://www.godiva.com/on/demandware.static/Sites-Godiva-Site/-/en_US/v1633496501374/fonts/Gotham/Gotham-Book.otf)
+          format("opentype");
+}
+@font-face {
+  font-family: Gotham;
+  font-style: italic;
+  font-weight: 400;
+  src: url(https://www.godiva.com/on/demandware.static/Sites-Godiva-Site/-/en_US/v1633496501374/fonts/Gotham/Gotham-BookItalic.ttf)
+      format("truetype");
+}
+@font-face {
+  font-family: Gotham;
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://www.godiva.com/on/demandware.static/Sites-Godiva-Site/-/en_US/v1633496501374/fonts/Gotham/Gotham-Medium.ttf)
+          format("truetype"),
+      url(https://www.godiva.com/on/demandware.static/Sites-Godiva-Site/-/en_US/v1633496501374/fonts/Gotham/Gotham-Medium.otf)
+          format("opentype");
+}
+@font-face {
+  font-family: Gotham;
+  font-style: italic;
+  font-weight: 700;
+  src: url(https://www.godiva.com/on/demandware.static/Sites-Godiva-Site/-/en_US/v1633496501374/fonts/Gotham/Gotham-MediumItalic.ttf)
+      format("truetype");
+}
+@font-face {
+  font-family: Gotham;
+  font-style: normal;
+  font-weight: 800;
+  src: url(https://www.godiva.com/on/demandware.static/Sites-Godiva-Site/-/en_US/v1633496501374/fonts/Gotham/Gotham-Bold.ttf)
+          format("truetype"),
+      url(https://www.godiva.com/on/demandware.static/Sites-Godiva-Site/-/en_US/v1633496501374/fonts/Gotham/Gotham-Bold.otf)
+          format("opentype");
+}
+@font-face {
+  font-family: Gotham;
+  font-style: italic;
+  font-weight: 800;
+  src: url(https://www.godiva.com/on/demandware.static/Sites-Godiva-Site/-/en_US/v1633496501374/fonts/Gotham/Gotham-BoldItalic.ttf)
+      format("truetype");
+}
+@font-face {
+  font-family: Gotham;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://www.godiva.com/on/demandware.static/Sites-Godiva-Site/-/en_US/v1633496501374/fonts/Gotham/Gotham-Book.ttf)
+          format("truetype"),
+      url(https://www.godiva.com/on/demandware.static/Sites-Godiva-Site/-/en_US/v1633496501374/fonts/Gotham/Gotham-Book.otf)
+          format("opentype");
+}
+@font-face {
+  font-family: Gotham;
+  font-style: italic;
+  font-weight: 400;
+  src: url(https://www.godiva.com/on/demandware.static/Sites-Godiva-Site/-/en_US/v1633496501374/fonts/Gotham/Gotham-BookItalic.ttf)
+      format("truetype");
+}
+@font-face {
+  font-family: Gotham;
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://www.godiva.com/on/demandware.static/Sites-Godiva-Site/-/en_US/v1633496501374/fonts/Gotham/Gotham-Medium.ttf)
+          format("truetype"),
+      url(https://www.godiva.com/on/demandware.static/Sites-Godiva-Site/-/en_US/v1633496501374/fonts/Gotham/Gotham-Medium.otf)
+          format("opentype");
+}
+@font-face {
+  font-family: Gotham;
+  font-style: italic;
+  font-weight: 700;
+  src: url(https://www.godiva.com/on/demandware.static/Sites-Godiva-Site/-/en_US/v1633496501374/fonts/Gotham/Gotham-MediumItalic.ttf)
+      format("truetype");
+}
+@font-face {
+  font-family: Gotham;
+  font-style: normal;
+  font-weight: 800;
+  src: url(https://www.godiva.com/on/demandware.static/Sites-Godiva-Site/-/en_US/v1633496501374/fonts/Gotham/Gotham-Bold.ttf)
+          format("truetype"),
+      url(https://www.godiva.com/on/demandware.static/Sites-Godiva-Site/-/en_US/v1633496501374/fonts/Gotham/Gotham-Bold.otf)
+          format("opentype");
+}
+@font-face {
+  font-family: Gotham;
+  font-style: italic;
+  font-weight: 800;
+  src: url(https://www.godiva.com/on/demandware.static/Sites-Godiva-Site/-/en_US/v1633496501374/fonts/Gotham/Gotham-BoldItalic.ttf)
+      format("truetype");
+}
+@font-face {
+  font-family: Gotham;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://www.godiva.com/on/demandware.static/Sites-Godiva-Site/-/en_US/v1633496501374/fonts/Gotham/Gotham-Book.ttf)
+          format("truetype"),
+      url(https://www.godiva.com/on/demandware.static/Sites-Godiva-Site/-/en_US/v1633496501374/fonts/Gotham/Gotham-Book.otf)
+          format("opentype");
+}
+@font-face {
+  font-family: Gotham;
+  font-style: italic;
+  font-weight: 400;
+  src: url(https://www.godiva.com/on/demandware.static/Sites-Godiva-Site/-/en_US/v1633496501374/fonts/Gotham/Gotham-BookItalic.ttf)
+      format("truetype");
+}
+@font-face {
+  font-family: Gotham;
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://www.godiva.com/on/demandware.static/Sites-Godiva-Site/-/en_US/v1633496501374/fonts/Gotham/Gotham-Medium.ttf)
+          format("truetype"),
+      url(https://www.godiva.com/on/demandware.static/Sites-Godiva-Site/-/en_US/v1633496501374/fonts/Gotham/Gotham-Medium.otf)
+          format("opentype");
+}
+@font-face {
+  font-family: Gotham;
+  font-style: italic;
+  font-weight: 700;
+  src: url(https://www.godiva.com/on/demandware.static/Sites-Godiva-Site/-/en_US/v1633496501374/fonts/Gotham/Gotham-MediumItalic.ttf)
+      format("truetype");
+}
+@font-face {
+  font-family: Gotham;
+  font-style: normal;
+  font-weight: 800;
+  src: url(https://www.godiva.com/on/demandware.static/Sites-Godiva-Site/-/en_US/v1633496501374/fonts/Gotham/Gotham-Bold.ttf)
+          format("truetype"),
+      url(https://www.godiva.com/on/demandware.static/Sites-Godiva-Site/-/en_US/v1633496501374/fonts/Gotham/Gotham-Bold.otf)
+          format("opentype");
+}
+@font-face {
+  font-family: Gotham;
+  font-style: italic;
+  font-weight: 800;
+  src: url(https://www.godiva.com/on/demandware.static/Sites-Godiva-Site/-/en_US/v1633496501374/fonts/Gotham/Gotham-BoldItalic.ttf)
+      format("truetype");
+}
+@font-face {
+  font-family: Gotham;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://www.godiva.com/on/demandware.static/Sites-Godiva-Site/-/en_US/v1633496501374/fonts/Gotham/Gotham-Book.ttf)
+          format("truetype"),
+      url(https://www.godiva.com/on/demandware.static/Sites-Godiva-Site/-/en_US/v1633496501374/fonts/Gotham/Gotham-Book.otf)
+          format("opentype");
+}
+@font-face {
+  font-family: Gotham;
+  font-style: italic;
+  font-weight: 400;
+  src: url(https://www.godiva.com/on/demandware.static/Sites-Godiva-Site/-/en_US/v1633496501374/fonts/Gotham/Gotham-BookItalic.ttf)
+      format("truetype");
+}
+@font-face {
+  font-family: Gotham;
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://www.godiva.com/on/demandware.static/Sites-Godiva-Site/-/en_US/v1633496501374/fonts/Gotham/Gotham-Medium.ttf)
+          format("truetype"),
+      url(https://www.godiva.com/on/demandware.static/Sites-Godiva-Site/-/en_US/v1633496501374/fonts/Gotham/Gotham-Medium.otf)
+          format("opentype");
+}
+@font-face {
+  font-family: Gotham;
+  font-style: italic;
+  font-weight: 700;
+  src: url(https://www.godiva.com/on/demandware.static/Sites-Godiva-Site/-/en_US/v1633496501374/fonts/Gotham/Gotham-MediumItalic.ttf)
+      format("truetype");
 }
