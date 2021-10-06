@@ -74,8 +74,9 @@ export class PacksComponent implements OnInit, OnChanges {
     }
   }
 
-  addToCart(pack: any) {
+  addToCart(e: any) {
     this.appService.addMockToCart();
+    e.stopPropogation();
   }
 
 }

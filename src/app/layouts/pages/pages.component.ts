@@ -6,7 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./pages.component.scss']
 })
 export class PagesComponent implements OnInit {
-  
-  ngOnInit() {}
+
+  ngOnInit() { }
+
+  toggleMenu(e: any) {
+    console.log("menu works");
+  }
 
 }

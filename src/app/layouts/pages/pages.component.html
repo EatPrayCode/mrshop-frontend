@@ -447,16 +447,16 @@
 
             <!-- Modal Menu -->
             <div class="nv-menu">
-                <a class="shop" href="/collections/toilet-sprays"><span style="left: 36%;">Sprays</span></a>
-                <a class="how" href="/pages/how-it-works"><span>How it Works</span></a>
-                <a class="reviews" href="/pages/reviews"><span>Reviews</span></a>
-                <a class="cart" href="/cart">
+                <a class="reviews" [routerLink]="['home']"><span style="left: 36%;">Home</span></a>
+                <a class="shop" [routerLink]="['store']"><span>store</span></a>
+                <a class="how" [routerLink]="['organiser']"><span>Organiser</span></a>
+                <a class="cart" [routerLink]="['checkout']">
                     <div class="cart-icon">
                         <strong>0</strong>
                     </div>
-                    <span>Cart</span>
+                    <span>Checkout</span>
                 </a>
-                <a class="links" onclick="toggleMenu(this);"><span>Menu</span></a>
+                <a class="links" (click)="toggleMenu(this);"><span>Menu</span></a>
             </div>
 
             <!-- Search Icon -->
