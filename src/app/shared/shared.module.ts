@@ -19,7 +19,6 @@ import { AlertDialogComponent } from './components/alert-dialog/alert-dialog.com
 import { AppSpinnerDirective } from './directives/app-spinner';
 import { SpinnerComponent } from './directives/spinner/spinner.component';
 import { AppMaterialModule } from './material.module';
-import { NgBottomNavigationModule } from 'ng-bottom-navigation';
 import { ConfirmDialogComponent } from './components/confirm-dialog/confirm-dialog.component';
 import { GetInTouchComponent } from './components/get-in-touch/get-in-touch.component';
 import { LogoComponent } from './components/logo/logo.component';
@@ -60,7 +59,7 @@ import { MissionComponent } from './components/mission/mission.component';
     AppMaterialModule,
     SpinnerComponent,
     AppSpinnerDirective,
-    NgBottomNavigationModule
+  
   ],
   providers: [
     {

@@ -33,7 +33,6 @@
     "@angular/fire": "^6.1.5",
     "firebase": "^8.6.7",
     "load-awesome": "^1.1.0",
-    "ng-bottom-navigation": "^0.3.0",
     "ngx-pagination": "5.1.0",
     "angular-in-memory-web-api": "0.11.0",
     "@swimlane/ngx-charts": "18.0.1",

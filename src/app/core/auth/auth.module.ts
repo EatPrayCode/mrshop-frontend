@@ -7,6 +7,7 @@ import { AcceptTermsModalComponent } from './components/accept-terms-modal/accep
 import { AcceptAgeTermsModalComponent } from './components/accept-age-terms-modal/accept-age-terms-modal.component';
 import { ChooseAppSettingsModalComponent } from './components/choose-app-settings-modal/choose-app-settings-modal.component';
 import { SharedModule } from 'src/app/shared/shared.module';
+import { SignUpComponent } from './components/sign-up/sign-up.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { SharedModule } from 'src/app/shared/shared.module';
     SigninMobileComponent,
     AcceptTermsModalComponent,
     AcceptAgeTermsModalComponent,
-    ChooseAppSettingsModalComponent
+    ChooseAppSettingsModalComponent,
+    SignUpComponent
   ],
   imports: [
     CommonModule,

@@ -2,6 +2,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { NotFoundComponent } from '../common/components/not-found/not-found.component';
+import { SignUpComponent } from '../core/auth/components/sign-up/sign-up.component';
 import { BlankComponent } from '../layouts/blank/blank.component';
 import { PagesComponent } from '../layouts/pages/pages.component';
 
@@ -14,6 +15,10 @@ const routes: Routes = [
       {
         path: '',
         loadChildren: () => import('./../features/landing/landing.module').then(m => m.LandingModule)
+      },
+      {
+        path: 'signup',
+        component: SignUpComponent
       },
     ]
   },
