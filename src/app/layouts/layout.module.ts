@@ -7,7 +7,6 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { SharedModule } from 'src/app/shared/shared.module';
 import { AuthModule } from '../core/auth/auth.module';
-import { NgBottomNavigationModule } from 'ng-bottom-navigation';
 
 import { PagesComponent } from './pages/pages.component';
 import { BreadcrumbComponent } from './components/breadcrumb/breadcrumb.component';
@@ -15,6 +14,7 @@ import { FullScreenComponent } from './components/fullscreen/fullscreen.componen
 import { MenuComponent } from './components/menu/menu.component';
 import { UserMenuComponent } from './components/user-menu/user-menu.component';
 import { CustomisePackModule } from '../features/checkout/components/customise-pack/customise-pack.module';
+import { CoreModule } from '@angular/flex-layout';
 
 @NgModule({
   declarations: [
@@ -30,8 +30,8 @@ import { CustomisePackModule } from '../features/checkout/components/customise-p
     SharedModule,
     FormsModule,
     ReactiveFormsModule,
-    NgBottomNavigationModule,
     AuthModule,
+    CoreModule,
     CustomisePackModule,
     CheckoutModule
   ],
