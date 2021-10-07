@@ -162,18 +162,17 @@
 
 
                                         <li class="menu-item ">
-                                            <a href="/pages/reviews" class="nav-top-link ">Reviews</a>
+                                            <a [routerLink]="['home']" class="nav-top-link ">Home</a>
 
                                         </li>
-
-
 
                                         <li class="menu-item ">
-                                            <a href="/blogs/the-drop" class="nav-top-link ">Blog</a>
-
+                                            <a [routerLink]="['organiser']" class="nav-top-link ">Organiser</a>
                                         </li>
 
-
+                                        <li class="menu-item ">
+                                            <a [routerLink]="['store']" class="nav-top-link ">Store</a>
+                                        </li>
 
                                         <li class="menu-item menu-item-has-children menu-parent-item">
                                             <a href="/pages/faq" class="nav-top-link ">Help!</a>
@@ -248,7 +247,7 @@
 
                                         <li class="header-cart">
                                             <div class="cart-inner">
-                                                <a href="/cart" class="cart-link">
+                                                <a [routerLink]="['checkout']" class="cart-link">
 
 
                                                     <!-- cart icon -->
@@ -421,9 +420,9 @@
 
                             </div>
                         </div>
-                        <a href="/pages/reviews" title="Reviews" class="linklist title"
-                            style="display: block;">reviews</a>
-                        <a href="/blogs/the-drop" title="Blog" class="linklist title" style="display: block;">blog</a>
+                        <a  [routerLink]="['home']" title="Home" class="linklist title"
+                            style="display: block;">Home</a>
+                        
                         <div class="linklist" onclick="openLinks(this);">
                             <div class="title">help<img class="arrow"
                                     src="https://cdn.shopify.com/s/files/1/1020/1629/files/nv_right-arrow.svg?v=1583784384">

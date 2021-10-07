@@ -54,6 +54,9 @@ export class PacksComponent implements OnInit, OnChanges {
 
   ngOnDestroy() { }
 
+  public onSubmit(): void {
+  }
+
   public getProperties() {
     this.appService.getProperties().subscribe((data: any) => {
       // let result = this.filterData(data); 
@@ -76,7 +79,8 @@ export class PacksComponent implements OnInit, OnChanges {
 
   addToCart(e: any) {
     this.appService.addMockToCart();
-    e.stopPropogation();
+    // e.stopPropagation();
+    // return
   }
 
 }

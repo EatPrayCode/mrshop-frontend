@@ -5,37 +5,43 @@
       <p color="" class="Large-sc-1qr0otk-12 ShelfSubtitle-jriw8u-3 hJZZPu">Designed and formulated for quality.</p>
    </div>
    <div class="ShelfRow-sc-14owske-2 cShAuK">
-      <form class="ShelfForm-sc-1rx7z1c-2 bMvgnU">
-         <div class="ShelfTile-jriw8u-5 StyledShelfTile-sc-1rx7z1c-0 dzoKRo"><a href="/en/us/products/harrys-blades">
+      <form (ngSubmit)="onSubmit()" *ngFor="let pack of allPacks" class="ShelfForm-sc-1rx7z1c-2 bMvgnU">
+         <div class="ShelfTile-jriw8u-5 StyledShelfTile-sc-1rx7z1c-0 dzoKRo">
+            <a>
                <div class="ImageWrapper-jriw8u-7 IyKnP"><img
                      src="https://www.harrys.com/harrys-cdnx-prod/assets/images/index_images/attachments/b303d48beb905aef5e3d22fc65df960ade4bce34."
                      alt="Harry's Blades" class="ItemImage-jriw8u-8 bbLOqe"></div>
             </a>
             <div class="InfoSection-jriw8u-9 InformationSection-sc-1rx7z1c-4 kbUFbj">
-               <div class="ItemInfo-jriw8u-10 ItemInformation-sc-1rx7z1c-15 jPCBqZ"><a
-                     href="/en/us/products/harrys-blades">
+               <div class="ItemInfo-jriw8u-10 ItemInformation-sc-1rx7z1c-15 jPCBqZ">
+                  <a>
                      <div color="" class="InfoWrapper-sc-1rx7z1c-3 ctsCIO">
                         <div class="PriceAndDivider-sc-1rx7z1c-6 jegjYv">
                            <p class="Medium-sc-1qr0otk-10 Bold-sc-1qr0otk-11 ProductShelfNameText-sc-1rx7z1c-5 dxTkMH">
-                              Harry's Blades</p>
-                           <div class="ProductPriceWrapper-sc-1rx7z1c-7 hDBqlQ"><span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+                              Harry's Blades
+                           </p>
+                           <div class="ProductPriceWrapper-sc-1rx7z1c-7 hDBqlQ">
+                              <span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
                               <p
                                  class="Medium-sc-1qr0otk-10 Bold-sc-1qr0otk-11 ProductShelfPriceText-sc-1rx7z1c-9 bLrAMN">
-                                 $30</p>
+                                 $30
+                              </p>
                            </div>
                         </div>
                      </div>
-                  </a></div>
+                  </a>
+               </div>
             </div>
             <div class="ProductSelectionElements-sc-1rx7z1c-10 ifYkZF">
                <div class="QuickLearn-sc-1ctqu11-4 jihpZZ">
                   <div class="QuickAddWrapper-sc-1ctqu11-5 eFKMzT">
-                     <div class="QuickLearnWrapper-sc-1ctqu11-3 khgyPF"><button
-                           aria-describedby="quick-learn-tooltip-817" aria-label="quick learn tooltip"
-                           class="QuickLearnCta-sc-1ctqu11-7 kfeiiW"><svg
-                              class="icon QuickLearnIcon-sc-1ctqu11-6 jIWiiw" viewBox="0 0 15 15">
-                              <use aria-hidden="true" xlink:href="#magnifying-glass"></use>
-                           </svg></button>
+                     <div class="QuickLearnWrapper-sc-1ctqu11-3 khgyPF">
+                        <button aria-describedby="quick-learn-tooltip-817" aria-label="quick learn tooltip"
+                           class="QuickLearnCta-sc-1ctqu11-7 kfeiiW">
+                           <svg class="icon QuickLearnIcon-sc-1ctqu11-6 jIWiiw" viewBox="0 0 15 15">
+                              <use aria-hidden="true"></use>
+                           </svg>
+                        </button>
                         <div class="Tooltip-sc-1ctqu11-0 QuickLearnTooltip-sc-1ctqu11-1 iTCfJR quick-learn-tooltip-817"
                            id="quick-learn-tooltip-817" role="tooltip">
                            <div class="markdown">
@@ -45,177 +51,24 @@
                                     <li>Designed for a close, comfortable shave</li>
                                     <li>Engineered in our German factory from high-quality Swedish steel</li>
                                     <li>Each razor cartridge features a flex hinge, so blades follow the contours of
-                                       your face</li>
+                                       your face
+                                    </li>
                                     <li>Lubricating strip provides an even glide and...</li>
                                  </ul>
                               </div>
                            </div>
                         </div>
-                     </div><button id="productCardCta-432"
-                        class="ProductCardButton-sc-1kja9x0-0 jPJPoK product-card-cta" data-test="product-card-cta"
-                        aria-label="Select" (click)="addToCart($event)">Select</button>
+                     </div>
+                     <button id="productCardCta-432" class="ProductCardButton-sc-1kja9x0-0 jPJPoK product-card-cta"
+                        data-test="product-card-cta" aria-label="Select"
+                        (click)="addToCart($event);$event.stopPropagation();">Select</button>
                      <div></div>
                      <div class="Tooltip-p3nxad-0 ConfirmationTooltip-p3nxad-1 jWPIgm">
-                        <p class="Medium-sc-1qr0otk-10 Title-p3nxad-2 gJHqSx"><svg
-                              class="icon CheckmarkIcon-p3nxad-3 iSkuIw" viewBox="0 0 49.48 41.9">
-                              <use aria-hidden="true" xlink:href="#green-checkmark"></use>
-                           </svg></p>
-                     </div>
-                  </div>
-                  <div></div>
-               </div>
-            </div>
-         </div>
-      </form>
-      <form class="ShelfForm-sc-1rx7z1c-2 bMvgnU">
-         <div class="ShelfTile-jriw8u-5 StyledShelfTile-sc-1rx7z1c-0 dzoKRo"><a href="/en/us/products/the-truman-set">
-               <div class="ImageWrapper-jriw8u-7 IyKnP"><img
-                     src="https://www.harrys.com/harrys-cdnx-prod/assets/images/index_images/attachments/557147f61bec380c49ca95b30f1c30303f95d93e.jpg"
-                     alt="Truman Set" class="ItemImage-jriw8u-8 bbLOqe"></div>
-            </a>
-            <div class="InfoSection-jriw8u-9 InformationSection-sc-1rx7z1c-4 kbUFbj">
-               <div class="ItemInfo-jriw8u-10 ItemInformation-sc-1rx7z1c-15 jPCBqZ"><a
-                     href="/en/us/products/the-truman-set">
-                     <div color="" class="InfoWrapper-sc-1rx7z1c-3 ctsCIO">
-                        <div class="PriceAndDivider-sc-1rx7z1c-6 jegjYv">
-                           <p class="Medium-sc-1qr0otk-10 Bold-sc-1qr0otk-11 ProductShelfNameText-sc-1rx7z1c-5 dxTkMH">
-                              Truman Set</p>
-                           <div class="ProductPriceWrapper-sc-1rx7z1c-7 hDBqlQ"><span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
-                              <p
-                                 class="Medium-sc-1qr0otk-10 Bold-sc-1qr0otk-11 ProductShelfPriceText-sc-1rx7z1c-9 bLrAMN">
-                                 $15</p>
-                           </div>
-                        </div>
-                     </div>
-                  </a></div>
-            </div>
-            <div class="ProductSelectionElements-sc-1rx7z1c-10 ifYkZF">
-               <div class="ColorSelectorWrapper-sc-1n2ugd7-0 kzaYOf">
-                  <ul role="radiogroup" aria-label="Color">
-                     <div class="ColorOptions-sc-1n2ugd7-1 jSTaoq">
-                        <li><input type="radio" id="gallery-product-shelf-default-product-2328-color-bright-orange"
-                              aria-label="Bright Orange" aria-checked="false" value="Bright Orange" checked=""><label
-                              for="gallery-product-shelf-default-product-2328-color-bright-orange"
-                              class="Label-sc-1n2ugd7-2 kkNoPd"><span class="Circle-sc-1pm1xg7-3 dNYPkw"></span><span
-                                 class="VisuallyHidden-sc-2bdmnd-0 ghIlXm">Bright Orange</span></label></li>
-                        <li><input type="radio" id="gallery-product-shelf-default-product-2328-color-indigo-blue"
-                              aria-label="Indigo Blue" aria-checked="false" value="Indigo Blue"><label
-                              for="gallery-product-shelf-default-product-2328-color-indigo-blue"
-                              class="Label-sc-1n2ugd7-2 kkNoPd"><span class="Circle-sc-1pm1xg7-3 dsIeio"></span><span
-                                 class="VisuallyHidden-sc-2bdmnd-0 ghIlXm">Indigo Blue</span></label></li>
-                        <li><input type="radio" id="gallery-product-shelf-default-product-2328-color-tropical-green"
-                              aria-label="Tropical Green" aria-checked="true" value="Tropical Green"><label
-                              for="gallery-product-shelf-default-product-2328-color-tropical-green"
-                              class="Label-sc-1n2ugd7-2 kLFprs"><span class="Circle-sc-1pm1xg7-3 jFwrwM"></span><span
-                                 class="VisuallyHidden-sc-2bdmnd-0 ghIlXm">Tropical Green</span></label></li>
-                     </div>
-                  </ul>
-               </div>
-               <div class="QuickLearn-sc-1ctqu11-4 jihpZZ">
-                  <div class="QuickAddWrapper-sc-1ctqu11-5 eFKMzT">
-                     <div class="QuickLearnWrapper-sc-1ctqu11-3 khgyPF"><button
-                           aria-describedby="quick-learn-tooltip-2330" aria-label="quick learn tooltip"
-                           class="QuickLearnCta-sc-1ctqu11-7 kfeiiW"><svg
-                              class="icon QuickLearnIcon-sc-1ctqu11-6 jIWiiw" viewBox="0 0 15 15">
-                              <use aria-hidden="true" xlink:href="#magnifying-glass"></use>
-                           </svg></button>
-                        <div class="Tooltip-sc-1ctqu11-0 QuickLearnTooltip-sc-1ctqu11-1 iTCfJR quick-learn-tooltip-2330"
-                           id="quick-learn-tooltip-2330" role="tooltip">
-                           <div class="markdown">
-                              <div>
-                                 <div class="markdown--h1">What's inside the set</div>
-                                 <ul class="markdown--ul">
-                                    <li>Our Truman handle, featuring a weighted core and textured rubber grip.</li>
-                                    <li>Three German-engineered blade cartridges, each with a flex hinge and lubricating
-                                       strip.</li>
-                                    <li>Foaming Shave Gel for a rich lather. </li>
-                                    <li>A travel cover to protect your blades...</li>
-                                 </ul>
-                              </div>
-                           </div>
-                        </div>
-                     </div><button id="productCardCta-433"
-                        class="ProductCardButton-sc-1kja9x0-0 jPJPoK product-card-cta" data-test="product-card-cta"
-                        aria-label="Select" (click)="addToCart($event)">Select</button>
-                     <div></div>
-                     <div class="Tooltip-p3nxad-0 ConfirmationTooltip-p3nxad-1 jWPIgm">
-                        <p class="Medium-sc-1qr0otk-10 Title-p3nxad-2 gJHqSx"><svg
-                              class="icon CheckmarkIcon-p3nxad-3 iSkuIw" viewBox="0 0 49.48 41.9">
-                              <use aria-hidden="true" xlink:href="#green-checkmark"></use>
-                           </svg></p>
-                     </div>
-                  </div>
-                  <div></div>
-               </div>
-            </div>
-         </div>
-      </form>
-      <form class="ShelfForm-sc-1rx7z1c-2 bMvgnU">
-         <div class="ShelfTile-jriw8u-5 StyledShelfTile-sc-1rx7z1c-0 dzoKRo"><a
-               href="/en/us/products/deodorant?id=2565">
-               <div class="ImageWrapper-jriw8u-7 IyKnP"><img
-                     src="https://www.harrys.com/harrys-cdnx-prod/assets/images/index_images/attachments/d833ab0c7bde3893e0fefe2aafbdaafbace194ea.jpg"
-                     alt="Odor &amp; Sweat Control | Antiperspirant" class="ItemImage-jriw8u-8 bbLOqe"></div>
-            </a>
-            <div type="new-badge" class="PrimaryCallout-jriw8u-11 ErQiC">
-               <p class="Small-sc-1qr0otk-7 exSmtM">New</p>
-            </div>
-            <div class="InfoSection-jriw8u-9 InformationSection-sc-1rx7z1c-4 kbUFbj">
-               <div class="ItemInfo-jriw8u-10 ItemInformation-sc-1rx7z1c-15 jPCBqZ"><a
-                     href="/en/us/products/deodorant?id=2565">
-                     <div color="" class="InfoWrapper-sc-1rx7z1c-3 ctsCIO">
-                        <div class="PriceAndDivider-sc-1rx7z1c-6 jegjYv">
-                           <p class="Medium-sc-1qr0otk-10 Bold-sc-1qr0otk-11 ProductShelfNameText-sc-1rx7z1c-5 dxTkMH">
-                              Odor &amp; Sweat Control | Antiperspirant</p>
-                           <div class="ProductPriceWrapper-sc-1rx7z1c-7 hDBqlQ"><span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
-                              <p
-                                 class="Medium-sc-1qr0otk-10 Bold-sc-1qr0otk-11 ProductShelfPriceText-sc-1rx7z1c-9 bLrAMN">
-                                 $5</p>
-                           </div>
-                        </div>
-                     </div>
-                  </a></div>
-            </div>
-            <div class="ProductSelectionElements-sc-1rx7z1c-10 ifYkZF">
-               <div class="QuickLearn-sc-1ctqu11-4 jihpZZ">
-                  <div class="QuickAddWrapper-sc-1ctqu11-5 eFKMzT">
-                     <div class="QuickLearnWrapper-sc-1ctqu11-3 khgyPF"><button
-                           aria-describedby="quick-learn-tooltip-2565" aria-label="quick learn tooltip"
-                           class="QuickLearnCta-sc-1ctqu11-7 kfeiiW"><svg
-                              class="icon QuickLearnIcon-sc-1ctqu11-6 jIWiiw" viewBox="0 0 15 15">
-                              <use aria-hidden="true" xlink:href="#magnifying-glass"></use>
-                           </svg></button>
-                        <div class="Tooltip-sc-1ctqu11-0 QuickLearnTooltip-sc-1ctqu11-1 iTCfJR quick-learn-tooltip-2565"
-                           id="quick-learn-tooltip-2565" role="tooltip">
-                           <div class="markdown">
-                              <div>
-                                 <div class="markdown--h1">What's good about it</div>
-                                 <ul class="markdown--ul">
-                                    <li>Antiperspirant provides 24-hour odor &amp; sweat protection</li>
-                                    <li>White solid stick formula goes on smoothly</li>
-                                    <li>Suitable for guys with sensitive skin
-                                       <ul class="markdown--ul">
-                                          <li>Contains soothing jojoba oil</li>
-                                       </ul>
-                                    </li>
-                                    <li>Available in our four signature scents:
-                                       <ul class="markdown--ul">
-                                          <li>Redwood, Shiso,...</li>
-                                       </ul>
-                                    </li>
-                                 </ul>
-                              </div>
-                           </div>
-                        </div>
-                     </div><button id="productCardCta-434"
-                        class="ProductCardButton-sc-1kja9x0-0 jPJPoK product-card-cta" data-test="product-card-cta"
-                        aria-label="Select" (click)="addToCart($event)">Select</button>
-                     <div></div>
-                     <div class="Tooltip-p3nxad-0 ConfirmationTooltip-p3nxad-1 jWPIgm">
-                        <p class="Medium-sc-1qr0otk-10 Title-p3nxad-2 gJHqSx"><svg
-                              class="icon CheckmarkIcon-p3nxad-3 iSkuIw" viewBox="0 0 49.48 41.9">
-                              <use aria-hidden="true" xlink:href="#green-checkmark"></use>
-                           </svg></p>
+                        <p class="Medium-sc-1qr0otk-10 Title-p3nxad-2 gJHqSx">
+                           <svg class="icon CheckmarkIcon-p3nxad-3 iSkuIw" viewBox="0 0 49.48 41.9">
+                              <use aria-hidden="true"></use>
+                           </svg>
+                        </p>
                      </div>
                   </div>
                   <div></div>

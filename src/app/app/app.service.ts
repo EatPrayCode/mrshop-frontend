@@ -65,6 +65,13 @@ export class AppService {
     public stateService: StateService,
     private router: Router) {
     this.addMockToCart();
+    this.addMockToCart();
+    this.addMockToCart();
+    this.addMockToCart();
+    this.addMockToCart();
+    this.addMockToCart();
+    this.addMockToCart();
+    this.addMockToCart();
   }
 
   addMockToCart() {
