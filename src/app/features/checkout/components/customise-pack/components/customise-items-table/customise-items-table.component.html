@@ -1,393 +1,180 @@
 <div class="container cart cart-page" data-shipments="1">
     <div class="row">
 
+        <div class="cart-items col-12">
 
+            <div *ngFor="let pack of inputData" class="card product-info  uuid-30914d7638d60f5826cc6b9152"
+                data-line-qty="4.0">
 
-        <div class="col-sm-7 col-md-8">
-            <div class="approaching-discounts">
+                <div class="line-item-header">
+                    <div class="line-item-name">
+                        {{pack.packsData.packName}}
+                    </div>
 
-            </div>
+                    <div class="remove-line-item d-lg-none">
 
-            <div class="cart-items">
-
-
-
-
-
-
-
-
-
-
-
-                <div *ngFor="let pack of inputData" class="card product-info  uuid-30914d7638d60f5826cc6b9152"
-                    data-line-qty="4.0">
-
-
-                    <div class="line-item-header">
-                        <div class="line-item-name">
-                            {{pack.packsData.packName}}
-                        </div>
-
-                        <div class="remove-line-item d-lg-none">
-
-                            <button type="button" class="remove-btn-lg remove-product btn btn-light" data-toggle="modal"
-                                data-target=".cart.cart-page #removeProductModal" data-pid="14169"
-                                data-name="Holiday Luxury Chocolate Advent Calendar"
-                                data-action="/on/demandware.store/Sites-Godiva-Site/en_US/Cart-RemoveProductLineItem"
-                                data-uuid="30914d7638d60f5826cc6b9152"
-                                aria-label="Remove product Holiday Luxury Chocolate Advent Calendar">
-                                <span aria-hidden="true">×</span>
-                            </button>
-
-                        </div>
+                        <button type="button" class="remove-btn-lg remove-product btn btn-light" data-toggle="modal"
+                            data-target=".cart.cart-page #removeProductModal" data-pid="14169"
+                            data-name="Holiday Luxury Chocolate Advent Calendar"
+                            data-action="/on/demandware.store/Sites-Godiva-Site/en_US/Cart-RemoveProductLineItem"
+                            data-uuid="30914d7638d60f5826cc6b9152"
+                            aria-label="Remove product Holiday Luxury Chocolate Advent Calendar">
+                            <span aria-hidden="true">×</span>
+                        </button>
 
                     </div>
 
+                </div>
 
-                    <div class="row ">
-                        <div class="col-lg-5">
-                            <div class="row">
-                                <div class="col-lg-12 d-flex flex-row">
-                                    <div class="item-image">
-                                        <img class="product-image"
-                                            src="https://www.godiva.com/dw/image/v2/AAKG_PRD/on/demandware.static/-/Sites-godiva-master-catalog-us/default/dw4fd53ea1/product_images/14169-1.jpg?sw=140&amp;sh=140"
-                                            alt="Holiday Luxury Chocolate Advent Calendar"
-                                            title="Holiday Luxury Chocolate Advent Calendar">
-                                    </div>
-                                    <div class="item-attributes attr-30914d7638d60f5826cc6b9152 d-flex flex-column">
-                                        <p><b>SKU:</b> 14169</p>
-
-
-
-
-                                        <div class="line-item-availability availability-30914d7638d60f5826cc6b9152">
-
-                                            <p class="line-item-attributes ">In Stock</p>
-
-
-                                        </div>
-
-
-
-                                        <div class="product-edit">
-                                            <a class="edit btn-link-primary" data-toggle="modal" title="Edit"
-                                                (click)="openViewEditPackDialog(pack)">
-                                                Edit
-                                            </a>
-                                        </div>
-
-
-                                    </div>
-                                    <div
-                                        class="lg-down-split-shipment-form flex flex-grow-1 align-items-end  justify-content-end d-lg-none">
-                                        <form data-form-split="" method="post"
-                                            action="/on/demandware.store/Sites-Godiva-Site/en_US/CheckoutShippingServices-SplitShipment">
-                                            <input name="productLineItemUUID" type="hidden"
-                                                value="30914d7638d60f5826cc6b9152">
-                                            <input name="redirectto" type="hidden" value="/cart">
-                                            <button class="btn btn-link btn-link-primary" type="submit">Ship this item
-                                                to more than one address</button>
-                                        </form>
-
-                                    </div>
+                <div class="row ">
+                    <div class="col-lg-5">
+                        <div class="row">
+                            <div class="col-lg-12 d-flex flex-row">
+                                <div class="item-image">
+                                    <img class="product-image"
+                                        src="https://www.godiva.com/dw/image/v2/AAKG_PRD/on/demandware.static/-/Sites-godiva-master-catalog-us/default/dw4fd53ea1/product_images/14169-1.jpg?sw=140&amp;sh=140"
+                                        alt="Holiday Luxury Chocolate Advent Calendar"
+                                        title="Holiday Luxury Chocolate Advent Calendar">
                                 </div>
-                            </div>
-                        </div>
-                        <div class="col-12 d-lg-none">
-                            <hr class="line-item-divider">
-                        </div>
+                                <div class="item-attributes attr-30914d7638d60f5826cc6b9152 d-flex flex-column">
+                                    <p><b>SKU:</b> 14169</p>
 
-                        <div class="col-lg-7 product-card-footer">
+                                    <div class="line-item-availability availability-30914d7638d60f5826cc6b9152">
 
-                            <div class="row">
-
-                                <div class="col-4 line-item-price-30914d7638d60f5826cc6b9152">
-                                    <p class="line-item-price-info">Each</p>
-
-
-                                    <div class="price">
-
-                                        <span>
-
-
-
-
-
-
-                                            <span class="sales">
-
-
-
-                                                <span class="value " content="39.95">
-
-                                                    $39.95
-
-
-                                                </span>
-                                            </span>
-                                        </span>
+                                        <p class="line-item-attributes ">In Stock</p>
 
                                     </div>
 
+                                    <div class="product-edit">
+                                        <a class="edit btn-link-primary" data-toggle="modal" title="Edit"
+                                            (click)="openViewEditPackDialog(pack)">
+                                            Edit
+                                        </a>
+                                    </div>
 
                                 </div>
 
-
-                                <div class="col-4 line-item-quantity">
-                                    <div class="quantity-form">
-                                        <label class="line-item-pricing-info quantity-label"
-                                            for="quantity-30914d7638d60f5826cc6b9152">Quantity</label>
-                                        <div class="qty-input-container">
-                                            <button name="qty-btn-down" class="qty-btn-down btn btn-light"
-                                                aria-label="decrease quantity">-</button>
-                                            <input class="form-control qty-input" type="number" value="4" min="1.0"
-                                                max="300.0" step="1.0" data-uuid="30914d7638d60f5826cc6b9152"
-                                                data-pid="14169"
-                                                data-action="/on/demandware.store/Sites-Godiva-Site/en_US/Cart-UpdateQuantity"
-                                                data-pre-change-qty="4.0" id="quantity-30914d7638d60f5826cc6b9152"
-                                                name="quantity-30914d7638d60f5826cc6b9152" aria-label="quantity: 4">
-                                            <button name="qty-btn-up" class="qty-btn-up btn btn-light"
-                                                aria-label="increase quantity">+</button>
-                                        </div>
-                                    </div>
-                                </div>
-
-
-                                <div class="col-4 line-item-total-price">
-                                    <p class="line-item-price-info">
-                                        Total
-                                    </p>
-                                    <div class="item-total-30914d7638d60f5826cc6b9152 price">
-                                        <div class="strike-through value
-non-adjusted-price">
-                                            null
-                                        </div>
-
-                                        <div class="pricing without-promo item-total-30914d7638d60f5826cc6b9152">$159.80
-                                        </div>
-
-
-
-                                    </div>
-                                </div>
-
-
-                                <div class="lg-split-shipment-form col-8 offset-2 d-none d-lg-block ">
+                                <div
+                                    class="lg-down-split-shipment-form flex flex-grow-1 align-items-end  justify-content-end d-lg-none">
                                     <form data-form-split="" method="post"
                                         action="/on/demandware.store/Sites-Godiva-Site/en_US/CheckoutShippingServices-SplitShipment">
                                         <input name="productLineItemUUID" type="hidden"
                                             value="30914d7638d60f5826cc6b9152">
                                         <input name="redirectto" type="hidden" value="/cart">
-                                        <button class="btn btn-link btn-link-primary" type="submit">Ship this item to
-                                            more than one address</button>
+                                        <button class="btn btn-link btn-link-primary" type="submit">Ship this item
+                                            to more than one address</button>
                                     </form>
 
                                 </div>
-
-
-
-                                <div class="col-lg-1 hidden-md-down remove-line-item-lg"></div>
                             </div>
-
-
-                            <div class="line-item-promo item-30914d7638d60f5826cc6b9152">
-
-
-                            </div>
-
                         </div>
-
-
-
-                        <div class="hidden-md-down">
-                            <button type="button" class="remove-btn-lg remove-product btn btn-light" data-toggle="modal"
-                                data-target=".cart.cart-page #removeProductModal" data-pid="14169"
-                                data-name="Holiday Luxury Chocolate Advent Calendar"
-                                data-action="/on/demandware.store/Sites-Godiva-Site/en_US/Cart-RemoveProductLineItem"
-                                data-uuid="30914d7638d60f5826cc6b9152"
-                                aria-label="Remove product Holiday Luxury Chocolate Advent Calendar">
-                                <span aria-hidden="true">×</span>
-                            </button>
-
-                        </div>
-
+                    </div>
+                    <div class="col-12 d-lg-none">
+                        <hr class="line-item-divider">
                     </div>
 
+                    <div class="col-lg-7 product-card-footer">
 
-                </div>
+                        <div class="row">
+
+                            <div class="col-4 line-item-price-30914d7638d60f5826cc6b9152">
+                                <p class="line-item-price-info">Each</p>
 
 
-            </div>
-        </div>
+                                <div class="price">
 
-        <div class="col-sm-5 col-md-4 totals">
-            <div class="row">
-                <div class="col-12">
-                    <form action="/on/demandware.store/Sites-Godiva-Site/en_US/Cart-AddCoupon" class="promo-code-form"
-                        method="GET" name="promo-code-form">
-                        <div class="form-group">
-                            <label for="couponCode">Enter Promo Code</label>
-                            <div class="row">
-                                <div class="col-7">
-                                    <input type="text" class="form-control coupon-code-field" id="couponCode"
-                                        name="couponCode" placeholder="Promo Code">
-                                    <div class="coupon-error">
-                                        <span class="coupon-missing-error" id="missingCouponCode" role="alert">
-                                            No coupon code entered</span>
-                                        <span class="coupon-error-message" id="invalidCouponCode" role="alert"></span>
+                                    <span>
+
+                                        <span class="sales">
+
+                                            <span class="value " content="39.95">
+
+                                                $39.95
+
+                                            </span>
+                                        </span>
+
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                            <div class="col-4 line-item-quantity">
+                                <div class="quantity-form">
+                                    <label class="line-item-pricing-info quantity-label"
+                                        for="quantity-30914d7638d60f5826cc6b9152">Quantity</label>
+                                    <div class="qty-input-container">
+                                        <button name="qty-btn-down" class="qty-btn-down btn btn-light"
+                                            aria-label="decrease quantity">-</button>
+                                        <input class="form-control qty-input" type="number" value="4" min="1.0"
+                                            max="300.0" step="1.0" data-uuid="30914d7638d60f5826cc6b9152"
+                                            data-pid="14169"
+                                            data-action="/on/demandware.store/Sites-Godiva-Site/en_US/Cart-UpdateQuantity"
+                                            data-pre-change-qty="4.0" id="quantity-30914d7638d60f5826cc6b9152"
+                                            name="quantity-30914d7638d60f5826cc6b9152" aria-label="quantity: 4">
+                                        <button name="qty-btn-up" class="qty-btn-up btn btn-light"
+                                            aria-label="increase quantity">+</button>
                                     </div>
                                 </div>
+                            </div>
 
-                                <input type="hidden" name="csrf_token"
-                                    value="qHsmBybMqxEW4rkttOf0KgGFHjXi5hpTGUiO20UMFCCeG6lHlT234WrU5kDtiAPXs7C73tKepFOe837NiVnywrrmW_cN4XEzcQgXjxd0naA19ao-5jPdd8sWywYkL1MKi6KR3Sw_Wz9ebQKmovdGq0iNKLlBnUOON2tvas2PlfbFakTmDEM=">
+                            <div class="col-4 line-item-total-price">
+                                <p class="line-item-price-info">
+                                    Total
+                                </p>
+                                <div class="item-total-30914d7638d60f5826cc6b9152 price">
+                                    <div class="strike-through value
+non-adjusted-price">
+                                        null
 
-                                <div class="col-5 promo-code-submit">
-                                    <button type="submit" class="btn btn-brown-custom btn-block promo-code-btn">
-                                        Submit
-                                    </button>
+                                    </div>
+
+                                    <div class="pricing without-promo item-total-30914d7638d60f5826cc6b9152">$159.80
+                                    </div>
+
                                 </div>
                             </div>
-                            <p class="coupon_loginRqd">
-                                Please <a class="login-cart"
-                                    href="https://www.godiva.com/on/demandware.store/Sites-Godiva-Site/en_US/Login-Show?action=login&amp;rurl=3">log
-                                    in</a> or <a class="login-cart"
-                                    href="https://www.godiva.com/on/demandware.store/Sites-Godiva-Site/en_US/Login-Show?action=register&amp;rurl=3">create
-                                    an account</a> to redeem your <span class="coupon_highlight"></span> offer.
-                            </p>
-                            <p class="coupon_orderTooSoon">
-                                You have already made a purchase with Godiva and are not eligible for the <span
-                                    class="coupon_highlight"></span> offer.
-                            </p>
+
+                            <div class="lg-split-shipment-form col-8 offset-2 d-none d-lg-block ">
+                                <form data-form-split="" method="post"
+                                    action="/on/demandware.store/Sites-Godiva-Site/en_US/CheckoutShippingServices-SplitShipment">
+                                    <input name="productLineItemUUID" type="hidden" value="30914d7638d60f5826cc6b9152">
+                                    <input name="redirectto" type="hidden" value="/cart">
+                                    <button class="btn btn-link btn-link-primary" type="submit">Ship this item to
+                                        more than one address</button>
+                                </form>
+
+                            </div>
+
+                            <div class="col-lg-1 hidden-md-down remove-line-item-lg"></div>
+
                         </div>
-                    </form>
 
+                        <div class="line-item-promo item-30914d7638d60f5826cc6b9152">
 
-                    <span>
-                        <a class="login-cart"
-                            href="https://www.godiva.com/on/demandware.store/Sites-Godiva-Site/en_US/Checkout-Login?rurl=3">
-                            Sign In</a>
-                        to your account to see available Rewards.
-                    </span>
+                        </div>
 
-                </div>
-            </div>
-            <div class="coupons-and-promos">
-
-
-
-                <span class="promotion-label">Promotions</span>
-
-
-
-                <div class="promotion-information">
-                    <span class="promotion-name">Free Shipping on Orders $39+</span>
-                    <span class="applied-promotion-discount">-$18.97</span>
-                </div>
-
-
-
-
-            </div>
-            <hr>
-
-            <div class="row">
-                <div class="col-8">
-                    <p class="subtotal-label">Subtotal</p>
-                </div>
-                <div class="col-4">
-                    <p class="text-right"><span class="sub-total">$279.60</span></p>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-8">
-                    <p>Shipping cost</p>
-                </div>
-                <div class="col-4">
-                    <p class="text-right shipping-cost">$18.97</p>
-                </div>
-            </div>
-
-
-            <div class="row shipping-discount ">
-                <div class="col-8">
-                    <p>Shipping Discount</p>
-                </div>
-                <div class="col-4">
-                    <p class="text-right shipping-discount-total">- $18.97</p>
-                </div>
-            </div>
-
-            <!-- Sales Tax -->
-            <div class="row">
-                <div class="col-8">
-                    <p>Estimated Sales Tax</p>
-                </div>
-                <div class="col-4">
-                    <p class="text-right tax-total">TBD</p>
-                </div>
-            </div>
-
-
-            <div class="row order-discount hide-order-discount">
-                <div class="col-8">
-                    <p>Order Discount</p>
-                </div>
-                <div class="col-4">
-                    <p class="text-right order-discount-total"> - $0.00</p>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-8">
-                    <strong>Estimated Total</strong>
-                </div>
-                <div class="col-4">
-                    <p class="text-right grand-total">$279.60</p>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-12 checkout-continue">
-                    <div class="checkout-and-applepay">
-                        <form class="cart-action-checkout" action="https://www.godiva.com/cart" method="post"
-                            id="checkout-form">
-
-                            <a href="https://www.godiva.com/on/demandware.store/Sites-Godiva-Site/en_US/Checkout-Login"
-                                class="btn btn-brown-custom btn-block checkout-btn btn-holiday  col cart" role="button"
-                                aria-pressed="true">
-                                Checkout
-                            </a>
-                        </form>
                     </div>
-                </div>
-            </div>
-        </div>
-    </div>
 
-    <div class="modal fade" id="removeProductModal" tabindex="-1" role="dialog"
-        aria-labelledby="removeProductLineItemModal">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header delete-confirmation-header">
-                    <h2 class="modal-title" id="removeProductLineItemModal">Remove Product?</h2>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
-                            aria-hidden="true">×</span></button>
+                    <div class="hidden-md-down">
+                        <button type="button" class="remove-btn-lg remove-product btn btn-light" data-toggle="modal"
+                            data-target=".cart.cart-page #removeProductModal" data-pid="14169"
+                            data-name="Holiday Luxury Chocolate Advent Calendar"
+                            data-action="/on/demandware.store/Sites-Godiva-Site/en_US/Cart-RemoveProductLineItem"
+                            data-uuid="30914d7638d60f5826cc6b9152"
+                            aria-label="Remove product Holiday Luxury Chocolate Advent Calendar">
+                            <span aria-hidden="true">×</span>
+                        </button>
+
+                    </div>
+
                 </div>
-                <div class="modal-body-remove delete-confirmation-body">
-                    Are you sure you want to remove the following product from the cart?
-                    <p class="product-to-remove"></p>
-                </div>
-                <div class="modal-footer-remove">
-                    <button type="button" class="btn btn-brown-outline" data-dismiss="modal">Cancel</button>
-                    <button type="button" class="btn btn-brown-custom cart-delete-confirmation-btn"
-                        data-dismiss="modal">
-                        Yes
-                    </button>
-                </div>
+
             </div>
+
         </div>
+
     </div>
 
 </div>

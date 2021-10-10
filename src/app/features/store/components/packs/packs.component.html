@@ -1,80 +1,193 @@
-<div class="ShelfContainer-jriw8u-1 StyledShelfContainer-sc-14owske-0 bzzriy shelf-container" data-test="product-shelf">
-   <div class="ShelfInfo-jriw8u-4 geETOq">
-      <h2 color="" class="h2-sc-1qr0otk-1 ShelfTitle-jriw8u-2 StyledShelfTitle-sc-14owske-1 cthtMM">Featured Products
-      </h2>
-      <p color="" class="Large-sc-1qr0otk-12 ShelfSubtitle-jriw8u-3 hJZZPu">Designed and formulated for quality.</p>
-   </div>
-   <div class="ShelfRow-sc-14owske-2 cShAuK">
-      <form (ngSubmit)="onSubmit()" *ngFor="let pack of allPacks" class="ShelfForm-sc-1rx7z1c-2 bMvgnU">
-         <div class="ShelfTile-jriw8u-5 StyledShelfTile-sc-1rx7z1c-0 dzoKRo">
-            <a>
-               <div class="ImageWrapper-jriw8u-7 IyKnP"><img
-                     src="https://www.harrys.com/harrys-cdnx-prod/assets/images/index_images/attachments/b303d48beb905aef5e3d22fc65df960ade4bce34."
-                     alt="Harry's Blades" class="ItemImage-jriw8u-8 bbLOqe"></div>
-            </a>
-            <div class="InfoSection-jriw8u-9 InformationSection-sc-1rx7z1c-4 kbUFbj">
-               <div class="ItemInfo-jriw8u-10 ItemInformation-sc-1rx7z1c-15 jPCBqZ">
-                  <a>
-                     <div color="" class="InfoWrapper-sc-1rx7z1c-3 ctsCIO">
-                        <div class="PriceAndDivider-sc-1rx7z1c-6 jegjYv">
-                           <p class="Medium-sc-1qr0otk-10 Bold-sc-1qr0otk-11 ProductShelfNameText-sc-1rx7z1c-5 dxTkMH">
-                              Harry's Blades
-                           </p>
-                           <div class="ProductPriceWrapper-sc-1rx7z1c-7 hDBqlQ">
-                              <span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
-                              <p
-                                 class="Medium-sc-1qr0otk-10 Bold-sc-1qr0otk-11 ProductShelfPriceText-sc-1rx7z1c-9 bLrAMN">
-                                 $30
-                              </p>
+<div id="mainContainer" class="container margin-top-sm">
+   <div id="shopContainer" class="row productgrid">
+       <div class="catalog-topnav amasty-catalog-topnav">
+       </div>
+
+       <div id="listContainer" class="col-12 col-sm-12 col-md-12 col-lg-12">
+           <div id="amasty-shopby-product-list">
+               <div class="top-toolbar">
+
+                   <div id="filterSort" class="row transparent-sod toolbar toolbar-products">
+
+                       <div class="col-6">
+                           <a id="filterButton" class="d-block d-sm-none filter-btn" data-toggle="collapse"
+                               href="#filterMobile" role="button" aria-expanded="false"
+                               aria-controls="filterMobile">FILTER BY<span class="icon-plus"></span></a>
+                       </div>
+
+                       <div class="col-6">
+                           <div class="toolbar-sorter sorter">
+                               <label class="sorter-label" for="sorter">Sort By</label>
+                               <select id="sorter" data-role="sorter" class="sorter-options">
+                                   <option value="position">
+                                       Position </option>
+                                   <option value="name">
+                                       Name </option>
+                                   <option value="price" selected="selected">
+                                       Price </option>
+                               </select>
+                               <a title="Set Descending Direction" href="#" class="action sorter-action sort-asc"
+                                   data-role="direction-switcher" data-value="desc">
+                                   <span>Set Descending Direction</span>
+                               </a>
                            </div>
-                        </div>
-                     </div>
-                  </a>
+                       </div>
+                   </div>
+
+                   <nav class="pagination-container" aria-label="shopPagination">
+                       <p class="page-info">
+                           Items <span>1</span>-<span>24</span> of <span>884</span> </p>
+
+                       <ul class="pagination justify-content-end">
+
+
+
+                           <li class="page-item active">
+                               <a class="page-link">1</a>
+                           </li>
+                           <li class="page-item">
+                               <a href="https://danielladraper.com/women?p=2" class="page-link">2</a>
+                           </li>
+                           <li class="page-item">
+                               <a href="https://danielladraper.com/women?p=3" class="page-link">3</a>
+                           </li>
+                           <li class="page-item">
+                               <a href="https://danielladraper.com/women?p=4" class="page-link">4</a>
+                           </li>
+                           <li class="page-item">
+                               <a href="https://danielladraper.com/women?p=5" class="page-link">5</a>
+                           </li>
+
+
+
+                           <li class="page-item">
+                               <a class="page-link" href="https://danielladraper.com/women?p=2"
+                                   title="Next">NEXT&nbsp;&nbsp;<span class="icon-chevron-thin-right"></span></a>
+                           </li>
+                       </ul>
+
+                   </nav>
+
+
+
                </div>
-            </div>
-            <div class="ProductSelectionElements-sc-1rx7z1c-10 ifYkZF">
-               <div class="QuickLearn-sc-1ctqu11-4 jihpZZ">
-                  <div class="QuickAddWrapper-sc-1ctqu11-5 eFKMzT">
-                     <div class="QuickLearnWrapper-sc-1ctqu11-3 khgyPF">
-                        <button aria-describedby="quick-learn-tooltip-817" aria-label="quick learn tooltip"
-                           class="QuickLearnCta-sc-1ctqu11-7 kfeiiW">
-                           <svg class="icon QuickLearnIcon-sc-1ctqu11-6 jIWiiw" viewBox="0 0 15 15">
-                              <use aria-hidden="true"></use>
-                           </svg>
-                        </button>
-                        <div class="Tooltip-sc-1ctqu11-0 QuickLearnTooltip-sc-1ctqu11-1 iTCfJR quick-learn-tooltip-817"
-                           id="quick-learn-tooltip-817" role="tooltip">
-                           <div class="markdown">
-                              <div>
-                                 <div class="markdown--h1">What’s Good About Them</div>
-                                 <ul class="markdown--ul">
-                                    <li>Designed for a close, comfortable shave</li>
-                                    <li>Engineered in our German factory from high-quality Swedish steel</li>
-                                    <li>Each razor cartridge features a flex hinge, so blades follow the contours of
-                                       your face
-                                    </li>
-                                    <li>Lubricating strip provides an even glide and...</li>
-                                 </ul>
-                              </div>
+
+
+               <div class="row category_list_products">
+                   <div *ngFor="let pack of allPacks"
+                       class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-3 col-xxl-3">
+                       <div class="product-list">
+
+                           <a class="product-link"
+                               href="https://danielladraper.com/silver-baby-stirrup-sailing-rope">
+
+                               <img class="product-image"
+                                   src="https://danielladraper.com/media/catalog/product/cache/90dc43685fc1f89a1968cf96207edf01/s/i/silverbabystirrupsailingrope1.jpg"
+                                   alt="Silver Baby Stirrup Sailing Rope" width="348" height="auto">
+                               <img class="detail-image"
+                                   src="https://danielladraper.com/media/catalog/product/cache/90dc43685fc1f89a1968cf96207edf01/s/i/silverbabystirrupsailingrope_hover.jpg"
+                                   alt="Silver Baby Stirrup Sailing Rope detailed" width="348" height="auto">
+
+                               <div class="product-desc">
+                                   <h2 class="product-title">Silver Baby Stirrup Sailing Rope</h2>
+                                   <div class="product-price" style="visibility: visible;">
+                                       <div class="price-box price-final_price" data-role="priceBox"
+                                           data-product-id="11667" data-price-box="product-id-11667">
+
+
+                                           <span class="price-container price-final_price tax weee"
+                                               style="visibility: visible;">
+                                               <span id="product-price-11667" data-price-amount="24.996001"
+                                                   data-price-type="finalPrice" class="price-wrapper "><span
+                                                       class="price">£25.00</span></span>
+                                           </span>
+
+                                       </div>
+                                   </div>
+                                   <span class="product-tag pink">New Design</span>
+                               </div>
+                           </a>
+                           <div data-role="add-to-links">
+                               <a class="wishlist-add" href="#" title="Add to Wish List"
+                                   aria-label="Add to Wish List"
+                                   data-post="{&quot;action&quot;:&quot;https:\/\/danielladraper.com\/guestwishlist\/index\/add\/&quot;,&quot;data&quot;:{&quot;product&quot;:&quot;11667&quot;,&quot;uenc&quot;:&quot;aHR0cHM6Ly9kYW5pZWxsYWRyYXBlci5jb20vd29tZW4,&quot;}}"
+                                   data-action="add-to-wishlist" role="button">
+                                   <span class="icon-DDHeartOutline"></span>
+                               </a>
                            </div>
-                        </div>
-                     </div>
-                     <button id="productCardCta-432" class="ProductCardButton-sc-1kja9x0-0 jPJPoK product-card-cta"
-                        data-test="product-card-cta" aria-label="Select"
-                        (click)="addToCart($event);$event.stopPropagation();">Select</button>
-                     <div></div>
-                     <div class="Tooltip-p3nxad-0 ConfirmationTooltip-p3nxad-1 jWPIgm">
-                        <p class="Medium-sc-1qr0otk-10 Title-p3nxad-2 gJHqSx">
-                           <svg class="icon CheckmarkIcon-p3nxad-3 iSkuIw" viewBox="0 0 49.48 41.9">
-                              <use aria-hidden="true"></use>
-                           </svg>
-                        </p>
-                     </div>
-                  </div>
-                  <div></div>
+                       </div>
+                   </div>
                </div>
-            </div>
-         </div>
-      </form>
+
+               <div class="bottom-toolbar">
+
+                   <div id="filterSort" class="row transparent-sod toolbar toolbar-products">
+
+                       <div class="col-6">
+                           <a id="filterButton" class="d-block d-sm-none filter-btn" data-toggle="collapse"
+                               href="#filterMobile" role="button" aria-expanded="false"
+                               aria-controls="filterMobile">FILTER BY<span class="icon-plus"></span></a>
+                       </div>
+
+                       <div class="col-6">
+                           <div class="toolbar-sorter sorter">
+                               <label class="sorter-label" for="sorter">Sort By</label>
+                               <select id="sorter" data-role="sorter" class="sorter-options">
+                                   <option value="position">
+                                       Position </option>
+                                   <option value="name">
+                                       Name </option>
+                                   <option value="price" selected="selected">
+                                       Price </option>
+                               </select>
+                               <a title="Set Descending Direction" href="#" class="action sorter-action sort-asc"
+                                   data-role="direction-switcher" data-value="desc">
+                                   <span>Set Descending Direction</span>
+                               </a>
+                           </div>
+                       </div>
+                   </div>
+
+                   <nav class="pagination-container" aria-label="shopPagination">
+                       <p class="page-info">
+                           Items <span>1</span>-<span>24</span> of <span>884</span> </p>
+
+                       <ul class="pagination justify-content-end">
+
+
+
+                           <li class="page-item active">
+                               <a class="page-link">1</a>
+                           </li>
+                           <li class="page-item">
+                               <a href="https://danielladraper.com/women?p=2" class="page-link">2</a>
+                           </li>
+                           <li class="page-item">
+                               <a href="https://danielladraper.com/women?p=3" class="page-link">3</a>
+                           </li>
+                           <li class="page-item">
+                               <a href="https://danielladraper.com/women?p=4" class="page-link">4</a>
+                           </li>
+                           <li class="page-item">
+                               <a href="https://danielladraper.com/women?p=5" class="page-link">5</a>
+                           </li>
+
+
+
+                           <li class="page-item">
+                               <a class="page-link" href="https://danielladraper.com/women?p=2"
+                                   title="Next">NEXT&nbsp;&nbsp;<span class="icon-chevron-thin-right"></span></a>
+                           </li>
+                       </ul>
+
+                   </nav>
+
+
+
+               </div>
+
+           </div>
+       </div>
+
    </div>
 </div>
