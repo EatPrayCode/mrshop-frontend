@@ -1,0 +1,2662 @@
+/*! CSS Used from: Embedded */
+.ng-hide:not(.ng-hide-animate) {
+    display: none !important;
+}
+/*! CSS Used from: Embedded */
+#feedLoading {
+    left: 50% !important;
+    padding: 0px !important;
+    margin-left: -50px !important;
+    margin-top: -50px !important;
+}
+.search-loader-main {
+    display: none;
+}
+.search-loader-main,
+.search-loader-main:after {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    background: url(//static.abhibus.com/mobile_web/img/home-page-icons-n.png) no-repeat;
+    background-size: 375px;
+    background-position: -153px -313px;
+    background-color: #ffffff;
+}
+.search-loader,
+.search-loader:after {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+.search-loader {
+    display: none;
+    font-size: 10px;
+    position: relative;
+    text-indent: -9999em;
+    border-top: 1.1em solid rgba(196, 0, 0, 0.2);
+    border-right: 1.1em solid rgba(196, 0, 0, 0.2);
+    border-bottom: 1.1em solid rgba(196, 0, 0, 0.2);
+    border-left: 1.1em solid #c40000;
+    -webkit-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-animation: load8 1.1s infinite linear;
+    animation: load8 1.1s infinite linear;
+}
+#loader_overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    cursor: pointer;
+}
+.show-loader {
+    display: block !important;
+}
+/*! CSS Used from: Embedded */
+li:before {
+    content: "•";
+    color: red;
+    font-size: 20px;
+    margin: 5px;
+    position: relative;
+    top: 3px;
+}
+.searchresult {
+    background: url(//static.abhibus.com/img/diwali/wap/searchtop-bg.png) no-repeat -57px -24px !important;
+    margin-top: 50px !important;
+    background-size: 117% !important;
+}
+input[type="checkbox"]:not(old),
+input[type="radio"]:not(old) {
+    width: 20px !important;
+    margin: 0px !important;
+    font-size: 12px !important;
+    opacity: 0 !important;
+    position: relative !important;
+    top: -4px !important;
+    left: 8px !important;
+    height: 20px !important;
+}
+.datalabels1.label-seats {
+    background-color: #f8f8f8;
+}
+.onward-close {
+    font-size: 12px !important;
+}
+.information {
+    height: auto;
+    position: absolute;
+    width: 100%;
+    min-height: auto;
+    background-color: #f8f8fa;
+    z-index: 99;
+    bottom: 0px;
+    overflow: scroll;
+    max-height: 95%;
+}
+.datalabels1 {
+    border: 0px solid !important;
+    top: 0px !important;
+    left: 0px !important;
+    width: 100% !important;
+    height: 65px !important;
+    padding: 10px 2% !important;
+}
+.seat-fare-info {
+    font-size: 12px !important;
+}
+.label-padding {
+    padding: 0% 0% 0% 2%;
+    font-weight: normal;
+}
+.service-info {
+    border-bottom: 1px solid #eaeaea;
+    height: 75px;
+    padding-top: 10px;
+}
+.service-info .col1 {
+    width: 50%;
+    float: left;
+    padding: 0% 0% 2% 2%;
+}
+.service-info .col2 {
+    width: 50%;
+    float: right;
+    padding: 0% 0% 2% 2%;
+}
+.brdpoint-icon,
+.busfilter-icon {
+    width: 24px;
+    height: 24px;
+    background: url(//static.abhibus.com/mobile_web/img/mobile-icons-all.png) no-repeat;
+    background-size: 415px;
+    position: relative;
+    float: right;
+}
+.brdpoint-icon {
+    background-position: -295px -379px;
+    margin-top: -5px;
+}
+.busfilter-icon {
+    background-position: -4px -245px;
+    margin-top: -3px;
+}
+.price-drop-filter {
+    background-position: -460px -105px !important;
+    background-size: 500px !important;
+}
+.concession-info {
+    z-index: 1000;
+    min-height: 80px;
+    position: fixed;
+    bottom: 0px;
+    background: #fff;
+    width: 100%;
+    font-size: 10px;
+    border: 1px solid #ccc;
+}
+.apply-concession {
+    font-size: 14px !important;
+    font-weight: 300 !important;
+    border: 1px solid #c40000 !important;
+    color: #fff !important;
+    background: #cf000b !important;
+    padding: 1% !important;
+    width: 75% !important;
+    line-height: 25px !important;
+    margin: 0 !important;
+    margin-top: 10px !important;
+}
+.filter input[type="number"] {
+    border-bottom: solid 1px #ccc;
+    color: #666;
+    margin: 4%;
+    padding: 2%;
+    width: 92%;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+.concession-panel {
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    cursor: not-allowed;
+    z-index: 3333;
+    background-color: rgba(0, 0, 0, 0.6);
+    transition: opacity 0.05s linear;
+}
+#seating-layout {
+    padding-bottom: 0px;
+    margin-top: 0px;
+    top: 20px;
+}
+.bus-track {
+    padding: 0% !important;
+    height: 24px;
+    width: 20px !important;
+    display: inline-block;
+    float: none !important;
+}
+.legends-overlay {
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    cursor: not-allowed;
+    z-index: 3333;
+    background-color: rgba(0, 0, 0, 0.6);
+    transition: opacity 0.05s linear;
+}
+.scrolling-wrapper {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 10px;
+}
+.rb-switcher i {
+    display: inline-block;
+    cursor: pointer;
+    height: 25px;
+    width: 25px;
+}
+#sorting {
+    border: 1px solid #c8c8c8;
+    width: 95%;
+    padding: 0px 0px 0px 0px !important;
+}
+.sorting-title {
+    position: relative;
+    top: -12px;
+    font-weight: normal;
+}
+.sorting-check {
+    border-bottom: solid 1px #c8c8c8 !important;
+    padding: 8px 10px 3px 10px;
+    margin: 0px;
+}
+.bustype {
+    color: #323232 !important;
+}
+input[type="checkbox"]:not(old) + label {
+    display: inline;
+    margin-left: -2em;
+    line-height: 0px !important;
+    width: 88%;
+}
+.sorting-sub-title {
+    color: #000;
+}
+.search-calendar {
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    padding: 2%;
+    margin-top: 45px;
+    padding-top: 0px;
+    border-radius: 3px;
+}
+.search-calendar .before-arrow {
+    width: 0px;
+    height: 0px;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #ffffff;
+    margin: auto;
+}
+.search-calendar ul {
+    list-style-type: none;
+    font-size: 12px;
+    text-align: center;
+    margin: auto !important;
+    background: #fff;
+    padding: 10px;
+    border-radius: 3px;
+}
+.c-day-name {
+    font-size: 10px;
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+.search-calendar ul li:before {
+    display: none;
+}
+.search-calendar ul li {
+    display: inline-block;
+    width: 20%;
+}
+.search-calendar ul li span {
+    display: block;
+    margin: auto;
+}
+.search-calendar-day {
+    line-height: 25px;
+}
+.search-selected-day {
+    background-color: #e76a60;
+    color: #fff;
+    border-radius: 50%;
+    height: 25px;
+    width: 25px;
+    text-align: center;
+}
+header .title h2 {
+    text-align: center;
+}
+.seat-breadcrumb {
+    background: #f7f7f7;
+    padding: 3% 2%;
+    overflow: hidden;
+    color: #666;
+    border-bottom: 1px solid #e1e1e1;
+}
+.seat-breadcrumb ul {
+    white-space: nowrap;
+    overflow-x: scroll;
+    margin-bottom: 0px;
+}
+.seat-breadcrumb ul li {
+    list-style-type: none;
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0px 2px;
+    overflow-x: scroll;
+    display: inline;
+}
+.seat-breadcrumb ul li::before {
+    content: " ";
+    color: red;
+    font-size: 0;
+    margin: 0;
+    position: relative;
+    top: 0;
+}
+.seat-breadcrumb .active {
+    color: #333;
+    border-bottom: 4px solid #e76a60;
+    font-weight: 500;
+}
+.overlay-index {
+    z-index: 999 !important;
+}
+.filter .top-header-title label {
+    font-weight: 400 !important;
+}
+.seat-info-bot {
+    border: none !important;
+    border-top: 1px solid #e1e1e1 !important;
+}
+#menu_boardingpoints,
+#menu_droppingpoints {
+    top: 0px !important;
+}
+#menu_boardingpoints .top-header-title,
+#menu_droppingpoints .top-header-title {
+    background: #fff !important;
+}
+#menu_boardingpoints.cbp-spmenu-selectboardingpoints input[type="text"],
+#menu_droppingpoints.cbp-spmenu-selectdropingpoints input[type="text"] {
+    background: #fff !important;
+    color: #333 !important;
+    width: 80% !important;
+    font-size: 14px !important;
+}
+#menu_boardingpoints .search-bar,
+#menu_droppingpoints .search-bar {
+    width: 100%;
+    padding-bottom: 8px;
+}
+.cbp-spmenu-selectboardingpoints h3,
+.cbp-spmenu-selectdropingpoints h3 {
+    background: #f7f7f7 !important;
+    padding: 5px 0px 5px 20px !important;
+}
+.cbp-spmenu-selectboardingpoints .top-header-title,
+.cbp-spmenu-selectdropingpoints .top-header-title {
+    padding: 2% 4% 0% 4% !important;
+    height: 40px !important;
+}
+.searchresult .searchresultlist {
+    border-radius: 10px !important;
+    box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28) !important;
+    border-color: rgba(223, 225, 229, 0) !important;
+}
+header .title h2 label {
+    font-weight: 400;
+}
+header .title h2 {
+    font-size: 16px !important;
+    font-weight: 100 !important;
+    line-height: 12px !important;
+    margin-top: 10px !important;
+}
+.seat-fare-info-title,
+.onward-close {
+    font-size: 14px;
+}
+.search-bar .search-icon {
+    background: url(//static.abhibus.com/mobile_web/img/mobile-icons-all-new_v30.png) no-repeat;
+    background-position: -156px -460px;
+    background-size: 400px;
+}
+.searchresult .searchresultlist-top {
+    border-bottom: solid 1px #e1e1e1 !important;
+}
+.searchresult .searchresultlist-top .searchresultlist-top-left p {
+    padding-bottom: 3px;
+}
+.searchresult .searchresultlist-top .searchresultlist-top-left h3 {
+    font-size: 16px !important;
+}
+.searchresult .searchresultlist-top .searchresultlist-top-left p {
+    font-size: 13px !important;
+}
+.searchresult .searchresultlist-bottom span {
+    font-size: 13px !important;
+}
+.service-timing {
+    font-size: 18px;
+    font-weight: 300;
+}
+.service-timing time {
+    font-weight: 400;
+}
+.price-info {
+    font-size: 18px;
+    font-weight: 300;
+    text-align: right;
+}
+.price-info label {
+    display: block;
+    color: #000 !important;
+    font-weight: 500 !important;
+    margin-bottom: 0px;
+}
+.avail-seat-count {
+    color: #717171;
+    font-size: 14px !important;
+    font-weight: 400 !important;
+}
+.sort-section span {
+    display: block;
+    position: relative;
+    bottom: 5px;
+}
+#seating-layout {
+    height: 100% !important;
+    min-height: 500px !important;
+}
+.ratings-container {
+    border-radius: 3px;
+}
+.ratings-container span {
+    display: block;
+}
+.rating-sec {
+    display: inline !important;
+    padding: 3px 5px 3px 8px;
+    font-size: 14px !important;
+    color: #000 !important;
+    font-weight: 400 !important;
+    border-radius: 3px;
+}
+.rating-sec img {
+    margin-top: -3px;
+}
+.no-of-ratings {
+    color: #7a7a7a;
+    font-size: 12px;
+    text-align: left;
+    padding: 4px 2px 0px 0px;
+}
+.searchresult .searchresultlist-bottom .dot-icon-left span {
+    font-size: 22px !important;
+    color: #cf000b !important;
+}
+.dot-icon-left {
+    float: left;
+}
+.dot-icon-right {
+    float: right;
+}
+.searchresult .searchresultlist-bottom .dot-icon-right span {
+    font-size: 22px !important;
+    color: #ff6870 !important;
+}
+.searchresult .searchresultlist {
+    min-height: 123px;
+}
+.dot-icon-sec {
+    border-bottom: 1px dashed #e1e1e1;
+    display: inline-block;
+    width: 33%;
+    position: relative;
+    height: 10px;
+    line-height: 17px;
+    margin-bottom: 5px;
+}
+.travel-time-middle-sec {
+    position: absolute;
+    width: auto;
+    bottom: 0px;
+    line-height: 17px;
+    text-align: center;
+    margin: auto;
+    background: #fff;
+    left: 0;
+    margin-left: 22%;
+    margin-bottom: -9px;
+}
+.searchresult .searchresultlist-top .searchresultlist-top-right {
+    min-width: 16%;
+}
+.service-soldout {
+    color: red;
+}
+.soldout-card {
+    opacity: 0.6;
+}
+.bus-details1 {
+    padding-left: 2%;
+    background-color: #8c8c8c !important;
+    color: #fff;
+    padding: 12px 0px 12px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bus-details2 {
+    font-size: 12px;
+    background-color: #8c8c8c !important;
+    text-align: left;
+    color: #fff;
+    padding: 10% 3% 10% 3%;
+    display: flex;
+    flex-direction: row;
+}
+.bus-details-up {
+    background: url(//static.abhibus.com/mobile_web/img/mobile-icons-all.png) no-repeat;
+    background-size: 400px;
+    display: inline-block;
+    padding: 5px 10px 9px 18px;
+    margin-left: 5px;
+    position: relative;
+    top: 1px;
+    left: 3px;
+}
+.bus-details-up {
+    background-position: -98px -128px;
+}
+.bus-details-info {
+    padding: 2%;
+    width: 100%;
+    background-color: #f8f8fa;
+    margin-top: 70px;
+}
+.bus-info {
+    padding: 2% 2% 2% 6%;
+}
+.list-bullet {
+    height: 5px;
+    width: 5px;
+    margin: 0 2px;
+    background-color: #c40000;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: -15px;
+}
+.bus-info-title {
+    font-size: 16px;
+    font-weight: 500;
+}
+.datalabels1 label {
+    margin-top: 3px !important;
+    margin-right: 3px;
+    font-weight: normal;
+    margin-right: 0px !important;
+}
+.seat-aval,
+.seat-sel,
+.seat-unaval,
+.seat-lds,
+.seat-avail-lds,
+.seat-avail-male {
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    border: 1px solid;
+    border-radius: 15% !important;
+}
+.seat-aval {
+    border: 2px solid #ccc;
+}
+.seat-sel {
+    border: 2px solid #9fd659;
+    background: #bfe58e;
+}
+.seat-unaval {
+    border: 2px solid #ccc;
+    background: #ebebeb;
+}
+.seat-lds {
+    border: 2px solid #ed719e;
+    background: #f6d6f5;
+}
+.seat-avail-lds {
+    border: 2px solid #ed719e;
+}
+.seat-avail-male {
+    border: 2px solid #00a8ff;
+}
+.datalabels label {
+    margin-right: 0px;
+    font-weight: normal !important;
+}
+.booking-details-close {
+    position: fixed;
+    width: 100%;
+}
+.seat-info-bot .c3 input[type="button"] {
+    font-size: 16px !important;
+    line-height: 43px !important;
+    border: 1px solid #e76a60 !important;
+    background: #e76a60 !important;
+}
+.floating-btns-filters {
+    z-index: 88;
+    border-radius: 10px 10px 0px 0px;
+}
+.strike-price {
+    text-decoration: line-through;
+}
+.header-date label {
+    font-weight: normal !important;
+    font-size: 12px;
+}
+.header-date label::after {
+    content: "\25BE";
+    display: inline-block;
+    -webkit-font-smoothing: antialiased;
+    font: normal 25px/1 "dashicons";
+    padding-left: 3px;
+    vertical-align: top;
+    color: #fff;
+    margin-top: -7px;
+}
+.price-info .onwards {
+    color: #717171 !important;
+    font-size: 14px !important;
+    font-weight: 400 !important;
+}
+.safety-title {
+    color: #323232 !important;
+    position: relative;
+    top: -8px;
+}
+.avail-seat-count {
+    overflow: hidden;
+    position: relative;
+    width: 90%;
+    white-space: nowrap;
+}
+.bus-details-tabs {
+    display: flex;
+    margin-top: 45px;
+    flex-wrap: nowrap;
+    position: fixed;
+    width: 100%;
+    background: #eceaea;
+    overflow-x: auto;
+}
+.bus-details-tabs > div {
+    text-align: center;
+    font-size: 11px;
+    margin: 0px 2px;
+    background-color: #d0cece;
+    height: 25px;
+    line-height: 19px;
+    padding: 4px;
+    width: auto;
+    display: inline-block;
+    flex: 0 0 auto;
+}
+.active-details-tab {
+    background: #e76a60 !important;
+    color: #ffffff !important;
+}
+.active-tab-content {
+    border-left: 2px solid #e76a60;
+    background: #eceaea;
+}
+.bus-details-subinfo {
+    padding: 2%;
+    width: 100%;
+}
+.active-title {
+    color: #e76a60;
+}
+.label-seats.cls-ameniies {
+    background-color: #f8f8f8;
+}
+.social-distance-msg {
+    position: fixed;
+    bottom: 45px;
+    width: 100%;
+    overflow: hidden;
+    z-index: 999;
+    background: #f38431;
+    color: #fff;
+    padding: 2%;
+}
+.social-distance-col1 {
+    width: 90%;
+    float: left;
+}
+.social-distance-col2 {
+    width: 10%;
+    float: left;
+    text-align: center;
+}
+.social-close {
+    padding: 3px 4px 3px 5px;
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+    line-height: 35px;
+}
+.cal-right-arrow,
+.cal-left-arrow {
+    background: url(//www.abhibus.com/img/mobile/ui-icons_676767_256x240.png) no-repeat;
+    background-size: 400px;
+    width: 40px;
+    height: 50px;
+    display: block;
+}
+.cal-right-arrow {
+    background-position: -60px 19px;
+}
+.cal-left-arrow {
+    background-position: -154px 19px;
+}
+.price-info label.available-seats {
+    color: #717171 !important;
+}
+.main-amenity {
+    display: inline-block;
+}
+.main-amenity span.safety-title {
+    font-size: 12px !important;
+}
+.serp-amenities i {
+    width: 30px;
+}
+.active-details-tab {
+    background: #e76a60 !important;
+    color: #ffffff !important;
+}
+.active-tab-content {
+    border-left: 2px solid #e76a60;
+    background: #eceaea;
+}
+.active-title {
+    color: #e76a60;
+    font-weight: 600;
+}
+.price-info .fares label {
+    font-size: 16px !important;
+}
+/*! CSS Used from: Embedded */
+.login-cion-big {
+    background: url(//static.abhibus.com/mobile_web/img/abhiprime-bg-new_v4.webp) no-repeat !important;
+    background-size: 400px !important;
+    height: 80px !important;
+    background-position: -107px -327px !important;
+}
+.login-menu {
+    overflow: hidden;
+    color: #fff;
+    font-size: 14px;
+    background: #474747 !important;
+}
+.cbp-spmenu-vertical {
+    width: 100% !important;
+}
+.login-menu .column-1,
+.login-menu2 .column-1 {
+    float: left;
+    width: 64px !important;
+}
+.login-menu .column-2,
+.login-menu2 .column-2 {
+    float: left;
+    height: 100%;
+    width: 60%;
+}
+.login-menu .column-3,
+.login-menu2 .column-3 {
+    float: right;
+    width: 50px;
+    height: 100%;
+}
+.login-text {
+    position: relative;
+    top: -3px;
+    padding-left: 2%;
+}
+.login-text3 {
+    position: relative;
+    top: 15px;
+    padding-left: 2%;
+}
+.login-arrow-icon {
+    position: relative;
+    top: 16px;
+}
+.login-text span,
+.login-text3 span {
+    display: block;
+}
+.cbp-spmenu a.prime::before {
+    background: url(//static.abhibus.com/mobile_web/img/abhiprime-bg-new_v4.webp) no-repeat;
+    height: 30px;
+    display: block;
+    line-height: 40px;
+    float: left;
+    content: "";
+    width: 28px;
+    margin-top: -5px;
+    background-position: 0px -31px;
+    background-size: 76px;
+}
+.login-arrow-icon {
+    background-size: 430px !important;
+    background-position: -0px -123px !important;
+}
+.login-menu2 {
+    height: 80px !important;
+    background: #474747 !important;
+    overflow: hidden !important;
+    color: #fff !important;
+    font-size: 14px !important;
+}
+.login-sub-title {
+    color: #cccccc;
+}
+.cbp-spmenu a.aboutus::before,
+.cbp-spmenu a.cancelticket::before,
+.cbp-spmenu a.contactus::before,
+.cbp-spmenu a.terms::before {
+    width: 40px !important;
+}
+.cbp-spmenu a.faqs::before {
+    width: 40px !important;
+    background-size: 349px !important;
+}
+.cbp-spmenu a.cancelticket::before {
+    background-size: 378px;
+}
+.cbp-spmenu a.aboutus::before {
+    background-size: 397px;
+}
+.cbp-spmenu a.signout::before {
+    width: 40px !important;
+}
+.loginpage-logo {
+    text-align: center;
+    padding: 2%;
+}
+.loginpage-logo img {
+    width: 150px;
+    margin: auto;
+}
+.login-page h2::before {
+    content: none !important;
+}
+.login-page .passenger-info {
+    padding: 2% 0 !important;
+}
+.new-textbox {
+    padding: 2% !important;
+}
+.login-page p span {
+    margin-top: 5px !important;
+}
+.font-red {
+    margin-left: 2px;
+}
+#login_form .passenger-info {
+    background-color: rgb(248, 248, 250) !important;
+}
+.login-btn {
+    margin: auto !important;
+    display: block !important;
+    width: 240px !important;
+    position: relative;
+    top: 10px;
+    margin-top: 15px !important;
+    padding: 4% !important;
+}
+.login-google {
+    width: 50%;
+    float: left;
+    text-align: left;
+}
+.login-facebook {
+    width: 50%;
+    float: left;
+    text-align: right;
+}
+.profile-info {
+    color: #333;
+    text-align: center;
+}
+.btn-skip {
+    text-align: center;
+    margin-top: 10px;
+    font-weight: 600;
+    font-size: 14px;
+    color: #cf000b;
+}
+#container_gender .rb-switcher i,
+#container_gender .rb-switcher.male i {
+    height: 35px !important;
+}
+.login-page p {
+    border-bottom: none !important;
+}
+.login-page p span {
+    background: transparent !important;
+    color: #9e9e9e !important;
+    font-size: 14px !important;
+    font-weight: 600 !important;
+}
+#loginMobile {
+    font-size: 16px !important;
+}
+.s-s-media img {
+    box-shadow: 2px 3px 3px 0 rgba(32, 33, 36, 0.28);
+    box-sizing: border-box;
+    border-radius: 50%;
+    margin: 5%;
+}
+#loginProfileForm .input__label-content {
+    padding-left: 15px !important;
+}
+#profilefullName,
+#profileEmail {
+    padding-left: 15px !important;
+}
+#loginProfileForm .rb-switcher {
+    margin: 0px !important;
+    width: 48%;
+    border-left: 1px solid #e1e1e1 !important;
+    padding-top: 8px !important;
+}
+#loginMobile {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    width: calc(100% - 2em);
+    vertical-align: top;
+    border: solid 1px #dadada;
+    background: #fff;
+    padding: 2%;
+}
+.freerides::before {
+    height: 30px;
+    display: block;
+    line-height: 40px;
+    float: left;
+    content: "";
+    width: 40px !important;
+    margin-top: -5px;
+    background: url(//static.abhibus.com/mobile_web/img/Friend-72.png) 0px 0px no-repeat;
+    background-size: 25px;
+}
+.passenger-info input[type="submit"] {
+    border: 1px solid #e76a60 !important;
+    background: #e76a60 !important;
+}
+/*! CSS Used from: https://static.abhibus.com/mobile_web/css/style_0_0_4.css ; media=all */
+@media all {
+    header {
+        display: block;
+    }
+    ul {
+        margin: 1em 0;
+        padding: 0;
+    }
+    body,
+    form {
+        margin: 0;
+    }
+    img {
+        border: 0;
+    }
+    ul {
+        padding: 0;
+    }
+    header .title {
+        text-align: center;
+    }
+    .input__label {
+        -khtml-user-select: none;
+        -moz-user-select: none;
+    }
+    a {
+        text-decoration: none;
+    }
+    .theme-green .back-bar {
+        // filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#ffeeeeee', endColorstr='#ffdddddd', GradientType=0);
+    }
+    body {
+        font-size: 1em;
+    }
+    button,
+    input {
+        font-family: sans-serif;
+        color: #222;
+    }
+    body {
+        line-height: 1.4;
+        overflow-y: scroll;
+        overflow: auto;
+    }
+    a {
+        outline: 0 !important;
+    }
+    .input__field:focus,
+    a:active,
+    a:focus,
+    a:hover {
+        outline: 0;
+    }
+    a:visited {
+        color: #bbb;
+    }
+    a:hover {
+        color: #737373;
+    }
+    a,
+    b,
+    body,
+    div,
+    form,
+    h2,
+    h3,
+    h4,
+    i,
+    img,
+    input,
+    label,
+    li,
+    p,
+    span,
+    ul {
+        font-family: "Open Sans", Arial, Helvetica, sans-serif;
+        font-weight: 400;
+    }
+    * {
+        font-family: "Open Sans", Arial, sans-serif;
+        font-weight: 400;
+    }
+    img {
+        -ms-interpolation-mode: bicubic;
+        vertical-align: middle;
+    }
+    label {
+        cursor: pointer;
+    }
+    button,
+    input {
+        font-size: 100%;
+        margin: 0;
+        vertical-align: baseline;
+    }
+    button,
+    input {
+        line-height: normal;
+    }
+    button,
+    input[type="button"],
+    input[type="submit"] {
+        cursor: pointer;
+        -webkit-appearance: button;
+    }
+    input[type="checkbox"],
+    input[type="radio"] {
+        box-sizing: border-box;
+        padding: 0;
+    }
+    button::-moz-focus-inner,
+    input::-moz-focus-inner {
+        border: 0;
+        padding: 0;
+    }
+    body {
+        background-color: #f8f8fa;
+    }
+    body {
+        background-color: #f8f8fa !important;
+    }
+    li,
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    .ac-icon-filter,
+    .back-icon,
+    .done-icon,
+    .login-cion-big,
+    .menu,
+    .nonac-icon-filter,
+    .reset-icon,
+    .rtn-home-icon,
+    .search-icon,
+    .slepeer-icon-filter,
+    .time-10-5-filter,
+    .time-5-11-filter,
+    .time-Afr-11-filter,
+    .time-be-10-filter,
+    .login-arrow-icon,
+    .price-drop-filter,
+    .seater-icon-filter {
+        background: url(//static.abhibus.com/mobile_web/img/mobile-icons-all-new_v30.png) no-repeat;
+    }
+    .back-icon,
+    .search-icon {
+        position: relative;
+        float: left;
+    }
+    .login-cion-big {
+        background-size: 800px;
+        background-position: -344px -9px;
+        display: inline-block;
+        width: 64px;
+        height: 50px;
+        cursor: pointer;
+        margin: auto;
+    }
+    .login-arrow-icon {
+        background-size: 400px;
+        background-position: -0px -195px;
+        height: 40px;
+        display: block;
+        float: left;
+        width: 50px;
+        float: right;
+    }
+    .cbp-spmenu-test a {
+        border: 0px solid !important;
+    }
+    .communicate {
+        border-top: 1px solid #e9e9e9;
+        width: 100%;
+        color: #737373;
+        padding: 2% 0% 2% 6%;
+    }
+    .back-icon {
+        width: 45px;
+        height: 30px;
+        display: block;
+        background-position: -400px -340px !important;
+        background-size: 500px;
+        line-height: 40px;
+        right: 8px;
+        top: 0px;
+    }
+    .search-icon {
+        border-bottom: none;
+        width: 36px;
+        height: 25px;
+        display: inline-block;
+        background-position: -159px -460px;
+        background-size: 400px;
+        margin-top: 0;
+        bottom: 0;
+    }
+    .done-icon,
+    .reset-icon {
+        display: block;
+        width: 40px;
+        height: 40px;
+        float: right;
+        cursor: pointer;
+    }
+    .reset-icon {
+        background-size: 500px;
+        background-position: 1px -344px;
+    }
+    .done-icon {
+        background-size: 450px;
+        background-position: -153px -305px;
+    }
+    .ac-icon-filter,
+    .nonac-icon-filter,
+    .slepeer-icon-filter,
+    .seater-icon-filter,
+    .time-10-5-filter,
+    .time-5-11-filter,
+    .time-Afr-11-filter,
+    .time-be-10-filter,
+    .price-drop-filter {
+        background-size: 550px;
+        width: 30px;
+        height: 30px;
+        margin: auto;
+        display: block;
+    }
+    .ac-icon-filter {
+        background-position: -447px -274px;
+    }
+    .nonac-icon-filter {
+        background-position: -390px -274px;
+    }
+    .price-drop-filter {
+        background-position: -449px -60px;
+    }
+    .slepeer-icon-filter {
+        background-position: -510px -274px;
+    }
+    .time-be-10-filter {
+        background-position: -136px -274px;
+    }
+    .time-10-5-filter {
+        background-position: -200px -274px;
+    }
+    .time-5-11-filter {
+        background-position: -263px -274px;
+    }
+    .time-Afr-11-filter {
+        background-position: -324px -277px;
+    }
+    header {
+        position: relative;
+        overflow: hidden;
+        background: #323232;
+        height: 45px;
+    }
+    header .menu {
+        left: 2%;
+        position: absolute;
+    }
+    header .menu span {
+        display: block;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+    }
+    header .title {
+        color: #fff;
+        font-weight: 100;
+        display: block;
+    }
+    header .title h2 {
+        font-size: 14px;
+        font-weight: 200;
+        margin-top: 12px;
+        line-height: 18px;
+    }
+    .login-page p {
+        text-align: center;
+    }
+    .login-menu {
+        height: 70px;
+        padding: 0%;
+        background: #a9a9a9;
+    }
+    .cbp-spmenu a.aboutus::before,
+    .cbp-spmenu a.cancelticket::before,
+    .cbp-spmenu a.contactus::before,
+    .cbp-spmenu a.terms::before {
+        height: 30px;
+        display: block;
+        line-height: 40px;
+        float: left;
+        content: "";
+        width: 50px;
+        margin-top: -5px;
+    }
+    .cbp-spmenu a.cancelticket::before {
+        background: url(//static.abhibus.com/mobile_web/img/mobile-icons-all-new_v30.png) -48px -431px no-repeat;
+        background-size: 380px;
+    }
+    .cbp-spmenu a.faqs::before {
+        content: "";
+        width: 50px;
+        height: 30px;
+        background: url(//static.abhibus.com/mobile_web/img/mobile-icons-all-new_v30.png) -95px -466px no-repeat;
+        display: block;
+        background-size: 350px;
+        line-height: 40px;
+        float: left;
+        margin-top: -5px;
+    }
+    .cbp-spmenu a.terms::before {
+        background: url(//static.abhibus.com/mobile_web/img/mobile-icons-all-new_v30.png) -140px -466px no-repeat;
+        background-size: 350px;
+    }
+    .cbp-spmenu a.aboutus::before {
+        background: url(//static.abhibus.com/mobile_web/img/mobile-icons-all-new_v30.png) -5px -415px no-repeat;
+        background-size: 400px;
+    }
+    .cbp-spmenu a.contactus::before {
+        background: url(//static.abhibus.com/mobile_web/img/mobile-icons-all-new_v30.png) -362px -408px no-repeat;
+        background-size: 400px;
+    }
+    .cbp-spmenu a.signout::before {
+        content: "";
+        width: 50px;
+        height: 30px;
+        background: url(//static.abhibus.com/mobile_web/img/mobile-icons-all-new_v30.png) -53px -78px no-repeat;
+        display: block;
+        background-size: 400px;
+        line-height: 40px;
+        float: left;
+        margin-top: -5px;
+    }
+    .login-page h2::before {
+        width: 40px;
+        line-height: 40px;
+        display: block;
+        content: "";
+        height: 30px;
+        float: left;
+    }
+    .login-page .top-header-title {
+        background: #323232;
+        padding: 2%;
+        color: #fff;
+        font-size: 18px;
+        font-weight: 200px;
+    }
+    .login-page h2 {
+        font-size: 18px !important;
+        font-weight: 200px !important;
+        margin: 8px !important;
+    }
+    .login-page h2::before {
+        background-position: -51px -203px;
+        background-size: 400px;
+        margin-top: -5px;
+    }
+    .login-page .s-s-media {
+        text-align: center;
+        overflow: hidden;
+        padding: 2%;
+        margin-left: 0;
+    }
+    .login-page p {
+        border-bottom: dotted 1px #ccc;
+        display: block;
+        padding: 4%;
+        position: relative;
+    }
+    .login-page p span {
+        margin-top: -1px;
+        position: absolute;
+        background: #fff;
+        padding: 0 5px;
+        left: 37%;
+        color: #3c3b3b;
+    }
+    .login-page input[type="submit"] {
+        width: 92%;
+        display: block;
+        margin: 10px auto;
+        font-size: 18px;
+        font-weight: 300;
+        border: 1px solid #c40000;
+        color: #fff;
+        background: #cf000b;
+        padding: 2%;
+    }
+    .cbp-spmenu-filterboarding input[type="text"],
+    .cbp-spmenu-filterdropping input[type="text"],
+    .cbp-spmenu-operator input[type="text"] {
+        width: 70%;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        bottom: 1px;
+        position: relative;
+        border-bottom: solid 0 #ccc;
+    }
+    .cbp-spmenu-operator .top-header-title {
+        background: #323232;
+        padding: 2% 4% 2% 4%;
+        color: #fff;
+        font-size: 18px;
+        font-weight: 200;
+        height: 45px;
+    }
+    .cbp-spmenu-operator input[type="text"] {
+        color: #fff;
+        background: #323232;
+    }
+    .cbp-spmenu-filterboarding .top-header-title {
+        height: 45px;
+        background: #323232;
+        padding: 2% 4% 2% 4%;
+        color: #fff;
+        font-size: 18px;
+        font-weight: 200;
+    }
+    .cbp-spmenu-filterboarding input[type="text"] {
+        color: #fff;
+        background: #323232;
+    }
+    .cbp-spmenu-filterdropping .top-header-title {
+        height: 45px;
+        background: #323232;
+        padding: 2% 4% 2% 4%;
+        color: #fff;
+        font-size: 18px;
+        font-weight: 200;
+    }
+    .cbp-spmenu-filterdropping input[type="text"] {
+        color: #fff;
+        background: #323232;
+    }
+    .searchresult {
+        min-height: 450px;
+        background: #fff;
+        padding: 2%;
+        margin-top: 0;
+        margin-bottom: 60px;
+    }
+    .searchresult .searchresultlist {
+        background: #fff;
+        display: block;
+        border-radius: 5px;
+        box-shadow: 1px 1px 3px #aaa;
+        border: 1px solid #dedede;
+        padding: 2%;
+        margin-bottom: 10px;
+    }
+    .searchresult .searchresultlist-top {
+        overflow: hidden;
+        border-bottom: solid 1px #ccc;
+    }
+    .searchresult .searchresultlist-top .searchresultlist-top-left {
+        float: left;
+        display: block;
+        width: 73%;
+    }
+    .searchresult .searchresultlist-top .searchresultlist-top-left h3 {
+        color: #000;
+        font-size: 14px;
+        margin: 5px 0;
+        font-weight: 400;
+    }
+    .searchresult .searchresultlist-top .searchresultlist-top-left p {
+        color: #737373;
+        font-size: 11px;
+        margin-bottom: 0px !important;
+    }
+    .searchresult .searchresultlist-top .searchresultlist-top-right {
+        float: right;
+        display: block;
+        text-align: right;
+        font-weight: bold;
+        font-size: 12px;
+    }
+    .searchresult .searchresultlist-bottom {
+        overflow: hidden;
+        margin-top: 5px;
+    }
+    .searchresult .searchresultlist-bottom span {
+        color: #d1020a;
+        font-weight: 400;
+        font-size: 12px;
+    }
+    .searchresult .searchresultlist-bottom .searchresultlist-bottom-left {
+        float: left;
+        color: #000;
+    }
+    .searchresult .searchresultlist-bottom .searchresultlist-bottom-right {
+        float: right;
+        text-align: right;
+    }
+    .searchresult .searchresultlist-bottom .searchresultlist-bottom-right label {
+        color: red;
+        font-size: 14px;
+    }
+    .floating-btns-filters {
+        position: fixed;
+        background: #fff;
+        color: #000;
+        font-weight: 200;
+        border: 1px solid #cdcdcd;
+        font-size: 12px;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: 2px 0;
+        box-shadow: 0 -2px 4px #e8e8e8;
+    }
+    .floating-btns-filters a {
+        display: inline-block;
+        width: 24%;
+        text-align: center;
+        color: #000;
+        border-right: solid 1px #fff;
+    }
+    .floating-btns-filters a:nth-child(4) {
+        border-right: none;
+    }
+    .filter .top-header-title {
+        background: #323232;
+        padding: 2% 4% 2% 4%;
+        color: #fff;
+        font-size: 16px;
+        font-weight: 200px;
+        overflow: hidden;
+        line-height: 30px;
+        height: 45px;
+    }
+    .filter h3,
+    .filter h4 {
+        color: #000;
+        line-height: 30px;
+        display: block;
+    }
+    .filter h2 {
+        font-size: 18px !important;
+        font-weight: 200px !important;
+        margin: 8px !important;
+        width: 50%;
+        text-align: left;
+        float: left;
+    }
+    .bustype a,
+    .datalabels,
+    .depat-time a {
+        text-align: center;
+    }
+    .filter h3 {
+        padding: 2%;
+        margin: 0 !important;
+        font-size: 16px;
+    }
+    .filter h4 {
+        padding: 2% 2% 0 2%;
+        margin: 0px 0 0 !important;
+        font-size: 14px;
+    }
+    .filter input[type="text"] {
+        border-bottom: solid 1px #ccc;
+        color: #666;
+        margin: 4%;
+        padding: 2%;
+        width: 92%;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+    }
+    .filter input[type="button"] {
+        width: 45%;
+        display: inline-block;
+        margin: 10px auto 10px 2%;
+        font-size: 18px;
+        font-weight: 300;
+        border: 1px solid #c40000;
+        color: #fff;
+        background: #cf000b;
+        padding: 2%;
+    }
+    .bustype,
+    .depat-time {
+        font-weight: 200;
+        overflow: hidden;
+    }
+    .filter a {
+        padding: 0 !important;
+        border: none !important;
+    }
+    .bustype a,
+    .depat-time a,
+    .filter-bpoint,
+    .filter-optr {
+        border: 1px solid #c8c8c8 !important;
+    }
+    .filter a:hover {
+        background-color: none !important;
+    }
+    .bustype {
+        color: #000;
+        font-size: 12px;
+        width: 100%;
+        padding: 2px 0;
+        margin-left: 2%;
+    }
+    .bustype a {
+        color: #000;
+        display: block;
+        background: #fff;
+        float: left;
+        width: 31.5%;
+        margin: 0%;
+        font-size: 12px !important;
+        padding-bottom: 5px !important;
+    }
+    .filter-bpoint span::after,
+    .filter-optr span::after {
+        height: 30px;
+        line-height: 40px;
+        float: right;
+        display: block;
+        content: "";
+    }
+    .filter-optr {
+        margin: 2%;
+        width: 95%;
+        padding: 2%;
+        font-size: 12px;
+    }
+    .filter-bpoint {
+        margin: 2%;
+        width: 95%;
+        padding: 2%;
+        font-size: 12px;
+    }
+    .filte-price-bar {
+        margin: 50px 6% 4%;
+        width: 95%;
+        padding: 2%;
+    }
+    .depat-time {
+        color: #000;
+        font-size: 12px;
+        width: 96%;
+        padding: 2px 0;
+        margin-left: 2%;
+    }
+    .depat-time a {
+        color: #000;
+        display: block;
+        background: #fff;
+        float: left;
+        width: 25%;
+        font-size: 12px !important;
+        padding-bottom: 5px !important;
+    }
+    .datalabels {
+        height: 40px;
+        border: 1px solid #eaeaea;
+        display: block;
+        color: #000;
+        margin: 0 !important;
+        font-size: 10px;
+    }
+    .datalabels label {
+        vertical-align: top;
+        margin-right: 12px;
+        display: inline-block;
+        margin-top: 10px;
+        margin-bottom: 0;
+    }
+    #seating-layout {
+        margin-top: 5px;
+        position: relative;
+        z-index: 5;
+        text-align: center !important;
+        margin-bottom: 20px;
+        font-size: 12px;
+        height: 450px;
+        overflow: auto;
+        padding-bottom: 40px;
+    }
+    #seating-layout .seating {
+        overflow: hidden;
+        margin-bottom: 10px;
+        background: #fff;
+        width: 290px;
+        text-align: center;
+        display: inline-block;
+    }
+    .seat-info-bot .c1,
+    .seat-info-bot .c2 {
+        text-align: left;
+        padding: 1%;
+        float: left;
+    }
+    .seat-info-bot {
+        bottom: 0;
+        width: 100%;
+        overflow: hidden;
+        position: fixed;
+        background: #fff;
+        border: 1px solid #ccc;
+        z-index: 999;
+    }
+    .seat-info-bot label {
+        display: block;
+        margin-bottom: 0;
+        font-size: 10px;
+        word-wrap: break-word;
+    }
+    .seat-info-bot .c1 {
+        width: 41%;
+        border-right: none;
+    }
+    .seat-info-bot .c2 {
+        width: 30%;
+        border-left: none;
+    }
+    .seat-info-bot .c3 {
+        float: right;
+        width: 25%;
+        text-align: right;
+    }
+    .seat-info-bot .c3 input[type="button"] {
+        font-size: 18px;
+        font-weight: 300;
+        border: 1px solid #c40000;
+        color: #fff;
+        background: #cf000b;
+        padding: 2%;
+        width: 100%;
+        line-height: 37px;
+        margin: 0;
+    }
+    .passenger-info {
+        overflow: hidden;
+        background: #fff;
+        margin-top: 52px;
+    }
+    .new-textbox {
+        padding: 0 2% 2%;
+        overflow: hidden;
+    }
+    .new-textbox {
+        border-bottom: solid 1px #ccc;
+        background: #fff;
+    }
+    .rb-switcher {
+        margin-top: 3px;
+    }
+    .rb-switcher input {
+        display: none;
+    }
+    .rb-switcher i,
+    .rb-switcher.male i {
+        display: inline-block;
+        cursor: pointer;
+        height: 40px;
+        width: 35px;
+    }
+    .rb-switcher i {
+        transition: all ease 0.2s;
+        -webkit-transition: all ease 0.2s;
+        background: url(//static.abhibus.com/mobile_web/img/mobile-icons-all-new_v30.png) -578px -541px no-repeat;
+        background-size: 700px;
+    }
+    .rb-switcher.male i {
+        transition: all ease 0.2s;
+        -webkit-transition: all ease 0.2s;
+        background: url(//static.abhibus.com/mobile_web/img/mobile-icons-all-new_v30.png) -417px -543px no-repeat;
+        background-size: 700px;
+    }
+    .rb-switcher i:before {
+        display: block;
+        content: "";
+        width: 30px;
+        height: 30px;
+    }
+    input[type="checkbox"]:not(old),
+    input[type="radio"]:not(old) {
+        width: 20px;
+        margin: 0;
+        padding: 0;
+        font-size: 12px;
+        opacity: 0;
+    }
+    input[type="checkbox"]:not(old) + label {
+        display: inline;
+        margin-left: -2em;
+        line-height: 30px;
+        width: 88%;
+    }
+    input[type="checkbox"]:not(old) + label > span {
+        display: inline-block;
+        width: 25px;
+        height: 25px;
+        margin: 0.25em 0.5em 0.25em 0.25em;
+        background: url(//static.abhibus.com/mobile_web/img/mobile-icons-all-new_v30.png) -152px -332px no-repeat;
+        background-size: 430px;
+        border: 1px solid #999;
+        border-radius: 50%;
+    }
+    input[type="checkbox"]:not(old):checked + label > span {
+        width: 25px;
+        height: 25px;
+        background: url(//static.abhibus.com/mobile_web/img/mobile-icons-all-new_v30.png) -203px -333px no-repeat;
+        background-size: 430px;
+        border: 1px solid #c40000;
+        border-radius: 50%;
+    }
+    input[type="checkbox"]:not(old):checked + label > span:before {
+        display: block;
+    }
+    .passenger-info input[type="submit"] {
+        width: 96%;
+        display: inline-block;
+        margin: 10px auto 10px 2%;
+        font-size: 18px;
+        font-weight: 300;
+        border: 1px solid #c40000;
+        color: #fff;
+        background: #cf000b;
+        padding: 2%;
+    }
+    .clearfix:after,
+    .clearfix:before {
+        content: "";
+        display: table;
+    }
+    .clearfix:after {
+        clear: both;
+    }
+    .modal__bg,
+    .modal__close {
+        cursor: pointer;
+    }
+    .modal__inner h2 {
+        font-size: 18px;
+        text-align: center;
+        background: #f4f4f4;
+        border: 1px solid #ccc;
+        margin-top: 30px;
+        padding: 2%;
+    }
+    .overlay {
+        position: fixed;
+    }
+    .overlay {
+        background-color: rgba(0, 0, 0, 0.6);
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 100;
+    }
+    .modal,
+    .modal__bg,
+    .modal__inner {
+        right: 0;
+        left: 0;
+        bottom: 0;
+    }
+    .modal {
+        opacity: 0;
+        display: none;
+        position: fixed;
+        top: 0;
+        text-align: left;
+        background: rgba(0, 0, 0, 0.6);
+    }
+    .modal__bg {
+        position: absolute;
+        top: 0;
+    }
+    .modal-state {
+        display: none;
+    }
+    .modal-state:checked + .modal {
+        opacity: 1;
+        display: block;
+    }
+    .modal-state:checked + .modal .modal__inner {
+        top: 0;
+    }
+    .modal__inner {
+        transition: top 0.25s ease;
+        position: absolute;
+        top: -20%;
+        width: 50%;
+        margin: auto;
+        overflow: auto;
+        background: #fff;
+        border-radius: 5px;
+        padding: 1em 2em;
+        height: 50%;
+    }
+    .modal__close {
+        position: absolute;
+        right: 1em;
+        top: 1em;
+        width: 1.1em;
+        height: 1.1em;
+    }
+    .modal__close:after,
+    .modal__close:before {
+        content: "";
+        position: absolute;
+        width: 2px;
+        height: 1.5em;
+        background: #ccc;
+        display: block;
+        transform: rotate(45deg);
+        left: 50%;
+        margin: -3px 0 0 -1px;
+        top: 0;
+    }
+    .modal__close:hover:after,
+    .modal__close:hover:before {
+        background: #aaa;
+    }
+    .modal__close:before {
+        transform: rotate(-45deg);
+    }
+    @media screen and (max-width: 768px) {
+        .modal__inner {
+            width: 90%;
+            height: 90%;
+            box-sizing: border-box;
+        }
+    }
+    .input {
+        position: relative;
+        z-index: 1;
+        display: inline-block;
+        width: calc(100% - 2em);
+        vertical-align: top;
+    }
+    .input__field {
+        position: relative;
+        display: block;
+        padding: 0.8em;
+        width: 60%;
+        border: none;
+        border-radius: 0;
+        background: #f0f0f0;
+        color: #aaa;
+        font-weight: 400;
+        -webkit-appearance: none;
+    }
+    .input__label {
+        display: inline-block;
+        float: right;
+        padding: 0;
+        width: 40%;
+        color: #696969;
+        font-weight: 700;
+        font-size: 70.25%;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        margin-bottom: 0;
+    }
+    .input__label-content {
+        position: relative;
+        display: block;
+        padding: 1.6em 0;
+        width: 100%;
+    }
+    .input--nariko {
+        overflow: hidden;
+        padding-top: 16px;
+        width: 85%;
+    }
+    .input__field--nariko {
+        width: 100%;
+        background: 0 0;
+        padding: 0;
+        z-index: 100;
+        color: #000;
+    }
+    .input__label--nariko {
+        width: 100%;
+        bottom: 0;
+        position: absolute;
+        pointer-events: none;
+        text-align: left;
+        color: #8e9191;
+        padding: 0;
+        font-size: 14px;
+    }
+    .input__label--nariko::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 4em;
+        top: 100%;
+        left: 0;
+        -webkit-transform: translate3d(0, -3px, 0);
+        transform: translate3d(0, -3px, 0);
+        -webkit-transition: -webkit-transform 0.4s;
+        transition: transform 0.4s;
+        -webkit-transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+        transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+    }
+    .cbp-spmenu-vertical,
+    .cbp-spmenu-vertical-left {
+        height: 100%;
+        top: 0;
+        overflow-y: scroll;
+        z-index: 1000;
+    }
+    .input__label-content--nariko {
+        padding: 0;
+        -webkit-transform-origin: 0 100%;
+        transform-origin: 0 100%;
+        -webkit-transition: -webkit-transform 0.4s, color 0.4s;
+        transition: transform 0.4s, color 0.4s;
+        -webkit-transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+        transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+    }
+    .cbp-spmenu-vertical a,
+    .cbp-spmenu-vertical-left a {
+        border-bottom: 1px solid #e9e9e9;
+        padding: 4%;
+    }
+    .input__field--nariko:focus {
+        cursor: text;
+        opacity: 1;
+        -webkit-transition: opacity 0s 0.4s;
+        transition: opacity 0s 0.4s;
+    }
+    .input__field--nariko:focus + .input__label--nariko::before {
+        -webkit-transition-delay: 50ms;
+        transition-delay: 50ms;
+        -webkit-transform: translate3d(0, -3.3em, 0);
+        transform: translate3d(0, -3.3em, 0);
+    }
+    .input__field--nariko:focus + .input__label--nariko .input__label-content--nariko {
+        color: #999;
+        -webkit-transform: translate3d(0, -18px, 0) scale3d(0.81, 0.81, 1);
+        transform: translate3d(0, -18px, 0) scale3d(0.81, 0.81, 1);
+        font-size: 16px;
+    }
+    .cbp-spmenu {
+        background: #fff;
+        position: fixed;
+    }
+    .cbp-spmenu a {
+        display: block;
+        color: #000;
+        font-size: 14px;
+    }
+    .cbp-spmenu-vertical-left {
+        width: 100%;
+    }
+    .cbp-spmenu-vertical {
+        width: 80%;
+    }
+    .cbp-spmenu-test {
+        left: -2000px;
+        display: none;
+    }
+    .cbp-spmenu-selectseat {
+        right: -2000px;
+        display: none;
+    }
+    .cbp-spmenu-right {
+        right: -2000px;
+        display: none;
+    }
+    .cbp-spmenu-selectfilter {
+        right: -2000px;
+        display: none;
+    }
+    .cbp-spmenu-selectboardingpoints {
+        right: -2000px;
+        display: none;
+    }
+    .cbp-spmenu-selectdropingpoints {
+        right: -2000px;
+        display: none;
+    }
+    .cbp-spmenu-operator {
+        right: -2000px;
+        display: none;
+    }
+    .cbp-spmenu-filterboarding {
+        right: -2000px;
+        display: none;
+    }
+    .cbp-spmenu-filterdropping {
+        right: -2000px;
+        display: none;
+    }
+    @media screen and (max-height: 26.375em) {
+        .cbp-spmenu-vertical {
+            font-size: 100%;
+            width: 190px;
+        }
+        .cbp-spmenu-right,
+        .cbp-spmenu-test {
+            right: -190px;
+        }
+    }
+    .slider-container {
+        width: 100%;
+    }
+    .slider-container .back-bar {
+        height: 410px;
+        position: relative;
+    }
+    .slider-container .back-bar .selected-bar {
+        position: absolute;
+        height: 100%;
+    }
+    .slider-container .back-bar .pointer {
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        background-color: red;
+        cursor: col-resize;
+        opacity: 1;
+        z-index: 2;
+    }
+    .slider-container .back-bar .pointer-label {
+        position: absolute;
+        top: -47px;
+        font-size: 12px;
+        background: #fff;
+        white-space: nowrap;
+        line-height: 1;
+        font-weight: 700;
+    }
+    .slider-container .clickable-dummy {
+        cursor: pointer;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+    }
+    .slider-container .scale {
+        top: 2px;
+        position: relative;
+    }
+    .theme-green .back-bar {
+        height: 5px;
+        border-radius: 2px;
+        background-color: #e7e7e7;
+        background-image: -moz-linear-gradient(top, #eee, #ddd);
+        background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#eee), to(#ddd));
+        background-image: -webkit-linear-gradient(top, #eee, #ddd);
+        background-image: -o-linear-gradient(top, #eee, #ddd);
+        background-image: linear-gradient(to bottom, #eee, #ddd);
+        background-repeat: repeat-x;
+    }
+    .theme-green .back-bar .selected-bar {
+        border-radius: 2px;
+        background-color: red;
+    }
+    .theme-green .back-bar .pointer {
+        width: 20px;
+        height: 20px;
+        top: -8px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        border-radius: 10px;
+        border: 1px solid #fff;
+        background-color: red;
+    }
+    .theme-green .back-bar .pointer-label {
+        color: #000;
+    }
+    #datepicker1 {
+        margin-left: -4px;
+        display: none;
+        margin-top: -4px;
+    }
+    .cbp-spmenu-selectboardingpoints .top-header-title {
+        background: #323232;
+        color: #fff;
+        font-size: 18px;
+        font-weight: 200;
+        padding: 2% 4% 2% 4%;
+        height: 45px;
+    }
+    .cbp-spmenu-selectboardingpoints h3 {
+        background: #dcdcdc;
+        display: block;
+        color: #000;
+        padding: 2% 2% 2% 12%;
+        margin: 0 !important;
+        font-size: 14px;
+        line-height: 30px;
+    }
+    .cbp-spmenu-selectboardingpoints input[type="text"] {
+        border-bottom: solid 0 #ccc;
+        background: #323232;
+        border-color: -moz-use-text-color -moz-use-text-color #ccc;
+        border-style: none none solid;
+        color: #fff;
+        width: 70%;
+        position: relative;
+        bottom: 1px;
+    }
+    .cbp-spmenu-selectdropingpoints .top-header-title {
+        background: #323232;
+        color: #fff;
+        font-size: 18px;
+        font-weight: 200;
+        padding: 2% 4% 2% 4%;
+        height: 45px;
+    }
+    .cbp-spmenu-selectdropingpoints h3 {
+        background: #dcdcdc;
+        display: block;
+        color: #000;
+        padding: 2% 2% 2% 12%;
+        margin: 0 !important;
+        font-size: 14px;
+        line-height: 30px;
+    }
+    .cbp-spmenu-selectdropingpoints input[type="text"] {
+        border-bottom: solid 0 #ccc;
+        background: #323232;
+        border-color: -moz-use-text-color -moz-use-text-color #ccc;
+        border-style: none none solid;
+        color: #fff;
+        width: 70%;
+        position: relative;
+        bottom: 1px;
+    }
+    input[type="number"] {
+        -moz-appearance: textfield;
+    }
+    .filter-operator input[type="checkbox"]:not(old),
+    input[type="radio"]:not(old) {
+        width: 20px;
+        margin: 0;
+        padding: 0;
+        font-size: 12px;
+        opacity: 1 !important;
+    }
+    .filter-operator .col1 {
+        width: 89%;
+        float: left;
+    }
+    .btn-done {
+        width: 100%;
+        background-color: #c40000;
+        color: #fff;
+        padding: 10px 15px !important;
+        position: fixed;
+        bottom: 0;
+    }
+    .filter-boarding input[type="checkbox"]:not(old),
+    input[type="radio"]:not(old) {
+        width: 20px;
+        margin: 0;
+        padding: 0;
+        font-size: 12px;
+        opacity: 1 !important;
+    }
+    .filter-boarding .col1 {
+        width: 89%;
+        float: left;
+    }
+    .cbp-spmenu-filterdropping .col1 {
+        width: 89%;
+        float: left;
+    }
+    .login-menu2 {
+        height: 70px;
+        padding: 0%;
+        background: #a9a9a9;
+    }
+    .login-error {
+        color: #cf000b;
+    }
+    .login-error {
+        text-align: center;
+        font-size: 12px;
+    }
+    .clearfix {
+        clear: both;
+    }
+    #loginForm input {
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+    .font-red {
+        font-size: 12px;
+    }
+    .seat-fare-info-title {
+        font-weight: 700;
+    }
+    .font-red {
+        color: #c40000;
+    }
+    .pointer {
+        cursor: pointer;
+    }
+    .seat-fare-info {
+        z-index: 999;
+        min-height: 145px;
+        position: fixed;
+        bottom: 44px;
+        background: #fff;
+        width: 100%;
+        font-size: 10px;
+    }
+    .seat-fare-info-title {
+        background: #dcdcdc;
+        padding: 8px;
+    }
+    .rtn-home-icon {
+        background-size: 500px;
+        width: 40px !important;
+        height: 40px !important;
+        display: block !important;
+        background-position: -400px -330px !important;
+        position: relative;
+        right: 5px;
+        top: -2px;
+    }
+    .bordertop {
+        border-top: solid 1px #ccc;
+    }
+    .modal {
+        transition: opacity 0.5s linear !important;
+        -webkit-transform: translate3d(0, 0, 0);
+    }
+    .onward-close {
+        float: right;
+        width: 50px;
+        font-weight: 700;
+        line-height: 15px;
+        color: #c40000;
+        text-align: center;
+        font-size: 18px;
+    }
+    input:focus {
+        outline-width: 0;
+    }
+    #feedLoading {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        text-align: center;
+        padding: 10px;
+        margin-left: -70px;
+        margin-top: -50px;
+        z-index: 9999;
+    }
+    .passenger-info {
+        font-size: 12px;
+    }
+    input {
+        border-radius: 0;
+    }
+    .search-bar {
+        float: left;
+        width: 82%;
+        border-bottom: 1px solid #ccc;
+    }
+    .col2 input[type="checkbox"]:not(old),
+    input[type="radio"]:not(old) {
+        opacity: 1 !important;
+    }
+    .fixed-header {
+        position: fixed;
+        width: 100%;
+        z-index: 999;
+    }
+    .bus-track {
+        background: url(//static.abhibus.com/mobile_web/img/mobile-icons-all-new_v30.png) no-repeat;
+    }
+    .bus-track {
+        float: left;
+        padding: 8% 0% 2% 12%;
+        background-size: 380px;
+        background-position: -180px -349px;
+    }
+    .select-filter {
+        border-bottom: 1px solid #e9e9e9;
+        padding: 4% 4% 4% 5%;
+        color: #000;
+        font-size: 14px;
+    }
+    .label-seats {
+        width: 50%;
+        height: auto;
+        padding: 2%;
+        text-align: left;
+        z-index: 10;
+        position: relative;
+        background-color: #fff;
+        top: 5px;
+        left: 12px;
+    }
+    label:before {
+        transform: none;
+        background: none;
+    }
+    .input__label-content {
+        width: 188px;
+    }
+    .bus-track-filter {
+        background: url(//static.abhibus.com/mobile_web/img/amenities.png) no-repeat;
+        background-size: 53px;
+        width: 35px;
+        height: 35px;
+        margin-right: 2px;
+        display: inline-block;
+    }
+    .bus-track-filter {
+        background-position: -8px -93px;
+        background-size: 45px;
+        width: 30px;
+        height: 30px;
+        margin: auto;
+        display: block;
+    }
+    .seater-icon-filter {
+        background-position: -438px -684px;
+        background-size: 547px !important;
+    }
+}
+/*! CSS Used from: https://static.abhibus.com/mobile_web/css/main.css ; media=all */
+@media all {
+    body {
+        margin: 0;
+    }
+    header {
+        display: block;
+    }
+    a {
+        background-color: transparent;
+    }
+    a:active,
+    a:hover {
+        outline: 0;
+    }
+    b {
+        font-weight: 700;
+    }
+    img {
+        border: 0;
+    }
+    button,
+    input {
+        margin: 0;
+        font: inherit;
+        color: inherit;
+    }
+    button {
+        overflow: visible;
+    }
+    button {
+        text-transform: none;
+    }
+    button,
+    html input[type="button"],
+    input[type="submit"] {
+        -webkit-appearance: button;
+        cursor: pointer;
+    }
+    button::-moz-focus-inner,
+    input::-moz-focus-inner {
+        padding: 0;
+        border: 0;
+    }
+    input {
+        line-height: normal;
+    }
+    input[type="checkbox"],
+    input[type="radio"] {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        padding: 0;
+    }
+    @media print {
+        *,
+        :after,
+        :before {
+            color: #000 !important;
+            text-shadow: none !important;
+            background: 0 0 !important;
+            -webkit-box-shadow: none !important;
+            box-shadow: none !important;
+        }
+        a,
+        a:visited {
+            text-decoration: underline;
+        }
+        a[href]:after {
+            content: " (" attr(href) ")";
+        }
+        a[href^="javascript:"]:after,
+        a[href^="#"]:after {
+            content: "";
+        }
+        img {
+            page-break-inside: avoid;
+        }
+        img {
+            max-width: 100% !important;
+        }
+        h2,
+        h3,
+        p {
+            orphans: 3;
+            widows: 3;
+        }
+        h2,
+        h3 {
+            page-break-after: avoid;
+        }
+    }
+    * {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    :after,
+    :before {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    body {
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        line-height: 1.42857143;
+        color: #333;
+        background-color: #fff;
+    }
+    button,
+    input {
+        font-family: inherit;
+        font-size: inherit;
+        line-height: inherit;
+    }
+    a {
+        color: #337ab7;
+        text-decoration: none;
+    }
+    a:focus {
+        outline: thin dotted;
+        outline: 5px auto -webkit-focus-ring-color;
+        outline-offset: -2px;
+    }
+    img {
+        vertical-align: middle;
+    }
+    h2,
+    h3,
+    h4 {
+        font-family: inherit;
+        font-weight: 500;
+        line-height: 1.1;
+        color: inherit;
+    }
+    h2,
+    h3 {
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    h4 {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    h2 {
+        font-size: 30px;
+    }
+    h3 {
+        font-size: 24px;
+    }
+    h4 {
+        font-size: 18px;
+    }
+    p {
+        margin: 0 0 10px;
+    }
+    ul {
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+    .container-fluid {
+        padding-right: 0px;
+        padding-left: 0px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    label {
+        display: inline-block;
+        max-width: 100%;
+        margin-bottom: 5px;
+        font-weight: 700;
+    }
+    input[type="checkbox"],
+    input[type="radio"] {
+        margin: 4px 0 0;
+        margin-top: 1px\9;
+        line-height: normal;
+    }
+    input[type="checkbox"]:focus,
+    input[type="radio"]:focus {
+        outline: thin dotted;
+        outline: 5px auto -webkit-focus-ring-color;
+        outline-offset: -2px;
+    }
+    .modal {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 1050;
+        display: none;
+        overflow: hidden;
+        -webkit-overflow-scrolling: touch;
+        outline: 0;
+    }
+    .clearfix:after,
+    .clearfix:before,
+    .container-fluid:after,
+    .container-fluid:before {
+        display: table;
+        content: " ";
+    }
+    .clearfix:after,
+    .container-fluid:after {
+        clear: both;
+    }
+}
+/*! CSS Used keyframes */
+@-webkit-keyframes load8 {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+@keyframes load8 {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}

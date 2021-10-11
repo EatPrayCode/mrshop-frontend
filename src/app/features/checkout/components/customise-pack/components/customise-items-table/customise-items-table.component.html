@@ -1,175 +1,174 @@
-<div class="container cart cart-page" data-shipments="1">
-    <div class="row">
+<div ng-app="abhibusApp" class="ng-scope" data-new-gr-c-s-check-loaded="14.1032.0" data-gr-ext-installed="">
 
-        <div class="cart-items col-12">
-
-            <div *ngFor="let pack of inputData" class="card product-info  uuid-30914d7638d60f5826cc6b9152"
-                data-line-qty="4.0">
-
-                <div class="line-item-header">
-                    <div class="line-item-name">
-                        {{pack.packsData.packName}}
-                    </div>
-
-                    <div class="remove-line-item d-lg-none">
-
-                        <button type="button" class="remove-btn-lg remove-product btn btn-light" data-toggle="modal"
-                            data-target=".cart.cart-page #removeProductModal" data-pid="14169"
-                            data-name="Holiday Luxury Chocolate Advent Calendar"
-                            data-action="/on/demandware.store/Sites-Godiva-Site/en_US/Cart-RemoveProductLineItem"
-                            data-uuid="30914d7638d60f5826cc6b9152"
-                            aria-label="Remove product Holiday Luxury Chocolate Advent Calendar">
-                            <span aria-hidden="true">×</span>
-                        </button>
-
-                    </div>
+    <div ng-view="" class="ng-scope">
+       
+        <div class="container-fluid ng-scope" id="box" ng-init="init()">
+            <header class="fixed-header">
+                <div class="menu">
+                    <!-- ngIf: !isExpanded --><span class="rtn-home-icon ng-scope" ng-click="returnToHome()"
+                        ng-if="!isExpanded"></span><!-- end ngIf: !isExpanded -->
+                    <!-- ngIf: isExpanded -->
 
                 </div>
+                <div class="title">
+                    <h2>
+                        <div>
+                            <label ng-bind="sourceName+' to'" class="ng-binding">Hyderabad to</label>
+                            <label ng-bind="destinationName" class="ng-binding">Bellary</label>
+                        </div>
+                        <div class="header-date">
+                            <input type="text" name="journey_date" id="datepicker1" ng-model="journey_date"
+                                value="Date Of Journey"
+                                class="calendar1 ng-pristine ng-untouched ng-valid ng-not-empty">
+                            <label ng-click="showCalendar()" class="ng-binding">Friday,15 Oct 2021</label>
+                        </div>
+                    </h2>
+                </div>
+            </header>
 
-                <div class="row ">
-                    <div class="col-lg-5">
-                        <div class="row">
-                            <div class="col-lg-12 d-flex flex-row">
-                                <div class="item-image">
-                                    <img class="product-image"
-                                        src="https://www.godiva.com/dw/image/v2/AAKG_PRD/on/demandware.static/-/Sites-godiva-master-catalog-us/default/dw4fd53ea1/product_images/14169-1.jpg?sw=140&amp;sh=140"
-                                        alt="Holiday Luxury Chocolate Advent Calendar"
-                                        title="Holiday Luxury Chocolate Advent Calendar">
+            <div class="searchresult" id="allservices" infinite-scroll="loadMoreServices()"
+                infinite-scroll-distance="2">
+
+                <div ng-show="status == 'Success' || status == 'success'" class="">
+                    <div class="scrolling-wrapper-main">
+                        <div class="scrolling-wrapper ng-hide"
+                            ng-show="searchResponse.fiterBannersRatings &amp;&amp; searchResponse.fiterBannersRatings.length >0"
+                            style="overflow: auto;">
+                            <!-- ngRepeat: banners in searchResponse.fiterBannersRatings -->
+                        </div>
+                    </div>
+                    <!-- start of service listing -->
+
+
+                    <!-- Apsrtc Services list -->
+                    <!-- ngRepeat: rtcblock in searchResponse.blockingList track by rtcblock.api -->
+                    <!-- Start Of Private Operators -->
+
+                    <div id="prvtServices" ng-show="!isExpanded">
+                        <!-- ngRepeat: pvtService in pvtFiltered = (privateServices | searchFilter:this:'PVT':''| orderBy:orderByField:reverseSort | zeroSeatsLast:'descending' ) | myLimitTo:limitNumber -->
+                        <div class="toggle-menu buslayout push-body searchresultlist activator ng-scope"
+                            ng-repeat="pvtService in pvtFiltered = (privateServices | searchFilter:this:'PVT':''| orderBy:orderByField:reverseSort | zeroSeatsLast:'descending' ) | myLimitTo:limitNumber "
+                            ng-class="{'soldout-card':pvtService.availableSeats == 0,'opr-refine': pvtService.applybg &amp;&amp; pvtService.applybg =='1'}">
+
+                            <!--     <div  class="toggle-menu buslayout push-body searchresultlist activator" ng-repeat="pvtService in privateServices |  filter:brdPointFilter:$index"> -->
+                            <div  *ngFor="let pack of inputData"
+                                ng-click="pvtService.isRTC == 0 &amp;&amp; pvtService.availableSeats>0 &amp;&amp; showSeatLayout(pvtService.serviceKey,sourceId,destinationId,pvtService.journeyDate,pvtService.api,0,pvtService.serviceIndex,pvtService);pvtService.availableSeats>0 &amp;&amp; (((pvtService.isRTC == 1 &amp;&amp; pvtService.travelerAgentName != 'UPSRTC'  &amp;&amp; pvtService.travelerAgentName != 'RSRTC'  &amp;&amp; pvtService.travelerAgentName != 'HRTC') &amp;&amp; selectBoardingPoint(pvtService.serviceIndex) ) || ((pvtService.isRTC == 0 || pvtService.travelerAgentName == 'UPSRTC' || pvtService.travelerAgentName == 'RSRTC' || pvtService.travelerAgentName == 'HRTC') &amp;&amp; showSeatLayout(pvtService.serviceKey,sourceId,destinationId,pvtService.journeyDate,pvtService.api,0,pvtService.serviceIndex,rtcsrv) ))">
+
+                                <div class="searchresultlist-top ">
+                                    <div class="searchresultlist-top-left" id="my-menus">
+                                        <div>
+                                            <div>
+                                                <!--<div ng-class="{'bus-track':pvtService.is_track_avail == 1,'bus-track-disable':pvtService.is_track_avail == 0}"></div>-->
+                                                <h3 class="ng-binding">
+                                                    {{pack.packsData.packName}}
+                                                </h3>
+
+                                            </div>
+                                            <p ng-bind="pvtService.busTypeName" class="ng-binding">NON-AC Seater/Sleeper
+                                                (2 + 1)</p>
+                                        </div>
+                                    </div>
+                                    <div class="searchresultlist-top-right">
+                                        <div class="ratings-container">
+                                            <!-- ngIf: pvtService.rating >= 0 --><span
+                                                class="rating-sec ng-binding ng-scope" ng-if="pvtService.rating >= 0">
+
+                                                <!-- ngIf: pvtService.rating >= 4 -->
+                                                <!-- ngIf: pvtService.rating >= 3 && pvtService.rating < 4 --><img
+                                                    ng-if="pvtService.rating >= 3 &amp;&amp; pvtService.rating < 4"
+                                                    src="https://static.abhibus.com/assets/img/star-orabge-16.png"
+                                                    class="ng-scope">
+                                                <!-- end ngIf: pvtService.rating >= 3 && pvtService.rating < 4 -->
+                                                <!-- ngIf: pvtService.rating >= 1 && pvtService.rating < 3 -->
+                                                <!-- ngIf: pvtService.rating == 0 -->
+                                                3.5
+                                            </span><!-- end ngIf: pvtService.rating >= 0 -->
+                                            <!-- ngIf: pvtService.noOfRatingsTextStr && pvtService.noOfRatingsTextStr !='' && pvtService.noOfRatingsTextStr !='0' --><span
+                                                ng-if="pvtService.noOfRatingsTextStr &amp;&amp; pvtService.noOfRatingsTextStr !='' &amp;&amp; pvtService.noOfRatingsTextStr !='0'"
+                                                class="no-of-ratings ng-binding ng-scope">(Few Ratings)</span>
+                                            <!-- end ngIf: pvtService.noOfRatingsTextStr && pvtService.noOfRatingsTextStr !='' && pvtService.noOfRatingsTextStr !='0' -->
+                                        </div>
+                                        <!--<div ng-if="pvtService.availableSeats == 0" class="soldout">Sold</div>-->
+                                    </div>
                                 </div>
-                                <div class="item-attributes attr-30914d7638d60f5826cc6b9152 d-flex flex-column">
-                                    <p><b>SKU:</b> 14169</p>
 
-                                    <div class="line-item-availability availability-30914d7638d60f5826cc6b9152">
+                                <div class="searchresultlist-bottom">
+                                    <div class="searchresultlist-bottom-left " ng-style="{'width':'70%'}"
+                                        style="width: 70%;">
 
-                                        <p class="line-item-attributes ">In Stock</p>
+                                        <div class="service-timing">
+                                            <time class="ng-binding">21:45</time>
+                                            <div class="dot-icon-sec" style="font-size: 10px;color:#717171">
+                                                <div class="dot-icon-left">
+                                                    <span>•</span>
+                                                </div>
+                                                <div class="travel-time-middle-sec ng-binding">
+                                                    08:45 hrs
+                                                </div>
+                                                <div class="dot-icon-right">
+                                                    <span>•</span>
+                                                </div>
+                                            </div>
+
+                                            <time style="font-weight: normal;color:#717171"
+                                                class="ng-binding">06:30</time>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                        <div class="avail-seat-count serp-amenities"
+                                            ng-init="listLimt = 2; charcount = 0;doTrim=1"
+                                            ng-click="pvtService.safeTBusImgCount !='' &amp;&amp; showGallery(pvtService.safetyImgMapID,pvtService.serviceIndex,'serp',pvtService.Amenities_list);pvtService.safeTBusImgCount =='' &amp;&amp; showSerpAmenities(pvtService.Amenities_list);">
+
+                                            <!-- ngIf: pvtService.safeTBusImgCount !='' -->
+
+                                            <!-- ngIf: pvtService.socialDistance == '1' -->
+
+                                            <!-- ngIf: pvtService.is_track_avail == 1 --><span
+                                                class="main-amenity ng-scope" ng-if="pvtService.is_track_avail == 1">
+                                                <i class="bus-track"> </i>
+                                                <span class="safety-title">Bus Tracking</span>
+                                            </span><!-- end ngIf: pvtService.is_track_avail == 1 -->
+
+                                            <!--<span ng-if="pvtService.Amenities_list[0].title.length > 25"  ng-init = "$parent.listLimt = 1;"></span>-->
+
+                                            <!-- ngRepeat: amenity in pvtService.Amenities_list | limitTo:2 track by $index -->
+                                            <!-- ngIf: pvtService.Amenities_list.length > 1 -->
+
+
+                                        </div>
 
                                     </div>
+                                    <div class="searchresultlist-bottom-right" style="width:30%">
+                                        <div class="price-info">
 
-                                    <div class="product-edit">
-                                        <a class="edit btn-link-primary" data-toggle="modal" title="Edit"
-                                            (click)="openViewEditPackDialog(pack)">
-                                            Edit
-                                        </a>
+
+                                            <div class="fares">
+                                                <label style="display:inline-block;"
+                                                    ng-class="{'strike-price': pvtService.is_deal_avail &amp;&amp; pvtService.offer_price}"
+                                                    class="ng-binding">₹699 </label>
+
+                                                <!-- ngIf: pvtService.is_deal_avail && pvtService.offer_price -->
+                                            </div>
+                                            <br>
+                                            <!-- ngIf: pvtService.fare.indexOf('+')>0 && !pvtService.offer_price --><label
+                                                class="onwards ng-scope"
+                                                ng-if="pvtService.fare.indexOf('+')>0 &amp;&amp; !pvtService.offer_price">onwards</label>
+                                            <!-- end ngIf: pvtService.fare.indexOf('+')>0 && !pvtService.offer_price -->
+
+                                            <label
+                                                ng-class="{'service-soldout': pvtService.availableSeats == 0,'available-seats': pvtService.availableSeats != 0}"
+                                                class="ng-binding available-seats">37 Seats </label>
+                                        </div>
+
                                     </div>
-
-                                </div>
-
-                                <div
-                                    class="lg-down-split-shipment-form flex flex-grow-1 align-items-end  justify-content-end d-lg-none">
-                                    <form data-form-split="" method="post"
-                                        action="/on/demandware.store/Sites-Godiva-Site/en_US/CheckoutShippingServices-SplitShipment">
-                                        <input name="productLineItemUUID" type="hidden"
-                                            value="30914d7638d60f5826cc6b9152">
-                                        <input name="redirectto" type="hidden" value="/cart">
-                                        <button class="btn btn-link btn-link-primary" type="submit">Ship this item
-                                            to more than one address</button>
-                                    </form>
-
                                 </div>
                             </div>
                         </div>
+                        <!-- end ngRepeat: pvtService in pvtFiltered = (privateServices | searchFilter:this:'PVT':''| orderBy:orderByField:reverseSort | zeroSeatsLast:'descending' ) | myLimitTo:limitNumber -->
                     </div>
-                    <div class="col-12 d-lg-none">
-                        <hr class="line-item-divider">
-                    </div>
-
-                    <div class="col-lg-7 product-card-footer">
-
-                        <div class="row">
-
-                            <div class="col-4 line-item-price-30914d7638d60f5826cc6b9152">
-                                <p class="line-item-price-info">Each</p>
-
-
-                                <div class="price">
-
-                                    <span>
-
-                                        <span class="sales">
-
-                                            <span class="value " content="39.95">
-
-                                                $39.95
-
-                                            </span>
-                                        </span>
-
-                                    </span>
-
-                                </div>
-
-                            </div>
-
-                            <div class="col-4 line-item-quantity">
-                                <div class="quantity-form">
-                                    <label class="line-item-pricing-info quantity-label"
-                                        for="quantity-30914d7638d60f5826cc6b9152">Quantity</label>
-                                    <div class="qty-input-container">
-                                        <button name="qty-btn-down" class="qty-btn-down btn btn-light"
-                                            aria-label="decrease quantity">-</button>
-                                        <input class="form-control qty-input" type="number" value="4" min="1.0"
-                                            max="300.0" step="1.0" data-uuid="30914d7638d60f5826cc6b9152"
-                                            data-pid="14169"
-                                            data-action="/on/demandware.store/Sites-Godiva-Site/en_US/Cart-UpdateQuantity"
-                                            data-pre-change-qty="4.0" id="quantity-30914d7638d60f5826cc6b9152"
-                                            name="quantity-30914d7638d60f5826cc6b9152" aria-label="quantity: 4">
-                                        <button name="qty-btn-up" class="qty-btn-up btn btn-light"
-                                            aria-label="increase quantity">+</button>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-4 line-item-total-price">
-                                <p class="line-item-price-info">
-                                    Total
-                                </p>
-                                <div class="item-total-30914d7638d60f5826cc6b9152 price">
-                                    <div class="strike-through value
-non-adjusted-price">
-                                        null
-
-                                    </div>
-
-                                    <div class="pricing without-promo item-total-30914d7638d60f5826cc6b9152">$159.80
-                                    </div>
-
-                                </div>
-                            </div>
-
-                            <div class="lg-split-shipment-form col-8 offset-2 d-none d-lg-block ">
-                                <form data-form-split="" method="post"
-                                    action="/on/demandware.store/Sites-Godiva-Site/en_US/CheckoutShippingServices-SplitShipment">
-                                    <input name="productLineItemUUID" type="hidden" value="30914d7638d60f5826cc6b9152">
-                                    <input name="redirectto" type="hidden" value="/cart">
-                                    <button class="btn btn-link btn-link-primary" type="submit">Ship this item to
-                                        more than one address</button>
-                                </form>
-
-                            </div>
-
-                            <div class="col-lg-1 hidden-md-down remove-line-item-lg"></div>
-
-                        </div>
-
-                        <div class="line-item-promo item-30914d7638d60f5826cc6b9152">
-
-                        </div>
-
-                    </div>
-
-                    <div class="hidden-md-down">
-                        <button type="button" class="remove-btn-lg remove-product btn btn-light" data-toggle="modal"
-                            data-target=".cart.cart-page #removeProductModal" data-pid="14169"
-                            data-name="Holiday Luxury Chocolate Advent Calendar"
-                            data-action="/on/demandware.store/Sites-Godiva-Site/en_US/Cart-RemoveProductLineItem"
-                            data-uuid="30914d7638d60f5826cc6b9152"
-                            aria-label="Remove product Holiday Luxury Chocolate Advent Calendar">
-                            <span aria-hidden="true">×</span>
-                        </button>
-
-                    </div>
+                    <!-- End Of private Operators -->
 
                 </div>
+                <!-- End of service listing -->
 
             </div>
 
