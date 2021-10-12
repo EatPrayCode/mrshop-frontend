@@ -1,7 +1,9 @@
-p {
-  font-family: Lato;
-}
-
 .main_content {
   width: 100%;
+  height: calc(100vh - 100px);
+}
+
+.sidenav-container {
+  top: 20px;
+  height: 100%;
 }
