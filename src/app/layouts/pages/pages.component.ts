@@ -7,10 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PagesComponent implements OnInit {
 
+  selectedNavLink: any = 'home';
+
   ngOnInit() { }
 
   toggleMenu(e: any) {
     console.log("menu works");
+  }
+
+  handleNavLinks(navLink: any) {
+    this.selectedNavLink = navLink;
   }
 
 }

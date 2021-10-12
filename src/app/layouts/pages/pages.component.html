@@ -13,11 +13,17 @@
                                     src="./../../../assets/images/logo.svg" height="24" alt="Pulse"></a>
                         </li>
 
-                        <li class="navLinks__item "><a class="activeHeader" [routerLink]="['home']">Home</a></li>
-                        <li class="navLinks__item "><a [routerLink]="['organiser']">Organiser</a></li>
-                        <li class="navLinks__item "><a [routerLink]="['store']">Store</a></li>
-                        <li class="navLinks__item "><a [routerLink]="['checkout']">Checkout</a></li>
-                        <li class="navLinks__item "><a [routerLink]="['rewards']">Rewards</a></li>
+                        <li class="navLinks__item "><a (click)="handleNavLinks('home')"
+                                [class.activeHeader]="selectedNavLink == 'home'" [routerLink]="['home']">Home</a></li>
+                        <li class="navLinks__item "><a (click)="handleNavLinks('organiser')"
+                                [routerLink]="['organiser']"
+                                [class.activeHeader]="selectedNavLink == 'organiser'">Organiser</a></li>
+                        <li class="navLinks__item "><a (click)="handleNavLinks('store')" [routerLink]="['store']"
+                                [class.activeHeader]="selectedNavLink == 'store'">Store</a></li>
+                        <li class="navLinks__item "><a (click)="handleNavLinks('checkout')" [routerLink]="['checkout']"
+                                [class.activeHeader]="selectedNavLink == 'checkout'">Checkout</a></li>
+                        <li class="navLinks__item "><a (click)="handleNavLinks('rewards')" [routerLink]="['rewards']"
+                                [class.activeHeader]="selectedNavLink == 'rewards'">Rewards</a></li>
                     </ul>
                 </div>
             </nav>
