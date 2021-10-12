@@ -8,6 +8,7 @@ import { CustomerTypeComponent } from './components/customer-type/customer-type.
 import { LeftMenuComponent } from './components/left-menu/left-menu.component';
 import { ChooseCategoriesComponent } from './components/choose-categories/choose-categories.component';
 import { PacksComponent } from './components/packs/packs.component';
+import { FiltersComponent } from './components/filters/filters.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { PacksComponent } from './components/packs/packs.component';
     CustomerTypeComponent,
     LeftMenuComponent,
     ChooseCategoriesComponent,
-    PacksComponent
+    PacksComponent,
+    FiltersComponent
   ],
   imports: [
     CommonModule,
@@ -27,7 +29,8 @@ import { PacksComponent } from './components/packs/packs.component';
     CustomerTypeComponent,
     LeftMenuComponent,
     ChooseCategoriesComponent,
-    PacksComponent
+    PacksComponent,
+    FiltersComponent
   ],
   entryComponents: [
     ChooseCategoriesComponent

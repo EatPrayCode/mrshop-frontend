@@ -79,4 +79,23 @@ export class StoreComponent implements OnInit {
     });
   }
 
+  openFiltersDialog(): void {
+    let dialogRef = this.dialog.open(FiltersComponent, {
+      hasBackdrop: true,
+      disableClose: false,
+      height: '100vh',
+      minWidth: '90%',
+      position: {
+        right: '0px',
+        bottom: '0px',
+      },
+      data: {
+        // pack: pack
+      }
+    });
+    dialogRef.afterClosed().subscribe(result => {
+      console.log('The dialog was closed');
+    });
+  }
+
 }
