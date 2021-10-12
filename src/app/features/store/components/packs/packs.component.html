@@ -1,193 +1,63 @@
-<div id="mainContainer" class="container margin-top-sm">
-   <div id="shopContainer" class="row productgrid">
-       <div class="catalog-topnav amasty-catalog-topnav">
-       </div>
-
-       <div id="listContainer" class="col-12 col-sm-12 col-md-12 col-lg-12">
-           <div id="amasty-shopby-product-list">
-               <div class="top-toolbar">
-
-                   <div id="filterSort" class="row transparent-sod toolbar toolbar-products">
-
-                       <div class="col-6">
-                           <a id="filterButton" class="d-block d-sm-none filter-btn" data-toggle="collapse"
-                               href="#filterMobile" role="button" aria-expanded="false"
-                               aria-controls="filterMobile">FILTER BY<span class="icon-plus"></span></a>
-                       </div>
-
-                       <div class="col-6">
-                           <div class="toolbar-sorter sorter">
-                               <label class="sorter-label" for="sorter">Sort By</label>
-                               <select id="sorter" data-role="sorter" class="sorter-options">
-                                   <option value="position">
-                                       Position </option>
-                                   <option value="name">
-                                       Name </option>
-                                   <option value="price" selected="selected">
-                                       Price </option>
-                               </select>
-                               <a title="Set Descending Direction" href="#" class="action sorter-action sort-asc"
-                                   data-role="direction-switcher" data-value="desc">
-                                   <span>Set Descending Direction</span>
-                               </a>
-                           </div>
-                       </div>
-                   </div>
-
-                   <nav class="pagination-container" aria-label="shopPagination">
-                       <p class="page-info">
-                           Items <span>1</span>-<span>24</span> of <span>884</span> </p>
-
-                       <ul class="pagination justify-content-end">
-
-
-
-                           <li class="page-item active">
-                               <a class="page-link">1</a>
-                           </li>
-                           <li class="page-item">
-                               <a href="https://danielladraper.com/women?p=2" class="page-link">2</a>
-                           </li>
-                           <li class="page-item">
-                               <a href="https://danielladraper.com/women?p=3" class="page-link">3</a>
-                           </li>
-                           <li class="page-item">
-                               <a href="https://danielladraper.com/women?p=4" class="page-link">4</a>
-                           </li>
-                           <li class="page-item">
-                               <a href="https://danielladraper.com/women?p=5" class="page-link">5</a>
-                           </li>
-
-
-
-                           <li class="page-item">
-                               <a class="page-link" href="https://danielladraper.com/women?p=2"
-                                   title="Next">NEXT&nbsp;&nbsp;<span class="icon-chevron-thin-right"></span></a>
-                           </li>
-                       </ul>
-
-                   </nav>
-
-
-
-               </div>
-
-
-               <div class="row category_list_products">
-                   <div *ngFor="let pack of allPacks"
-                       class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-3 col-xxl-3">
-                       <div class="product-list">
-
-                           <a class="product-link"
-                               href="https://danielladraper.com/silver-baby-stirrup-sailing-rope">
-
-                               <img class="product-image"
-                                   src="https://danielladraper.com/media/catalog/product/cache/90dc43685fc1f89a1968cf96207edf01/s/i/silverbabystirrupsailingrope1.jpg"
-                                   alt="Silver Baby Stirrup Sailing Rope" width="348" height="auto">
-                               <img class="detail-image"
-                                   src="https://danielladraper.com/media/catalog/product/cache/90dc43685fc1f89a1968cf96207edf01/s/i/silverbabystirrupsailingrope_hover.jpg"
-                                   alt="Silver Baby Stirrup Sailing Rope detailed" width="348" height="auto">
-
-                               <div class="product-desc">
-                                   <h2 class="product-title">Silver Baby Stirrup Sailing Rope</h2>
-                                   <div class="product-price" style="visibility: visible;">
-                                       <div class="price-box price-final_price" data-role="priceBox"
-                                           data-product-id="11667" data-price-box="product-id-11667">
-
-
-                                           <span class="price-container price-final_price tax weee"
-                                               style="visibility: visible;">
-                                               <span id="product-price-11667" data-price-amount="24.996001"
-                                                   data-price-type="finalPrice" class="price-wrapper "><span
-                                                       class="price">£25.00</span></span>
-                                           </span>
-
-                                       </div>
-                                   </div>
-                                   <span class="product-tag pink">New Design</span>
-                               </div>
-                           </a>
-                           <div data-role="add-to-links">
-                               <a class="wishlist-add" href="#" title="Add to Wish List"
-                                   aria-label="Add to Wish List"
-                                   data-post="{&quot;action&quot;:&quot;https:\/\/danielladraper.com\/guestwishlist\/index\/add\/&quot;,&quot;data&quot;:{&quot;product&quot;:&quot;11667&quot;,&quot;uenc&quot;:&quot;aHR0cHM6Ly9kYW5pZWxsYWRyYXBlci5jb20vd29tZW4,&quot;}}"
-                                   data-action="add-to-wishlist" role="button">
-                                   <span class="icon-DDHeartOutline"></span>
-                               </a>
-                           </div>
-                       </div>
-                   </div>
-               </div>
-
-               <div class="bottom-toolbar">
-
-                   <div id="filterSort" class="row transparent-sod toolbar toolbar-products">
-
-                       <div class="col-6">
-                           <a id="filterButton" class="d-block d-sm-none filter-btn" data-toggle="collapse"
-                               href="#filterMobile" role="button" aria-expanded="false"
-                               aria-controls="filterMobile">FILTER BY<span class="icon-plus"></span></a>
-                       </div>
-
-                       <div class="col-6">
-                           <div class="toolbar-sorter sorter">
-                               <label class="sorter-label" for="sorter">Sort By</label>
-                               <select id="sorter" data-role="sorter" class="sorter-options">
-                                   <option value="position">
-                                       Position </option>
-                                   <option value="name">
-                                       Name </option>
-                                   <option value="price" selected="selected">
-                                       Price </option>
-                               </select>
-                               <a title="Set Descending Direction" href="#" class="action sorter-action sort-asc"
-                                   data-role="direction-switcher" data-value="desc">
-                                   <span>Set Descending Direction</span>
-                               </a>
-                           </div>
-                       </div>
-                   </div>
-
-                   <nav class="pagination-container" aria-label="shopPagination">
-                       <p class="page-info">
-                           Items <span>1</span>-<span>24</span> of <span>884</span> </p>
-
-                       <ul class="pagination justify-content-end">
-
-
-
-                           <li class="page-item active">
-                               <a class="page-link">1</a>
-                           </li>
-                           <li class="page-item">
-                               <a href="https://danielladraper.com/women?p=2" class="page-link">2</a>
-                           </li>
-                           <li class="page-item">
-                               <a href="https://danielladraper.com/women?p=3" class="page-link">3</a>
-                           </li>
-                           <li class="page-item">
-                               <a href="https://danielladraper.com/women?p=4" class="page-link">4</a>
-                           </li>
-                           <li class="page-item">
-                               <a href="https://danielladraper.com/women?p=5" class="page-link">5</a>
-                           </li>
-
-
-
-                           <li class="page-item">
-                               <a class="page-link" href="https://danielladraper.com/women?p=2"
-                                   title="Next">NEXT&nbsp;&nbsp;<span class="icon-chevron-thin-right"></span></a>
-                           </li>
-                       </ul>
-
-                   </nav>
-
-
-
-               </div>
-
-           </div>
-       </div>
-
-   </div>
-</div>
+<div class="frGb">Categories to Bag</div>
+    <div class="_1g-m">
+        <div class="_2ihZ wdFi"><a href="/MemoryCard1-llpid-275260?use_mw=1&amp;src=store&amp;from=storefront">
+                <div class="OWAX"><img class="_1hwb _1Zjw"
+                        src="https://assetscdn1.paytm.com/images/catalog/view_item/904044/1633433476934.png?imwidth=280&amp;impolicy=hq"
+                        alt="Memory Cards"></div>
+                <div class="_2Yoj"></div>
+            </a></div>
+        <div class="_2ihZ wdFi"><a
+                href="/tablets-offer-msf-deals-2021-llpid-288650?use_mw=1&amp;src=store&amp;from=storefront">
+                <div class="OWAX"><img class="_1hwb _1Zjw"
+                        src="https://assetscdn1.paytm.com/images/catalog/view_item/903991/1633431593817.png?imwidth=280&amp;impolicy=hq"
+                        alt="Tablets"></div>
+                <div class="_2Yoj"></div>
+            </a></div>
+        <div class="_2ihZ wdFi"><a
+                href="/Kids-clothing-collection-llpid-287168?use_mw=1&amp;src=store&amp;from=storefront">
+                <div class="OWAX"><img class="_1hwb _1Zjw"
+                        src="https://assetscdn1.paytm.com/images/catalog/view_item/903598/1633424151045.jpg?imwidth=280&amp;impolicy=hq"
+                        alt="Kidswear"></div>
+                <div class="_2Yoj"></div>
+            </a></div>
+        <div class="_2ihZ wdFi"><a href="/Diabetic-care-psp-llpid-204458?use_mw=1&amp;src=store&amp;from=storefront">
+                <div class="OWAX"><img class="_1hwb _1Zjw"
+                        src="https://assetscdn1.paytm.com/images/catalog/view_item/903225/1633420310225.png?imwidth=280&amp;impolicy=hq"
+                        alt="Diabetic Care"></div>
+                <div class="_2Yoj"></div>
+            </a></div>
+        <div class="_2ihZ wdFi"><a
+                href="/Cookware-Combos-and-more-llpid-288604?use_mw=1&amp;src=store&amp;from=storefront">
+                <div class="OWAX"><img class="_1hwb _1Zjw"
+                        src="https://assetscdn1.paytm.com/images/catalog/view_item/903725/1633427313217.png?imwidth=280&amp;impolicy=hq"
+                        alt="clone_clone_Cookware &amp; More"></div>
+                <div class="_2Yoj"></div>
+            </a></div>
+        <div class="_2ihZ wdFi"><a
+                href="/Casual-Shoes-Collection-llpid-287655?use_mw=1&amp;src=store&amp;from=storefront">
+                <div class="OWAX"><img class="_1hwb _1Zjw"
+                        src="https://assetscdn1.paytm.com/images/catalog/view_item/903994/1633431971545.png?imwidth=280&amp;impolicy=hq"
+                        alt="Mens casual shoes"></div>
+                <div class="_2Yoj"></div>
+            </a></div>
+        <div class="_2ihZ wdFi"><a
+                href="/New-Brands-Launched-Apparels-llpid-286987?use_mw=1&amp;src=store&amp;from=storefront&amp;page=1&amp;category=5041&amp;brand=486407&amp;sort_popular=1&amp;price=149%2C299">
+                <div class="OWAX"><img class="_1hwb _1Zjw"
+                        src="https://assetscdn1.paytm.com/images/catalog/view_item/903747/1633428174851.png?imwidth=280&amp;impolicy=hq"
+                        alt="Belts &amp; wallets"></div>
+                <div class="_2Yoj"></div>
+            </a></div>
+        <div class="_2ihZ wdFi"><a
+                href="/petsupplies-all-llpid-198441?category=101406,101407&amp;use_mw=1&amp;src=store&amp;from=storefront">
+                <div class="OWAX"><img class="_1hwb _1Zjw"
+                        src="https://assetscdn1.paytm.com/images/catalog/view_item/904543/1633449343378.png?imwidth=280&amp;impolicy=hq"
+                        alt="FB_Dog &amp; Cat Food"></div>
+                <div class="_2Yoj"></div>
+            </a></div>
+        <div class="_2ihZ wdFi"><a href="/Fans-Up-to-60-Off-llpid-208794?use_mw=1&amp;src=store&amp;from=storefront">
+                <div class="OWAX"><img class="_1hwb _1Zjw"
+                        src="https://assetscdn1.paytm.com/images/catalog/view_item/904038/1633433771000.png?imwidth=280&amp;impolicy=hq"
+                        alt="clone_FAN"></div>
+                <div class="_2Yoj"></div>
+            </a></div>
+    </div>
