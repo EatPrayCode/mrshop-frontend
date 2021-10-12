@@ -1,3 +1,4 @@
+import { organiserItemsConst } from './../../mock-data/constants';
 import { Component } from '@angular/core';
 
 @Component({
@@ -6,5 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./blank.component.scss']
 })
 export class BlankComponent {
+
+  complexLinks: any[] = [{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},];
 
 }
