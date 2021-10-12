@@ -988,28 +988,3 @@ main {
         opacity: 1;
     }
 }
-/*! CSS Used fontfaces */
-@font-face {
-    font-family: UniNeue;
-    font-style: normal;
-    font-weight: 500;
-    src: local("Uni Neue Regular"), local("UniNeue-Regular"),
-        url(https://www.phonepe.com/pulsestatic/pulse/static/UniNeueRegular-7e4e5ddbef12dcf02118f78af51da82e.otf)
-            format("truetype");
-}
-@font-face {
-    font-family: UniNeue;
-    font-style: bold;
-    font-weight: 700;
-    src: local("Uni Neue Bold"), local("UniNeue-Bold"),
-        url(https://www.phonepe.com/pulsestatic/pulse/static/UniNeueBold-7b99adece88b53f147f2bb7aea4762d0.otf)
-            format("truetype");
-}
-@font-face {
-    font-family: UniNeue;
-    font-style: bolder;
-    font-weight: 800;
-    src: local("Uni Neue Heavy"), local("UniNeue-Heavy"),
-        url(https://www.phonepe.com/pulsestatic/pulse/static/UniNeueHeavy-270b7d3f7356ce1a68c52efd83f1f017.otf)
-            format("truetype");
-}
