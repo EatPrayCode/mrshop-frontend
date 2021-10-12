@@ -1,13 +1,16 @@
-<section class="_3995s">
-    <div class="_3zYBn">
-        <div class="_3QLRN"><i class="clear"></i>
-            <div class="_1vFpG"><i class="search"></i><input type="text" placeholder="Search Paytm"></div>
+<section class="micro-app-container">
+    <div class="micro-app-toolbar-container">
+        <div class="micro-app-toolbar-row"><i class="clear"></i>
+            <div class="micro-app-toolbar-search-container">
+                <i class="search"> </i>
+                <input type="text" placeholder="Search mrshop">
+            </div>
         </div>
     </div>
-    <div class="_1E_OP">
-        <div class="_8oupZ">
-            <div class="_2yuAj">
-                <a class="_1VCtp">
+    <div class="micro-app-content">
+        <div class="micro-app-content-left">
+            <div class="micro-app-left-menu-list">
+                <a [routerLink]="['home']" class="left-menu-item-active">
                     <span>Recharge &amp; Pay Bills</span>
                 </a>
                 <a class="">
@@ -31,12 +34,13 @@
                 </a>
             </div>
         </div>
-        <div class="o5jX8" style="background: #f5f8fa;">
+        <div class="micro-app-content-right" style="background: #f5f8fa;">
             <a *ngFor="let item of complexLinks">
                 <div class="_3yeWX">
                     <img src="https://assetscdn1.paytm.com/images/catalog/view_item/710719/1610605805462.png"
                         alt="Mobile Prepaid">
-                </div><span>Mobile Prepaid</span>
+                </div>
+                <span>Mobile Prepaid</span>
             </a>
         </div>
     </div>

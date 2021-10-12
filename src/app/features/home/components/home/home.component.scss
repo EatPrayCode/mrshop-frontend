@@ -1,4 +1,3 @@
-
 ::-webkit-scrollbar {
     display: none;
 }
@@ -17,12 +16,10 @@ img {
     max-width: 100%;
     border-style: none;
 }
-button,
 input {
     font: inherit;
     margin: 0;
 }
-button,
 input {
     overflow: visible;
 }
@@ -32,24 +29,10 @@ a {
     cursor: pointer;
     position: relative;
 }
-ul {
-    list-style: none;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-ul {
-    margin: 0;
-    padding: 0;
-}
-button:focus,
 input:focus {
-    outline: none;
+    outline: 0;
     -webkit-appearance: none;
-}
-/*! CSS Used from: Embedded */
+} /*! CSS Used from: Embedded */
 i {
     font-family: PAYTM-COMMON-MWEB !important;
     speak: none;
@@ -71,16 +54,11 @@ i {
 img {
     width: 100%;
 }
-
-input:-moz-placeholder,
-
-/*! CSS Used from: Embedded */
-img {
+img,
+input:-moz-placeholder {
     width: 100%;
 }
-
-input:-moz-placeholder,
-._2-CQY ._3kZR6 a {
+input:-moz-placeholder {
     background: #00b9f5;
     border-radius: 50px;
     padding: 7px 13px;
@@ -88,72 +66,7 @@ input:-moz-placeholder,
     font-size: 1.2rem;
     color: #fff;
     font-weight: 700;
-}
-
-._2PSue,
-._2PSue:after {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
-}
-
-._1glzc ._153qt ._210g0,
-._1glzc ._153qt ._210g0 a {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-align: center;
-    align-items: center;
-}
-._1glzc ._153qt ._210g0 a {
-    width: 23%;
-    min-width: 23%;
-    text-align: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -ms-flex-direction: column;
-    flex-direction: column;
-}
-._1glzc ._153qt ._210g0 a span {
-    background: #000;
-    border-radius: 3px;
-    padding: 0 6px;
-    font-size: 14.4px;
-    font-size: 0.9rem;
-    color: #fff;
-    font-weight: 700;
-    line-height: 1.4;
-    position: absolute;
-    top: -8px;
-}
-._1glzc ._153qt ._210g0 a ._1kWgX {
-    height: 33px;
-    font-size: 19.2px;
-    font-size: 1.2rem;
-    color: #fff;
-    font-weight: 600;
-    line-height: 15px;
-}
-._1glzc ._153qt ._210g0 a img {
-    padding-bottom: 4px;
-    width: 40px;
-}
-/*! CSS Used from: Embedded */
-._2MTbQ img {
-    position: absolute;
-    bottom: 0;
-}
-
-._2MTbQ ._1Ga58 h1 span {
-    display: block;
-    text-transform: none;
-    font-size: 25.6px;
-    font-size: 1.6rem;
-    color: #000;
-    font-weight: 500;
-}
-
+} /*! CSS Used from: Embedded */
 img {
     width: 100%;
 }
@@ -161,79 +74,19 @@ input:-moz-placeholder,
 input:focus::-moz-placeholder {
     color: transparent;
 }
-.qSlSv ._3zBy5,
-.qSlSv ._3zBy5 a {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-align: center;
-    align-items: center;
+img {
+    width: 100%;
 }
-.qSlSv ._3zBy5 a {
-    width: 22%;
-    min-width: 22%;
-    text-align: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -ms-flex-direction: column;
-    flex-direction: column;
+input:-moz-placeholder,
+input:focus::-moz-placeholder {
+    color: transparent;
+} /*! CSS Used from: Embedded */
+img {
+    width: 100%;
 }
-.qSlSv ._3zBy5 a span {
-    background: #000;
-    border-radius: 3px;
-    padding: 0 4px;
-    display: inline-block;
-    width: -webkit-max-content;
-    width: -moz-max-content;
-    width: max-content;
-    -webkit-transform: translateX(-40%);
-    -ms-transform: translateX(-40%);
-    transform: translateX(-40%);
-    font-size: 14.4px;
-    font-size: 0.9rem;
-    color: #fff;
-    font-weight: 700;
-    line-height: 1.4;
-    position: absolute;
-    top: -3px;
-}
-.qSlSv ._3zBy5 a ._3IE-U {
-    height: 13px;
-    background: transparent;
-}
-.qSlSv ._3zBy5 a ._3GMyU {
-    margin-bottom: 4px;
-    height: 50px;
-}
-.qSlSv ._3zBy5 a ._3GMyU img {
-    width: auto;
-    height: 50px;
-}
-.qSlSv ._3zBy5 a ._2mM_z {
-    height: 40px;
-    max-height: 20px;
-    font-size: 19.2px;
-    font-size: 1.2rem;
-    color: #000;
-    font-weight: 600;
-    line-height: 15px;
-}
-.qSlSv ._3qnF1,
-.qSlSv ._3qnF1 ._29q3U {
-    -ms-flex-align: center;
-    align-items: center;
-}
-.qSlSv ._3qnF1 ._29q3U i {
-    margin: 0 8px 3px;
-    padding: 3px;
-    border: solid #00b9f5;
-    border-width: 0 2px 2px 0;
-    display: inline-block;
-    -webkit-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
-    transition: all 0.3s ease;
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
+input:-moz-placeholder,
+input:focus::-moz-placeholder {
+    color: transparent;
 }
 img {
     width: 100%;
@@ -242,25 +95,34 @@ input:-moz-placeholder,
 input:focus::-moz-placeholder {
     color: transparent;
 }
-._33-Uj .cXQRN .pjtEk ._2ClTh span {
-    display: block;
-    font-size: 19.2px;
-    font-size: 1.2rem;
-    color: gray;
-    font-weight: 500;
+img {
+    width: 100%;
 }
-._2r-dj img {
-    margin-right: 20px;
-    border-radius: 100%;
-    width: 50px;
-    height: 50px;
+input:-moz-placeholder,
+input:focus::-moz-placeholder {
+    color: transparent;
+} /*! CSS Used from: Embedded */
+img {
+    width: 100%;
 }
-._36Xcr img {
-    margin: 6px 20px 0 0;
-    width: auto;
-    height: 30px;
+input:-moz-placeholder,
+input:focus::-moz-placeholder {
+    color: transparent;
+} /*! CSS Used from: Embedded */
+img {
+    width: 100%;
 }
-/*! CSS Used from: Embedded */
+input:-moz-placeholder,
+input:focus::-moz-placeholder {
+    color: transparent;
+} /*! CSS Used from: Embedded */
+img {
+    width: 100%;
+}
+input:-moz-placeholder,
+input:focus::-moz-placeholder {
+    color: transparent;
+} /*! CSS Used from: Embedded */
 img {
     width: 100%;
 }
@@ -268,193 +130,7 @@ input:-moz-placeholder,
 input:focus::-moz-placeholder {
     color: transparent;
 }
-._1w7kQ img {
-    border-radius: 100%;
-    border: 1px solid #e8edf3;
-    margin-right: 15px;
-    width: 40px;
-    height: 40px;
-}
-._1w7kQ ._2-z9I span {
-    display: block;
-    font-size: 16px;
-    font-size: 1rem;
-    color: #000;
-    font-weight: 400;
-}
-._1w7kQ a {
-    background: #00b9f5;
-    border-radius: 50px;
-    padding: 7px 13px;
-    margin-left: auto;
-    font-size: 19.2px;
-    font-size: 1.2rem;
-    color: #fff;
-    font-weight: 800;
-}
-
-img {
-    width: 100%;
-}
-input:-moz-placeholder,
-input:focus::-moz-placeholder {
-    color: transparent;
-}
-.ns3pk ul,
-.ns3pk ul li {
-    display: -ms-flexbox;
-    display: flex;
-}
-.ns3pk ul li img {
-    margin-right: 10px;
-    border-radius: 12px;
-}
-img {
-    width: 100%;
-}
-
-input:-moz-placeholder,
-input:focus::-moz-placeholder {
-    color: transparent;
-}
-._33fqW ul,
-._33fqW ul li {
-    display: -ms-flexbox;
-    display: flex;
-}
-._33fqW ul li img {
-    margin-right: 10px;
-    border-radius: 100%;
-    width: 70px;
-    height: 70px;
-}
-.YQ_6D,
-.YQ_6D .LBqxR {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-align: center;
-    align-items: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -ms-flex-direction: column;
-    flex-direction: column;
-}
-
-.YQ_6D .LBqxR h1 span {
-    display: block;
-    margin-top: 8px;
-    font-size: 16px;
-    color: #333;
-    font-weight: 400;
-    line-height: 1.3;
-}
-.YQ_6D .LBqxR ._2OSbb img {
-    width: 20px;
-    margin-left: 15px;
-}
-.YQ_6D .LBqxR ._2OSbb img:first-child {
-    margin-left: 0;
-}
-.YQ_6D .hzmAb span {
-    display: block;
-    border-radius: 4px;
-    text-align: center;
-    background: #00b9f5;
-    width: 100%;
-    height: 62px;
-    font-size: 16px;
-    color: #fff;
-    font-weight: 700;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-align: center;
-    align-items: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-}
-/*! CSS Used from: Embedded */
-img {
-    width: 100%;
-}
-input:-moz-placeholder,
-input:focus::-moz-placeholder {
-    color: transparent;
-}
-.wMR_D ._3ZKYn:after,
-.wMR_D ._3ZKYn:before {
-    content: "";
-    margin-top: -2px;
-    background: #1d2f54;
-    width: 100%;
-    height: 2px;
-    position: absolute;
-    top: 50%;
-    left: 0;
-}
-/*! CSS Used from: Embedded */
-img {
-    width: 100%;
-}
-input:-moz-placeholder,
-input:focus::-moz-placeholder {
-    color: transparent;
-}
-.DmsB6 i {
-    font-size: 24px;
-}
-/*! CSS Used from: Embedded */
-img {
-    width: 100%;
-}
-._3sjUl i {
-    border: solid;
-    border-width: 0 1px 1px 0;
-    display: inline-block;
-    padding: 3px;
-}
-input:-moz-placeholder,
-input:focus::-moz-placeholder {
-    color: transparent;
-}
-._63Y5e .w7b5D a {
-    width: 80px;
-    font-size: 24px;
-    color: #506d85;
-}
-._63Y5e ._3f262 a {
-    color: #8ba6c1;
-    position: relative;
-    display: inline-block;
-    margin: 5px 10px 0;
-    width: inherit;
-}
-._63Y5e ._3f262 a:after {
-    content: "|";
-    position: absolute;
-    top: -2px;
-    right: -11px;
-}
-.W5G8p h1,
-.W5G8p h2,
-.W5G8p h3,
-.W5G8p h4 {
-    font-size: 22.4px;
-    font-size: 1.4rem;
-}
-/*! CSS Used from: Embedded */
-img {
-    width: 100%;
-}
-input:-moz-placeholder,
-input:focus::-moz-placeholder {
-    color: transparent;
-}
-._3995s {
-    overflow-y: scroll;
-    // position: fixed;
-}
-._3995s,
-._3995s ._3zYBn {
+.micro-app-container .micro-app-toolbar-container {
     background: #fff;
     top: 0;
     right: 0;
@@ -462,32 +138,33 @@ input:focus::-moz-placeholder {
     left: 0;
     z-index: 3;
 }
-._3995s ._3zYBn {
+.micro-app-container .micro-app-toolbar-container {
     border-bottom: 1px solid #e8edf3;
     width: 100%;
     position: -webkit-sticky;
     position: sticky;
 }
-._3995s ._3zYBn ._3QLRN {
+.micro-app-container .micro-app-toolbar-container ._3QLRN {
     padding: 20px 20px 20px;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-align: center;
     align-items: center;
 }
-._3995s ._3zYBn ._3QLRN i {
+
+.micro-app-container .micro-app-toolbar-container ._3QLRN i {
     padding: 10px 10px 10px 0;
     font-size: 25px;
     color: #506d85;
     font-weight: 300;
 }
-._3995s ._3zYBn ._3QLRN ._1vFpG {
+.micro-app-container .micro-app-toolbar-container ._3QLRN .micro-app-toolbar-search-container {
     display: -ms-flexbox;
     display: flex;
     width: 100%;
     position: relative;
 }
-._3995s ._3zYBn ._3QLRN ._1vFpG i {
+.micro-app-container .micro-app-toolbar-container ._3QLRN .micro-app-toolbar-search-container i {
     font-size: 15px;
     color: #506d85;
     font-weight: 300;
@@ -495,7 +172,7 @@ input:focus::-moz-placeholder {
     top: 2px;
     left: 13px;
 }
-._3995s ._3zYBn ._3QLRN ._1vFpG input {
+.micro-app-container .micro-app-toolbar-container ._3QLRN .micro-app-toolbar-search-container input {
     border: 0;
     background: #f5f8fa;
     border-radius: 50px;
@@ -506,25 +183,29 @@ input:focus::-moz-placeholder {
     color: #506d85;
     font-weight: 500;
 }
-._3995s ._3zYBn ._3QLRN ._1vFpG input:focus::-webkit-input-placeholder {
+.micro-app-container
+    .micro-app-toolbar-container
+    ._3QLRN
+    .micro-app-toolbar-search-container
+    input:focus::-webkit-input-placeholder {
     opacity: 0;
     color: transparent;
     -webkit-transition: all 0.2s ease;
     -o-transition: all 0.2s ease;
     transition: all 0.2s ease;
 }
-._3995s ._1E_OP {
+.micro-app-container .micro-app-content {
     display: -ms-flexbox;
     display: flex;
 }
-._3995s ._1E_OP ._8oupZ {
+.micro-app-container .micro-app-content .micro-app-content-left {
     width: 30%;
     background: #f5f8fa;
     overflow: scroll;
     height: 84vh;
     position: absolute;
 }
-._3995s ._1E_OP ._8oupZ ._2yuAj a {
+.micro-app-container .micro-app-content .micro-app-content-left .micro-app-left-menu-list a {
     display: block;
     padding: 23px 0;
     border-bottom: 1px solid #e8edf3;
@@ -532,20 +213,20 @@ input:focus::-moz-placeholder {
     color: #37445a;
     font-weight: 500;
 }
-._3995s ._1E_OP ._8oupZ ._2yuAj a span {
+.micro-app-container .micro-app-content .micro-app-content-left .micro-app-left-menu-list a span {
     display: block;
     padding: 0 13px;
 }
-._3995s ._1E_OP ._8oupZ ._2yuAj ._1VCtp {
+.micro-app-container .micro-app-content .micro-app-content-left .micro-app-left-menu-list .left-menu-item-active {
     background: #fff;
     font-weight: 700;
 }
-._3995s ._1E_OP ._8oupZ ._2yuAj ._1VCtp span {
+.micro-app-container .micro-app-content .micro-app-content-left .micro-app-left-menu-list .left-menu-item-active span {
     display: block;
     padding: 0 13px;
     border-left: 2px solid #00b9f5;
 }
-._3995s ._1E_OP .o5jX8 {
+.micro-app-container .micro-app-content .micro-app-content-right {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
@@ -557,7 +238,7 @@ input:focus::-moz-placeholder {
     width: 70%;
     max-height: 80vh;
 }
-._3995s ._1E_OP .o5jX8 a {
+.micro-app-container .micro-app-content .micro-app-content-right a {
     text-align: center;
     width: 33.33%;
     margin-bottom: 25px;
@@ -568,16 +249,16 @@ input:focus::-moz-placeholder {
     -ms-flex-direction: column;
     flex-direction: column;
 }
-._3995s ._1E_OP .o5jX8 a ._3yeWX {
+.micro-app-container .micro-app-content .micro-app-content-right a ._3yeWX {
     margin-bottom: 5px;
     width: 64px;
     height: auto;
 }
-._3995s ._1E_OP .o5jX8 a ._3yeWX img {
+.micro-app-container .micro-app-content .micro-app-content-right a ._3yeWX img {
     width: auto;
     height: 40px;
 }
-._3995s ._1E_OP .o5jX8 a span {
+.micro-app-container .micro-app-content .micro-app-content-right a span {
     text-align: center;
     width: 70px;
     font-size: 12px;
