@@ -13,6 +13,7 @@
           </div>
 
           <div class="nav-button-content">
+
             <div fxFlex="100" class="mt-3 p-2" fxLayoutAlign="space-between center">
               <button mat-raised-button color="primary" matStepperPrevious fxLayout="row" fxLayoutAlign="center center"
                 type="button">
@@ -24,6 +25,19 @@
                 <span class="mx-1 uppercase">Next</span>
                 <mat-icon>navigate_next</mat-icon>
               </button>
+
+              <div class="pack-summary flex-column">
+                <!-- <input formControlName="packTotal"> -->
+                <div class="summary flex-row">
+                  <div class="summary-content">Pack total : $10000</div>
+                  <div class="summary-content">Total count: 56456599</div>
+                </div>
+                <div class="summary flex-row">
+                  <div class="summary-content">Savings : $10000</div>
+                  <div class="summary-content">Savings : $10000</div>
+                </div>
+              </div>
+
             </div>
 
           </div>
@@ -42,9 +56,7 @@
                   <mat-label>Location</mat-label>
                   <input matInput placeholder="Enter a location" formControlName="location" autocomplete="off"
                     #addressAutocomplete>
-                  <button mat-button matSuffix
-                    mat-icon-button
-                    type="button">
+                  <button mat-button matSuffix mat-icon-button type="button">
                     <mat-icon>close</mat-icon>
                   </button>
                 </mat-form-field>
@@ -74,9 +86,7 @@
                   <mat-label>Neighborhood</mat-label>
                   <mat-select placeholder="Select Neighborhood..." formControlName="neighborhood" multiple
                     (selectionChange)="onSelectNeighborhood()">
-                    <mat-option
-                      *ngFor="let neighborhood of neighborhoods"
-                      [value]="neighborhood">
+                    <mat-option *ngFor="let neighborhood of neighborhoods" [value]="neighborhood">
                       {{neighborhood?.name}}
                     </mat-option>
                   </mat-select>
@@ -87,9 +97,7 @@
                 <mat-form-field appearance="outline" class="w-100">
                   <mat-label>Street</mat-label>
                   <mat-select placeholder="Select Street..." formControlName="street" multiple>
-                    <mat-option
-                      *ngFor="let street of streets"
-                      [value]="street">
+                    <mat-option *ngFor="let street of streets" [value]="street">
                       {{street?.name}}
                     </mat-option>
                   </mat-select>
@@ -165,8 +173,7 @@
                 <mat-icon>check</mat-icon>
               </button>
               <h2 class="mt-3 uppercase">Congratulations!</h2>
-              <h2 class="my-3">Your Order <span
-                  class="primary-color">"Hello"</span> has been Placed
+              <h2 class="my-3">Your Order <span class="primary-color">"Hello"</span> has been Placed
               </h2>
               <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempus dolor ante, ut
                 luctus mi faucibus a. Ut eu tincidunt neque. Proin porttitor id ligula id placerat. Integer nec nulla
