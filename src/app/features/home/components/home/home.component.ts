@@ -22,7 +22,7 @@ export class HomeComponent implements OnInit {
       const mainCategory_ = this.navItems.filter(ele => {
         return ele.route == categoryName;
       });
-      this.rightList = mainCategory_[0].children;
+      this.rightList = mainCategory_;
       this.mainCategory = mainCategory_;
     });
   }
@@ -38,7 +38,6 @@ export class HomeComponent implements OnInit {
 
   selectMainCategory(item: any) {
     const category = item.route;
-    this.mainCategory = {};
     const mainCategory_ = this.navItems.filter(ele => {
       return ele.route == category;
     });
