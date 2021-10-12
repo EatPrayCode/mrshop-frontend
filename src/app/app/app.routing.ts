@@ -20,10 +20,10 @@ const routes: Routes = [
         path: 'signup',
         component: SignUpComponent
       },
-      {
-        path: 'home',
-        loadChildren: () => import('./../features/home/home.module').then(m => m.HomeModule)
-      },
+      // {
+      //   path: 'home',
+      //   loadChildren: () => import('./../features/home/home.module').then(m => m.HomeModule)
+      // },
     ]
   },
 

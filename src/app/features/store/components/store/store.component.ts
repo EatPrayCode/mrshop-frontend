@@ -7,6 +7,9 @@ import { MatSidenav } from '@angular/material/sidenav';
 import { delay } from 'rxjs/operators';
 import { ChooseCategoriesComponent } from '../choose-categories/choose-categories.component';
 import { onSideNavChange, animateText, onMainContentChange } from '../../animations/animations';
+import { of } from 'rxjs';
+import { categoriesNavItems } from 'src/app/mock-data/app.models';
+import { categoriesNavItemsConst } from 'src/app/mock-data/constants';
 
 @Component({
   selector: 'app-store',
@@ -20,6 +23,36 @@ export class StoreComponent implements OnInit {
   public sortings = ['Sort by Default', 'Best match', 'Lowest first', 'Highest first'];
   public sort: any;
 
+  rightList: any = [{}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {},];
+  mainCategory: any = {}
+  navItems: categoriesNavItems[] = [];
+
+  initialisePage(categoryName: any) {
+    this.loadCategories({}).subscribe(res => {
+      this.navItems = res;
+      const mainCategory_ = this.navItems.filter(ele => {
+        return ele.route == categoryName;
+      });
+      this.rightList = mainCategory_[0].children;
+      this.mainCategory = mainCategory_;
+    });
+  }
+
+  loadCategories(payload: any) {
+    const obs$ = categoriesNavItemsConst;
+    return of(obs$).pipe(delay(300));
+  }
+
+  selectMainCategory(item: any) {
+    const category = item.route;
+    this.mainCategory = {};
+    const mainCategory_ = this.navItems.filter(ele => {
+      return ele.route == category;
+    });
+    this.mainCategory = item;
+    this.rightList = mainCategory_[0].children;
+  }
+
   constructor(
     private _sidenavService: SidenavService,
     private observer: BreakpointObserver,
@@ -32,6 +65,7 @@ export class StoreComponent implements OnInit {
 
   ngOnInit(): void {
     this.sort = this.sortings[0];
+    this.initialisePage('housekeeping');
   }
 
   public changeSorting(sort: any) {

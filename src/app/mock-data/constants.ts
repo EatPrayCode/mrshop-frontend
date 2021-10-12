@@ -185,6 +185,734 @@ export const categoriesNavItemsConst: categoriesNavItems[] = [
         ]
     },
     {
+        displayName: 'Housekeeping',
+        route: 'housekeeping',
+        children: [
+            {
+                displayName: 'Groceries',
+                packsList: [{
+                    name: 'Name1',
+                    price: '30'
+                },
+                {
+                    name: 'Name2',
+                    price: '60'
+                },
+                {
+                    name: 'Name1',
+                    price: '30'
+                },
+                {
+                    name: 'Name2',
+                    price: '60'
+                }
+                    ,
+                {
+                    name: 'Name1',
+                    price: '30'
+                },
+                {
+                    name: 'Name2',
+                    price: '60'
+                },
+                {
+                    name: 'Name1',
+                    price: '30'
+                },
+                {
+                    name: 'Name2',
+                    price: '60'
+                },
+                {
+                    name: 'Name1',
+                    price: '30'
+                },
+                {
+                    name: 'Name2',
+                    price: '60'
+                }]
+            },
+            {
+                displayName: 'Essentials',
+                packsList: [{
+                    name: 'Name3',
+                    price: '30'
+                },
+                {
+                    name: 'Name4',
+                    price: '60'
+                },
+                {
+                    name: 'Name3',
+                    price: '30'
+                },
+                {
+                    name: 'Name4',
+                    price: '60'
+                }
+                    ,
+                {
+                    name: 'Name3',
+                    price: '30'
+                },
+                {
+                    name: 'Name4',
+                    price: '60'
+                },
+                {
+                    name: 'Name3',
+                    price: '30'
+                },
+                {
+                    name: 'Name4',
+                    price: '60'
+                },
+                {
+                    name: 'Name3',
+                    price: '30'
+                },
+                {
+                    name: 'Name4',
+                    price: '60'
+                }]
+            },
+            {
+                displayName: 'Cutlery',
+                packsList: [{
+                    name: 'Name5',
+                    price: '30'
+                },
+                {
+                    name: 'Name6',
+                    price: '60'
+                },
+                {
+                    name: 'Name5',
+                    price: '30'
+                },
+                {
+                    name: 'Name6',
+                    price: '60'
+                }
+                    ,
+                {
+                    name: 'Name5',
+                    price: '30'
+                },
+                {
+                    name: 'Name6',
+                    price: '60'
+                },
+                {
+                    name: 'Name5',
+                    price: '30'
+                },
+                {
+                    name: 'Name6',
+                    price: '60'
+                },
+                {
+                    name: 'Name5',
+                    price: '30'
+                },
+                {
+                    name: 'Name6',
+                    price: '60'
+                }]
+            },
+            {
+                displayName: 'Others',
+                packsList: [{
+                    name: 'Name7',
+                    price: '30'
+                },
+                {
+                    name: 'Name8',
+                    price: '60'
+                },
+                {
+                    name: 'Name7',
+                    price: '30'
+                },
+                {
+                    name: 'Name8',
+                    price: '60'
+                }
+                    ,
+                {
+                    name: 'Name7',
+                    price: '30'
+                },
+                {
+                    name: 'Name8',
+                    price: '60'
+                },
+                {
+                    name: 'Name7',
+                    price: '30'
+                },
+                {
+                    name: 'Name8',
+                    price: '60'
+                },
+                {
+                    name: 'Name7',
+                    price: '30'
+                },
+                {
+                    name: 'Name8',
+                    price: '60'
+                }]
+            }
+        ]
+    },
+    {
+        displayName: 'Housekeeping',
+        route: 'housekeeping',
+        children: [
+            {
+                displayName: 'Groceries',
+                packsList: [{
+                    name: 'Name1',
+                    price: '30'
+                },
+                {
+                    name: 'Name2',
+                    price: '60'
+                },
+                {
+                    name: 'Name1',
+                    price: '30'
+                },
+                {
+                    name: 'Name2',
+                    price: '60'
+                }
+                    ,
+                {
+                    name: 'Name1',
+                    price: '30'
+                },
+                {
+                    name: 'Name2',
+                    price: '60'
+                },
+                {
+                    name: 'Name1',
+                    price: '30'
+                },
+                {
+                    name: 'Name2',
+                    price: '60'
+                },
+                {
+                    name: 'Name1',
+                    price: '30'
+                },
+                {
+                    name: 'Name2',
+                    price: '60'
+                }]
+            },
+            {
+                displayName: 'Essentials',
+                packsList: [{
+                    name: 'Name3',
+                    price: '30'
+                },
+                {
+                    name: 'Name4',
+                    price: '60'
+                },
+                {
+                    name: 'Name3',
+                    price: '30'
+                },
+                {
+                    name: 'Name4',
+                    price: '60'
+                }
+                    ,
+                {
+                    name: 'Name3',
+                    price: '30'
+                },
+                {
+                    name: 'Name4',
+                    price: '60'
+                },
+                {
+                    name: 'Name3',
+                    price: '30'
+                },
+                {
+                    name: 'Name4',
+                    price: '60'
+                },
+                {
+                    name: 'Name3',
+                    price: '30'
+                },
+                {
+                    name: 'Name4',
+                    price: '60'
+                }]
+            },
+            {
+                displayName: 'Cutlery',
+                packsList: [{
+                    name: 'Name5',
+                    price: '30'
+                },
+                {
+                    name: 'Name6',
+                    price: '60'
+                },
+                {
+                    name: 'Name5',
+                    price: '30'
+                },
+                {
+                    name: 'Name6',
+                    price: '60'
+                }
+                    ,
+                {
+                    name: 'Name5',
+                    price: '30'
+                },
+                {
+                    name: 'Name6',
+                    price: '60'
+                },
+                {
+                    name: 'Name5',
+                    price: '30'
+                },
+                {
+                    name: 'Name6',
+                    price: '60'
+                },
+                {
+                    name: 'Name5',
+                    price: '30'
+                },
+                {
+                    name: 'Name6',
+                    price: '60'
+                }]
+            },
+            {
+                displayName: 'Others',
+                packsList: [{
+                    name: 'Name7',
+                    price: '30'
+                },
+                {
+                    name: 'Name8',
+                    price: '60'
+                },
+                {
+                    name: 'Name7',
+                    price: '30'
+                },
+                {
+                    name: 'Name8',
+                    price: '60'
+                }
+                    ,
+                {
+                    name: 'Name7',
+                    price: '30'
+                },
+                {
+                    name: 'Name8',
+                    price: '60'
+                },
+                {
+                    name: 'Name7',
+                    price: '30'
+                },
+                {
+                    name: 'Name8',
+                    price: '60'
+                },
+                {
+                    name: 'Name7',
+                    price: '30'
+                },
+                {
+                    name: 'Name8',
+                    price: '60'
+                }]
+            }
+        ]
+    },
+    {
+        displayName: 'Housekeeping',
+        route: 'housekeeping',
+        children: [
+            {
+                displayName: 'Groceries',
+                packsList: [{
+                    name: 'Name1',
+                    price: '30'
+                },
+                {
+                    name: 'Name2',
+                    price: '60'
+                },
+                {
+                    name: 'Name1',
+                    price: '30'
+                },
+                {
+                    name: 'Name2',
+                    price: '60'
+                }
+                    ,
+                {
+                    name: 'Name1',
+                    price: '30'
+                },
+                {
+                    name: 'Name2',
+                    price: '60'
+                },
+                {
+                    name: 'Name1',
+                    price: '30'
+                },
+                {
+                    name: 'Name2',
+                    price: '60'
+                },
+                {
+                    name: 'Name1',
+                    price: '30'
+                },
+                {
+                    name: 'Name2',
+                    price: '60'
+                }]
+            },
+            {
+                displayName: 'Essentials',
+                packsList: [{
+                    name: 'Name3',
+                    price: '30'
+                },
+                {
+                    name: 'Name4',
+                    price: '60'
+                },
+                {
+                    name: 'Name3',
+                    price: '30'
+                },
+                {
+                    name: 'Name4',
+                    price: '60'
+                }
+                    ,
+                {
+                    name: 'Name3',
+                    price: '30'
+                },
+                {
+                    name: 'Name4',
+                    price: '60'
+                },
+                {
+                    name: 'Name3',
+                    price: '30'
+                },
+                {
+                    name: 'Name4',
+                    price: '60'
+                },
+                {
+                    name: 'Name3',
+                    price: '30'
+                },
+                {
+                    name: 'Name4',
+                    price: '60'
+                }]
+            },
+            {
+                displayName: 'Cutlery',
+                packsList: [{
+                    name: 'Name5',
+                    price: '30'
+                },
+                {
+                    name: 'Name6',
+                    price: '60'
+                },
+                {
+                    name: 'Name5',
+                    price: '30'
+                },
+                {
+                    name: 'Name6',
+                    price: '60'
+                }
+                    ,
+                {
+                    name: 'Name5',
+                    price: '30'
+                },
+                {
+                    name: 'Name6',
+                    price: '60'
+                },
+                {
+                    name: 'Name5',
+                    price: '30'
+                },
+                {
+                    name: 'Name6',
+                    price: '60'
+                },
+                {
+                    name: 'Name5',
+                    price: '30'
+                },
+                {
+                    name: 'Name6',
+                    price: '60'
+                }]
+            },
+            {
+                displayName: 'Others',
+                packsList: [{
+                    name: 'Name7',
+                    price: '30'
+                },
+                {
+                    name: 'Name8',
+                    price: '60'
+                },
+                {
+                    name: 'Name7',
+                    price: '30'
+                },
+                {
+                    name: 'Name8',
+                    price: '60'
+                }
+                    ,
+                {
+                    name: 'Name7',
+                    price: '30'
+                },
+                {
+                    name: 'Name8',
+                    price: '60'
+                },
+                {
+                    name: 'Name7',
+                    price: '30'
+                },
+                {
+                    name: 'Name8',
+                    price: '60'
+                },
+                {
+                    name: 'Name7',
+                    price: '30'
+                },
+                {
+                    name: 'Name8',
+                    price: '60'
+                }]
+            }
+        ]
+    },
+    {
+        displayName: 'Housekeeping',
+        route: 'housekeeping',
+        children: [
+            {
+                displayName: 'Groceries',
+                packsList: [{
+                    name: 'Name1',
+                    price: '30'
+                },
+                {
+                    name: 'Name2',
+                    price: '60'
+                },
+                {
+                    name: 'Name1',
+                    price: '30'
+                },
+                {
+                    name: 'Name2',
+                    price: '60'
+                }
+                    ,
+                {
+                    name: 'Name1',
+                    price: '30'
+                },
+                {
+                    name: 'Name2',
+                    price: '60'
+                },
+                {
+                    name: 'Name1',
+                    price: '30'
+                },
+                {
+                    name: 'Name2',
+                    price: '60'
+                },
+                {
+                    name: 'Name1',
+                    price: '30'
+                },
+                {
+                    name: 'Name2',
+                    price: '60'
+                }]
+            },
+            {
+                displayName: 'Essentials',
+                packsList: [{
+                    name: 'Name3',
+                    price: '30'
+                },
+                {
+                    name: 'Name4',
+                    price: '60'
+                },
+                {
+                    name: 'Name3',
+                    price: '30'
+                },
+                {
+                    name: 'Name4',
+                    price: '60'
+                }
+                    ,
+                {
+                    name: 'Name3',
+                    price: '30'
+                },
+                {
+                    name: 'Name4',
+                    price: '60'
+                },
+                {
+                    name: 'Name3',
+                    price: '30'
+                },
+                {
+                    name: 'Name4',
+                    price: '60'
+                },
+                {
+                    name: 'Name3',
+                    price: '30'
+                },
+                {
+                    name: 'Name4',
+                    price: '60'
+                }]
+            },
+            {
+                displayName: 'Cutlery',
+                packsList: [{
+                    name: 'Name5',
+                    price: '30'
+                },
+                {
+                    name: 'Name6',
+                    price: '60'
+                },
+                {
+                    name: 'Name5',
+                    price: '30'
+                },
+                {
+                    name: 'Name6',
+                    price: '60'
+                }
+                    ,
+                {
+                    name: 'Name5',
+                    price: '30'
+                },
+                {
+                    name: 'Name6',
+                    price: '60'
+                },
+                {
+                    name: 'Name5',
+                    price: '30'
+                },
+                {
+                    name: 'Name6',
+                    price: '60'
+                },
+                {
+                    name: 'Name5',
+                    price: '30'
+                },
+                {
+                    name: 'Name6',
+                    price: '60'
+                }]
+            },
+            {
+                displayName: 'Others',
+                packsList: [{
+                    name: 'Name7',
+                    price: '30'
+                },
+                {
+                    name: 'Name8',
+                    price: '60'
+                },
+                {
+                    name: 'Name7',
+                    price: '30'
+                },
+                {
+                    name: 'Name8',
+                    price: '60'
+                }
+                    ,
+                {
+                    name: 'Name7',
+                    price: '30'
+                },
+                {
+                    name: 'Name8',
+                    price: '60'
+                },
+                {
+                    name: 'Name7',
+                    price: '30'
+                },
+                {
+                    name: 'Name8',
+                    price: '60'
+                },
+                {
+                    name: 'Name7',
+                    price: '30'
+                },
+                {
+                    name: 'Name8',
+                    price: '60'
+                }]
+            }
+        ]
+    },
+    {
         displayName: 'Mens',
         iconName: 'videocam',
         route: 'mens',
