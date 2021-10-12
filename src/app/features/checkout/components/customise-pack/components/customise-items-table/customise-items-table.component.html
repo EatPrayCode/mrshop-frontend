@@ -59,7 +59,7 @@
                                         <div>
                                             <div>
                                                 <!--<div ng-class="{'bus-track':pvtService.is_track_avail == 1,'bus-track-disable':pvtService.is_track_avail == 0}"></div>-->
-                                                <h3 class="ng-binding">
+                                                <h3 class="ng-binding" (click)="openViewEditPackDialog(pack)">
                                                     {{pack.packsData.packName}}
                                                 </h3>
 
