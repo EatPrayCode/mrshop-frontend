@@ -1,17 +1,23 @@
-<mat-sidenav-container class="sidenav-container">
-
-    <mat-sidenav #leftSidenav mode="side" opened>
-        <app-left-menu></app-left-menu>
-    </mat-sidenav>
-
-    <mat-sidenav-content [@onMainContentChange]="onSideNavChange ? 'open': 'close'">
-
-        <div class="main_content">
-
-            <app-organiser-list (addTaskToListEvt)="handleAddTaskToList($event)"></app-organiser-list>
-
+<section class="micro-app-container">
+    <!-- <div class="micro-app-toolbar-container">
+        <div class="micro-app-toolbar-row">
+            <i class="clear"></i>
+            <div class="micro-app-toolbar-search-container">
+                <input type="text" placeholder="Search mrshop">
+            </div>
         </div>
-
-    </mat-sidenav-content>
-
-</mat-sidenav-container>
+    </div> -->
+    <div class="micro-app-content">
+        <div class="micro-app-content-left">
+            <div class="micro-app-left-menu-list">
+                <a *ngFor="let item of navItems" (click)="selectMainCategory(item)"
+                    [class.left-menu-item-active]="mainCategory.route == item.route">
+                    <span>{{item.displayName}}</span>
+                </a>
+            </div>
+        </div>
+        <div class="micro-app-content-right" style="background: #f5f8fa;">
+            <app-organiser-list (addTaskToListEvt)="handleAddTaskToList($event)"></app-organiser-list>
+        </div>
+    </div>
+</section>

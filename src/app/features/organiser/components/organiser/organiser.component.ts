@@ -7,6 +7,9 @@ import { delay } from 'rxjs/operators';
 import { SidenavService } from '../../../../services/sidenav.service';
 import { onSideNavChange, animateText, onMainContentChange } from '../../animations/animations';
 import { AppService } from 'src/app/app/app.service';
+import { of } from 'rxjs';
+import { categoriesNavItems } from 'src/app/mock-data/app.models';
+import { categoriesNavItemsConst } from 'src/app/mock-data/constants';
 
 @Component({
   selector: 'app-organiser',
@@ -30,6 +33,7 @@ export class OrganiserComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    this.initialisePage('housekeeping');
   }
 
   handleAddTaskToList(task: any) {
@@ -76,5 +80,36 @@ export class OrganiserComponent implements OnInit {
       console.log('The dialog was closed');
     });
   }
+
+  rightList: any = [{}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {},];
+  mainCategory: any = {}
+  navItems: categoriesNavItems[] = [];
+
+  initialisePage(categoryName: any) {
+    this.loadCategories({}).subscribe(res => {
+      this.navItems = res;
+      const mainCategory_ = this.navItems.filter(ele => {
+        return ele.route == categoryName;
+      });
+      this.rightList = mainCategory_[0].children;
+      this.mainCategory = mainCategory_;
+    });
+  }
+
+  loadCategories(payload: any) {
+    const obs$ = categoriesNavItemsConst;
+    return of(obs$).pipe(delay(300));
+  }
+
+  selectMainCategory(item: any) {
+    const category = item.route;
+    this.mainCategory = {};
+    const mainCategory_ = this.navItems.filter(ele => {
+      return ele.route == category;
+    });
+    this.mainCategory = item;
+    this.rightList = mainCategory_[0].children;
+  }
+
 
 }

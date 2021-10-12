@@ -3014,13 +3014,13 @@ h6 {
 }
 @media (min-width: 50em) {
     .cart__drawer {
-        max-width: 40vw;
-        min-width: 400px;
+        // max-width: 40vw;
+        // min-width: 400px;
     }
 }
 @media (min-width: 75em) {
     .cart__drawer {
-        max-width: 500px;
+        // max-width: 500px;
     }
 }
 .cart__drawer-close {
@@ -3067,8 +3067,8 @@ h6 {
 }
 @media (min-width: 50em) {
     .cart__drawer-footer {
-        max-width: 40vw;
-        min-width: 400px;
+        // max-width: 40vw;
+        // min-width: 400px;
     }
 }
 @media (min-width: 75em) {
@@ -3242,57 +3242,4 @@ h6 {
 .sezzle-button-text.sezzle-left {
     text-align: left;
     margin: 0;
-}
-/*! CSS Used fontfaces */
-@font-face {
-    font-family: Studio Pro Web;
-    src: url(https://www.prima.co/static/StudioPro-Regular-e57d2a294a7e9fd025a8f44753d2521e.woff2) format("woff2"),
-        url(https://www.prima.co/static/StudioPro-Regular-b561062ae9197e0dd3a8e5e8a333cdcb.woff) format("woff"),
-        url(https://www.prima.co/static/StudioPro-Regular-843cbbfe155d9847e4cea29b64f23ff1.eot) format("eot");
-}
-@font-face {
-    font-family: Studio Pro Web Bold;
-    src: url(https://www.prima.co/static/StudioPro-Bold-508e68d54d38bafed78cafdab130c46c.woff2) format("woff2"),
-        url(https://www.prima.co/static/StudioPro-Bold-9875f4101b3e562790fcb714098d6bf8.woff) format("woff"),
-        url(https://www.prima.co/static/StudioPro-Bold-9d3dd432231f947032caeb8148b01614.eot) format("eot");
-}
-@font-face {
-    font-family: Self Modern_Regular;
-    src: url(https://www.prima.co/static/bretagne_self-modern_regular_web-7d258eb1b362bf65aec93466ad7c68e1.eot);
-    src: url(https://www.prima.co/static/bretagne_self-modern_regular_web-6897c28161fa8ecdad8eb1fe9000579a.woff)
-            format("woff"),
-        url(https://www.prima.co/static/bretagne_self-modern_regular_web-30f2c007685898fd77f93afead77c5a3.woff2)
-            format("woff2"),
-        url(https://www.prima.co/static/bretagne_self-modern_regular_web-01144db55bb05e93af31d7f2be050211.ttf)
-            format("truetype"),
-        url(https://www.prima.co/static/bretagne_self-modern_regular_web-b6f7a1cfd4fb4f11c268c5c988255cfb.svg#svgFontName)
-            format("svg");
-    font-weight: 400;
-    font-style: normal;
-}
-@font-face {
-    font-family: Self Modern_Italic;
-    src: url(https://www.prima.co/static/bretagne_self-modern_italic_web-be9f4d212c23b5b2e0f3afed3d71edb2.eot);
-    src: url(https://www.prima.co/static/bretagne_self-modern_italic_web-0ae4412b29143aee6cae1b18b7256fa1.woff)
-            format("woff"),
-        url(https://www.prima.co/static/bretagne_self-modern_italic_web-d7f7dcd4554b7fad58385844cccb5929.woff2)
-            format("woff2"),
-        url(https://www.prima.co/static/bretagne_self-modern_italic_web-0ca439af0cc7c84d98b97e2aed1f6351.ttf)
-            format("truetype"),
-        url(https://www.prima.co/static/bretagne_self-modern_italic_web-502086da67d84a3b178aa05c7ef188f1.svg#svgFontName)
-            format("svg");
-    font-weight: 400;
-    font-style: normal;
-}
-@font-face {
-    font-family: "akzidenz-grotesk-extended";
-    src: url("https://use.typekit.net/af/cf1549/00000000000000000001375a/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3")
-            format("woff2"),
-        url("https://use.typekit.net/af/cf1549/00000000000000000001375a/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3")
-            format("woff"),
-        url("https://use.typekit.net/af/cf1549/00000000000000000001375a/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3")
-            format("opentype");
-    font-display: auto;
-    font-style: normal;
-    font-weight: 300;
 }
