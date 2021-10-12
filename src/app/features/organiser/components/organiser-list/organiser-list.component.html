@@ -1,22 +1,26 @@
 <section class="_3Rsp4">
 
     <div class="_1Ulzd">
-        <div class="_2-XA5"><img src="https://assetscdn1.paytm.com/images/catalog/view_item/695726/1617889954881.png"
-                alt="Scan any QR">
+        <div *ngFor="let task of allTasks" class="_2-XA5"><img
+                src="https://assetscdn1.paytm.com/images/catalog/view_item/695726/1617889954881.png" alt="Scan any QR">
             <div class="_2IDs6">Scan any QR<span>Make payments at nearby shops</span></div>
-        </div>
-        <div class="_2-XA5"><img src="https://assetscdn1.paytm.com/images/catalog/view_item/695727/1617890104236.png"
-                alt="App only offers">
-            <div class="_2IDs6">App only offers<span>View your personalized offers, scratchcards and points</span></div>
-        </div>
-        <div class="_2-XA5"><img src="https://assetscdn1.paytm.com/images/catalog/view_item/695728/1617890317932.png"
-                alt="Safe and Secure">
-            <div class="_2IDs6">Safe and Secure<span>At Paytm your trust is foremost, your money is yours until you get
-                    what you paid for</span></div>
-        </div>
-        <div class="_2-XA5"><img src="https://assetscdn1.paytm.com/images/catalog/view_item/695729/1617890352804.png"
-                alt="Faster and Smoother">
-            <div class="_2IDs6">Faster and Smoother<span>Make the most of the enriched in-app experience</span></div>
+            <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+                <mat-icon>more_vert</mat-icon>
+            </button>
+            <mat-menu #menu="matMenu">
+                <button mat-menu-item (click)="addTaskToList(task)">
+                    <mat-icon>dialpad</mat-icon>
+                    <span>Add to Box</span>
+                </button>
+                <button mat-menu-item>
+                    <mat-icon>voicemail</mat-icon>
+                    <span>Organise Now</span>
+                </button>
+                <button mat-menu-item>
+                    <mat-icon>notifications_off</mat-icon>
+                    <span>Add to Fav</span>
+                </button>
+            </mat-menu>
         </div>
     </div>
 
