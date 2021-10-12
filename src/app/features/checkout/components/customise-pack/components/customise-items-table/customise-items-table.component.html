@@ -1,148 +1,375 @@
-<div class="searchresult" id="allservices">
-
-    <div>
-        <div class="scrolling-wrapper-main">
-            <div class="scrolling-wrapper ng-hide"
-                ng-show="searchResponse.fiterBannersRatings &amp;&amp; searchResponse.fiterBannersRatings.length >0"
-                style="overflow: auto;">
-                <!-- ngRepeat: banners in searchResponse.fiterBannersRatings -->
+<div class="cart__drawer cg bcw p15 top f jcc aic fix x y right open">
+    <div class="cart__drawer-inner x y abs bcw">
+        <div class="cart__drawer-header"><button aria-label="close cart drawer"
+                class="abs left bctran cg top cart__drawer-close p15 mt0"><svg width="25px" height="25px"
+                    viewBox="0 0 46 45">
+                    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square">
+                        <g transform="translate(0.609375, 0.585938)" stroke="currentColor">
+                            <path d="M0.333333333,0.333333333 L43.7940336,43.7940336"></path>
+                            <path d="M0,0 L44,44"
+                                transform="translate(22.000000, 22.000000) rotate(-270.000000) translate(-22.000000, -22.000000)">
+                            </path>
+                        </g>
+                    </g>
+                </svg></button>
+            <div class="x ac">
+                <h4 class="m05 mt05">The Goods <span class="s14 studio">(6 items)</span></h4>
             </div>
         </div>
-        <!-- start of service listing -->
-
-
-        <!-- Apsrtc Services list -->
-        <!-- ngRepeat: rtcblock in searchResponse.blockingList track by rtcblock.api -->
-        <!-- Start Of Private Operators -->
-
-        <div id="prvtServices" ng-show="!isExpanded">
-            <!-- ngRepeat: pvtService in pvtFiltered = (privateServices | searchFilter:this:'PVT':''| orderBy:orderByField:reverseSort | zeroSeatsLast:'descending' ) | myLimitTo:limitNumber -->
-            <div class="toggle-menu buslayout push-body searchresultlist activator ng-scope"
-                ng-repeat="pvtService in pvtFiltered = (privateServices | searchFilter:this:'PVT':''| orderBy:orderByField:reverseSort | zeroSeatsLast:'descending' ) | myLimitTo:limitNumber "
-                ng-class="{'soldout-card':pvtService.availableSeats == 0,'opr-refine': pvtService.applybg &amp;&amp; pvtService.applybg =='1'}">
-
-                <!--     <div  class="toggle-menu buslayout push-body searchresultlist activator" ng-repeat="pvtService in privateServices |  filter:brdPointFilter:$index"> -->
-                <div *ngFor="let pack of inputData" style="border: 1px solid;">
-
-                    <div class="searchresultlist-top ">
-                        <div class="searchresultlist-top-left" id="my-menus">
-                            <div>
-                                <div>
-                                    <!--<div ng-class="{'bus-track':pvtService.is_track_avail == 1,'bus-track-disable':pvtService.is_track_avail == 0}"></div>-->
-                                    <h3 class="ng-binding" (click)="openViewEditPackDialog(pack)">
-                                        {{pack.packsData.packName}}
-                                    </h3>
-
+        <div class="cart__drawer-content">
+            <div class="p15">
+                <div class="cart__drawer-content__deep">
+                    <div>
+                        <div>
+                            <div class="cart__item cg bct rel aic mb1">
+                                <div class=" f jcb cart__item-inner">
+                                    <div><img class="block"
+                                            src="https://cdn.shopify.com/s/files/1/0042/9031/4274/products/shopify-images_gift-bag_V3_300x300.jpg?v=1603987597"
+                                            alt="Canvas Gift Bag"></div>
+                                    <div class="x ml1 pl1 f jcb aic">
+                                        <div>
+                                            <h4 class="m0 p0 mb0 s18">Canvas Gift Bag<br><span
+                                                    class="s14">$5.00</span></h4>
+                                            <div>
+                                                <div class="product__form-quantity x f mt05 jcs aic"><button
+                                                        class="s18 minus ac medium rel cg circle"><svg
+                                                            width="18px" height="18px" viewBox="0 0 18 18">
+                                                            <g id="Subtract" stroke="none" stroke-width="1"
+                                                                fill="none" fill-rule="evenodd" opacity="0.8">
+                                                                <path
+                                                                    d="M9,17.5 C13.6944204,17.5 17.5,13.6944204 17.5,9 C17.5,4.30557963 13.6944204,0.5 9,0.5 C4.30557963,0.5 0.5,4.30557963 0.5,9 C0.5,13.6944204 4.30557963,17.5 9,17.5 Z M9,16.5 C4.85786438,16.5 1.5,13.1421356 1.5,9 C1.5,4.85786438 4.85786438,1.5 9,1.5 C13.1421356,1.5 16.5,4.85786438 16.5,9 C16.5,13.1421356 13.1421356,16.5 9,16.5 Z"
+                                                                    id="Oval-Copy-4" fill="currentColor"
+                                                                    fill-rule="nonzero"></path>
+                                                                <polygon id="+" fill="currentColor"
+                                                                    fill-rule="nonzero"
+                                                                    points="11.94 8.58 11.94 9.42 9.396 9.42 8.556 9.42 6 9.42 6 8.58 8.556 8.58 9.396 8.58">
+                                                                </polygon>
+                                                            </g>
+                                                        </svg></button><input name="quantity" min="1"
+                                                        class="studio medium cg" value="1"><button
+                                                        class="s18 ac plus medium rel cg circle"><svg
+                                                            class="rel" width="18px" height="18px"
+                                                            viewBox="0 0 18 18">
+                                                            <g id="Add-" stroke="none" stroke-width="1"
+                                                                fill="none" fill-rule="evenodd" opacity="0.8">
+                                                                <path
+                                                                    d="M9,17.5 C13.6944204,17.5 17.5,13.6944204 17.5,9 C17.5,4.30557963 13.6944204,0.5 9,0.5 C4.30557963,0.5 0.5,4.30557963 0.5,9 C0.5,13.6944204 4.30557963,17.5 9,17.5 Z M9,16.5 C4.85786438,16.5 1.5,13.1421356 1.5,9 C1.5,4.85786438 4.85786438,1.5 9,1.5 C13.1421356,1.5 16.5,4.85786438 16.5,9 C16.5,13.1421356 13.1421356,16.5 9,16.5 Z"
+                                                                    id="Oval-Copy-4" fill="currentColor"
+                                                                    fill-rule="nonzero"></path>
+                                                                <polygon id="+" fill="currentColor"
+                                                                    fill-rule="nonzero"
+                                                                    points="11.94 8.58 11.94 9.42 9.396 9.42 9.396 12 8.556 12 8.556 9.42 6 9.42 6 8.58 8.556 8.58 8.556 6 9.396 6 9.396 8.58">
+                                                                </polygon>
+                                                            </g>
+                                                        </svg></button></div>
+                                            </div><span class="block my1 studio small"></span>
+                                        </div><button class="abs bctran top right p05 cart__item-remove"><svg
+                                                width="18px" height="18px" viewBox="0 0 18 18">
+                                                <g id="Shop-Pages-" stroke="none" stroke-width="1" fill="none"
+                                                    fill-rule="evenodd" opacity="0.7">
+                                                    <g id="Group-23-Copy-3"
+                                                        transform="translate(1.004883, 1.117188)"
+                                                        stroke="currentColor">
+                                                        <circle id="Oval-Copy-4" cx="8" cy="8" r="8"></circle>
+                                                        <g id="Group-11-Copy"
+                                                            transform="translate(5.000000, 5.000000)"
+                                                            stroke-linecap="square" stroke-width="1.5">
+                                                            <path d="M0.0526315789,0 L5.95353618,5.90090461"
+                                                                id="Line-8"></path>
+                                                            <path d="M-1.33226763e-14,8.85513884e-13 L6,6"
+                                                                id="Line-8-Copy"
+                                                                transform="translate(3.000000, 3.000000) rotate(-270.000000) translate(-3.000000, -3.000000) ">
+                                                            </path>
+                                                        </g>
+                                                    </g>
+                                                </g>
+                                            </svg></button>
+                                    </div>
                                 </div>
-                                <p ng-bind="pvtService.busTypeName" class="ng-binding">
-                                    {{pack.packsData.packDescription}}</p>
+                                <div class="x cart__item-notes bcteal block">
+                                    <div class="cart__item-notes-header mb0 p10 bcp studio"><svg width="18"
+                                            height="18" viewBox="0 0 18 18" fill="none">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M9 17C13.4183 17 17 13.4183 17 9C17 4.58172 13.4183 1 9 1C4.58172 1 1 4.58172 1 9C1 13.4183 4.58172 17 9 17Z"
+                                                stroke="#113034"></path>
+                                            <path
+                                                d="M8.188 11.444H9.1L9.508 7.82V5.24H7.78V7.82L8.188 11.444ZM7.768 14H9.532V12.224H7.768V14Z"
+                                                fill="#113034"></path>
+                                        </svg>
+                                        <div><strong>Please write your gift message below prior to
+                                                checkout.</strong>
+                                            <div>(150 character limit, no special characters)</div>
+                                        </div>
+                                    </div><textarea id="test" name="notes" maxlength="150"
+                                        class="x s12 block bcwhite studio cart__item-notes-textarea"></textarea>
+                                </div>
                             </div>
-                        </div>
-                        <div class="searchresultlist-top-right">
-                            <div class="ratings-container">
-                                <!-- ngIf: pvtService.rating >= 0 --><span class="rating-sec ng-binding ng-scope"
-                                    ng-if="pvtService.rating >= 0">
-
-                                    <!-- ngIf: pvtService.rating >= 4 -->
-                                    <!-- ngIf: pvtService.rating >= 3 && pvtService.rating < 4 --><img
-                                        ng-if="pvtService.rating >= 3 &amp;&amp; pvtService.rating < 4"
-                                        src="https://static.abhibus.com/assets/img/star-orabge-16.png" class="ng-scope">
-                                    <!-- end ngIf: pvtService.rating >= 3 && pvtService.rating < 4 -->
-                                    <!-- ngIf: pvtService.rating >= 1 && pvtService.rating < 3 -->
-                                    <!-- ngIf: pvtService.rating == 0 -->
-                                    3.5
-                                </span><!-- end ngIf: pvtService.rating >= 0 -->
-                                <!-- ngIf: pvtService.noOfRatingsTextStr && pvtService.noOfRatingsTextStr !='' && pvtService.noOfRatingsTextStr !='0' --><span
-                                    ng-if="pvtService.noOfRatingsTextStr &amp;&amp; pvtService.noOfRatingsTextStr !='' &amp;&amp; pvtService.noOfRatingsTextStr !='0'"
-                                    class="no-of-ratings ng-binding ng-scope">(Few Ratings)</span>
-                                <!-- end ngIf: pvtService.noOfRatingsTextStr && pvtService.noOfRatingsTextStr !='' && pvtService.noOfRatingsTextStr !='0' -->
-                            </div>
-                            <!--<div ng-if="pvtService.availableSeats == 0" class="soldout">Sold</div>-->
                         </div>
                     </div>
-
-                    <div class="searchresultlist-bottom">
-                        <div class="searchresultlist-bottom-left " ng-style="{'width':'70%'}" style="width: 70%;">
-
-                            <div class="service-timing">
-                                <time class="ng-binding">21:45</time>
-                                <div class="dot-icon-sec" style="font-size: 10px;color:#717171">
-                                    <div class="dot-icon-left">
-                                        <span>•</span>
-                                    </div>
-                                    <div class="travel-time-middle-sec ng-binding">
-                                        08:45 hrs
-                                    </div>
-                                    <div class="dot-icon-right">
-                                        <span>•</span>
+                    <div>
+                        <div>
+                            <div class="cart__item cg bct rel aic mb1">
+                                <div class=" f jcb cart__item-inner">
+                                    <div><img class="block"
+                                            src="https://cdn.shopify.com/s/files/1/0042/9031/4274/products/shopify-images_no-worries_300x300.jpg?v=1611679919"
+                                            alt="Prima No Worries™ 20mg CBD + Botanicals Capsules"></div>
+                                    <div class="x ml1 pl1 f jcb aic">
+                                        <div>
+                                            <h4 class="m0 p0 mb0 s18">Prima No Worries™ 20mg CBD + Botanicals
+                                                Capsules<br><span class="s14">$52.00</span></h4>
+                                            <div>
+                                                <div class="product__form-quantity x f mt05 jcs aic"><button
+                                                        class="s18 minus ac medium rel cg circle"><svg
+                                                            width="18px" height="18px" viewBox="0 0 18 18">
+                                                            <g id="Subtract" stroke="none" stroke-width="1"
+                                                                fill="none" fill-rule="evenodd" opacity="0.8">
+                                                                <path
+                                                                    d="M9,17.5 C13.6944204,17.5 17.5,13.6944204 17.5,9 C17.5,4.30557963 13.6944204,0.5 9,0.5 C4.30557963,0.5 0.5,4.30557963 0.5,9 C0.5,13.6944204 4.30557963,17.5 9,17.5 Z M9,16.5 C4.85786438,16.5 1.5,13.1421356 1.5,9 C1.5,4.85786438 4.85786438,1.5 9,1.5 C13.1421356,1.5 16.5,4.85786438 16.5,9 C16.5,13.1421356 13.1421356,16.5 9,16.5 Z"
+                                                                    id="Oval-Copy-4" fill="currentColor"
+                                                                    fill-rule="nonzero"></path>
+                                                                <polygon id="+" fill="currentColor"
+                                                                    fill-rule="nonzero"
+                                                                    points="11.94 8.58 11.94 9.42 9.396 9.42 8.556 9.42 6 9.42 6 8.58 8.556 8.58 9.396 8.58">
+                                                                </polygon>
+                                                            </g>
+                                                        </svg></button><input name="quantity" min="1"
+                                                        class="studio medium cg" value="1"><button
+                                                        class="s18 ac plus medium rel cg circle"><svg
+                                                            class="rel" width="18px" height="18px"
+                                                            viewBox="0 0 18 18">
+                                                            <g id="Add-" stroke="none" stroke-width="1"
+                                                                fill="none" fill-rule="evenodd" opacity="0.8">
+                                                                <path
+                                                                    d="M9,17.5 C13.6944204,17.5 17.5,13.6944204 17.5,9 C17.5,4.30557963 13.6944204,0.5 9,0.5 C4.30557963,0.5 0.5,4.30557963 0.5,9 C0.5,13.6944204 4.30557963,17.5 9,17.5 Z M9,16.5 C4.85786438,16.5 1.5,13.1421356 1.5,9 C1.5,4.85786438 4.85786438,1.5 9,1.5 C13.1421356,1.5 16.5,4.85786438 16.5,9 C16.5,13.1421356 13.1421356,16.5 9,16.5 Z"
+                                                                    id="Oval-Copy-4" fill="currentColor"
+                                                                    fill-rule="nonzero"></path>
+                                                                <polygon id="+" fill="currentColor"
+                                                                    fill-rule="nonzero"
+                                                                    points="11.94 8.58 11.94 9.42 9.396 9.42 9.396 12 8.556 12 8.556 9.42 6 9.42 6 8.58 8.556 8.58 8.556 6 9.396 6 9.396 8.58">
+                                                                </polygon>
+                                                            </g>
+                                                        </svg></button></div>
+                                            </div>
+                                        </div><button class="abs bctran top right p05 cart__item-remove"><svg
+                                                width="18px" height="18px" viewBox="0 0 18 18">
+                                                <g id="Shop-Pages-" stroke="none" stroke-width="1" fill="none"
+                                                    fill-rule="evenodd" opacity="0.7">
+                                                    <g id="Group-23-Copy-3"
+                                                        transform="translate(1.004883, 1.117188)"
+                                                        stroke="currentColor">
+                                                        <circle id="Oval-Copy-4" cx="8" cy="8" r="8"></circle>
+                                                        <g id="Group-11-Copy"
+                                                            transform="translate(5.000000, 5.000000)"
+                                                            stroke-linecap="square" stroke-width="1.5">
+                                                            <path d="M0.0526315789,0 L5.95353618,5.90090461"
+                                                                id="Line-8"></path>
+                                                            <path d="M-1.33226763e-14,8.85513884e-13 L6,6"
+                                                                id="Line-8-Copy"
+                                                                transform="translate(3.000000, 3.000000) rotate(-270.000000) translate(-3.000000, -3.000000) ">
+                                                            </path>
+                                                        </g>
+                                                    </g>
+                                                </g>
+                                            </svg></button>
                                     </div>
                                 </div>
-
-                                <time style="font-weight: normal;color:#717171" class="ng-binding">06:30</time>
                             </div>
-                            <div class="clearfix"></div>
-                            <div class="avail-seat-count serp-amenities" ng-init="listLimt = 2; charcount = 0;doTrim=1"
-                                ng-click="pvtService.safeTBusImgCount !='' &amp;&amp; showGallery(pvtService.safetyImgMapID,pvtService.serviceIndex,'serp',pvtService.Amenities_list);pvtService.safeTBusImgCount =='' &amp;&amp; showSerpAmenities(pvtService.Amenities_list);">
-
-                                <!-- ngIf: pvtService.safeTBusImgCount !='' -->
-
-                                <!-- ngIf: pvtService.socialDistance == '1' -->
-
-                                <!-- ngIf: pvtService.is_track_avail == 1 --><span class="main-amenity ng-scope"
-                                    ng-if="pvtService.is_track_avail == 1">
-                                    <i class="bus-track"> </i>
-                                    <span class="safety-title" (click)="openViewEditPackDialog(pack)">edit</span>
-                                    <i class="bus-track"> </i>
-                                    <span class="safety-title">edit</span>
-
-                                    <i class="bus-track"> </i>
-                                    <span class="safety-title">delete</span>
-                                    <i class="bus-track"> </i>
-                                    <span class="safety-title">edit</span>
-                                    <i class="bus-track"> </i>
-                                    <span class="safety-title">delete</span>
-                                </span><!-- end ngIf: pvtService.is_track_avail == 1 -->
-
-                                <!--<span ng-if="pvtService.Amenities_list[0].title.length > 25"  ng-init = "$parent.listLimt = 1;"></span>-->
-
-                                <!-- ngRepeat: amenity in pvtService.Amenities_list | limitTo:2 track by $index -->
-                                <!-- ngIf: pvtService.Amenities_list.length > 1 -->
-
-
-                            </div>
-
                         </div>
-                        <div class="searchresultlist-bottom-right" style="width:30%">
-                            <div class="price-info">
-
-
-                                <div class="fares">
-                                    <label style="display:inline-block;"
-                                        ng-class="{'strike-price': pvtService.is_deal_avail &amp;&amp; pvtService.offer_price}"
-                                        class="ng-binding">₹699 </label>
-
-                                    <!-- ngIf: pvtService.is_deal_avail && pvtService.offer_price -->
+                    </div>
+                    <div>
+                        <div>
+                            <div class="cart__item cg bct rel aic mb1">
+                                <div class=" f jcb cart__item-inner">
+                                    <div><img class="block"
+                                            src="https://cdn.shopify.com/s/files/1/0042/9031/4274/products/shopify-images_no-worries_300x300.jpg?v=1611679919"
+                                            alt="Prima No Worries™ 20mg CBD + Botanicals Capsules"></div>
+                                    <div class="x ml1 pl1 f jcb aic">
+                                        <div>
+                                            <h4 class="m0 p0 mb0 s18">Prima No Worries™ 20mg CBD + Botanicals
+                                                Capsules<br><span class="s14">$44.20</span></h4>
+                                            <div class="mt15">
+                                                <p class="studio s12 m0">Quantity: 1</p>
+                                                <p class="studio s12 m0">Deliver every: 1 <span
+                                                        class="capitalize">month</span></p>
+                                            </div>
+                                        </div><button class="abs bctran top right p05 cart__item-remove"><svg
+                                                width="18px" height="18px" viewBox="0 0 18 18">
+                                                <g id="Shop-Pages-" stroke="none" stroke-width="1" fill="none"
+                                                    fill-rule="evenodd" opacity="0.7">
+                                                    <g id="Group-23-Copy-3"
+                                                        transform="translate(1.004883, 1.117188)"
+                                                        stroke="currentColor">
+                                                        <circle id="Oval-Copy-4" cx="8" cy="8" r="8"></circle>
+                                                        <g id="Group-11-Copy"
+                                                            transform="translate(5.000000, 5.000000)"
+                                                            stroke-linecap="square" stroke-width="1.5">
+                                                            <path d="M0.0526315789,0 L5.95353618,5.90090461"
+                                                                id="Line-8"></path>
+                                                            <path d="M-1.33226763e-14,8.85513884e-13 L6,6"
+                                                                id="Line-8-Copy"
+                                                                transform="translate(3.000000, 3.000000) rotate(-270.000000) translate(-3.000000, -3.000000) ">
+                                                            </path>
+                                                        </g>
+                                                    </g>
+                                                </g>
+                                            </svg></button>
+                                    </div>
                                 </div>
-                                <br>
-                                <!-- ngIf: pvtService.fare.indexOf('+')>0 && !pvtService.offer_price --><label
-                                    class="onwards ng-scope"
-                                    ng-if="pvtService.fare.indexOf('+')>0 &amp;&amp; !pvtService.offer_price">onwards</label>
-                                <!-- end ngIf: pvtService.fare.indexOf('+')>0 && !pvtService.offer_price -->
-
-                                <label
-                                    ng-class="{'service-soldout': pvtService.availableSeats == 0,'available-seats': pvtService.availableSeats != 0}"
-                                    class="ng-binding available-seats">37 Seats </label>
                             </div>
-
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <div class="cart__item cg bct rel aic mb1">
+                                <div class=" f jcb cart__item-inner">
+                                    <div><img class="block"
+                                            src="https://cdn.shopify.com/s/files/1/0042/9031/4274/products/shopify-images_no-worries_300x300.jpg?v=1611679919"
+                                            alt="Prima No Worries™ 20mg CBD + Botanicals Capsules"></div>
+                                    <div class="x ml1 pl1 f jcb aic">
+                                        <div>
+                                            <h4 class="m0 p0 mb0 s18">Prima No Worries™ 20mg CBD + Botanicals
+                                                Capsules<br><span class="s14">$132.60</span></h4>
+                                            <div class="mt15">
+                                                <p class="studio s12 m0">Quantity: 3</p>
+                                                <p class="studio s12 m0">Deliver every: 3 <span
+                                                        class="capitalize">month</span></p>
+                                            </div>
+                                        </div><button class="abs bctran top right p05 cart__item-remove"><svg
+                                                width="18px" height="18px" viewBox="0 0 18 18">
+                                                <g id="Shop-Pages-" stroke="none" stroke-width="1" fill="none"
+                                                    fill-rule="evenodd" opacity="0.7">
+                                                    <g id="Group-23-Copy-3"
+                                                        transform="translate(1.004883, 1.117188)"
+                                                        stroke="currentColor">
+                                                        <circle id="Oval-Copy-4" cx="8" cy="8" r="8"></circle>
+                                                        <g id="Group-11-Copy"
+                                                            transform="translate(5.000000, 5.000000)"
+                                                            stroke-linecap="square" stroke-width="1.5">
+                                                            <path d="M0.0526315789,0 L5.95353618,5.90090461"
+                                                                id="Line-8"></path>
+                                                            <path d="M-1.33226763e-14,8.85513884e-13 L6,6"
+                                                                id="Line-8-Copy"
+                                                                transform="translate(3.000000, 3.000000) rotate(-270.000000) translate(-3.000000, -3.000000) ">
+                                                            </path>
+                                                        </g>
+                                                    </g>
+                                                </g>
+                                            </svg></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <div class="cart__item cg bct rel aic mb1">
+                                <div class=" f jcb cart__item-inner">
+                                    <div><img class="block"
+                                            src="https://cdn.shopify.com/s/files/1/0042/9031/4274/products/shopify-images_instant-zen_V2_300x300.jpg?v=1604529344"
+                                            alt="Instant Zen 15mg CBD Functional Powder Blend"></div>
+                                    <div class="x ml1 pl1 f jcb aic">
+                                        <div>
+                                            <h4 class="m0 p0 mb0 s18">Instant Zen 15mg CBD Functional Powder
+                                                Blend<br></h4>
+                                            <h4 class="m0 p0 mb0 s18"><span class="s14">Free with $75+
+                                                    Purchase</span></h4><span
+                                                class="block my1 studio small">Gifts with purchase are
+                                                non-refundable items. If you choose to return your order, your
+                                                gift with purchase must be included in the return. </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <div class="cart__item cg bct rel aic mb1">
+                                <div class=" f jcb cart__item-inner">
+                                    <div><img class="block"
+                                            src="https://cdn.shopify.com/s/files/1/0042/9031/4274/products/shopify-images_clean-hands_300x300.jpg?v=1613608035"
+                                            alt="Clean Hands"></div>
+                                    <div class="x ml1 pl1 f jcb aic">
+                                        <div>
+                                            <h4 class="m0 p0 mb0 s18">Clean Hands<br><span
+                                                    class="s14">$8.00</span></h4>
+                                            <div>
+                                                <div class="product__form-quantity x f mt05 jcs aic"><button
+                                                        class="s18 minus ac medium rel cg circle"><svg
+                                                            width="18px" height="18px" viewBox="0 0 18 18">
+                                                            <g id="Subtract" stroke="none" stroke-width="1"
+                                                                fill="none" fill-rule="evenodd" opacity="0.8">
+                                                                <path
+                                                                    d="M9,17.5 C13.6944204,17.5 17.5,13.6944204 17.5,9 C17.5,4.30557963 13.6944204,0.5 9,0.5 C4.30557963,0.5 0.5,4.30557963 0.5,9 C0.5,13.6944204 4.30557963,17.5 9,17.5 Z M9,16.5 C4.85786438,16.5 1.5,13.1421356 1.5,9 C1.5,4.85786438 4.85786438,1.5 9,1.5 C13.1421356,1.5 16.5,4.85786438 16.5,9 C16.5,13.1421356 13.1421356,16.5 9,16.5 Z"
+                                                                    id="Oval-Copy-4" fill="currentColor"
+                                                                    fill-rule="nonzero"></path>
+                                                                <polygon id="+" fill="currentColor"
+                                                                    fill-rule="nonzero"
+                                                                    points="11.94 8.58 11.94 9.42 9.396 9.42 8.556 9.42 6 9.42 6 8.58 8.556 8.58 9.396 8.58">
+                                                                </polygon>
+                                                            </g>
+                                                        </svg></button><input name="quantity" min="1"
+                                                        class="studio medium cg" value="1"><button
+                                                        class="s18 ac plus medium rel cg circle"><svg
+                                                            class="rel" width="18px" height="18px"
+                                                            viewBox="0 0 18 18">
+                                                            <g id="Add-" stroke="none" stroke-width="1"
+                                                                fill="none" fill-rule="evenodd" opacity="0.8">
+                                                                <path
+                                                                    d="M9,17.5 C13.6944204,17.5 17.5,13.6944204 17.5,9 C17.5,4.30557963 13.6944204,0.5 9,0.5 C4.30557963,0.5 0.5,4.30557963 0.5,9 C0.5,13.6944204 4.30557963,17.5 9,17.5 Z M9,16.5 C4.85786438,16.5 1.5,13.1421356 1.5,9 C1.5,4.85786438 4.85786438,1.5 9,1.5 C13.1421356,1.5 16.5,4.85786438 16.5,9 C16.5,13.1421356 13.1421356,16.5 9,16.5 Z"
+                                                                    id="Oval-Copy-4" fill="currentColor"
+                                                                    fill-rule="nonzero"></path>
+                                                                <polygon id="+" fill="currentColor"
+                                                                    fill-rule="nonzero"
+                                                                    points="11.94 8.58 11.94 9.42 9.396 9.42 9.396 12 8.556 12 8.556 9.42 6 9.42 6 8.58 8.556 8.58 8.556 6 9.396 6 9.396 8.58">
+                                                                </polygon>
+                                                            </g>
+                                                        </svg></button></div>
+                                            </div>
+                                        </div><button class="abs bctran top right p05 cart__item-remove"><svg
+                                                width="18px" height="18px" viewBox="0 0 18 18">
+                                                <g id="Shop-Pages-" stroke="none" stroke-width="1" fill="none"
+                                                    fill-rule="evenodd" opacity="0.7">
+                                                    <g id="Group-23-Copy-3"
+                                                        transform="translate(1.004883, 1.117188)"
+                                                        stroke="currentColor">
+                                                        <circle id="Oval-Copy-4" cx="8" cy="8" r="8"></circle>
+                                                        <g id="Group-11-Copy"
+                                                            transform="translate(5.000000, 5.000000)"
+                                                            stroke-linecap="square" stroke-width="1.5">
+                                                            <path d="M0.0526315789,0 L5.95353618,5.90090461"
+                                                                id="Line-8"></path>
+                                                            <path d="M-1.33226763e-14,8.85513884e-13 L6,6"
+                                                                id="Line-8-Copy"
+                                                                transform="translate(3.000000, 3.000000) rotate(-270.000000) translate(-3.000000, -3.000000) ">
+                                                            </path>
+                                                        </g>
+                                                    </g>
+                                                </g>
+                                            </svg></button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- end ngRepeat: pvtService in pvtFiltered = (privateServices | searchFilter:this:'PVT':''| orderBy:orderByField:reverseSort | zeroSeatsLast:'descending' ) | myLimitTo:limitNumber -->
+            <div class="cart__drawer-footer fix x bcnt bottom z4">
+                <div class="x mt1 px15"><a
+                        href="https://shop.prima.co/4290314274/checkouts/6a551ec07d2e22d7d830927094600728?key=2fdcceeea2b8ee2db13fa0cf5ef5bf3b"
+                        class="button button--full ac inline-block s14 button--green akz caps button--lg"
+                        role="button">Checkout <span class="cart__drawer-price ml1 pl1">$241.80</span></a></div>
+                <div class="rel z9 px15 pb1 al">
+                    <div class="cart__drawer-info ac"><span class="block akz s12 pt05 caps mt1 ls15">Good Vibes,
+                            Guaranteed.</span>
+                        <p class="mt1 mb0 small">30 days to try it and love it — or <span
+                                class="small cg rel studio underline inline-block ">send it back</span>.</p>
+                        <p class="mt05 small">By checking out you're agreeing to our <a class="underline"
+                                href="/terms-and-conditions/" target="_blank" rel="noopener nofollow">terms and
+                                conditions</a>.</p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <!-- End Of private Operators -->
-
     </div>
-    <!-- End of service listing -->
-
 </div>
