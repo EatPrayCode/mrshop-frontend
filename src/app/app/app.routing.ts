@@ -20,6 +20,10 @@ const routes: Routes = [
         path: 'signup',
         component: SignUpComponent
       },
+      {
+        path: 'home',
+        loadChildren: () => import('./../features/home/home.module').then(m => m.HomeModule)
+      },
     ]
   },
 
@@ -33,10 +37,6 @@ const routes: Routes = [
       { path: 'organiser', loadChildren: () => import('./../features/organiser/organiser.module').then(m => m.OrganiserModule) },
       {
         path: 'rewards', loadChildren: () => import('./../features/rewards/rewards.module').then(m => m.RewardsModule)
-      },
-      {
-        path: 'home',
-        loadChildren: () => import('./../features/home/home.module').then(m => m.HomeModule)
       },
       // {
       //   path: 'admin',
