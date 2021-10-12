@@ -16,119 +16,17 @@ img {
     max-width: 100%;
     border-style: none;
 }
-input {
-    font: inherit;
-    margin: 0;
-}
-input {
-    overflow: visible;
-}
 a {
     text-decoration: none;
     color: #00b9f5;
     cursor: pointer;
     position: relative;
 }
-input:focus {
-    outline: 0;
-    -webkit-appearance: none;
-} /*! CSS Used from: Embedded */
-i {
-    font-family: PAYTM-COMMON-MWEB !important;
-    speak: none;
-    font-style: normal;
-    font-weight: 400;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-.clear:before {
-    content: "\E912";
-}
-.search:before {
-    content: "\E937";
-    color: #506d85;
-}
 img {
     width: 100%;
 }
-img,
-input:-moz-placeholder {
-    width: 100%;
-}
-input:-moz-placeholder {
-    background: #00b9f5;
-    border-radius: 50px;
-    padding: 7px 13px;
-    font-size: 19.2px;
-    font-size: 1.2rem;
-    color: #fff;
-    font-weight: 700;
-} /*! CSS Used from: Embedded */
-img {
-    width: 100%;
-}
-input:-moz-placeholder,
-input:focus::-moz-placeholder {
-    color: transparent;
-}
-img {
-    width: 100%;
-}
-input:-moz-placeholder,
-input:focus::-moz-placeholder {
-    color: transparent;
-} /*! CSS Used from: Embedded */
-img {
-    width: 100%;
-}
-input:-moz-placeholder,
-input:focus::-moz-placeholder {
-    color: transparent;
-}
-img {
-    width: 100%;
-}
-input:-moz-placeholder,
-input:focus::-moz-placeholder {
-    color: transparent;
-}
-img {
-    width: 100%;
-}
-input:-moz-placeholder,
-input:focus::-moz-placeholder {
-    color: transparent;
-} /*! CSS Used from: Embedded */
-img {
-    width: 100%;
-}
-input:-moz-placeholder,
-input:focus::-moz-placeholder {
-    color: transparent;
-} /*! CSS Used from: Embedded */
-img {
-    width: 100%;
-}
-input:-moz-placeholder,
-input:focus::-moz-placeholder {
-    color: transparent;
-} /*! CSS Used from: Embedded */
-img {
-    width: 100%;
-}
-input:-moz-placeholder,
-input:focus::-moz-placeholder {
-    color: transparent;
-} /*! CSS Used from: Embedded */
-img {
-    width: 100%;
-}
-input:-moz-placeholder,
-input:focus::-moz-placeholder {
-    color: transparent;
+.micro-app-container {
+    height: 100vh;
 }
 .micro-app-container .micro-app-toolbar-container {
     background: #fff;
@@ -144,56 +42,6 @@ input:focus::-moz-placeholder {
     position: -webkit-sticky;
     position: sticky;
 }
-.micro-app-container .micro-app-toolbar-container ._3QLRN {
-    padding: 20px 20px 20px;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-align: center;
-    align-items: center;
-}
-
-.micro-app-container .micro-app-toolbar-container ._3QLRN i {
-    padding: 10px 10px 10px 0;
-    font-size: 25px;
-    color: #506d85;
-    font-weight: 300;
-}
-.micro-app-container .micro-app-toolbar-container ._3QLRN .micro-app-toolbar-search-container {
-    display: -ms-flexbox;
-    display: flex;
-    width: 100%;
-    position: relative;
-}
-.micro-app-container .micro-app-toolbar-container ._3QLRN .micro-app-toolbar-search-container i {
-    font-size: 15px;
-    color: #506d85;
-    font-weight: 300;
-    position: absolute;
-    top: 2px;
-    left: 13px;
-}
-.micro-app-container .micro-app-toolbar-container ._3QLRN .micro-app-toolbar-search-container input {
-    border: 0;
-    background: #f5f8fa;
-    border-radius: 50px;
-    padding: 0 15px 0 35px;
-    width: 100%;
-    height: 40px;
-    font-size: 16px;
-    color: #506d85;
-    font-weight: 500;
-}
-.micro-app-container
-    .micro-app-toolbar-container
-    ._3QLRN
-    .micro-app-toolbar-search-container
-    input:focus::-webkit-input-placeholder {
-    opacity: 0;
-    color: transparent;
-    -webkit-transition: all 0.2s ease;
-    -o-transition: all 0.2s ease;
-    transition: all 0.2s ease;
-}
 .micro-app-container .micro-app-content {
     display: -ms-flexbox;
     display: flex;
@@ -202,7 +50,7 @@ input:focus::-moz-placeholder {
     width: 30%;
     background: #f5f8fa;
     overflow: scroll;
-    height: 84vh;
+    height: 100%;
     position: absolute;
 }
 .micro-app-container .micro-app-content .micro-app-content-left .micro-app-left-menu-list a {
@@ -236,7 +84,7 @@ input:focus::-moz-placeholder {
     position: absolute;
     right: -2px;
     width: 70%;
-    max-height: 80vh;
+    max-height: 100%;
 }
 .micro-app-container .micro-app-content .micro-app-content-right a {
     text-align: center;
@@ -249,12 +97,12 @@ input:focus::-moz-placeholder {
     -ms-flex-direction: column;
     flex-direction: column;
 }
-.micro-app-container .micro-app-content .micro-app-content-right a ._3yeWX {
+.micro-app-container .micro-app-content .micro-app-content-right a .micro-app-content-right-widget {
     margin-bottom: 5px;
     width: 64px;
     height: auto;
 }
-.micro-app-container .micro-app-content .micro-app-content-right a ._3yeWX img {
+.micro-app-container .micro-app-content .micro-app-content-right a .micro-app-content-right-widget img {
     width: auto;
     height: 40px;
 }

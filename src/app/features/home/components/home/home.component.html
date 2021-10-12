@@ -1,8 +1,8 @@
 <section class="micro-app-container">
     <div class="micro-app-toolbar-container">
-        <div class="micro-app-toolbar-row"><i class="clear"></i>
+        <div class="micro-app-toolbar-row">
+            <i class="clear"></i>
             <div class="micro-app-toolbar-search-container">
-                <i class="search"> </i>
                 <input type="text" placeholder="Search mrshop">
             </div>
         </div>
@@ -10,33 +10,14 @@
     <div class="micro-app-content">
         <div class="micro-app-content-left">
             <div class="micro-app-left-menu-list">
-                <a [routerLink]="['home']" class="left-menu-item-active">
+                <a *ngFor="let item of leftList" [class.left-menu-item-active1]="selectedItem.id == 'item.id'" class="left-menu-item-active">
                     <span>Recharge &amp; Pay Bills</span>
-                </a>
-                <a class="">
-                    <span>Online
-                        Shopping</span>
-                </a>
-                <a class="">
-                    <span>Travel</span>
-                </a>
-                <a class="">
-                    <span>Movies &amp;Events</span>
-                </a>
-                <a class=""><span>Stocks &amp;
-                        Wealth</span>
-                </a>
-                <a class="">
-                    <span>Loans &amp; Credit Card</span>
-                </a>
-                <a class="">
-                    <span>Other Services</span>
                 </a>
             </div>
         </div>
         <div class="micro-app-content-right" style="background: #f5f8fa;">
-            <a *ngFor="let item of complexLinks">
-                <div class="_3yeWX">
+            <a *ngFor="let item of rightList">
+                <div class="micro-app-content-right-widget">
                     <img src="https://assetscdn1.paytm.com/images/catalog/view_item/710719/1610605805462.png"
                         alt="Mobile Prepaid">
                 </div>
