@@ -10,8 +10,8 @@
     <div class="micro-app-content">
         <div class="micro-app-content-left">
             <div class="micro-app-left-menu-list">
-                <a *ngFor="let item of leftList" [class.left-menu-item-active1]="selectedItem.id == 'item.id'" class="left-menu-item-active">
-                    <span>Recharge &amp; Pay Bills</span>
+                <a *ngFor="let item of navItems" (click)="selectMainCategory(item)" [class.left-menu-item-active]="mainCategory.route == item.route">
+                    <span>{{item.displayName}}</span>
                 </a>
             </div>
         </div>
@@ -21,7 +21,7 @@
                     <img src="https://assetscdn1.paytm.com/images/catalog/view_item/710719/1610605805462.png"
                         alt="Mobile Prepaid">
                 </div>
-                <span>Mobile Prepaid</span>
+                <span>{{item.displayName}}</span>
             </a>
         </div>
     </div>
