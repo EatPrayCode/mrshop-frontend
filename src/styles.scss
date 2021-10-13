@@ -17,22 +17,11 @@ app-pages .full-screen {
     height: auto !important; // this thing
 }
 
-app-checkout .mat-horizontal-stepper-header-container {
-    // height: 15%;
-}
-
 app-checkout .mat-stepper-horizontal {
     height: 100%;
     display: flex !important;
     flex-direction: column;
     width: 100%;
-}
-
-app-checkout .mat-horizontal-content-container {
-    // height: 85%;
-    // padding: 0 0px 24px 24px;
-    // width: 100%;
-    // padding: 10px !important;
 }
 
 app-checkout .mat-horizontal-content-container {
@@ -58,9 +47,9 @@ bottom-nav {
     border-top-style: 0 px solid;
 }
 
-.mat-horizontal-stepper-header-container {
-    // margin-bottom: 20px;
-}
+// .mat-horizontal-stepper-header-container {
+//     // margin-bottom: 20px;
+// }
 
 .mat-horizontal-stepper-header {
     display: flex;
