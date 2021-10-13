@@ -11,16 +11,6 @@ import { dataProfiles } from 'src/app/mock-data/constants';
 })
 export class CustomiseItemsTableComponent implements OnChanges {
 
-  members: { title: string, subtitle: string, content: string, url: string }[] = [
-    { title: 'Title', subtitle: 'Subtitle', content: 'Content here', url: 'https://material.angular.io/assets/img/examples/shiba2.jpg' },
-    { title: 'Title', subtitle: 'Subtitle', content: 'Content here', url: 'https://material.angular.io/assets/img/examples/shiba2.jpg' },
-    { title: 'Title', subtitle: 'Subtitle', content: 'Content here', url: 'https://material.angular.io/assets/img/examples/shiba2.jpg' },
-    { title: 'Title', subtitle: 'Subtitle', content: 'Content here', url: 'https://material.angular.io/assets/img/examples/shiba2.jpg' },
-    { title: 'Title', subtitle: 'Subtitle', content: 'Content here', url: 'https://material.angular.io/assets/img/examples/shiba2.jpg' },
-    { title: 'Title', subtitle: 'Subtitle', content: 'Content here', url: 'https://material.angular.io/assets/img/examples/shiba2.jpg' },
-  ];
-  complexLinks: any[] = dataProfiles[0].toOrganiseTasks;
-
   @Input() inputData: any = {};
 
   @Output() packChange = new EventEmitter();
