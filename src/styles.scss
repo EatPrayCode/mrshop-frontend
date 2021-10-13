@@ -8,7 +8,11 @@
 //     margin: 0;
 //     font-family: Roboto, "Helvetica Neue", sans-serif;
 // }
-// @import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+mat-dialog-container {
+    z-index: 2000;
+}
+
 // @import "./../node_modules/font-awesome/css/font-awesome.css";
 // app-pages .full-screen {
 //     height: auto !important; // this thing
