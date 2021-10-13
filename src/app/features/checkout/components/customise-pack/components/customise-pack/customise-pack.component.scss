@@ -1,666 +1,79 @@
-.customise-container {
-  height: 100%;
+body {
+  font-family: 'lato', sans-serif;
 }
-// table,
-
-th,
-td {
-  // border: 1px solid black;
-  border-collapse: collapse;
-}
-th,
-td {
-  padding: 5px;
-  text-align: left;
-}
-
-table {
-  border: 1px solid #7a7a7a;
-  border-radius: 8px;
-  box-shadow: 3px 3px 7px 2px #7a7a7a;
-  // margin: 24px;
-  margin: 10px 0;
-}
-.customize-pack-container {
-  display: flex;
-  height: 100%;
-  width: 100%;
-  flex-direction: column;
-}
-.form-wraper {
-  display: flex;
-  flex-direction: column;
-  padding: 0 12px;
-  height: 90%;
-  overflow-y: hidden;
-}
-.table-container-scroll {
-  height: 90%;
-  overflow-y: scroll;
-}
-.pack-summary {
-  height: 10%;
-}
-.pack-config-wrapper {
-  height: 10%;
-  width: 100%;
-  justify-content: space-between;
-  .pack-field {
-    width: 30%;
-  }
-}
-.summary {
-  width: 100%;
-  justify-content: space-between;
-  .summary-content {
-    width: 45%;
-  }
-}
-.flex-row {
-  display: flex;
-  flex-direction: row;
-}
-.flex-column {
-  display: flex;
-  flex-direction: column;
-}
-.table-container {
-  width: 100%;
-}
-
-.pack-summary-container {
-  width: 100%;
-  border: 2px solid red;
-}
-.td-border-bottom {
-  border-bottom: 1px solid coral;
-}
-
-.pack-drop-down {
-  width: 100%;
-}
-
-/*! CSS Used from: Embedded */
-.searchFields .textbox-from-to {
-  margin: 10px 0% !important;
-  border-bottom: 1px solid #eae9e9;
-  padding: 10px;
-}
-* {
-  box-sizing: border-box;
-}
-.homeSlides {
-  display: none;
-  text-align: center;
-  width: 92%;
-  margin: auto;
-}
-img {
-  vertical-align: middle;
-}
-.slideshow-container {
+.container {
   max-width: 1000px;
-  position: relative;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 10px;
+  padding-right: 10px;
 }
-.dot {
-  cursor: pointer;
-  height: 5px;
-  width: 5px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-.active,
-.dot:hover {
-  background-color: #c40000;
-  width: 8px;
-  height: 8px;
-}
-.slider {
-  margin: 15px 0px;
-  padding-left: 2%;
-}
-.current-day {
-  background-color: #e76a60;
-  border-radius: 50%;
-  color: #fff !important;
-  opacity: 1 !important;
-  width: 30px !important;
-  height: 30px !important;
-  line-height: 30px !important;
-  margin: auto;
-}
-.calender-day {
-  border-radius: 50%;
-  width: 25px;
-  height: 25px;
-  line-height: 26px;
-  margin: auto;
-}
-.calendar-day-name {
-  display: block;
-  font-size: 10px;
-  padding-top: 2px;
-}
-.container-month {
-  width: 77px;
-  height: 45px;
-  float: left;
-  font-size: 12px;
-  color: #333;
-  margin: 10px;
-  border-left: 1px solid #e1e1e1;
-  padding-left: 15px;
-  margin-left: 5px;
-  text-align: left;
-}
-.container-month::before {
-  content: "\25BE";
-  display: inline-block;
-  -webkit-font-smoothing: antialiased;
-  font: normal 30px/1 "dashicons";
-  padding-left: 3px;
-  vertical-align: top;
-  float: right;
-  color: #c40000;
-  margin-top: 0px;
-}
-.container-month span {
-  position: relative;
-  top: 5px;
-}
-#calendar2 {
-  height: 45px;
-  overflow: hidden;
-  opacity: 1;
-  transform: translate3d(0px, 0px, 0px);
-  min-width: 220px;
-}
-.calendar-dates {
-  display: inline-block;
-  font-size: 16px;
-  color: #333;
-  transition: all ease-in-out 0.3s;
-  min-width: 36px;
-  margin: 0px;
-  margin-left: 12px;
-  float: left;
-}
-.cal-date p {
-  color: #333;
-  text-align: left;
-  padding-left: 4%;
-  margin: 0px;
-}
-.slick-slider {
-  min-width: 36px;
-}
-.border-b-0 {
-  border-bottom: 0px solid #eae9e9 !important;
-}
-.twowaychang {
-  background: url(//static.abhibus.com/mobile_web/img/mobile-icons-all-new_v30.png) no-repeat !important;
-  background-size: 550px !important;
-}
-.twowaychang {
-  background-position: -165px 0px !important;
-  right: 3% !important;
-  top: 35px !important;
-}
-.searchFields {
-  background: #fff url(https://static.abhibus.com/img/diwali/wap/search-panel-corner.png) bottom right !important;
-  background-repeat: no-repeat !important;
-  margin: 2%;
-  margin-top: 10px !important;
-  border-radius: 10px;
-  box-shadow: 0 1px 3px 0 rgba(32, 33, 36, 0.12);
-  border-color: rgba(223, 225, 229, 0);
-  margin-bottom: 45px;
-  background-size: 24% !important;
-}
-.textbox-from-to {
-  font-weight: 100 !important;
-  color: #333;
-}
-.field1 {
-  width: 85%;
-}
-.field2 {
-  width: 85%;
-}
-.searchFields a.btnab {
-  display: block;
-  font-size: 16px;
-  font-weight: 100;
-  border: 1px solid #c40000;
-  width: 110px !important;
-  border-radius: 10px;
-  padding: 8px;
-  position: absolute;
-  margin-left: 34% !important;
-  bottom: -28px;
-  margin-left: calc(50% - 56px) !important;
-}
-#roundTrip {
-  height: 40px;
-}
-.searchFields .btnab {
-  background-color: #e76a60;
-  border: 1px solid #e76a60 !important;
-}
-.container-month-name {
-  font-size: 15px;
-}
-.slick-slider {
-  position: relative;
-  display: block;
-  box-sizing: border-box;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-touch-callout: none;
-  -khtml-user-select: none;
-  -ms-touch-action: pan-y;
-  touch-action: pan-y;
-  -webkit-tap-highlight-color: transparent;
-}
-.view-offer {
-  font-size: 14px;
-  text-align: right;
-  margin-top: 5px;
-  color: #e76a60;
-  margin-right: 3%;
-  margin-bottom: 5px;
-  font-weight: 700;
-  height: 25px;
-}
-.view-offer a {
-  color: #e76a60;
-  font-weight: bold;
-}
-.mobile-web-footer {
-  padding: 0% 4% 4% 4%;
-}
-.mobile-web-footer p {
-  line-height: 24px;
-}
-.mobile-web-footer ul li {
-  list-style: disc;
-  margin-left: 20px;
-  margin-bottom: 10px;
-}
-.mobile-web-footer .text-600 {
-  font-weight: bold;
-  margin-top: 30px;
-}
-.mobile-web-footer .tabhead {
-  border: solid 1px #ccc;
-  padding: 0px 9px;
-  overflow: hidden;
-}
-.mobile-web-footer h3 {
-  font-size: 18px;
-  font-weight: bold;
-  margin-top: 50px;
-}
-.mobile-web-footer .tabhead span {
+
+h2 {
+  font-size: 26px;
+  margin: 20px 0;
   text-align: center;
-  color: #b40003;
-  font-size: 24px;
-  font-weight: bold;
-  display: inline-block;
-  background: #ccc;
-  padding: 2px 2px;
-  border-radius: 100px;
-  width: 8%;
-  float: left;
-  margin-top: 10px;
+  small {
+    font-size: 0.5em;
+  }
 }
-.mobile-web-footer .tabhead strong {
-  display: inline;
-  width: 88%;
-  float: right;
-  min-height: 50px;
-  line-height: 18px;
-  margin-top: 7px;
-}
-.new-bg-dasara {
-  background: url(//static.abhibus.com/img/diwali/wap/search-button-bg.png);
-  background-position: -26px 280px;
-  background-repeat: no-repeat;
-  background-size: 438px;
-}
-.app-text {
-  border-left: solid 5px #dc635b;
-  padding-left: 20px;
-}
-/*! CSS Used from: https://static.abhibus.com/mobile_web/css/style_0_0_4.css ; media=all */
-@media all {
-  ul {
-    margin: 1em 0;
-    padding: 0;
+
+.responsive-table {
+  li {
+    border-radius: 3px;
+    padding: 25px 30px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
   }
-  img {
-    border: 0;
-  }
-  ul {
-    padding: 0;
-  }
-  .searchFields {
-    text-align: center;
-  }
-  a {
-    text-decoration: none;
-  }
-  input {
-    font-family: sans-serif;
-    color: #222;
-  }
-  a {
-    outline: 0 !important;
-  }
-  a:active,
-  a:focus,
-  a:hover {
-    outline: 0;
-  }
-  a:visited {
-    color: #bbb;
-  }
-  a:hover {
-    color: #737373;
-  }
-  a,
-  div,
-  h2,
-  h3,
-  img,
-  input,
-  li,
-  p,
-  span,
-  strong,
-  ul {
-    font-family: "Open Sans", Arial, Helvetica, sans-serif;
-    font-weight: 400;
-  }
-  * {
-    font-family: "Open Sans", Arial, sans-serif;
-    font-weight: 400;
-  }
-  img {
-    -ms-interpolation-mode: bicubic;
-    vertical-align: middle;
-  }
-  input {
-    font-size: 100%;
-    margin: 0;
-    vertical-align: baseline;
-  }
-  input {
-    line-height: normal;
-  }
-  input::-moz-focus-inner {
-    border: 0;
-    padding: 0;
-  }
-  li,
-  ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  .pointer-icon,
-  .pointer-icon2,
-  .twowaychang {
-    background: url(//static.abhibus.com/mobile_web/img/mobile-icons-all-new_v30.png) no-repeat;
-  }
-  .pointer-icon {
-    background-size: 450px;
-    width: 30px;
-    height: 30px;
-    display: block;
-    background-position: -8px -50px;
-    float: left;
-  }
-  .twowaychang {
-    position: absolute;
-    top: 29px;
-    right: 10%;
-    margin: 0;
-    padding: 0;
-    z-index: 2;
-    background-position: -259px -8px;
-    background-size: 800px;
-    display: block;
-    width: 50px;
-    height: 50px;
-  }
-  .searchFields {
-    position: relative;
-    margin-top: -10px;
-    background: #fff;
-  }
-  .textbox-from-to {
-    border-bottom: 1px solid #c3c3c3;
-    text-align: left;
-    display: block;
-    overflow: hidden;
-  }
-  .textbox-from-to {
-    padding: 2%;
-    margin: 10px 4% 0;
-    font-size: 20px;
-    color: #000;
-    line-height: 30px;
-  }
-  a.btnab {
-    color: #fff;
-    font-weight: 300;
-  }
-  .field {
-    -webkit-transition: all 0.2s ease-in-out;
-    -moz-transition: all 0.2s ease-in-out;
-    -o-transition: all 0.2s ease-in-out;
-    -ms-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;
-    position: relative;
-    z-index: 1;
-  }
-  .searchFields a.btnab {
-    width: 92%;
-    display: block;
-    margin: 10px auto;
-    font-size: 18px;
-    font-weight: 300;
-    border: 1px solid #c40000;
-  }
-  .btnab {
-    background-color: #cf000b;
-    padding: 10px 0;
-  }
-  .btnab:hover {
-    background-color: #a71c1c;
-  }
-  a.btnab {
+  .table-header {
+    background-color: #95A5A6;
     font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
   }
-  .searchFields a.btnab:hover {
-    background-color: #a71c1c;
-    border: 1px solid #919191;
-    -o-transition: background-color 0.5s ease-out, background-color 0.5s ease-in;
-    -webkit-transition: background-color 0.5s ease-out, background-color 0.5s ease-in;
-    -moz-transition: background-color 0.5s ease-out, background-color 0.5s ease-in;
-    transition: background-color 0.5s ease-out, background-color 0.5s ease-in;
+  .table-row {
+    background-color: #ffffff;
+    box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.1);
   }
-  .clearfix:after,
-  .clearfix:before {
-    content: "";
-    display: table;
+  .col-1 {
+    flex-basis: 10%;
   }
-  .clearfix:after {
-    clear: both;
+  .col-2 {
+    flex-basis: 40%;
   }
-  .clearfix {
-    clear: both;
+  .col-3 {
+    flex-basis: 25%;
   }
-  input:focus {
-    outline-width: 0;
+  .col-4 {
+    flex-basis: 25%;
   }
-  input {
-    border-radius: 0;
-  }
-  .pointer-icon2 {
-    background-size: 370px;
-    width: 30px;
-    height: 30px;
-    display: block;
-    background-position: -297px -72px;
-    float: left;
-  }
-}
-/*! CSS Used from: https://static.abhibus.com/mobile_web/css/main.css ; media=all */
-@media all {
-  a {
-    background-color: transparent;
-  }
-  a:active,
-  a:hover {
-    outline: 0;
-  }
-  strong {
-    font-weight: 700;
-  }
-  img {
-    border: 0;
-  }
-  input {
-    margin: 0;
-    font: inherit;
-    color: inherit;
-  }
-  input::-moz-focus-inner {
-    padding: 0;
-    border: 0;
-  }
-  input {
-    line-height: normal;
-  }
-  @media print {
-    *,
-    :after,
-    :before {
-      color: #000 !important;
-      text-shadow: none !important;
-      background: 0 0 !important;
-      -webkit-box-shadow: none !important;
-      box-shadow: none !important;
+  
+  @media all and (max-width: 767px) {
+    .table-header {
+      display: none;
     }
-    a,
-    a:visited {
-      text-decoration: underline;
+    .table-row{
+      
     }
-    a[href]:after {
-      content: " (" attr(href) ")";
+    li {
+      display: block;
     }
-    a[href^="javascript:"]:after,
-    a[href^="#"]:after {
-      content: "";
+    .col {
+      
+      flex-basis: 100%;
+      
     }
-    img {
-      page-break-inside: avoid;
+    .col {
+      display: flex;
+      padding: 10px 0;
+      &:before {
+        color: #6C7A89;
+        padding-right: 10px;
+        content: attr(data-label);
+        flex-basis: 50%;
+        text-align: right;
+      }
     }
-    img {
-      max-width: 100% !important;
-    }
-    h2,
-    h3,
-    p {
-      orphans: 3;
-      widows: 3;
-    }
-    h2,
-    h3 {
-      page-break-after: avoid;
-    }
-  }
-  * {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-  }
-  :after,
-  :before {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-  }
-  input {
-    font-family: inherit;
-    font-size: inherit;
-    line-height: inherit;
-  }
-  a {
-    color: #337ab7;
-    text-decoration: none;
-  }
-  a:focus {
-    outline: thin dotted;
-    outline: 5px auto -webkit-focus-ring-color;
-    outline-offset: -2px;
-  }
-  img {
-    vertical-align: middle;
-  }
-  h2,
-  h3 {
-    font-family: inherit;
-    font-weight: 500;
-    line-height: 1.1;
-    color: inherit;
-  }
-  h2,
-  h3 {
-    margin-top: 20px;
-    margin-bottom: 10px;
-  }
-  h2 {
-    font-size: 30px;
-  }
-  h3 {
-    font-size: 24px;
-  }
-  p {
-    margin: 0 0 10px;
-  }
-  ul {
-    margin-top: 0;
-    margin-bottom: 10px;
-  }
-  .col-md-6 {
-    position: relative;
-    min-height: 1px;
-    padding-right: 15px;
-    padding-left: 15px;
-  }
-  @media (min-width: 992px) {
-    .col-md-6 {
-      float: left;
-    }
-    .col-md-6 {
-      width: 50%;
-    }
-  }
-  .clearfix:after,
-  .clearfix:before {
-    display: table;
-    content: " ";
-  }
-  .clearfix:after {
-    clear: both;
   }
 }

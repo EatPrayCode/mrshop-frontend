@@ -30,4 +30,6 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 <!-- 
     https://stackblitz.com/edit/angular-8zy3pi?file=src%2Fapp%2Fapp.component.html
     https://www.freakyjolly.com/angular-material-card-example-using-mat-card-component/
-    https://stackblitz.com/edit/angular-flexlayouts-sample?file=src%2Fapp%2Fapp.component.html -->
+    https://stackblitz.com/edit/angular-flexlayouts-sample?file=src%2Fapp%2Fapp.component.html 
+    https://codepen.io/rokkr/pen/bZoOrp
+    -->

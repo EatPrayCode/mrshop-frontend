@@ -1,258 +1,35 @@
-<div class="customise-container">
-
-  <div class="customize-pack-container">
-
-    <h2>My List</h2>
-
-    <form [formGroup]="form" class="form-wraper">
-
-      <div class="pack-config-wrapper flex-row">
-        <mat-form-field class="pack-field">
-          <mat-select (ngModelChange)="changePackTemplate($event)" formControlName="packTemplate"
-            placeholder="Pack Template">
-            <mat-option *ngFor="let packTemplate of form.controls.packTemplates?.value" [value]="packTemplate">
-              {{ packTemplate.name }}
-            </mat-option>
-          </mat-select>
-        </mat-form-field>
-        <mat-form-field class="pack-field">
-          <mat-select (ngModelChange)="changePackTemplate($event)" formControlName="packTemplate"
-            placeholder="Pack Template">
-            <mat-option *ngFor="let packTemplate of form.controls.packTemplates?.value" [value]="packTemplate">
-              {{ packTemplate.name }}
-            </mat-option>
-          </mat-select>
-        </mat-form-field>
-
-        <mat-form-field class="pack-field">
-          <mat-select (ngModelChange)="changePackSize($event)" placeholder="Pack Size" formControlName="packSize">
-            <mat-option *ngFor="let size of form.controls.packSizes?.value" [value]="size">
-              {{ size.name }}
-            </mat-option>
-          </mat-select>
-        </mat-form-field>
-      </div>
-
-      <div class="table-container-scroll">
-
-        <div formArrayName="items" class="flex-row" *ngFor="
-            let items of form.controls.items?.value;
-            let i = index;
-            trackBy: trackFn
-          ">
-
-          <div [formGroupName]="i" class="table-container">
-            <mat-card class="example-card">
-              <mat-card-header>
-                <img
-                  src="https://www.freakyjolly.com/wp-content/uploads/2021/07/cropped-cropped-fj-logo-192-removebg-preview-e1625997712615-1.png"
-                  mat-card-avatar />
-                <mat-card-title>
-                  {{(form.controls.items?.value)[i].name}}
-                </mat-card-title>
-
-                <mat-card-subtitle>
-                  Pack Description
-                </mat-card-subtitle>
-              </mat-card-header>
-
-              <mat-card-content>
-
-                <div id="home" class="new-bg-dasara">
-
-
-                  <div class="searchFields clearfix">
-                    <span class="twowaychang" ng-click="swapCities()"></span>
-                    <div class="field field1" onclick="openItem('select_city')">
-                      <div id="sourceCity" ng-click="setRequestedInputBox('sourceCity')"
-                        class="toggle-menu selectcity push-body textbox-from-to activator"> <span
-                          class="pointer-icon2"></span>
-                        <!-- ngIf: sourceName != null --><span ng-if="sourceName != null" style="color:#555"
-                          class="ng-binding ng-scope">Hyderabad</span><!-- end ngIf: sourceName != null -->
-                        <!-- ngIf: sourceName == null -->
-                        <input type="hidden" name="source_id" ng-model="sourceId" value="3"
-                          class="ng-pristine ng-untouched ng-valid ng-not-empty">
-                      </div>
-                    </div>
-                    <div class="field field2" onclick="openItem('select_city')">
-                      <div id="destinationCity" ng-click="setRequestedInputBox('destinationCity')"
-                        class="toggle-menu selectcity push-body textbox-from-to activator border-b-0"> <span
-                          class="pointer-icon"></span> <!-- ngIf: destinationName != null --><span
-                          ng-if="destinationName != null" style="color:#555" class="ng-binding ng-scope">Bellary</span>
-                        <!-- end ngIf: destinationName != null -->
-                        <!-- ngIf: destinationName == null -->
-                        <input type="hidden" name="destination_id" ng-model="destinationId" value="1057"
-                          class="ng-pristine ng-untouched ng-valid ng-not-empty">
-                      </div>
-                    </div>
-                    <div class="cal-date">
-                      <p>Departure</p>
-                      <div style="overflow:auto">
-                        <div class="slider slick-slider " id="calendar2" style="float:left">
-                          <!-- ngRepeat: calDay in daylist track by $index -->
-                          <div class="calendar-dates ng-scope" ng-repeat="calDay in daylist track by $index"
-                            ng-click="setJrnyDate(calDay.dateObj)" data-date="2021-10-11">
-                            <span ng-bind="calDay.day" class="calender-day ng-binding current-day"
-                              ng-class="{'current-day':calDay.dateObj == journey_date}" style="display:block;">11</span>
-                            <span ng-bind="calDay.dayName" class="calendar-day-name ng-binding">MON</span>
-                          </div><!-- end ngRepeat: calDay in daylist track by $index -->
-                          <div class="calendar-dates ng-scope" ng-repeat="calDay in daylist track by $index"
-                            ng-click="setJrnyDate(calDay.dateObj)" data-date="2021-10-12">
-                            <span ng-bind="calDay.day" class="calender-day ng-binding"
-                              ng-class="{'current-day':calDay.dateObj == journey_date}" style="display:block;">12</span>
-                            <span ng-bind="calDay.dayName" class="calendar-day-name ng-binding">TUE</span>
-                          </div><!-- end ngRepeat: calDay in daylist track by $index -->
-                          <div class="calendar-dates ng-scope" ng-repeat="calDay in daylist track by $index"
-                            ng-click="setJrnyDate(calDay.dateObj)" data-date="2021-10-13">
-                            <span ng-bind="calDay.day" class="calender-day ng-binding"
-                              ng-class="{'current-day':calDay.dateObj == journey_date}" style="display:block;">13</span>
-                            <span ng-bind="calDay.dayName" class="calendar-day-name ng-binding">WED</span>
-                          </div><!-- end ngRepeat: calDay in daylist track by $index -->
-                          <div class="calendar-dates ng-scope" ng-repeat="calDay in daylist track by $index"
-                            ng-click="setJrnyDate(calDay.dateObj)" data-date="2021-10-14">
-                            <span ng-bind="calDay.day" class="calender-day ng-binding"
-                              ng-class="{'current-day':calDay.dateObj == journey_date}" style="display:block;">14</span>
-                            <span ng-bind="calDay.dayName" class="calendar-day-name ng-binding">THU</span>
-                          </div><!-- end ngRepeat: calDay in daylist track by $index -->
-                          <div class="calendar-dates ng-scope" ng-repeat="calDay in daylist track by $index"
-                            ng-click="setJrnyDate(calDay.dateObj)" data-date="2021-10-15">
-                            <span ng-bind="calDay.day" class="calender-day ng-binding"
-                              ng-class="{'current-day':calDay.dateObj == journey_date}" style="display:block;">15</span>
-                            <span ng-bind="calDay.dayName" class="calendar-day-name ng-binding">FRI</span>
-                          </div><!-- end ngRepeat: calDay in daylist track by $index -->
-                        </div>
-                        <div class="container-month" ng-click="showCalendar()">
-                          <span ng-bind="activeMonthName" class="container-month-name ng-binding">OCT</span>
-                          <span ng-bind="activeYear" class="container-month-year ng-binding">2021</span>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="clearfix"></div>
-                    <!-- ngIf: msg != null -->
-
-
-                    <div id="roundTrip">
-                      <a href="javascript:;" class="btnab" ng-click="validateInputs()" ngtouch="validateInputs()"
-                        aria-label="Search"> Search</a>
-                    </div>
-                  </div>
-
-                  <a href="https://m368j.app.goo.gl/appdownload" style="text-decoration:none" aria-label="appdownload">
-                    <img class=" lazyloaded" data-src="https://static.abhibus.com/img/ABHIFIRST.webp" alt=""
-                      style="padding: 10px 10px" width="100%" height="100%"
-                      src="https://static.abhibus.com/img/ABHIFIRST.webp">
-                  </a>
-
-                </div>
-
-              </mat-card-content>
-
-              <!-- <mat-card-content>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                  et dolore
-                  magna aliqua.
-                </p>
-
-                <mat-grid-list cols="4" rowHeight="100px">
-                  <mat-grid-tile *ngFor="let tile of tiles" [colspan]="tile.cols" [rowspan]="tile.rows"
-                    [style.background]="tile.color">
-
-                    <input type="checkbox" (change)="changeCheckbox($event, i)" formControlName="isChecked" />
-                    Item Description
-
-                    <mat-form-field class="language-field">
-                      <mat-select (ngModelChange)="changeBrand($event, i)" formControlName="brand" placeholder="Brand">
-                        <mat-option *ngFor="
-                            let brand of (form.controls.items?.value)[i].brandsList
-                          " [value]="brand">
-                          {{ brand.value }}
-                        </mat-option>
-                      </mat-select>
-                    </mat-form-field>
-
-                    <mat-form-field class="language-field">
-                      <mat-select (ngModelChange)="changeVariant($event, i)" formControlName="variant"
-                        placeholder="Variant">
-                        <mat-option *ngFor="
-                            let variant of (form.controls.items?.value)[i].brand
-                              ?.variantsList
-                          " [value]="variant">
-                          {{ variant.value }}
-                        </mat-option>
-                      </mat-select>
-                    </mat-form-field>
-
-                    <mat-form-field class="language-field">
-                      <mat-select (ngModelChange)="doSomething($event)" placeholder="Budget">
-                        <mat-option *ngFor="let language of languages" [value]="language">
-                          {{ language.viewValue }}
-                        </mat-option>
-                      </mat-select>
-                    </mat-form-field>
-
-                    <mat-form-field class="language-field">
-                      <mat-select (ngModelChange)="changeQuantity($event, i)" formControlName="quantity"
-                        placeholder="Quantity">
-                        <mat-option *ngFor="
-                            let quantity of (form.controls.items?.value)[i]
-                              .quantityList
-                          " [value]="quantity">
-                          {{ quantity.value }}
-                        </mat-option>
-                      </mat-select>
-                    </mat-form-field>
-
-                    Price Per Item
-                    <input formControlName="pricePerItem" />
-
-                    Total Price Per Item
-                    <input formControlName="totalPricePerItem" />
-
-                    <input type="checkbox" (change)="toggleBrandless($event, i)" formControlName="isBrandless" />
-                    Brandless
-
-                    <mat-form-field appearance="fill">
-                      <mat-label>Choose Days</mat-label>
-                      <input matInput [matDatepicker]="picker" />
-                      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
-                      <mat-datepicker #picker></mat-datepicker>
-                    </mat-form-field>
-                  </mat-grid-tile>
-                </mat-grid-list>
-              </mat-card-content> -->
-
-              <mat-card-actions>
-                <button mat-raised-button color="accent">LIKE</button>
-                <button mat-raised-button color="primary">
-                  <i class="fa fa-trash"></i>
-                </button>
-              </mat-card-actions>
-            </mat-card>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </form>
-
-    <div class="pack-summary flex-column">
-      <!-- <input formControlName="packTotal"> -->
-      <div class="summary flex-row">
-        <div class="summary-content">Pack total : $10000</div>
-        <div class="summary-content">Total count: 56456599</div>
-      </div>
-      <div class="summary flex-row">
-        <div class="summary-content">Savings : $10000</div>
-        <div class="summary-content">Savings : $10000</div>
-      </div>
-    </div>
-
-  </div>
-
-  <!-- {{form.controls.packTemplate?.value|json}} -->
-
+<div class="">
+  <h2>Pack Details<small>by mrshop</small></h2>
+  <ul class="responsive-table">
+    <li class="table-header">
+      <div class="col col-1">Job Id</div>
+      <div class="col col-2">Customer Name</div>
+      <div class="col col-3">Amount Due</div>
+      <div class="col col-4">Payment Status</div>
+    </li>
+    <li *ngFor="let task of tiles" class="table-row">
+      <div class="col col-1" data-label="Job Id">42235</div>
+      <div class="col col-2" data-label="Customer Name">John Doe</div>
+      <div class="col col-3" data-label="Amount">$350</div>
+      <div class="col col-4" data-label="Payment Status">Pending</div>
+    </li>
+    <li class="table-row">
+      <div class="col col-1" data-label="Job Id">42442</div>
+      <div class="col col-2" data-label="Customer Name">Jennifer Smith</div>
+      <div class="col col-3" data-label="Amount">$220</div>
+      <div class="col col-4" data-label="Payment Status">Pending</div>
+    </li>
+    <li class="table-row">
+      <div class="col col-1" data-label="Job Id">42257</div>
+      <div class="col col-2" data-label="Customer Name">John Smith</div>
+      <div class="col col-3" data-label="Amount">$341</div>
+      <div class="col col-4" data-label="Payment Status">Pending</div>
+    </li>
+    <li class="table-row">
+      <div class="col col-1" data-label="Job Id">42311</div>
+      <div class="col col-2" data-label="Customer Name">John Carpenter</div>
+      <div class="col col-3" data-label="Amount">$115</div>
+      <div class="col col-4" data-label="Payment Status">Pending</div>
+    </li>
+  </ul>
 </div>

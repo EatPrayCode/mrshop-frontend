@@ -75,8 +75,8 @@ img {
   border-left: 2px solid #00b9f5;
 }
 .micro-app-container .micro-app-content .micro-app-content-right {
-  // display: -ms-flexbox;
-  display: flex;
+  display: -ms-flexbox;
+  // display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   // padding: 23px 5px 23px 0;
@@ -113,7 +113,6 @@ img {
   color: #000;
   font-weight: 600;
 }
-
 
 @media only screen and (max-width: 600px) {
   .micro-app-content {
