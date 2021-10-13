@@ -29,7 +29,7 @@ const routes: Routes = [
 
   {
     path: '',
-    component: PagesComponent,
+    component: BlankComponent,
     children: [
       { path: 'about', loadChildren: () => import('./../features/about/about.module').then(m => m.AboutModule) },
       { path: 'checkout', loadChildren: () => import('./../features/checkout/checkout.module').then(m => m.CheckoutModule) },

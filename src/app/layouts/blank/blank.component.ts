@@ -15,6 +15,10 @@ export class BlankComponent {
   mainCategory: any = {}
   navItems: categoriesNavItems[] = [];
 
+  selectedNavLink:any = 'home';
+
+  handleNavLinks(navLink: any) { }
+
   initialisePage(categoryName: any) {
     this.loadCategories({}).subscribe(res => {
       this.navItems = res;

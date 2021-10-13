@@ -1,28 +1,13 @@
-<section class="micro-app-container">
-    <!-- <div class="micro-app-toolbar-container">
-        <div class="micro-app-toolbar-row">
-            <i class="clear"></i>
-            <div class="micro-app-toolbar-search-container">
-                <input type="text" placeholder="Search mrshop">
-            </div>
-        </div>
-    </div> -->
-    <div class="micro-app-content">
-        <div class="micro-app-content-left">
-            <div class="micro-app-left-menu-list">
-                <a *ngFor="let item of navItems" (click)="selectMainCategory(item)" [class.left-menu-item-active]="mainCategory.route == item.route">
-                    <span>{{item.displayName}}</span>
-                </a>
-            </div>
-        </div>
-        <div class="micro-app-content-right" style="background: #f5f8fa;">
-            <a *ngFor="let item of navItems">
-                <div class="micro-app-content-right-widget">
-                    <img src="https://assetscdn1.paytm.com/images/catalog/view_item/710719/1610605805462.png"
-                        alt="Mobile Prepaid">
-                </div>
-                <span>{{item.displayName}}</span>
-            </a>
-        </div>
+<div class="main-container">
+
+    <div class="main-header">Header Here</div>
+
+    <div class="main-content">
+        Hi
     </div>
-</section>
+
+    <div class="bottom-navigation">Bottom Navigation</div>
+
+</div>
+
+<div class="main-footer">Footer Here</div>

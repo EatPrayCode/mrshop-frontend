@@ -1,81 +1,70 @@
-/* You can add global styles to this file, and also import other style files */
-
-html,
-body {
-    height: 100%;
-}
-
-body {
-    margin: 0;
-    font-family: Roboto, "Helvetica Neue", sans-serif;
-}
-
-@import "~@angular/material/prebuilt-themes/indigo-pink.css";
-@import "./../node_modules/font-awesome/css/font-awesome.css";
-
-app-pages .full-screen {
-    height: auto !important; // this thing
-}
-
-app-checkout .mat-stepper-horizontal {
-    height: 100%;
-    display: flex !important;
-    flex-direction: column;
-    width: 100%;
-}
-
-app-checkout .mat-horizontal-content-container {
-    padding: 0 0px 0px 0px;
-}
-
-app-checkout .mat-horizontal-stepper-content {
-    display: flex;
-    height: 100%;
-    width: 100%;
-    flex-direction: column;
-}
-
-html,
-body {
-    height: 100%;
-    min-height: 100%;
-    padding: 0;
-    margin: 0;
-}
-
-bottom-nav {
-    border-top-style: 0 px solid;
-}
-
-// .mat-horizontal-stepper-header-container {
-//     // margin-bottom: 20px;
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+// /* You can add global styles to this file, and also import other style files */
+// html,
+// body {
+//     height: 100%;
 // }
-
-.mat-horizontal-stepper-header {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    margin-bottom: -15px;
-}
-.mat-step-label {
-    position: relative;
-    top: 10px;
-}
-
-.mat-stepper-horizontal-line {
-    margin: 0 -30px !important;
-}
-
-.mat-horizontal-stepper-header .mat-step-icon,
-.mat-horizontal-stepper-header .mat-step-icon-not-touched {
-    margin-right: 0 !important;
-}
-
-.mat-step-text-label {
-    font-size: 12px;
-}
-
-.micro-app-left-menu-list {
-    text-align: center;
-}
+// body {
+//     margin: 0;
+//     font-family: Roboto, "Helvetica Neue", sans-serif;
+// }
+// @import "~@angular/material/prebuilt-themes/indigo-pink.css";
+// @import "./../node_modules/font-awesome/css/font-awesome.css";
+// app-pages .full-screen {
+//     height: auto !important; // this thing
+// }
+// app-checkout .mat-stepper-horizontal {
+//     height: 100%;
+//     display: flex !important;
+//     flex-direction: column;
+//     width: 100%;
+// }
+// app-checkout .mat-horizontal-content-container {
+//     padding: 0 0px 0px 0px;
+// }
+// app-checkout .mat-horizontal-stepper-content {
+//     display: flex;
+//     height: 100%;
+//     width: 100%;
+//     flex-direction: column;
+// }
+// html,
+// body {
+//     height: 100%;
+//     min-height: 100%;
+//     padding: 0;
+//     margin: 0;
+// }
+// bottom-nav {
+//     border-top-style: 0 px solid;
+// }
+// // .mat-horizontal-stepper-header-container {
+// //     // margin-bottom: 20px;
+// // }
+// .mat-horizontal-stepper-header {
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     text-align: center;
+//     margin-bottom: -15px;
+// }
+// .mat-step-label {
+//     position: relative;
+//     top: 10px;
+// }
+// .mat-stepper-horizontal-line {
+//     margin: 0 -30px !important;
+// }
+// .mat-horizontal-stepper-header .mat-step-icon,
+// .mat-horizontal-stepper-header .mat-step-icon-not-touched {
+//     margin-right: 0 !important;
+// }
+// .mat-step-text-label {
+//     font-size: 12px;
+// }
+// .micro-app-left-menu-list {
+//     text-align: center;
+// }
+// body {
+//     padding-bottom: 70px;
+// }

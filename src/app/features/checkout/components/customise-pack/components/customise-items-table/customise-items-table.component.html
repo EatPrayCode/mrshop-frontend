@@ -1,94 +1,73 @@
-<div class="cart__drawer-content">
-    <div class="p15">
-        <div class="cart__drawer-content__deep">
+<article class="c-card c-card--external c-card--flight c-flight-card" layout="row">
+    <div class="c-card__image-holder">
+        <img src="http://logok.org/wp-content/uploads/2014/10/Expedia-logo.png" alt="" class="c-card__image img-responsive" flex="nogrow" />
+    </div>
 
-            <div *ngFor="let packItem of inputData">
-                <div>
-                    <div class="cart__item cg bct rel aic mb1">
-                        <div class=" f jcb cart__item-inner">
-                            <div><img class="block"
-                                    src="https://cdn.shopify.com/s/files/1/0042/9031/4274/products/shopify-images_no-worries_300x300.jpg?v=1611679919"
-                                    alt="Prima No Worries™ 20mg CBD + Botanicals Capsules"></div>
-                            <div class="x ml1 pl1 f jcb aic">
-                                <div>
-                                    <h4 class="m0 p0 mb0 s18">
-                                        <br>
-                                        {{packItem?.packsData?.packName}}
-                                        <span class="s14">$52.00</span>
-                                    </h4>
-                                    <div>
-                                        <div class="product__form-quantity x f mt05 jcs aic">
-                                            <button class="s18 minus ac medium rel cg circle"><svg width="18px"
-                                                    height="18px" viewBox="0 0 18 18">
-                                                    <g id="Subtract" stroke="none" stroke-width="1" fill="none"
-                                                        fill-rule="evenodd" opacity="0.8">
-                                                        <path
-                                                            d="M9,17.5 C13.6944204,17.5 17.5,13.6944204 17.5,9 C17.5,4.30557963 13.6944204,0.5 9,0.5 C4.30557963,0.5 0.5,4.30557963 0.5,9 C0.5,13.6944204 4.30557963,17.5 9,17.5 Z M9,16.5 C4.85786438,16.5 1.5,13.1421356 1.5,9 C1.5,4.85786438 4.85786438,1.5 9,1.5 C13.1421356,1.5 16.5,4.85786438 16.5,9 C16.5,13.1421356 13.1421356,16.5 9,16.5 Z"
-                                                            id="Oval-Copy-4" fill="currentColor" fill-rule="nonzero">
-                                                        </path>
-                                                        <polygon id="+" fill="currentColor" fill-rule="nonzero"
-                                                            points="11.94 8.58 11.94 9.42 9.396 9.42 8.556 9.42 6 9.42 6 8.58 8.556 8.58 9.396 8.58">
-                                                        </polygon>
-                                                    </g>
-                                                </svg>
-                                            </button>
-                                            <input name="quantity" min="1" class="studio medium cg" value="1">
-                                            <button class="s18 ac plus medium rel cg circle"
-                                                (click)="openViewEditPackDialog(packItem)">
-                                                <svg class="rel" width="18px" height="18px" viewBox="0 0 18 18">
-                                                    <g id="Add-" stroke="none" stroke-width="1" fill="none"
-                                                        fill-rule="evenodd" opacity="0.8">
-                                                        <path
-                                                            d="M9,17.5 C13.6944204,17.5 17.5,13.6944204 17.5,9 C17.5,4.30557963 13.6944204,0.5 9,0.5 C4.30557963,0.5 0.5,4.30557963 0.5,9 C0.5,13.6944204 4.30557963,17.5 9,17.5 Z M9,16.5 C4.85786438,16.5 1.5,13.1421356 1.5,9 C1.5,4.85786438 4.85786438,1.5 9,1.5 C13.1421356,1.5 16.5,4.85786438 16.5,9 C16.5,13.1421356 13.1421356,16.5 9,16.5 Z"
-                                                            id="Oval-Copy-4" fill="currentColor" fill-rule="nonzero">
-                                                        </path>
-                                                        <polygon id="+" fill="currentColor" fill-rule="nonzero"
-                                                            points="11.94 8.58 11.94 9.42 9.396 9.42 9.396 12 8.556 12 8.556 9.42 6 9.42 6 8.58 8.556 8.58 8.556 6 9.396 6 9.396 8.58">
-                                                        </polygon>
-                                                    </g>
-                                                </svg>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <button class="abs bctran top right p05 cart__item-remove"><svg width="18px"
-                                        height="18px" viewBox="0 0 18 18">
-                                        <g id="Shop-Pages-" stroke="none" stroke-width="1" fill="none"
-                                            fill-rule="evenodd" opacity="0.7">
-                                            <g id="Group-23-Copy-3" transform="translate(1.004883, 1.117188)"
-                                                stroke="currentColor">
-                                                <circle id="Oval-Copy-4" cx="8" cy="8" r="8"></circle>
-                                                <g id="Group-11-Copy" transform="translate(5.000000, 5.000000)"
-                                                    stroke-linecap="square" stroke-width="1.5">
-                                                    <path d="M0.0526315789,0 L5.95353618,5.90090461" id="Line-8">
-                                                    </path>
-                                                    <path d="M-1.33226763e-14,8.85513884e-13 L6,6" id="Line-8-Copy"
-                                                        transform="translate(3.000000, 3.000000) rotate(-270.000000) translate(-3.000000, -3.000000) ">
-                                                    </path>
-                                                </g>
-                                            </g>
-                                        </g>
-                                    </svg>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+
+    <div class="c-card__body" layout="row nowrap" xs-layout="row wrap" flex>
+        <header class="c-card__title" flex layout>Expedia</header>
+
+        <div class="c-flight-card__action material-icons c-flight-card__action--launch" flex="nogrow" layout xs-order="2"></div>
+    </div>
+</article>
+
+<article class="c-card c-card--external c-card--flight c-flight-card" layout="row">
+    <div class="c-card__image-holder"><img src="https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/challenge_thumbnails/000/395/798/datas/original.jpg" alt="" class="c-card__image img-responsive" flex="nogrow" /></div>
+
+    <div class="c-card__body" layout="row nowrap" xs-layout="row wrap" flex>
+        <div class="c-flight-card__flight-schedule" flex="auto" xs-order="1">
+            <strong>08:45 - 09:55</strong>
+            <sub>Air Berlin</sub>
+        </div>
+
+        <div layout="row reversed" xs-layout="column" xs-flex flex="nogrow" layout-align="space-around" xs-order="4">
+            <div class="c-flight-card__duration" xs-order="2">
+                <strong>1h 10min</strong>
+                <sub class="hidden-xs">MUC-BER</sub>
             </div>
 
-        </div>
-    </div>
-    <div class="cart__drawer-footer fix x bcnt bottom">
-        <div class="x mt1 px15"><a
-                href="https://shop.prima.co/4290314274/checkouts/6a551ec07d2e22d7d830927094600728?key=2fdcceeea2b8ee2db13fa0cf5ef5bf3b"
-                class="button button--full ac inline-block s14 button--green akz caps button--lg" role="button">Checkout
-                <span class="cart__drawer-price ml1 pl1">$241.80</span></a></div>
-        <div class="rel z9 px15 pb1 al">
-            <div class="cart__drawer-info ac"><span class="block akz s12 pt05 caps mt1 ls15">Good Vibes,
-                    Guaranteed.</span>
-                <!-- <p class="mt1 mb0 small">30 days to try it and love it — or <span
-                        class="small cg rel studio underline inline-block ">send it back</span>.</p> -->
+            <div class="c-flight-card__stops" xs-order="1">
+                <strong>Nonstop</strong>
             </div>
         </div>
+
+        <div class="c-flight-card__price" xs-order="5">
+            <strong>80E</strong>
+            <sub>Hin- und Rücklug</sub>
+        </div>
+
+        <div class="c-flight-card__action material-icons c-flight-card__action--saved" flex="nogrow" layout xs-order="2"></div>
     </div>
-</div>
+</article>
+
+<article class="c-card c-card--external c-card--flight c-flight-card" layout="row">
+    <div class="c-card__image-holder">
+        <img src="data:image/png;base64,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"
+            alt="" class="c-card__image img-responsive" flex="nogrow" />
+    </div>
+
+    <div class="c-card__body" layout="row nowrap" xs-layout="row wrap" flex>
+        <div class="c-flight-card__flight-schedule" flex="auto" xs-order="1">
+            <strong>08:45 - 09:55</strong>
+            <sub>Lufthansa - Lufthansa CityLine</sub>
+        </div>
+
+        <div layout="row reversed" xs-layout="column" xs-flex flex="nogrow" layout-align="space-around" xs-order="4">
+            <div class="c-flight-card__duration" xs-order="2">
+                <strong>1h 10min</strong>
+                <sub class="hidden-xs">MUC-BER</sub>
+            </div>
+
+            <div class="c-flight-card__stops" xs-order="1">
+                <strong>Nonstop</strong>
+            </div>
+        </div>
+
+        <div class="c-flight-card__price" xs-order="5">
+            <strong>80E</strong>
+            <sub>Hin- und Rücklug</sub>
+        </div>
+
+        <div class="c-flight-card__action material-icons c-flight-card__action--fav" flex="nogrow" layout xs-order="2"></div>
+    </div>
+</article>
