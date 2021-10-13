@@ -1,40 +1,32 @@
-<div class="no-scroll-desktop" data-react-helmet="class" data-new-gr-c-s-check-loaded="14.1032.0"
-    data-gr-ext-installed="">
-    <div id="___gatsby">
-        <div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper">
-            <nav class="navHeaderStyles">
-                <div class="navHeaderStyles__wrapper">
-                    <h1 class="navTitle"><a class="home" [routerLink]="['']"><img
-                                src="./../../../assets/images/logo.svg"><img
-                                src="./../../../assets/images/pulse.gif"><img
-                                src="./../../../assets/images/beat_of_progress.svg"></a></h1>
-                    <ul id="desktopMenu" class="navLinks">
-                        <li class="navLinks__item mobileLogo"><a class="linkStyle" [routerLink]="['']"><img
-                                    src="./../../../assets/images/logo.svg" height="24" alt="Pulse"></a>
-                        </li>
+<div style="outline:none">
+    <nav class="navHeaderStyles">
+        <div class="navHeaderStyles__wrapper">
+            <h1 class="navTitle"><a class="home" [routerLink]="['']"><img
+                        src="./../../../assets/images/logo.svg"><img
+                        src="./../../../assets/images/pulse.gif"><img
+                        src="./../../../assets/images/beat_of_progress.svg"></a></h1>
+            <ul id="desktopMenu" class="navLinks">
+                <li class="navLinks__item mobileLogo"><a class="linkStyle" [routerLink]="['']"><img
+                            src="./../../../assets/images/logo.svg" height="24" alt="Pulse"></a>
+                </li>
 
-                        <li class="navLinks__item "><a (click)="handleNavLinks('home')"
-                                [class.activeHeader]="selectedNavLink == 'home'" [routerLink]="['home']">Home</a></li>
-                        <li class="navLinks__item "><a (click)="handleNavLinks('organiser')"
-                                [routerLink]="['organiser']"
-                                [class.activeHeader]="selectedNavLink == 'organiser'">Organiser</a></li>
-                        <li class="navLinks__item "><a (click)="handleNavLinks('store')" [routerLink]="['store']"
-                                [class.activeHeader]="selectedNavLink == 'store'">Store</a></li>
-                        <li class="navLinks__item "><a (click)="handleNavLinks('checkout')" [routerLink]="['checkout']"
-                                [class.activeHeader]="selectedNavLink == 'checkout'">Checkout</a></li>
-                        <li class="navLinks__item "><a (click)="handleNavLinks('rewards')" [routerLink]="['rewards']"
-                                [class.activeHeader]="selectedNavLink == 'rewards'">Rewards</a></li>
-                    </ul>
-                </div>
-            </nav>
-            <main class="noGutterForMobileHeader">
-                <div id="mainDiv" class="index-module--container--3zvgE">
-                    <div class="index-module--exploreComponents__map--31XWp">
-                        <router-outlet></router-outlet>
-                    </div>
-                </div>
-            </main>
+                <li class="navLinks__item "><a (click)="handleNavLinks('home')"
+                        [class.activeHeader]="selectedNavLink == 'home'" [routerLink]="['home']">Home</a></li>
+                <li class="navLinks__item "><a (click)="handleNavLinks('organiser')"
+                        [routerLink]="['organiser']"
+                        [class.activeHeader]="selectedNavLink == 'organiser'">Organiser</a></li>
+                <li class="navLinks__item "><a (click)="handleNavLinks('store')" [routerLink]="['store']"
+                        [class.activeHeader]="selectedNavLink == 'store'">Store</a></li>
+                <li class="navLinks__item "><a (click)="handleNavLinks('checkout')" [routerLink]="['checkout']"
+                        [class.activeHeader]="selectedNavLink == 'checkout'">Checkout</a></li>
+                <li class="navLinks__item "><a (click)="handleNavLinks('rewards')" [routerLink]="['rewards']"
+                        [class.activeHeader]="selectedNavLink == 'rewards'">Rewards</a></li>
+            </ul>
         </div>
-
-    </div>
+    </nav>
+    <main class="noGutterForMobileHeader">
+        <div id="mainDiv">
+            <router-outlet></router-outlet>
+        </div>
+    </main>
 </div>
