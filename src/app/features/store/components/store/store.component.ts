@@ -1,3 +1,4 @@
+import { ViewEditPackComponent } from './../../../checkout/components/customise-pack/components/view-edit-pack/view-edit-pack.component';
 import { SidenavService } from './../../../../services/sidenav.service';
 import { FiltersComponent } from '../filters/filters.component';
 import { MatDialog } from '@angular/material/dialog';
@@ -23,7 +24,10 @@ export class StoreComponent implements OnInit {
   public sortings = ['Sort by Default', 'Best match', 'Lowest first', 'Highest first'];
   public sort: any;
 
-  rightList: any = [{}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {},];
+  rightList: any = [{}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {},
+    {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {},
+    {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {},
+    {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {},];
   mainCategory: any = {}
   navItems: categoriesNavItems[] = [];
 
@@ -94,7 +98,7 @@ export class StoreComponent implements OnInit {
   }
 
   openPackSummaryDialog(pack: any): void {
-    let dialogRef = this.dialog.open(ChooseCategoriesComponent, {
+    let dialogRef = this.dialog.open(FiltersComponent, {
       hasBackdrop: true,
       disableClose: false,
       height: '100vh',

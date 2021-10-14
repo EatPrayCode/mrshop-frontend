@@ -1,23 +1,20 @@
-<section class="micro-app-container">
-    <!-- <div class="micro-app-toolbar-container">
-        <div class="micro-app-toolbar-row">
-            <i class="clear"></i>
-            <div class="micro-app-toolbar-search-container">
-                <input type="text" placeholder="Search mrshop">
-            </div>
-        </div>
-    </div> -->
-    <div class="micro-app-content">
-        <div class="micro-app-content-left">
-            <div class="micro-app-left-menu-list">
-                <a *ngFor="let item of navItems" (click)="selectMainCategory(item)"
-                    [class.left-menu-item-active]="mainCategory.route == item.route">
-                    <span>{{item.displayName}}</span>
-                </a>
-            </div>
-        </div>
-        <div class="micro-app-content-right">
-            <app-packs></app-packs>
-        </div>
+<div class="row">
+    <div class="col-4 side-container">
+
+        <ul class="list-group list-group-flush">
+            <li *ngFor="let item of rightList" class="list-group-item">
+                <span class="badge bg-success rounded-pill">1/14</span> CName
+            </li>
+        </ul>
+
     </div>
-</section>
+    <div class="col-8 main-container">
+        <i class="bi bi-gear" (click)="openPackSummaryDialog({})"></i>
+        <app-packs></app-packs>
+    </div>
+</div>
+
+
+<!-- <div class="container-fluid">
+
+</div> -->
