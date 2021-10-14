@@ -1,6 +1,37 @@
-<i class="bi bi-cart"></i>
-<i class="bi bi-archive"></i>
-<i class="bi bi-gear"></i>
-<i class="bi bi-house-door"></i>
-<i class="bi bi-shop"></i>
-<button class="sc-gqjmRU kSUTPa" [routerLink]="['home']">Demo</button>
+<div class="wrapper">
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">mrshop</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">Login</a></li>
+                    <li><a href="#">Sign Up</a></li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <div class="main">
+        <div class="contain">
+            <div class="content">
+                <h4>mrshop</h4>
+                <hr>
+                <p>SuperOrganiser SuperApp :)</p>
+                <input [routerLink]="['home']" class="btn btn-primary" value="Get Now" name="">
+            </div>
+        </div>
+    </div>
+
+</div>

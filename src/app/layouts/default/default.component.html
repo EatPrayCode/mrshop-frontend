@@ -1,0 +1,53 @@
+<div class="p-1 bg-warning">
+    <h1>mrshop launching soon</h1>
+</div>
+<nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <a [routerLink]="['']" class="navbar-brand">
+            <i class="bi bi-house-door"></i> mrshop
+        </a>
+        <a [routerLink]="['home']" class="navbar-brand">
+            <i class="bi bi-house-door"></i>
+        </a>
+        <a [routerLink]="['organiser']" class="navbar-brand">
+            <i class="bi bi-archive"></i>
+        </a>
+        <a [routerLink]="['store']" class="navbar-brand">
+            <i class="bi bi-shop"></i>
+        </a>
+        <a [routerLink]="['checkout']" class="navbar-brand">
+            <i class="bi bi-cart"></i>
+        </a>
+        <a [routerLink]="['settings']" class="navbar-brand">
+            <i class="bi bi-gear"></i>
+        </a>
+    </div>
+</nav>
+
+<nav class="navbar fixed-bottom navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+
+        <a [routerLink]="['home']" class="navbar-brand">
+            <i class="bi bi-house-door"></i>
+        </a>
+        <a [routerLink]="['organiser']" class="navbar-brand">
+            <i class="bi bi-archive"></i>
+        </a>
+        <a [routerLink]="['store']" class="navbar-brand">
+            <i class="bi bi-shop"></i>
+        </a>
+        <a [routerLink]="['checkout']" class="navbar-brand">
+            <i class="bi bi-cart"></i>
+        </a>
+        <a [routerLink]="['settings']" class="navbar-brand">
+            <i class="bi bi-gear"></i>
+        </a>
+
+    </div>
+</nav>
+
+<div class="container-fluid">
+
+    <router-outlet></router-outlet>
+
+</div>

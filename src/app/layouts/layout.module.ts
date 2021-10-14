@@ -1,3 +1,4 @@
+import { DefaultComponent } from './default/default.component';
 import { CheckoutModule } from './../features/checkout/checkout.module';
 import { NgModule } from '@angular/core';
 
@@ -22,7 +23,8 @@ import { CoreModule } from '@angular/flex-layout';
     MenuComponent,
     UserMenuComponent,
     FullScreenComponent,
-    BreadcrumbComponent
+    BreadcrumbComponent,
+    DefaultComponent
   ],
   imports: [
     CommonModule,
@@ -40,7 +42,8 @@ import { CoreModule } from '@angular/flex-layout';
     MenuComponent,
     UserMenuComponent,
     FullScreenComponent,
-    BreadcrumbComponent
+    BreadcrumbComponent,
+    DefaultComponent
   ]
 })
 export class LayoutsModule { }
