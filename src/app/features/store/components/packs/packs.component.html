@@ -1,56 +1,14 @@
-<div class="_1g-m" *ngFor="let message of allPacks" (click)="addToCart({})">
-    <div class="_2ihZ wdFi">
-        <a>
-            <div class="OWAX"><img class="_1hwb _1Zjw" src="https://assetscdn1.paytm.com/images/catalog/view_item/904044/1633433476934.png?imwidth=280&amp;impolicy=hq" alt="Memory Cards"></div>
-            <div class="_2Yoj"></div>
-        </a>
-    </div>
-    <div class="_2ihZ wdFi">
-        <a>
-            <div class="OWAX"><img class="_1hwb _1Zjw" src="https://assetscdn1.paytm.com/images/catalog/view_item/903991/1633431593817.png?imwidth=280&amp;impolicy=hq" alt="Tablets"></div>
-            <div class="_2Yoj"></div>
-        </a>
-    </div>
-    <div class="_2ihZ wdFi">
-        <a>
-            <div class="OWAX"><img class="_1hwb _1Zjw" src="https://assetscdn1.paytm.com/images/catalog/view_item/903598/1633424151045.jpg?imwidth=280&amp;impolicy=hq" alt="Kidswear"></div>
-            <div class="_2Yoj"></div>
-        </a>
-    </div>
-    <div class="_2ihZ wdFi">
-        <a>
-            <div class="OWAX"><img class="_1hwb _1Zjw" src="https://assetscdn1.paytm.com/images/catalog/view_item/903225/1633420310225.png?imwidth=280&amp;impolicy=hq" alt="Diabetic Care"></div>
-            <div class="_2Yoj"></div>
-        </a>
-    </div>
-    <div class="_2ihZ wdFi">
-        <a>
-            <div class="OWAX"><img class="_1hwb _1Zjw" src="https://assetscdn1.paytm.com/images/catalog/view_item/903725/1633427313217.png?imwidth=280&amp;impolicy=hq" alt="clone_clone_Cookware &amp; More"></div>
-            <div class="_2Yoj"></div>
-        </a>
-    </div>
-    <div class="_2ihZ wdFi">
-        <a>
-            <div class="OWAX"><img class="_1hwb _1Zjw" src="https://assetscdn1.paytm.com/images/catalog/view_item/903994/1633431971545.png?imwidth=280&amp;impolicy=hq" alt="Mens casual shoes"></div>
-            <div class="_2Yoj"></div>
-        </a>
-    </div>
-    <div class="_2ihZ wdFi">
-        <a>
-            <div class="OWAX"><img class="_1hwb _1Zjw" src="https://assetscdn1.paytm.com/images/catalog/view_item/903747/1633428174851.png?imwidth=280&amp;impolicy=hq" alt="Belts &amp; wallets"></div>
-            <div class="_2Yoj"></div>
-        </a>
-    </div>
-    <div class="_2ihZ wdFi">
-        <a>
-            <div class="OWAX"><img class="_1hwb _1Zjw" src="https://assetscdn1.paytm.com/images/catalog/view_item/904543/1633449343378.png?imwidth=280&amp;impolicy=hq" alt="FB_Dog &amp; Cat Food"></div>
-            <div class="_2Yoj"></div>
-        </a>
-    </div>
-    <div class="_2ihZ wdFi">
-        <a>
-            <div class="OWAX"><img class="_1hwb _1Zjw" src="https://assetscdn1.paytm.com/images/catalog/view_item/904038/1633433771000.png?imwidth=280&amp;impolicy=hq" alt="clone_FAN"></div>
-            <div class="_2Yoj"></div>
-        </a>
+<div class="row">
+    <div class="col-sm-4" *ngFor="let item of allPacks">
+        <div class="card">
+            <img src="./../../../../../assets/images/landing.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Special title treatment</h5>
+                <div class="row">
+                    <p class="col card-text">1000$</p>
+                    <i (click)="addToCart(item)" class="col bi bi-cart"></i>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
