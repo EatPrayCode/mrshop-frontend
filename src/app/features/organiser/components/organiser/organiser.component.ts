@@ -66,7 +66,8 @@ export class OrganiserComponent implements OnInit {
       hasBackdrop: true,
       disableClose: false,
       height: '100vh',
-      minWidth: '50%',
+      minWidth: '85%',
+      maxWidth: '85%',
       position: {
         right: '0px',
         bottom: '0px',
@@ -81,7 +82,11 @@ export class OrganiserComponent implements OnInit {
     });
   }
 
-  rightList: any = [{}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {},];
+  rightList: any = [{}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {},
+    {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {},
+    {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {},
+    {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {},];
+   
   mainCategory: any = {}
   navItems: categoriesNavItems[] = [];
 

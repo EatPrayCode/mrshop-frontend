@@ -25,9 +25,9 @@ export class StoreComponent implements OnInit {
   public sort: any;
 
   rightList: any = [{}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {},
-    {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {},
-    {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {},
-    {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {},];
+  {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {},
+  {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {},
+  {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {},];
   mainCategory: any = {}
   navItems: categoriesNavItems[] = [];
 
@@ -97,32 +97,13 @@ export class StoreComponent implements OnInit {
 
   }
 
-  openPackSummaryDialog(pack: any): void {
-    let dialogRef = this.dialog.open(FiltersComponent, {
-      hasBackdrop: true,
-      disableClose: false,
-      height: '100vh',
-      minWidth: '50%',
-      position: {
-        right: '0px',
-        bottom: '0px',
-      },
-      data: {
-        pack: pack
-      }
-    });
-
-    dialogRef.afterClosed().subscribe(result => {
-      console.log('The dialog was closed');
-    });
-  }
-
   openFiltersDialog(): void {
     let dialogRef = this.dialog.open(FiltersComponent, {
       hasBackdrop: true,
       disableClose: false,
       height: '100vh',
       minWidth: '90%',
+      maxWidth: '85%',
       position: {
         right: '0px',
         bottom: '0px',
