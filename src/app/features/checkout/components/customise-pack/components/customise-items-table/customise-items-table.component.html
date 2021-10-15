@@ -1,28 +1,25 @@
-<article *ngFor="let task of inputData" class="c-card c-card--external c-card--flight c-flight-card" layout="row">
-    <div class="c-card__image-holder"><img src="https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/challenge_thumbnails/000/395/798/datas/original.jpg" alt="" class="c-card__image img-responsive" flex="nogrow" /></div>
 
-    <div class="c-card__body" layout="row nowrap" xs-layout="row wrap" flex>
-        <div class="c-flight-card__flight-schedule" flex="auto" xs-order="1">
-            <strong (click)="openViewEditPackDialog({})">{{task.packsData.packName}}</strong>
-            <sub>Air Berlin</sub>
-        </div>
-
-        <div layout="row reversed" xs-layout="column" xs-flex flex="nogrow" layout-align="space-around" xs-order="4">
-            <div class="c-flight-card__duration" xs-order="2">
-                <strong>1h 10min</strong>
-                <sub class="hidden-xs">MUC-BER</sub>
+    <main class="container-fluid h-100">
+        <div class="row">
+          <!-- Second Card -->
+          <div class="col-12 my-2" *ngFor="let task of inputData">
+            <div class="card shadow">
+              <div class="card-body">
+                <div class="row align-items-center">
+                  <div class="col-6 col-md-10">
+                    <div class="row align-items-center justify-content-center">
+                      <h5 class="col-sm-12 col-md-4 card-title text-muted">13/06/2018</h5>
+                      <h5 class="col-sm-12 col-md-4 card-title">NAME</h5>
+                      <h5 class="col-sm-12 col-md-4"><span class="text-warning">Save your Score</span></h5>
+                    </div>
+                  </div>
+                  <div class="col-6 col-md-2">
+                    <h5 class="text-center"><button type="button" class="btn btn-lg btn-warning rounded-circle text-white font-weight-bold shadow" (click)="openViewEditPackDialog(task)">/</button></h5>
+                  </div>
+                </div>
+              </div>
             </div>
-
-            <div class="c-flight-card__stops" xs-order="1">
-                <strong>Nonstop</strong>
-            </div>
+          </div>
         </div>
-
-        <div class="c-flight-card__price" xs-order="5">
-            <strong>80E</strong>
-            <sub>Hin- und Rücklug</sub>
-        </div>
-
-        <div class="c-flight-card__action material-icons c-flight-card__action--saved" flex="nogrow" layout xs-order="2"></div>
-    </div>
-</article>
+      <main>
+    
