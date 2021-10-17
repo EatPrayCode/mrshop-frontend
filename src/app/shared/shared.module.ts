@@ -13,8 +13,6 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
   suppressScrollX: true
 };
 
-import { AgmCoreModule } from '@agm/core';
-
 import { AlertDialogComponent } from './components/alert-dialog/alert-dialog.component';
 import { AppSpinnerDirective } from './directives/app-spinner';
 import { SpinnerComponent } from './directives/spinner/spinner.component';
@@ -32,7 +30,6 @@ import { MissionComponent } from './components/mission/mission.component';
     TranslateModule,
     FlexLayoutModule,
     PerfectScrollbarModule,
-    AgmCoreModule,
     AppMaterialModule,
   ],
   declarations: [
@@ -50,7 +47,6 @@ import { MissionComponent } from './components/mission/mission.component';
     TranslateModule,
     FlexLayoutModule,
     PerfectScrollbarModule,
-    AgmCoreModule,
     LogoComponent,
     GetInTouchComponent,
     MissionComponent,
