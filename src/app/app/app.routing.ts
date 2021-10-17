@@ -39,10 +39,10 @@ const routes: Routes = [
       {
         path: 'rewards', loadChildren: () => import('./../features/rewards/rewards.module').then(m => m.RewardsModule)
       },
-      {
-        path: 'home',
-        loadChildren: () => import('./../features/home/home.module').then(m => m.HomeModule)
-      },
+      // {
+      //   path: 'home',
+      //   loadChildren: () => import('./../features/home/home.module').then(m => m.HomeModule)
+      // },
       // {
       //   path: 'admin',
       //   loadChildren: () => import('./../features/admin/admin.module').then(m => m.AdminModule)

@@ -20,12 +20,16 @@ import { AppInterceptor } from './common/utils/app-interceptor';
 
 import { AppSettings } from './app/app.settings';
 import { AppComponent } from './app/app.component';
+import { AdminDashboardComponent } from './features/admin-dashboard/components/admin-dashboard/admin-dashboard.component';
+import { CustomertypeProfileComponent } from './features/admin-dashboard/components/customertype-profile/customertype-profile.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NotFoundComponent,
-    BlankComponent
+    BlankComponent,
+    AdminDashboardComponent,
+    CustomertypeProfileComponent
   ],
   imports: [
     BrowserAnimationsModule,
