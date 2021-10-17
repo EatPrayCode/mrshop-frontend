@@ -1,7 +1,6 @@
 import { Component, OnInit, ViewChild, ElementRef, NgZone } from '@angular/core';
 import { MatStepper } from '@angular/material/stepper';
 import { FormGroup, FormBuilder, Validators, FormArray } from '@angular/forms';
-import { MapsAPILoader } from '@agm/core';
 import { AppService } from 'src/app/app/app.service';
 
 @Component({
@@ -142,12 +141,12 @@ export class CheckoutComponent implements OnInit {
   }
 
   private setCurrentPosition() {
-    if ("geolocation" in navigator) {
-      navigator.geolocation.getCurrentPosition((position) => {
-        this.lat = position.coords.latitude;
-        this.lng = position.coords.longitude;
-      });
-    }
+    // if ("geolocation" in navigator) {
+    //   navigator.geolocation.getCurrentPosition((position) => {
+    //     this.lat = position.coords.latitude;
+    //     this.lng = position.coords.longitude;
+    //   });
+    // }
   }
 
   // public getAddress(){    
@@ -167,24 +166,24 @@ export class CheckoutComponent implements OnInit {
   // }
 
   public getAddress() {
-    this.appService.getAddress(this.lat, this.lng).subscribe(response => {
-      console.log(response);
-      // if (response['results'].length) {
-      //   let address = response['results'][0].formatted_address;
-      //   this.submitForm.controls.address.get('location').setValue(address);
-      //   this.setAddresses(response['results'][0]);
-      // }
-    })
+    // this.appService.getAddress(this.lat, this.lng).subscribe(response => {
+    //   console.log(response);
+    //   // if (response['results'].length) {
+    //   //   let address = response['results'][0].formatted_address;
+    //   //   this.submitForm.controls.address.get('location').setValue(address);
+    //   //   this.setAddresses(response['results'][0]);
+    //   // }
+    // })
   }
 
   public onMapClick(e: any) {
-    this.lat = e.coords.lat;
-    this.lng = e.coords.lng;
-    this.getAddress();
+    // this.lat = e.coords.lat;
+    // this.lng = e.coords.lng;
+    // this.getAddress();
   }
 
   public onMarkerClick(e: any) {
-    console.log(e);
+    // console.log(e);
   }
 
   public setAddresses(result: any) { }
