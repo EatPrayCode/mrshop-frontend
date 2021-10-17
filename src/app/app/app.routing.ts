@@ -21,16 +21,16 @@ const routes: Routes = [
         path: 'signup',
         component: SignUpComponent
       },
-      // {
-      //   path: 'home',
-      //   loadChildren: () => import('./../features/home/home.module').then(m => m.HomeModule)
-      // },
+      {
+        path: 'home',
+        loadChildren: () => import('./../features/home/home.module').then(m => m.HomeModule)
+      },
     ]
   },
 
   {
     path: '',
-    component: DefaultComponent,
+    component: BlankComponent,
     children: [
       { path: 'about', loadChildren: () => import('./../features/about/about.module').then(m => m.AboutModule) },
       { path: 'checkout', loadChildren: () => import('./../features/checkout/checkout.module').then(m => m.CheckoutModule) },

@@ -1,0 +1,54 @@
+.main-container {
+    height: 100vh;
+    border: 2px solid pink;
+    position: relative;
+}
+
+.main-header {
+    border: 2px solid orange;
+    position: sticky;
+    top: 0px;
+    height: 50px;
+}
+
+.bottom-navigation {
+    position: absolute;
+    bottom: 0;
+    height: 50px;
+    border: 2px solid red;
+    width: 100%;
+}
+
+.bottom-content {
+    position: absolute;
+    bottom: 50px;
+    height: 50px;
+    border: 2px solid aquamarine;
+    width: 100%;
+}
+
+.left-layout {
+    height: 50px;
+    border: 2px solid pink;
+    height: calc(100vh - 100px);
+}
+
+.right-layout {
+    height: 50px;
+    border: 2px solid darkgoldenrod;
+    height: calc(100vh - 100px);
+}
+
+.main-content {
+    position: relative;
+    border: 2px solid yellow;
+    overflow-y: scroll;
+    top: 0px;
+    height: calc(100vh - 150px);
+    width: 100%;
+}
+
+.main-footer {
+    border: 2px solid green;
+    width: 100%;
+}
