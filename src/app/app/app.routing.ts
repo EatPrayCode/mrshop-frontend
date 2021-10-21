@@ -1,5 +1,3 @@
-import { DefaultComponent } from './../layouts/default/default.component';
-
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { NotFoundComponent } from '../common/components/not-found/not-found.component';
@@ -30,7 +28,7 @@ const routes: Routes = [
 
   {
     path: '',
-    component: BlankComponent,
+    component: PagesComponent,
     children: [
       { path: 'about', loadChildren: () => import('./../features/about/about.module').then(m => m.AboutModule) },
       { path: 'checkout', loadChildren: () => import('./../features/checkout/checkout.module').then(m => m.CheckoutModule) },
